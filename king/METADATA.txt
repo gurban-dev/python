@@ -1,0 +1,154 @@
+Initial Objective:
+Write Python source code that reads from a column name
+in a Microsoft Excel file and prints a statement
+depending on the value in each row.
+
+The system creates a metadata for the two excel files.
+It's not thinking in terms of excel anymore.
+An existing table inside the system.
+
+The name of the sheet becomes the name of the database
+whereas the name of the columns become the names of the
+field in the database.
+
+How can I add a stage where I write either SQL or Python
+to access the ProductType column in the database table.
+How can I refer to the data if it is no longer Excel?
+
+Review Yes or No is the new column or field which will
+house the new formula logic/Python conditional.
+
+If the current GOC came from the previous, did its type change?
+
+Fill out numbers 5-12.
+
+GOC
+prevous is the leftmost column in the table.
+current
+
+If previous_GOC and current_GOC are the same, return the table 
+Left join because previous_GOC is our leftmost column.
+
+PREVIOUS_GOC Is our primary key.
+
+If you upload the data, the two tables should be joined.
+
+Issue:
+Upon failing, an error isn't outputed. The fail occurs silently.
+
+Is a left join appropriate here?
+
+We want to see if GOC has changed in terms of type which
+is recorded in a separate column in the table.
+
+PREV_vs_Vlookup is the name of a field/column in the
+METADATA Excel spreadsheet.
+
+import pandas as pd
+import numpy as np
+df = pd.read_sql("SELECT * FROM Data", con=engine)
+df['ReviewYesorNo'] = np.where(df['ProductType']=='FX','Y','N')
+
+For what kind of database table is this Python source code for?
+
+Swayam is the system I am working with.
+This could potentially be SQLAlchemy.
+
+I am seeing the subsequent error:
+ProductTypeReview, Error - name 'engine' is not defined
+
+previous is the leftmost column in the table.
+
+If previous_GOC and current_GOC are the same,
+return the table.
+
+Left join because previous_GOC is our leftmost column.
+
+PREVIOUS_GOC Is our primary key.
+
+We want to see if GOC has changed in terms of
+type which is recorded in a separate column in
+the table.
+
+PREV_vs_Vlookup is the name of a field/column
+in the METADATA Excel spreadsheet.
+
+def PREV_vs_CURR_Vlookup(df, j_message):
+  print(df['METADATA'].columns)
+
+  df['METADATA']['PREV_vs_CURR_Vlookup'] = pd.merge(
+    ['Previous'], ['Current'], how='left',
+    on=['Current']['Current_GOC'],
+    left_on=['Previous']['Previous_GOC']
+  )
+
+This is invalid Python. Here's why:
+
+❌ ['Current']['Current_GOC']
+This tries to access 'Current_GOC' from the list ['Current'],
+which is a list with a string, not a dictionary or DataFrame.
+
+Assuming the following:
+df['METADATA']['Previous'] is a DataFrame that contains a
+column 'Previous_GOC'.
+
+df['METADATA']['Current'] is a DataFrame that contains a
+column 'Current_GOC'.
+
+What we likely want instead:
+def PREV_vs_CURR_Vlookup(df, j_message):
+  print(df['METADATA'].columns)
+
+  df['METADATA']['PREV_vs_CURR_Vlookup'] = pd.merge(
+    df['METADATA']['Previous'],
+    df['METADATA']['Current'],
+    how='left',
+    left_on='Previous_GOC',
+    right_on='Current_GOC'
+  )
+
+print(df['METADATA']['PREV_vs_CURR_Vlookup'])
+
+However, this assigns an entire DataFrame (the result of
+pd.merge(...)) into a single column named 'PREV_vs_CURR_Vlookup'.
+That’s invalid unless the merged DataFrame has only one column.
+
+Clarify:
+Inside METADATA, there are two columns:
+
+Previous or Previous_GOC
+
+Current or Current_GOC
+
+You want to merge these two (left join) columns on GOC names.
+
+Then compare types, and store the result in a new column
+PREV_vs_CURR_Vlookup.
+
+That aligns with the earlier goal:
+Detect if the GOC's type has changed from Previous to
+Current, and store 'Yes' or 'No' in PREV_vs_CURR_Vlookup.
+
+pd.merge() needs two DataFrames.
+
+left_on and right_on take string column names.
+
+how='left' in pd.merge() performs a left join, which works
+like this:
+Keep all rows from the left DataFrame, and match rows from
+the right DataFrame where possible based on the join condition.
+
+If there's no match in the right DataFrame, pandas fills the
+missing values with NaN.
+
+left_on='Previous_GOC', right_on='Current_GOC'
+
+The above line tells pandas:
+Look in the left DataFrame (Previous) for a column called
+'Previous_GOC'.
+
+Look in the right DataFrame (Current) for a column called
+'Current_GOC'.
+
+Form a new DataFrame by joining the rows where those values
+match.

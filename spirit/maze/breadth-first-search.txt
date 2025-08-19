@@ -1,0 +1,86 @@
+Breadth-first search algorithm in the context
+of finding the shortest path in a maze:
+
+Input:
+A text representation of a maze.
+
+Output:
+A Path object containing a path or sequence
+of steps that must be followed to go from S
+to G.
+
+1. Queue Setup:
+   A queue is like a line where items are added
+   at the back and taken from the front. BFS
+   uses this to keep track of paths you're exploring.
+   You’ll store the current path (a sequence of
+   positions) in the queue.
+
+2. Starting Point:
+   a. Create a Path object and initialise it with
+      the starting position.
+
+   b. Add the Path object to the queue to begin
+      the exploration.
+
+3. Visited Positions:
+   Keep track of where you've been already to
+   avoid going in circles. Use a "visited" list
+   to remember these positions.
+
+4. While the Queue is Not Empty:
+   a. Remove and Check the First Path:
+      Take the path at the front of the queue and
+      look at the last position in that path.
+   b. Goal Check:
+      If the current position is the goal, you're
+      done! Return the path that led you here.
+   c. Explore Neighbors:
+      For each neighboring position (adjacent cells
+      in the maze):
+      i.  If it's not visited, mark it as visited.
+      ii. Create a new path by adding this position
+          to the existing one and put it in the queue.
+
+class Path:
+  def __init__(self, steps=[]):
+    self.steps = steps
+
+  # The "+" operator invokes this method.
+  def __add__(self, position):
+    return Path(self.steps + [position])
+
+Pseudocode for example maze_1.txt:
+start = (1, 0)
+path = Path([start]) -> Path([(1, 0)])
+
+queue = deque()
+queue.append(path) -> append(Path([(1, 0)]))
+
+visited = [start] -> [(1, 0)]
+
+while queue:
+  # Deque or get and remove the item located
+  # at the front of the queue.
+  path = queue.popleft() -> Path([(1, 0)])
+
+  # Obtain the last position in the latest
+  # Path object that was dequeued from the
+  # queue.
+  position = path.steps[-1] -> (1, 0)
+
+  if maze.is_goal(position):
+    return path
+
+  for adjacent in maze.get_adjacent(position):
+    if maze.is_accessible(adjacent) and adjacent not in visited:
+      visited.append(adjacent) -> append((1, 1))
+
+      # See the __add__ method in the Path class
+      # defined in path.py to comprehend the
+      # subsequent line of pseudocode.
+      new_path = path + adjacent -> Path([(1, 0)] + [(1, 1)])
+
+      # Append the "new_path Path object containing the
+      # updated path or sequence of positions to the queue.
+      queue.append(new_path)

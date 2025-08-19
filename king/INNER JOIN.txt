@@ -1,0 +1,38 @@
+The INNER JOIN keyword selects records that
+have matching values in both tables.
+
+Format:
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+Keep in mind that INNER JOINs are sometimes
+written without the keyword "INNER".
+
+Table name: Products
+ProductID   ProductName   CategoryID    Price
+1	          Chais	        1	            18
+2	          Chang	        1	            19
+3	          Aniseed Syrup	2	            10
+
+Table name: Categories
+CategoryID   CategoryName   Description
+1	           Beverages	    Soft drinks, coffees, teas, beers, and ales
+2	           Condiments	    Sweet and savory sauces, relishes, spreads, and seasonings
+3	           Confections	  Desserts, candies, and sweet breads
+
+See rows containing values for the columns "ProductID",
+"ProductName", and "CategoryName" from the database
+table named "Products", but only for rows/records that
+have the same value in the "CategoryID" column in both
+tables.
+
+SELECT ProductID, ProductName, CategoryName
+FROM Products
+INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+
+ProductID   ProductName     CategoryName
+1	          Chais	          Beverages
+2	          Chang	          Beverages
+3	          Aniseed Syrup   Condiments

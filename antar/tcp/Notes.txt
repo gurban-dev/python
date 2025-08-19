@@ -1,0 +1,35 @@
+Socket:
+A socket is a software endpoint for communication
+between two programs over a network, while TCP
+(Transmission Control Protocol) is a protocol.
+
+An endpoint refers to a unique combination of an
+IP address and a port number that identifies a
+specific location where network communication can
+occur.
+
+In this context, a protocol is a set of rules and
+that govern how data is transmitted across a network.
+
+Transmission Control Protocol/Internet Protocol
+(TCP/IP) suite is the foundation of modern network
+communication.
+
+It enables computers to communicate and share data
+across local or wide-area networks like the Internet.
+
+File descriptor:
+In socket programming, a file descriptor is an integer
+that represents an open socket, allowing a program to
+interact with the network.
+
+Objective:
+To establish a TCP client-server interaction
+where the client and server can communicate
+with each other over a network.
+
+Remember that in software engineering, the client
+side is what the end user sees when they interact
+with an application. The server-side is where the
+business logic is located and processes the data
+inputted by the end user.

@@ -1,0 +1,14 @@
+Big O (O): Represents the upper bound or worst-case time
+complexity of an algorithm's running time.
+
+Ω (Omega): Represents the lower bound or best-case time
+complexity of an algorithm's running time.
+
+Θ (Theta): Represents the tight bound or average-case of
+an algorithm's running time.
+
+In computer science, a traversal is the process of visiting
+each element inside of a data structure.
+
+In colloquial/everyday English, you could say the following:
+I will traverse mount Kilimanjaro in Tanzania.

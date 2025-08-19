@@ -1,0 +1,73 @@
+Format of a common table expression:
+WITH cte_name AS (
+  SELECT column1, column2
+  FROM your_table
+  WHERE some_condition
+)
+
+SELECT *
+FROM cte_name;
+
+Table name: Employees
+employee_id	  employee_name	  supervisor_id
+1	            John Smith	    NULL
+2	            Mary Johnson	  1
+3             Sam Brown	      1
+4             Alice White	    2
+
+Find all employees along with their immediate supervisors.
+
+WITH EmployeesWithSupervisors AS (
+  SELECT e.employee_id, e.employee_name, s.employee_name AS supervisor_name
+  FROM Employees e
+  JOIN Employees s
+  ON e.supervisor_id = s.employee_id
+)
+
+The above SQL query is called a self join because
+a table is being joined against itself. It combines
+rows from two different aliases representing the
+same table, with an expression specifying which rows
+are to be paired.
+
+Format:
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+
+Reading the SQL query backwards may make it clearer:
+FROM ... --Query the Employees table (Alias it as "e")
+JOIN ... --Join with the same Employees table (Alias it as "s")
+ON ... --The join on both tables is based on: e.supervisor_id = s.employee_id
+SELECT ... --Pluck out: e.id AS employee_id,
+                        e.name AS employee_name,
+                        s.name AS supervisor_name
+
+The same alias cannot be used for both the employees
+and the supervisors which is why "e" and "s", which
+represent the Employee table, are brought into existence.
+This would cause a conflict because SQL cannot distinguish
+between the left and right sides of the JOIN clause.
+
+"ON e.supervisor_id = s.employee_id" means give me all of
+the rows from table "s" where the "employee_id" matches
+the "supervisor_id" for this row in table "e".
+
+
+Output of the above query:
+employee_id	  employee_name	  supervisor_name
+1	            John Smith	    NULL
+2	            Mary Johnson	  John Smith
+3	            Sam Brown	      John Smith
+4	            Alice White	    Mary Johnson
+
+The value under "supervisor_name" is NULL for the
+first record because John Smith  
+
+A LEFT JOIN returns all records from the left table
+(Employees e) and the matching records from the right
+table (Employees s).
+
+If there is no match in the right table (an employee
+without a supervisor), the result will include NULL
+values for columns from the right table (supervisor_name).

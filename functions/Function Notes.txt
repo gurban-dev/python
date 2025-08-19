@@ -1,0 +1,24 @@
+Built-in functions are predefined by Python:
+print(), len(), type()
+
+User-defined functions are created by the programmer:
+def greet():
+  print("Hello!")
+
+Functions are different than methods.
+
+# A built-in function.
+print("Hello")
+
+# A user-defined function.
+def greet():
+  print("Hi!")
+
+A method is a function that belongs to an object.
+(like a string, list, etc.).
+
+A method of a string object.
+"hello".upper()
+
+A method of a list object.
+[1, 2, 3].append(4)

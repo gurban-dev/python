@@ -1,0 +1,51 @@
+Format of a function definition:
+
+def function_name():
+  statement
+  statement
+  etc.
+
+The first line is known as the function header.
+It marks the beginning of the function definition.
+
+The function header begins with the key word "def",
+followed by the name of the function, followed by
+a set of parentheses, followed by a colon.
+
+Beginning at the next line is a set of statements
+known as a block. A block is simply a set of
+statements that belong together as a group.
+
+These statements are performed any time the function
+is executed. Notice in the general format that all
+of the statements in the block are indented. This
+indentation is required, because the Python
+interpreter uses it to tell where the block begins
+and where it ends.
+
+Single-responsibility principle:
+A function should only perform one specific task.
+
+The single responsibility principle makes code easier
+to read because each function focuses on one clear task,
+so you can understand its purpose quickly without
+confusion. It simplifies testing since you only need to
+verify one specific behaviour per function, making tests
+more straightforward and reliable. It also makes code
+easier to change because modifying one function's behaviour
+won’t unintentionally affect others, reducing bugs and
+making maintenance safer and faster.
+
+Functions written with function annotations syntax:
+def function_name() -> return_type:
+  statement
+  statement
+  etc.
+
+-> return_type is known as a function annotation
+or type hint.
+
+It behaves as a placeholder for the type of value
+that the function is expected to return.
+
+return_type could be None, int, string, etc.

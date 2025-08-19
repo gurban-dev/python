@@ -1,0 +1,19 @@
+The NOT bitwise operator (~).
+
+num = 60
+
+128  64  32  16     8    4    2    1
+2^7  2^6  2^5  2^4   2^3  2^2  2^1  2^0 
+ 0    0    1    1     1    1    0    0
+
+60 can be represented in binary:
+0011 1100
+
+Applying the NOT bitwise operator:
+~num
+
+0011 1100 -> 1100 0011
+
+-(60) - 1 = -61
+The formula for the ~ (NOT) bitwise operator:
+-num - 1 = -61

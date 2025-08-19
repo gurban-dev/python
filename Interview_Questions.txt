@@ -1,0 +1,5 @@
+Python lists are mutable, but tuples are immutable
+objects.
+
+What are decorators in Python able to do with arguments?
+Accept them for functions and modify them.

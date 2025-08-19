@@ -1,0 +1,37 @@
+Before executing a Python program, make sure
+that the file has been saved.
+
+python3 <name_of_file>.py
+
+E.g. hello_world.py
+
+Remember that this command-line argument
+must be executed in the same directory/folder
+where the Python program is being stored.
+
+The program is hello_world.py in this case.
+
+It is simply the file containing the Python
+source code.
+
+Python files must always end in the ".py"
+file extension and they are sometimes
+referred to as programs.
+
+
+To go into a particular directory:
+cd <directory_name>
+
+E.g.
+cd python
+
+
+To go up one directory level:
+cd ..
+
+Running Python in interactive mode:
+python3
+
+On Linux:
+Click Ctrl + D or type "quit() and click Enter
+to exit interactive mode.

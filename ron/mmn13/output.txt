@@ -1,0 +1,66 @@
+The program should print the names of the jobs in the order in which they received service from the computer.
+
+For each job, the program must also print:
+
+Its priority
+
+The processing time it required
+
+The waiting time before it began execution
+
+Example:
+
+For the following input:
+
+N 3 11
+E 4 30
+T 6 15
+A 7 21
+F 8 25
+H 5 18
+The program output should be:
+
+1 F 8 25 0
+2 A 7 21 25
+3 T 6 15 46
+4 H 5 18 61
+5 E 4 30 79
+6 N 3 11 109
+(Assuming no new jobs arrived during the program execution.)
+
+Output for example input:
+1 F 8 0 0
+2 A 7 0 25
+3 T 6 0 46
+4 H 5 0 61
+5 E 4 0 79
+6 N 3 0 109
+
+Output for additional input:
+1 V 10 0 0
+2 S 9 0 5
+3 L 8 0 50
+4 P 7 0 70
+5 Q 6 0 100
+6 K 5 0 135
+7 R 4 0 150
+8 W8 10 0 190
+9 W7 8 0 236
+10 W9 7 0 273
+11 W9 10 0 304
+12 W9 6 0 352
+13 W8 4 0 367
+14 M 3 0 404
+15 W7 5 0 429
+16 W10 3 0 438
+17 J 2 0 484
+18 W9 2 0 494
+19 W6 7 0 542
+20 W5 4 0 565
+21 W7 2 0 607
+22 W5 2 0 636
+23 U 1 0 637
+24 W10 1 0 687
+25 W2 7 0 729
+26 W2 7 0 767
+27 W6 1 0 801

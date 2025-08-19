@@ -1,0 +1,15 @@
+An algorithm is a step by step approach to
+solving a problem.
+
+Requirements:
+1. An algorithm must be unambiguous.
+   Meaning that any two people should read it
+   and arrive at the same conclusion.
+
+   Unambiguous means not open to more than one
+   interpretation.
+2. An algorithm should have clearly defined inputs
+   and outputs.
+3. An algorithm should be language neutral, so that
+   a Java developer and a Python developer can both
+   understand or comprehend it.

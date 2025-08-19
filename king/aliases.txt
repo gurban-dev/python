@@ -1,0 +1,11 @@
+Aliases for columns in a table:
+SELECT CustomerID as ID
+CustomerName as Customer
+FROM Customers;
+
+"ID" AND "Customer" are aliases.
+
+
+Aliases for tables:
+SELECT c.CustomerID,
+FROM Customers AS c;

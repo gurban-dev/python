@@ -1,0 +1,5 @@
+Web sraping is the automated process of collecting publicly available
+data from a website.
+
+Instead of gathering data manually, simple scraper tools can acquire
+vast amounts of information in a few minutes.

@@ -1,0 +1,40 @@
+hello_world.py
+add_operator.py
+
+comments.py
+
+data_types.py
+string_literal.py
+
+if_elif_else.py
+price_of_house.py
+
+format_specifier.py
+multiline_f_string.py
+
+running_python.txt
+
+operator_precdence.py
+
+input.py, hello_world.py
+if_elif_else.py, add_operator.py
+data_types.py, comments.py
+
+repetition_structures:
+Repetition Structures.txt
+for.py, nested_for_loop1.py
+nested_for_loop2.py, while.py
+
+lists.py
+
+functions:
+Function Format.txt
+functions.py
+message.py
+params_and_args.py
+
+files:
+file_write.py
+line_read.py
+philosophers.txt
+read_data.py

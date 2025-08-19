@@ -1,0 +1,54 @@
+What we've learned:
+Variables
+Assignment operator
+Integers
+Strings
+The print() and input() built-in functions.
+
+
+Practice Questions
+1. What is declared in Python to store data?
+   Answer: Variables are declared in Python
+           to store data.
+
+2. How can the data type of a variable be identified?
+   Answer: Look at the value being assigned to the
+           variable.
+
+3. How do you know if a value is an integer in Python?
+   Answer: The value must be a number without a decimal
+           and without quotes surrounding it.
+           E.g. -1
+4. How do you know if a value is a string in Python?
+   Answer: The value must be enclosed or surrounded by
+           either single or double quotes.
+           E.g. '-1', "True"
+
+given_name = 'Dennis'
+
+no is an abbreviation for "number".
+no_of_pizza_pies = 5
+
+What you see to the left of the assignment operator
+(=) is the variable name.
+
+What you see to the right of the assignment operator
+(=) is the value being assigned.
+
+Two pieces of data are being stored here:
+A person' given name (same meaning as first name).
+The number of pizza pies they ordered.
+
+given_name and no_of_pizza_pies are the variables
+declared.
+
+What is the data type of given_name and no_of_pizza_pies?
+Since the variable given_name was assigned 'Dennis', it
+is a string data type. Anytime you see data surrounded
+by quotes, you can immediately conclude that the data type
+is a string.
+
+The variable no_of_pizza_pies was assigned 5. 5 is a whole
+number and it is not surrounded by quotes. Therefore, it
+can be concluded that no_of_pizza_pies is being assigned
+an integer and is of the integer data type.

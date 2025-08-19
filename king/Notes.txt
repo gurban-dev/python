@@ -1,0 +1,14 @@
+An Application Programming Interface makes it possible for
+two different pieces of software to communicate with each
+other.
+
+Think of a restaurant server/waiter that communicates with
+customers and the kitchen staff.
+
+An API endpoint is the location where the API receives requests
+from the client side/front end to access resources that exist
+on a server.
+
+The office365-rest-client library is a crucial tool for
+interacting with SharePoint using Python:
+pip install Office365-REST-Python-Client

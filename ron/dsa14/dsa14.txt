@@ -1,0 +1,329 @@
+Question 1 (32 points – 8 for each)
+
+The array PARTITION contains the following values:
+PARTITION:
+Index: 0 1 2 3 4
+Value: A B A B A
+
+You are required to answer the following questions:
+
+a. What does the array rpA look like after applying
+   the PARTITION algorithm?
+
+After applying the PARTITION algorithm the array rpA
+would be:
+[A, A, A, B, B]
+
+Partition Algorithm:
+Step 1: Choose a pivot element (usually the first
+        element, so here it’s "A").
+
+Step 2: Rearrange the array so that:
+	All elements smaller than or equal to the pivot
+	(here, "A") are on the left.
+
+	All elements greater than the pivot (here, "B")
+	are on the right.
+
+The pivot is often selected as the first element
+in the array, or some other predefined position.
+
+In this case, the first element of the array is
+"A" at index 0, so it can be selected as the pivot.
+
+Here, since there are only two possible values (A
+and B), the algorithm should group all the "A"s
+together and all the "B"s together.
+
+b. What is the purpose of the QUICKSORT algorithm in general?
+
+In general, the purpose of the Quicksort algorithm is to
+efficiently sort a collection of elements-such as numbers,
+strings, or objects-into a specified order (typically
+ascending or descending).
+
+c. What is the role of the PARTITION procedure within the
+   QUICKSORT algorithm?
+
+The PARTITION procedure is a crucial step within the
+QUICKSORT algorithm. Its main role is to reorder the
+elements of the array (or subarray) so that:
+
+The pivot element (chosen during the partitioning step)
+is placed in its correct sorted position.
+
+All elements smaller than the pivot are moved to the
+left of the pivot.
+
+All elements greater than the pivot are moved to the
+right of the pivot.
+
+d. What is the time complexity of the QUICKSORT algorithm
+   in the best-case, worst-case, and average-case scenarios?
+
+The best-case time complexity of the QUICKSORT
+algorithm is Ω(n log n) (omega of n log n)
+because quickSort performs best when each pivot
+splits the array into two equal halves.
+
+Suppose you had an array of size n:
+First call: splits into n/2 and n/2
+
+Second level: each n/2 is split into n/4
+
+Total depth of recursion = log₂(n)
+
+Each level of recursion does a total of n
+comparisons. Therefore: Ω(n⋅logn)
+
+This happens repeatedly on each subarray.
+
+
+The average case time complexity is Θ(n log n)
+(theta of n log n) because the pivot will not
+always split the array perfectly (50-50), nor
+terribly (e.g. 1 and n–1).
+
+But on average, it splits into two reasonably
+balanced parts, like 25%-75%, 40%-60%, etc.
+
+For this reason the depth of the recursion tree
+remains about log n.
+
+
+The worst case time complexity is O(n²) (big O
+of n squared) because the recursion depth is n
+(as deep as the number of elements), and each
+level compares n elements (due to the partitioning
+step).
+
+The worst case occurs when the pivot consistently
+results in one subarray having n-1 elements and
+the other having 0.
+
+This happens when the pivot is always the smallest
+or largest element.
+
+
+Question 2 (36 points – A:16p , B:8p, C:12p)
+You are given three sorted arrays in ascending order,
+each of size n, which contain only natural numbers
+(positive integers) — no duplicates within each
+individual array.
+
+Suggest an efficient algorithm for finding a number
+that appears in all three arrays (i.e., a common element).
+
+I suggest the three-pointer technique for finding a
+number that appears in all three arrays because it:
+
+Compare elements directly at the pointers without
+searching or scanning entire arrays repeatedly.
+
+Advances only the pointer(s) with the smallest value,
+effectively skipping elements that cannot be common,
+thus avoiding unnecessary comparisons.
+
+Traverses each array at most once, ensuring linear
+time complexity.
+
+
+What is the time complexity of your suggested algorithm?
+
+The time complexity of the three pointer technique in
+this case is O(n) (big O of n) because each of the three
+arrays would be traversed once, without needing to revisit
+any elements.
+
+Since three arrays are being traversed, the time
+complexity would be O(3n), but constants like 3
+are ignored when expressing time complexity, so
+O(3n) becomes O(n).
+
+
+Is it possible to achieve better complexity?
+
+No, it is not possible to achieve a better
+complexity because each array is size n,
+and you may have to look at every element
+at least once in the worst case.
+
+Please explain your answer.
+
+
+Question 3 (10 points )
+
+Regarding the array:
+A = ⟨3, 7, 8, 1, 8, 3, 9, 1, 8, 7, 8⟩
+
+a. Demonstrate the operation of the COUNTING-SORT
+   algorithm on the array A.
+   – Show the contents of the array C at the beginning
+     of executing line 6 in the subroutine (as appears
+	  on page 161).
+   – Show the contents of the array C at the beginning
+     of executing line 9.
+   – Show the contents of the array B at the end of
+     executing the subroutine.
+
+Note: In line 9 of the COUNTING-SORT subroutine (as
+appears on page 140 of the textbook), the for loop
+is defined as follows:
+
+for j ← 1 to length[A]
+
+Show that the algorithm still functions correctly.
+
+Step 1: Set up an array 𝐶 (Counting Array) and
+find the range of elements in the array.
+
+The elements in the array 𝐴 are in the range from
+1 to 9
+
+The array 𝐶 is used to count the frequency of each
+element. Let’s initialize an array 𝐶 of size 10
+(since the maximum element in the array is 9).
+
+C = ⟨0, 0, 0, 0, 0, 0, 0, 0, 0, 0⟩
+
+Step 2: Count the frequency of each element in
+the array 𝐴.
+
+We now go through each element in 𝐴 and increment
+the corresponding index in 𝐶.
+
+𝐴[1] = 3 → Increment 𝐶[3]
+𝐴[2] = 7 → Increment 𝐶[7]
+...
+𝐴[11] = 8 → Increment 𝐶[8]
+
+Contents of 𝐶 after counting frequencies:
+𝐶 = ⟨0, 2, 0, 2, 0, 0, 0, 2, 4, 1⟩
+
+At this point, 𝐶[𝑖] represents the number of
+occurrences of element 𝑖 in the array 𝐴.
+
+Step 3: Compute the cumulative counts.
+
+The next step is to update 𝐶 to contain the
+cumulative counts. This means each element
+𝐶[𝑖] will store the sum of counts from the
+previous elements:
+𝐶[1] = 𝐶[1] + 𝐶[0] = 2 + 0 = 2
+𝐶[2] = 𝐶[2] + 𝐶[1] = 0 + 2 = 2
+...
+𝐶[9] = 𝐶[9] + 𝐶[8] = 1 + 10 = 11
+
+Contents of 𝐶 after cumulative counts:
+𝐶 = ⟨0, 2, 2, 4, 4, 4, 4, 6, 10, 11⟩
+
+At this point, 𝐶[𝑖] represents the number of
+elements in 𝐴 that are less than or equal to 𝑖.
+
+E.g.
+A = ⟨3, 7, 8, 1, 8, 3, 9, 1, 8, 7, 8⟩
+
+𝐶 = ⟨0, 2, 2, 4, 4, 4, 4, 6, 10, 11⟩
+
+Suppose i = 9
+
+11 is stored at 𝐶[𝑖].
+
+There are 11 items in 𝐴 that are less than
+or equal to 𝑖.
+
+Step 4: Build the output array B
+After computing the cumulative count array 𝐶,
+use it to construct the sorted output array B
+by placing each element of A in its correct
+position.
+
+The program goes backwards through array A
+from the last element to the first (to
+preserve stability).
+
+Assuming 𝐴 has one-based indexing.
+𝐴 = ⟨3, 7, 8, 1, 8, 3, 9, 1, 8,  7,  8⟩
+     1  2  3  4  5  6  7  8  9  10  11
+
+𝐶 has zero-based indexing.
+𝐶 = ⟨0, 2, 2, 4, 4, 4, 4, 6, 10, 11⟩
+     0  1  2  3  4  5  6  7   8   9
+
+Array B must be the same size as array A
+because it is the output array where the
+sorted elements of A are placed.
+
+B has one-based indexing.
+B = ⟨ ,  ,  ,  ,  ,  ,  ,  ,  ,   ,   ⟩
+     1  2  3  4  5  6  7  8  9  10  11
+
+Array B as a result of for j ← length[A] downto 1:
+B = ⟨1, 1, 3, 3, 7, 7, 8, 8, 8, 8, 9⟩
+
+for j ← 1 to length[𝐴] means that the scanning of
+elements in 𝐴 will begin from 𝐴's first element
+rather than its last.
+
+Array B as a result of for j ← 1 to length[A]:
+B = ⟨1, 1, 3, 3, 7, 7, 8, 8, 8, 8, 9⟩
+
+The COUNTING-SORT algorithm still sorts the
+elements in array A as they would have been
+with the right-to-left version. To see this
+demonstrated, see counting-sort.txt.
+
+Considering that the correct output is produced,
+it can be affirmed that the algorithm still
+functions correctly.
+
+However, if by "still functions correctly"
+the question is of stability, then the left
+-to-right version breaks the stability, so
+it cannot be said that the algorithm still
+functions correctly.
+
+b. Is the algorithm still stable after this change?
+
+Justify your answer.
+
+j ← 1 to length[𝐴] means:
+Start the loop with j = 1.
+
+Continue incrementing j until j = length[𝐴].
+
+A stable sorting algorithm maintains the relative
+order of equal elements. That is, if two elements
+"a" and "b" are equal and "a" appears before "b"
+in the input, then "a" should appear before "b"
+in the output.
+
+With the left-to-right version the order of equal
+elements (like the 8s) gets reversed, so unlike
+the right-to-left version it is not stable.
+
+Left-to-right version
+for j ← 1 to length[A]
+
+| Original pos of 8 | Final B pos |
+|-------------------|-------------|
+| A[3] = 8          | B[10]       |
+| A[5] = 8          | B[9]        |
+| A[9] = 8          | B[8]        |
+| A[11] = 8         | B[7]        |
+
+The order is reversed in the output. So
+the left-to-right version is not stable.
+
+Right-to-left version
+for j ← length[A] downto 1
+
+| Original pos of 8 | Final B pos |
+|-------------------|-------------|
+| A[3] = 8          | B[7]        |
+| A[5] = 8          | B[8]        |
+| A[9] = 8          | B[9]        |
+| A[11] = 8         | B[10]       |
+
+The original order of 8s is preserved,
+so the right-to-left version is stable.

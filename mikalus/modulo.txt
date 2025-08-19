@@ -1,0 +1,40 @@
+Exercise 1
+1 % 3 = 1
+
+What can we subtract from 1, so that
+it can be evenly divided by 3.
+
+Zero can be evenly divided by any integer.
+
+1 can be subtracted from 1 to get zero.
+And zero can be evenly divided by anything.
+
+1 is congruent to 1 mod 3.
+
+1 - 1 = 0
+
+0 % 3 = 0
+
+Exercise 2
+99 % 100 = 99
+
+99 is congruent to 99 mod 100.
+
+99 - 99 = 0
+
+0 % 100 = 0
+
+Subtract 99 from 99, so that zero can be
+evenly divided by 100.
+
+Exercise 3
+101 % 100 = 1
+
+Subtract 1 from 101, so that 100 can be
+evenly divided by 100.
+
+101 is congruent to 1 mod 100.
+
+101 - 1 = 100
+
+100 % 100 = 0

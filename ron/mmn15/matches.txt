@@ -1,0 +1,21 @@
+Pseudocode:
+
+class Apt:
+  self._floor
+  self._area
+
+class SpecialApt(Apt):
+  self._has_view
+
+class RoofApt(SpecialApt):
+  self._has_pool
+
+  def matches(self, spec_floor=None, spec_area=None, spec_has_pool=None):
+    return self._has_pool == spec_has_pool
+
+roofAptObj = RoofApt(3, 80, True)
+
+roofAptObj.matches(
+	spec_floor=2, spec_area=70, spec_has_pool=True
+)
+
