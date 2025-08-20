@@ -46,7 +46,20 @@ print('\nrange(4):', range(4), '\n')
 # "i" is a variable.
 # The range() function accepts an integer as an argument.
 
+num = 0
+
 # range(bucket_capacity) becomes range(4) in this case
 # because "bucket_capacity" was assigned .
 for i in range(bucket_capacity):
   print('i:', i)
+
+  print('Sofiia')
+
+  num = num + 1
+
+  print('num:', num)
+
+  if num == 1:
+    print('The variable num is equal to 1.')
+  
+  print('')

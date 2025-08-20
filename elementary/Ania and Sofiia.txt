@@ -1,8 +1,6 @@
 Previous session’s student:
-Sofiia (Me presenting last time)
--> Ania (Me presenting last time)
-
-Tell Kostia about your availability on the 22nd.
+-> Sofiia (Wrote code out last time)
+Ania (Me presenting last time)
 
 Already discussed:
 data_types.py
