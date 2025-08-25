@@ -19,5 +19,15 @@ for i in range(3):
   print('i:', i, '\n')
 
 print('')
-for element in [0, 1, 2]:
+
+# For-loop
+for element in ['Sofiia', 0, 1, 2]:
   print('element:', element)
+
+for i in range(3):
+  print('i:', i)
+
+  print('Oh yeah!')
+
+for expression in ['Oh', 'yeah!']:
+  print(expression)

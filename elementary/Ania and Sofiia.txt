@@ -1,6 +1,6 @@
 Previous session’s student:
 -> Sofiia (Wrote code out last time)
-Ania (Me presenting last time)
+Ania (Wrote code out last time)
 
 Already discussed:
 data_types.py
