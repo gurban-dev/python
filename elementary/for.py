@@ -24,6 +24,7 @@ print('')
 for element in ['Sofiia', 0, 1, 2]:
   print('element:', element)
 
+print()
 for i in range(3):
   print('i:', i)
 

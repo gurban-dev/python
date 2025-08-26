@@ -1,9 +1,13 @@
 What we've learned:
 Variables
-Assignment operator
-Integers
-Strings
-The print() and input() built-in functions.
+Assignment operator (=)
+Integer data type
+String data type
+Float data type
+For-loops
+
+The following built-in functions:
+print(), input(), type(), range()
 
 
 Practice Questions
@@ -23,6 +27,28 @@ Practice Questions
    Answer: The value must be enclosed or surrounded by
            either single or double quotes.
            E.g. '-1', "True"
+5. What does typing python or python3 in the command-line
+   load?
+   Answer: The Python interactive shell.
+
+6. What are all the following called in Python?
+   Hint: Notice what all of these lines have in
+         common.
+   print()
+   type()
+   range()
+
+   Answer: Since they all contain parentheses, these
+           are known as functions.
+7. What built-in function in Python returns the data
+   type of the argument passed to it?
+   Answer: type()
+
+8. What does is the argument being passed to the type()
+   function below?
+   type('Copernicus')
+
+   Answer: 'Copernicus'
 
 given_name = 'Dennis'
 
