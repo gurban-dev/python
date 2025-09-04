@@ -1,0 +1,4 @@
+A string literal is the actual text that
+is surrounded by quotation marks.
+
+It's data type is still a string.
