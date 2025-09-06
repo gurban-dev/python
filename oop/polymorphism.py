@@ -1,4 +1,13 @@
 '''
+Polymorphism is the ability of an instance of a class
+to take more than one form.
+
+A class is a blueprint that defines the data and behaviour
+encapsulated or grouped together in a single unit.
+
+An instance of a class is an actual object created
+from that blueprint.
+
 1. Create a superclass Transport with:
    A constructor that sets a name attribute.
 

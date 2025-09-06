@@ -1,7 +1,7 @@
 # Repetition structure
-# It repeatedly executes one or more lines of
-# source code in a block or section of the
-# program.
+# One or multiple lines of code in a section of
+# the program will be executed one or mutliple
+# times.
 
 # Python's built-in range() function accepts an
 # integer (a number without quotes and without a
@@ -19,6 +19,12 @@ for i in range(3):
   print('i:', i, '\n')
 
 print('')
+
+# The subsequent line is a list data structure:
+# ['Sofiia', 0, 1, 2]
+
+# This is a list because the items are surrounded
+# by square brackets [].
 
 # For-loop
 for element in ['Sofiia', 0, 1, 2]:

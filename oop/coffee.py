@@ -103,6 +103,8 @@ you can see that there is a parameter called "bean_type".
 The argument being passed to the constructor is
 'arabica'.'''
 
+# The square brackets [] indicate that what
+# follows is a list data structure.
 bean_types = [
   'Arabica',
   'Robusta',
@@ -127,6 +129,7 @@ bean_type = input(
   'from the above menu: '
 )
 
+# Create an instance or an object of the Coffee class.
 espresso = Coffee(bean_type)
 
 # espresso = Coffee('arabica')
