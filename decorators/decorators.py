@@ -10,7 +10,7 @@ def func(f):
   # *args and **kwargs means that the function "f"
   # can accept any number of positional and keyword
   # arguments.
-  def wrapper(*args, **kwargs) -> None:
+  def wrapper(*args, **kwargs):
     print('Started')
 
     returnVal = f(*args, **kwargs)
