@@ -28,3 +28,21 @@ name_of_game = 'wordwoll'
 
 for letter in name_of_game:
   print(letter)
+
+
+# The following Python list has indexes.
+# The first index begins at 0.
+# The first element has an index of 0.
+
+# Indexes:
+#          0        1       2
+pets = ['Kitten', 'Cat', 'Parrot']
+
+# Access the element stored at index 0.
+print('\npets[0]:', pets[0])
+
+print('\npets[2]:', pets[2])
+
+# Keep in mind that the largest index in
+# the list is 2.
+print('\npets[3]:', pets[3])
