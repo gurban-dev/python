@@ -28,7 +28,10 @@ the end parameter removes this default behaviour:
 "Hello World!"
 
 Be sure to save the changes you make in
-the file/program you are working on.'''
+the file/program you are working on.
+
+Show the output with end="\n".
+'''
 print("Hello World!", end="")
 
 # After writing source code in a Python file,
@@ -49,7 +52,7 @@ print('Good morning!')
 
 # Using two lines two write a print statement
 # does not add another newline escape sequence.
-print('There is a newline character at the '
+print('There is a newline escape sequence at the '
       'beginning of this string and an '
       'automatically included one at the end.')
 
@@ -72,7 +75,8 @@ The print() function in Python itself doesn't have
 a strict character limit.
 
 If you try to print an extremely large string (e.g.,
-gigabytes of data), you may run into memory issues.
+gigabytes of data), your computer might encounter
+memory issues.
 
 However, this would be more of a memory error rather
 than a strict character limit for the print() function.'''
