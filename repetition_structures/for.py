@@ -1,8 +1,8 @@
 # This program demonstrates a simple for loop
 # that uses a list of numbers.
 
-# [1, 2, 3, 4, 5] is a list data structure
-# in Python.
+# [1, 2, 3, 4, 5] is a list data structure in
+# Python.
 
 # Traverse the items/elements in the list.
 
@@ -25,5 +25,16 @@ for num in [1, 2, 3, 4, 5]:
   output.'''
   print(num)
 
-#   print(num, end=' ')
-# print('')
+  # print(num, end=', ')
+print('')
+
+# Python lists can store elements that have
+# different data types.
+for item in ['Alexander', 30, 20.0, True]:
+  print('item:', item)
+print('')
+
+# The variable "i" is assigned the element from
+# the current iteration.
+for i in range(-1, 6):
+  print('i:', i)

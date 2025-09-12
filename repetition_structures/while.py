@@ -10,10 +10,14 @@ while keep_going == 'y':
   # Get a salesperson's sales and commission rate.
   sales = float(input('Enter the amount of sales: '))
 
+	# Python's built-in input() function returns a string.
+  # In this case, that string must be converted to a
+  # float data type because of the multiplication that
+  # follows.
   comm_rate = float(input('Enter the commission rate: '))
 
   # Calculate the commission.
-  commission = sales * comm_rate
+  commission = sales + comm_rate
 
   # Display the commission.
   print('\nThe commission is $',

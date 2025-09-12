@@ -3,8 +3,8 @@ print("### Numeric Types ###")
 '''
 The data type of the variable "int_var" is
 an integer because it is assigned 10 which
-is a whole number. 10 doesn't have a
-fractional part.'''
+is a number without a decimal point and not
+enclosed by quotation marks.'''
 int_var = 10
 
 '''
@@ -54,3 +54,13 @@ print("\n### None Type ###")
 # null or the absence of a value.
 none_type = None
 print(f"None: {none_type}, Type: {type(none_type)}")
+
+count = None
+
+count = 0
+
+count += 1
+
+count = 'I am a string.'
+
+print('count:', count)
