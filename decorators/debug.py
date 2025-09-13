@@ -8,10 +8,21 @@ def debug(func):
     # representation of an object meant to be unambiguous and,
     # ideally, could be used to recreate the object.
 
+    # Simply put, passing a string object to repr() will
+    # return its value with the enclosed quotation marks.
+
     # It differs from str(), which is designed to be readable for humans.
     args_repr = [repr(a) for a in args]
 
-    print('kwargs:', kwargs, '\n')
+    print('args:', args)
+
+    # Output: Alexander
+    print('\nargs[0]:', args[0])
+
+    # Output: 'Alexander'
+    print('repr(args[0]):', repr(args[0]))
+
+    print('\nkwargs:', kwargs, '\n')
 
     kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
 
