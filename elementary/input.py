@@ -1,4 +1,18 @@
+# Syntax:
+# <variable_name> = <value_being_assigned>
+
+# The variable name is ALWAYS on the left side
+# of the assignment operator.
 given_name = input('Please input your given name: ')
+
+# What data on the next line is being stored?
+# Answer: The value that is assigned to the variable
+#         is the data being stored.
+given_name = 'William Shakespeare'
+
+# The assignment operator (=) is in
+# between the left and right sides.
+# left_side = right_side
 
 print('\ngiven_name:', given_name)
 
