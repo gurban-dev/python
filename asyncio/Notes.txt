@@ -1,0 +1,18 @@
+In an asynchronous program, tasks run concurrently.
+Meaning that the time that they execute overlaps.
+
+Suppose you had three tasks:
+Task 1, Task 2, Task 3
+
+The execution of task 1 can pause if necessary and task 2
+can begin. The same applies to task 2 and task 3 which makes
+all of them coroutine functions as they can suspend their
+execution and resume later.
+
+In a synchronous program, tasks run sequentially.
+Meaning that task 2 cannot begin until task 1 has
+completed.
+
+For this reason, asyncrhonous programming where the execution
+of tasks overlap is faster than synchronous programming where
+tasks are executed sequentially.
