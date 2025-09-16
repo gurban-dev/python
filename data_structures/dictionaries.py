@@ -17,8 +17,8 @@ An element consists of a key, followed by a
 colon, followed by a value:
 'John': 41
 
-The keys of a dictionary do not have to be
-string literals, but remember that they must
+The keys of a dictionary do not have to be string
+literals like 'John', but remember that they must
 be immutable or unchangeable.
 """
 integers = {
@@ -33,7 +33,8 @@ an expression in the following format:
 dictionary_name[key]
 
 dictionary_name is the variable that references the
-dictionary, and key is the key for the element.
+dictionary, and key is the key for one of the key-value
+pairs.
 
 If the key exists in the dictionary, the expression
 returns the value that is associated with the key.
@@ -68,6 +69,11 @@ type used for access the string literal dictionary
 key.
 """
 print(f"\nphonebook[\'Chris\']: {phonebook['Chris']}")
+
+name = 'Thomas'
+age = 300
+
+print(f'Hello, my name is {name}. I am {age} years old.')
 
 # Remember that string comparisons are case sensitive.
 # The expression phonebook['chris'] will not locate the
