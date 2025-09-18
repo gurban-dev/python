@@ -8,14 +8,13 @@ variables.
 The behaviour of an object is defined with methods
 that are defined within the class.
 
-Unlike Java, the name of the Python file
-isn't required to match the name of the
-class declared inside of it.
+Unlike Java, the name of the Python file isn't
+required to match the name of the class declared
+inside of it.
 
-Although not a strict requirement, it is
-conventional practice to make the name of
-a file the same as the class declared in
-it, but written in snake case:
+Although not a strict requirement, it is conventional
+practice to make the name of a file the same as the
+class declared in it, but written in snake case:
 
 Class name (pascal naming convention):
 CoffeeMachine
@@ -81,7 +80,7 @@ class Coffee:
   The ensuing method is often referred to as a setter
   /mutator because it changes the value of an instance
   variable/data member that belongs to an object.'''
-  
+
   # Setter/mutator
   def set_bean_type(self, bean_type):
     self.bean_type = bean_type
@@ -134,8 +133,10 @@ espresso = Coffee(bean_type)
 
 # espresso = Coffee('arabica')
 
+# Invoke the selector/getter method.
 print('espresso.get_bean_type():', espresso.get_bean_type())
 
+# Invoke the setter/mutator method.
 espresso.set_bean_type('robusta')
 
 print('espresso.get_bean_type():', espresso.get_bean_type())
