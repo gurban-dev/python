@@ -12,24 +12,21 @@ These operators have the same precedence level:
 
 4. Addition and subtraction: + -
 
-The multiplication ( * ), floating-point division ( / ),
-integer division ( // ), and remainder ( % ) operators
-have the same precedence.
+As mentioned above, the multiplication ( * ), floating-point
+division ( / ), integer division ( // ), and remainder ( % )
+operators have the same precedence level.
 
-The addition ( + ) and subtraction ( - ) operators
-likewise have the same precedence.
+The addition ( + ) and subtraction ( - ) operators likewise
+have the same precedence level.
 
-When two operators with the same precedence level
-share an operand, the operators execute from left
-to right.
+When two operators with the same precedence level share
+an operand, the operators execute from left to right.
 
-The multiplication and float division operators
-share the operand 5 in the below example.
+The multiplication and float division operators share
+the operand 5 in the below example.
 
 E.g.
 2 * 5 / 5
-
-What is the use case for arithmetic operations?
 """
 
 """
@@ -65,8 +62,8 @@ num2 = 4 / 3 * (2 - 1)
 
 print(f'\nnum2: {num2}')
 
-# / is called floating-point or
-# float division.
+# / performs floating-point or float
+# division.
 num3 = 4 / (3 * 2 - 1)
 
 print(f'\nnum3: {num3}')
@@ -84,9 +81,8 @@ num5 = 4 // 5
 
 print(f'\nnum5: {num5}')
 
-# Python has a built-in method called
-# type() for revealing the data type
-# of variables.
+# Python has a built-in method called type()
+# for revealing the data type of variables.
 print(f'\ntype(10.0): {type(10.0)}')
 
 '''
@@ -110,22 +106,21 @@ num6 = 6 % 5
 
 print(f'\nnum6: {num6}')
 
-# 3 % 5 = 3
+# 3 % 5 computes to 3.
 num7 = 3 % 5
 
 '''
 3 is congruent to 3 mod 5.
-3 - 3 = 0 and 0 can be
-divided evenly by five.
 
-Zero divided by anything will
-not have any remainder.
+3 - 3 equals 0 and 0 can be divided evenly
+by five.
 
-When the number of the right side of the
-remainder operator (%) is larger than the
-number on the left side, the expression
-will evaluate to the value of the number
-on the left side.'''
+Zero divided by anything will not have any remainder.
+
+When the number of the right side of the remainder
+operator (%) is larger than the number on the left
+side, the expression will evaluate to the value of
+the number on the left side.'''
 
 '''
 99 is congruent to 99 mod 100.

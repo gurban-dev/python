@@ -16,6 +16,9 @@ of storing a single value in memory.
 x = x + 3 -> x = 10 + 3 -> x = 13
 
 += is called an augmented assignment operator.
+
+The same arithmetic operation is being performed
+on line 16 as line 23.
 '''
 x += 3
 print("x:", x)
@@ -35,9 +38,8 @@ y -= 3
 print("y:", y)
 
 """
-Float division will give you the
-exact amount of times a number can
-fit into a larger number.
+Float division will give you the exact amount
+of times a number can fit into a larger number.
 
 This means that you may see the remainder
 included in the calculation which makes it
@@ -55,9 +57,10 @@ E.g. 3.3333333333333335
 print("10 / 3:", 10 / 3)
 
 """
-Integer/floor division is going to give
-you the amount of times a number can
-fully go into a larger number."""
+Integer/floor division is going to give you
+the amount of times a number can fully go
+into a larger number.
+"""
 
 # Integer/floor division
 print("10 // 3:", 10 // 3)
@@ -86,6 +89,12 @@ by 3 if there is any.
 
 10 - 1 = 9 and 9 is a multiple of 3
 which makes it fully divisble by 3.
+
+Think of it this way, what is the largest
+multiple of 3 that is less than 10.
+
+Take that multiple and subract it from 10.
+That gives you the result of 10 % 3.
 """
 # 10 modulo 3
 print('10 % 3:', 10 % 3)

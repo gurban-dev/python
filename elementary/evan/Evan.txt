@@ -1,2 +1,0 @@
-Previously discussed:
-exercise1.py
