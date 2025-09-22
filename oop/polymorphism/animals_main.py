@@ -1,3 +1,5 @@
+# The asterisk (*) signifies that everything from
+# a module should be imported.
 from animals import *
 
 '''
@@ -21,6 +23,12 @@ animals.make_sound()
 
 # Object of the Dog class.
 dog = Dog()
+
+# In this example, an instance of both the Dog
+# and Cat classes can be created without passing
+# any arguments to either of their constructors
+# because in each of their constructors, the
+# argument for the species parameter is hardcoded.
 
 dog.show_species()
 

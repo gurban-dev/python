@@ -25,6 +25,7 @@ class Product:
     # Increment the count of the class variable
     # "total_products" when a new instance is
     # created.
+    # Product.total_products = Product.total_products + 1
     Product.total_products += 1
 
   # Selector/Getter
@@ -41,8 +42,8 @@ product1 = Product("Laptop", 999.99)
 product2 = Product("Smartphone", 499.99)
 product3 = Product("Headphones", 99.99)
 
-# Output the class variable that
-# is the same for each object.
+# Output the class variable that is
+# the same for each object.
 print(f'product1.get_total_products(): '
       f'{product1.get_total_products()}')
 

@@ -1,7 +1,9 @@
 class Foo:
+  # Class variable
   __a = 2
 
   def __init__(self):
+    # Instance variable
     self.__b = 1
 
 F = Foo()
