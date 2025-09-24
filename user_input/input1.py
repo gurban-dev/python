@@ -6,6 +6,9 @@ as a string.
 Include a whitespace character after the prompt
 statement because the input() function does not
 automatically include one.'''
+
+# The prompt statement in the following example:
+# 'What is your name? '
 name = input('What is your name? ')
 
 # F-string

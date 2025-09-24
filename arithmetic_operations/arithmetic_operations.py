@@ -3,7 +3,7 @@ There are two variables in this program:
 x and y
 
 The data type of variable "x" is an integer
-because an integer value, namely 10 was
+because an integer literal, namely 10 was
 assigned to it.
 
 The same can be said of variable "y".
@@ -18,7 +18,7 @@ x = x + 3 -> x = 10 + 3 -> x = 13
 += is called an augmented assignment operator.
 
 The same arithmetic operation is being performed
-on line 16 as line 23.
+on line 16 as on line 23.
 '''
 x += 3
 print("x:", x)
@@ -73,6 +73,8 @@ print("10 * 3:", 10 * 3)
 print("10 ** 3:", 10 ** 3)
 
 """
+Modulo operator / remainder operator / modulus operator
+
 Used to get the remainder of a division.
 Always returns a whole number or an integer.
 
@@ -87,7 +89,7 @@ by 3 if there is any.
 
 10 is congruent to 1 mod 3.
 
-10 - 1 = 9 and 9 is a multiple of 3
+10 - 1 equals 9 and 9 is a multiple of 3
 which makes it fully divisble by 3.
 
 Think of it this way, what is the largest

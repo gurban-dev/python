@@ -1,4 +1,5 @@
 # Floating point number.
+# The data type is a float.
 total = 100.12345
 
 # A whitespace character is automatically
@@ -34,5 +35,11 @@ a variable is placed inside them.
 .2 specifies that the number should be rounded to
 two decimal places.
 
-f indicates that the value is a floating-point number.'''
+f indicates that the value is a floating-point number.
+
+end='' is a keyword argument. Rather than leaving the
+default behaviour alone, explicitly tell the print()
+function to remove the newline escape sequence at the
+end of its output.
+'''
 print(f'total with string formatting: {total:.2f}', end='')

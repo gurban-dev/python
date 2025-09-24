@@ -1,5 +1,5 @@
 '''
-+=, -=, *=, /*, %= are called augmented
++=, -=, *=, /*, %= are all called augmented
 assignment operators.'''
 
 num = 2
@@ -45,6 +45,8 @@ print('\nAfter num //= num:', num)
 
 # num = num % 1 becomes:
 # num = 2 % 3
+# 2 is congruent to 2 mod 3.
+# 2 - 2 is equal to 0. 0 is divisible by 3.
 num %= 3
 
 print('\nAfter num %= 2:', num)

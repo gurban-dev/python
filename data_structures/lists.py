@@ -10,9 +10,9 @@ element.
 Below is a statement that creates a list of integers.
 
 The items that are enclosed in brackets and separated
-by commas are the list elements. 2 the first element
+by commas are the list elements. 2 is the first element
 for example.'''
-even_numbers = [2, 4, 6, 8, 10]
+even_numbers = [2, 2, 4, 6, 8, 10]
 
 # List of strings.
 names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
