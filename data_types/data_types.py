@@ -7,15 +7,13 @@ is a number without a decimal point and not
 enclosed by quotation marks.'''
 int_var = 10
 
-'''
-The data type is a float or a floating-point
-number because it contains a decimal point
-which indicates that the numeric value has a
-fractional part.'''
+# The data type is a float because the number contains
+# a decimal point and is not enclosed in quotation
+# marks.
 float_var = 10.0
 
-# Utilise the built-in type() function to
-# output the data type of the variable.
+# Utilise the built-in type() function to output
+# the data type of variables, but literals likewise.
 
 # <class 'int'> is returned by type(int_var).
 print(f"Integer: {int_var}, Type: {type(int_var)}")
@@ -63,4 +61,7 @@ count += 1
 
 count = 'I am a string.'
 
-print('count:', count)
+# The print() returns nothing.
+return_type = print('count:', count)
+
+print('return_type:', return_type)

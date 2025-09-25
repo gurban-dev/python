@@ -1,5 +1,5 @@
 '''
-This exercise covers for loops, while loops, data type
+This exercise covers for-loops, while loops, data type
 conversion, if-elif-else conditionals, and understanding
 truthy and falsy values in Python.
 

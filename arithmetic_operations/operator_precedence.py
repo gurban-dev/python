@@ -81,7 +81,7 @@ num5 = 4 // 5
 
 print(f'\nnum5: {num5}')
 
-# Python has a built-in method called type()
+# Python has a built-in function called type()
 # for revealing the data type of variables.
 print(f'\ntype(10.0): {type(10.0)}')
 
@@ -98,7 +98,7 @@ the most number of times it can be.
 
 6 is congruent to 1 mod 5.
 
-6 - 1 = 5 and 5 can be divided evenly by 5.
+6 - 1 is equal to 5 and 5 is divisible by 5.
 
 When 6 is divided by 5, there is a remainder of
 1 because 6 cannot be evenly divided by 5.'''
@@ -112,25 +112,25 @@ num7 = 3 % 5
 '''
 3 is congruent to 3 mod 5.
 
-3 - 3 equals 0 and 0 can be divided evenly
-by five.
+3 - 3 equals 0 and 0 is divisible by 5.
 
-Zero divided by anything will not have any remainder.
+Zero divided by any number will not have any remainder.
 
-When the number of the right side of the remainder
-operator (%) is larger than the number on the left
-side, the expression will evaluate to the value of
-the number on the left side.'''
+When the operand on the right side of the remainder
+operator (%) is larger than the operand on the left
+side, think about what needs to be subtracted from
+the operand on the left side in order for it to be
+divisible by the operand on the right side of the
+remainder operator (%).'''
 
 '''
 99 is congruent to 99 mod 100.
 
-99 - 99 = 0 and 0 can be divided evenly
-by 100 or anything.
+99 - 99 = 0 and 0 is divisble by any number
+including 100.
 
-Therefore, subtracting 99 from 99
-will allow the result to be divided
-evenly by 100.'''
+Therefore, subtracting 99 from 99 will allow
+the result to be divisible by 100.'''
 num8 = 99 % 100
 
 print(f'\nnum8: {num8}')

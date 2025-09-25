@@ -2,7 +2,7 @@
 Boolean values are True or False.
 
 In Python, they are written as "True" and "False"
-(without the quotes).
+(without the quotation marks).
 
 Assigning True or False to a variable will make
 that variable a boolean variable.
@@ -31,13 +31,15 @@ Empty dictionaries: {}
 
 Empty sets: set()
 
-Empty strings: ""
-
 Empty ranges: range(0)
 
 
 Examples of truthy values:
-Non-zero numbers: -1.5
+Non-empty strings: "False", " ", ' '
+
+Non-zero integers: -1
+
+Non-zero floats: -1.5
 
 Non-empty lists: [1, 2, 3]
 
@@ -47,21 +49,12 @@ Non-empty dictionaries: {"a": 1, "b": 2}
 
 Non-empty sets: {1, 2, 3}
 
-Non-empty strings: "False"
-
 Non-empty ranges: range(1, 10)
 '''
 
-# The "None" keyword represents the absence of
-# a value. It has the same meaning as null.
-# This evaluates as False.
-refresh_token = None
-
-refresh_token = 'random content'
-
 '''
-An empty string evaluates as False.
-\' is one of the escape sequence in Python.
+An empty string evaluates to False.
+\' is one of the escape sequences in Python.
 
 Output:
 bool(''): False
@@ -78,12 +71,19 @@ print('\nbool(\'False\'):', bool('False'))
 # of whether it is positive or negative.
 print('\nbool(-1.5):', bool(-1.5), end='\n\n')
 
+# The "None" keyword represents the absence of
+# a value. It has the same meaning as null.
+# This evaluates to False.
+refresh_token = None
+
+refresh_token = 'random content'
+
 '''
 The program enters the indented block directly under
 the "if" keyword if "refresh_token" evaluates as True.
 The program will enter the else block is "refresh_token"
 evaluates as False.'''
 if refresh_token:
-  print('refresh_token evaluated as True.')
+  print('refresh_token evaluated to True.')
 else:
-  print('refresh_token evaluated as False.')
+  print('refresh_token evaluated to False.')
