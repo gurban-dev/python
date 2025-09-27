@@ -32,11 +32,14 @@ In an if-else or if-elif-else statement, only one block
 of indented statements is executed.
 """
 
-# if-elif-else statement
+print('bool(is_hot):', bool(is_hot), '\n')
+
+# if statement
 if is_hot:
 	print("It's a warm day.")
 	print("Drink plenty of water.")
 
+# if-elif-else statement
 if is_cold:
 	print("It is a cold day.")
 	print("Wear warm clothes.")
@@ -51,23 +54,26 @@ else:
 # evaluate to True before entering the block.
 if is_cold and is_rainy:
   print('\nIt\'s cold and rainy.')
-    
+
 if is_hot and is_rainy:
   print('It\'s either hot or rainy.')
 
 # The two subsequent float literals represent
 # percentage values.
 inflation_rate = 7.5
-unemployment_rate = 8.2
+unemployment_rate = 8
 
 # Write two separate if statements if there are two
 # separate conditions that can both be true.
 # In other words, these conditions are independent of
 # each other.
+
+# Floats and integers can be compared to each other with
+# comparison operators.
 if inflation_rate > 5:
   print("\nInflation is high! Prices are rising quickly.")
 
-if unemployment_rate > 7:
+if unemployment_rate > 7.0:
   print("\nUnemployment is high! Many people are not\n" \
 	"participating in the labour market.")
 

@@ -22,10 +22,10 @@ simply concatenate them.
 "1" + "2" = "12"
 """
 
-# Input 2.
+# Input the number 2.
 num1_str = input('\nInput a number: ')
 
-# Input 2 again.
+# Input the number 2 again.
 num2_str = input('Input a second number: ')
 
 # The output is 22 because variables
@@ -50,10 +50,18 @@ Remember that inputting a non-numerical value like
 generates a ValueError because "fish" converted to
 an integer."""
 
-# Input 2.
-num1_int = int(input('\nInput a number: '))
+# Input the number 2.
+num1_int = input('\nInput a number: ')
 
-# Input 2 again.
+# Change the above int() function to float().
+# Let's see how the calculation will be different.
+
+# Now change the above int() function to a string(),
+# but leave the subsequent one as int().
+
+# Input the number 2 again.
 num2_int = int(input('Input a second number: '))
 
 print(f'num1_int + num2_int: {num1_int + num2_int}')
+
+print(f'num1_int ** num2_int: {num1_int ** num2_int}')

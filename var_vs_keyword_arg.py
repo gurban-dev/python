@@ -1,10 +1,14 @@
 '''
 The PEP 8 style guide says:
-Always put one space around the = operator when
-assigning a value to a variable because it
-improves readability.
+Always put one space around the = (assignment
+operator when assigning a value to a variable
+because it improves readability.
 '''
-name = "Thomas"
+given_name = "Thomas"
+
+num = 10
+
+watermelon_weight = 4.5
 
 '''
 The PEP 8 style guide also says not to put spaces around

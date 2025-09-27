@@ -15,7 +15,13 @@ the source code.
 
 Functions are called as: function(argument)
 
+E.g.
+print("Hello World!")
+
 Methods are called as: object.method()
+
+E.g.
+"Alexander".upper()
 '''
 
 # Declare a list data structure.
@@ -34,27 +40,29 @@ print(f'list_of_strs: {list_of_strs}\n'
       f'set_of_strs: {set_of_strs}')
 
 # Insert an element/item to "list_of_strs".
-list_of_strs.add(2)
+list_of_strs.append(2)
 
 '''
 The print() function has the ability to output
 the data stored in both "list_of_strs" and
 "set_of_strs".
 
+Question:
 If the append() method can be used to insert
 additional elements/items into the list named
 "list_of_strs", can this method be used for
 the same purpose on the set named "set_of_strs"?
-If not, why?'''
+If not, why?
 
-# Insert an element/item to "set_of_strs".
-set_of_strs.add(2)
-
-'''
+Answer:
 The append() method cannot be used to insert
 elements into the set named "set_of_strs"
 because it is defined in the Python list class
 and is only available to list objects that were
-instantiated from that class, not to set objects.'''
+instantiated from that class, not to set objects.
+'''
+
+# Insert an element/item to "set_of_strs".
+set_of_strs.add(2)
 
 # set_of_strs.append(2)

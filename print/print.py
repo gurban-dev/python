@@ -3,35 +3,41 @@
 # invoked on their own without objects.
 print("Hello World 🐱")
 
+# The print() function will accept data and
+# print it to the screen.
+
 """
 The asterisk surrounded by double quotes ("*")
 is a string literal because it is enclosed by
 a pair of quotes.
 
 This string literal ("*") is being multiplied
-ten times which means that it will be
-outputted ten times."""
+ten times which means that it will be outputted
+ten times."""
 print("*" * 10)
 
-# greeting is the string.
+# greeting is the string variable.
 # 'Good morning!' is the string literal
 # that is assigned to the greeting variable.
 greeting = 'Good morning!'
 
 print('type(greeting):', type(greeting), '\n')
 
-# The print() function in Python appends a newline
-# sequence (\n) by default at the end of the
+print(type(type(1)))
+
+# The print() function in Python automatically appends
+# a newline sequence (\n) by default at the end of the
 # outputted string.
-print('One')
+print('One', end='\n')
 print('Two')
 print('Three')
 
 """
 If you do not want the print() function to
 start a new line of output when it finishes
-displaying its output, you can pass the
-special argument end='':
+displaying its output, you can pass the following
+keyword argument:
+end='':
 """
 print('One', end='')
 

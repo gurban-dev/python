@@ -17,7 +17,7 @@ while keep_going == 'y':
   comm_rate = float(input('Enter the commission rate: '))
 
   # Calculate the commission.
-  commission = sales + comm_rate
+  commission = sales * comm_rate
 
   # Display the commission.
   print('\nThe commission is $',
@@ -45,7 +45,7 @@ while keep_going == 'y':
   # literal. The while loop will terminate after
   # this.
   keep_going = input('\nDo you want to calculate another ' +
-  'commission (Enter y for yes): ')
+  'commission (Enter y for yes): ').lower()
 
   # So long as the following condition evaluates to
   # True, the while loop will continue iterating:

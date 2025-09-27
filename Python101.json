@@ -1,5 +1,70 @@
 {
-  "flashcards": [],
+  "flashcards": [
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    },
+    {
+      "back": "A1",
+      "front": "Q1"
+    }
+  ],
   "notes": [
     {
       "content": "Content",
@@ -8,6 +73,10 @@
     {
       "content": "Content",
       "topic": "Apple"
+    },
+    {
+      "content": "For loops iterate over lists.",
+      "topic": "Loops"
     }
   ]
 }
