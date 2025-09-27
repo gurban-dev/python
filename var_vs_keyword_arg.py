@@ -6,10 +6,6 @@ because it improves readability.
 '''
 given_name = "Thomas"
 
-num = 10
-
-watermelon_weight = 4.5
-
 '''
 The PEP 8 style guide also says not to put spaces around
 the assignment operator (=) in keyword arguments (end="")
