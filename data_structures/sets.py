@@ -9,7 +9,7 @@
 # inside of a set data structure, the set will
 # internally or implicitly exclude those duplicate
 # items.
-items = {1, 1, 'Venice', 'Venice'}
+items = {1.0, 1.0, 1, 1, 'Venice', 'Venice'}
 
 # Also, remember that sets do not supporting indexing.
 # Unlike a list, you cannot access the first element
@@ -29,3 +29,5 @@ print('items:', items)
 items.add('Istanbul')
 
 print('items:', items)
+
+nums = []

@@ -1,6 +1,8 @@
 '''
-+=, -=, *=, /*, %= are all called augmented
-assignment operators.'''
+**=, *=, /*, %=, +=, -= are all called
+augmented assignment operators.'''
+
+2 * 4 / 4
 
 num = 2
 
