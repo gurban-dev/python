@@ -21,9 +21,7 @@ All the keys (movie titles) in the dictionary
 💡 Hint: Use .keys() to get dictionary keys.
 '''
 
-# I am creating a list of top 5 favorite movies
 from collections import defaultdict
-
 
 movies = [
   "The Matrix",
@@ -33,11 +31,8 @@ movies = [
   "Interstellar"
 ]
 
-# Then i convert the list i make in a variable of
-# type tuple (just like int() or Float() lesson 1)
 movies_tuple = tuple(movies)
 
-# I create a dictionary and
 movies_dict = {
   "The Matrix": 1999,
   "Gladiator": 2000,
@@ -45,8 +40,6 @@ movies_dict = {
   "The Dark Knight": 2008,
   "Interstellar": 2014
 }
-
-# finaly i use the print command to print of the three variables
 
 print("First movie in the list:", movies[0])
 
@@ -74,9 +67,7 @@ print('\nLoop through movies')
 for movie in movies:
   print(movie, end=", ")
   # print('movie:', movie)
-print()
-
-print()
+print('\n')
 
 # dict_movies = {}
 
