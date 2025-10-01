@@ -1,64 +1,48 @@
-Concept:
-A repetition structure causes a statement or
-set of statements to execute repeatedly.
+Loops in Python
 
-Statements in this case are lines of code or instructions
-that we are giving to the computer.
+A loop is a repetition structure that allows a statement or group
+of statements to execute multiple times. Loops are useful when a
+task needs to be repeated.
 
-A section of source code will be executed more
-than once.
+Python provides two main types of loops: while loops and for loops.
 
-They are needed in certain cases because programmers
-have to write code that performs the same tasks
-multiple times.
+While Loops (Condition-Controlled)
 
-In Python, you use the while statement to write a
-condition-controlled loop, and you use the for
-statement to write a count-controlled loop.
+A while loop executes as long as a condition is true, making it a
+pretest loop (the condition is tested before each iteration).
 
-A while loop is also called a pretest loop because it
-tests its condition before performing an iteration.
+Use a while loop when you need to validate user input or repeat
+an action until a certain condition is met (e.g., entering an
+email address and password).
 
-During each iteration, source code or instructions
-are executed.
-
-A condition-controlled loop causes a statement or
-set of statements to repeat as long as a condition
-is true.
-
-You want to write a while loop when validating user
-input is necessary.
-E.g. An end user is entering their date of birth.
-
-A while loop has two parts:
-(1) a condition that is tested for a true or false value
-(2) a statement or set of statements that is repeated as
-    long as the condition is true.
+Syntax:
 
 while condition:
   statement
   statement
-  etc.
-
-The first line is referred to as the while clause.
 
 
-A count-controlled loop iterates a specific number
-of times. In Python, you use the for statement to
-write a count-controlled loop.
+condition is evaluated before each iteration.
 
-In Python, the for statement is designed to work
-with a sequence of data items. When the statement
-executes, it iterates once for each item in the
-sequence.
+The indented statements are executed repeatedly while the condition
+is true.
 
-[value1, value2, etc.] is an iterable because
-the program can iterate or loop through each
-of the elements/items it contains.
+For Loops (Count-Controlled)
 
-for variable in [value1, value2, etc.]:
+A for loop iterates over a sequence of items (like a list, string,
+or range).
+
+Each iteration executes once per item, making it ideal for tasks
+that repeat a known number of times.
+
+Syntax:
+
+for variable in [value1, value2, ...]:
   statement
   statement
-  etc.
 
-The first line is known as the for clause.
+[value1, value2, ...] is an iterable, a collection of items the loop can
+process one by one.
+
+The for clause defines the loop variable that takes the value
+of each item in turn.

@@ -27,3 +27,9 @@ class MathUtils:
 
 print('MathUtils.add(10, 10):',
   MathUtils.add(10, 10))
+
+# Instantiating the MathUtils class in spite of the
+# fact that it doesn't have a constructor method.
+math = MathUtils()
+
+print('\nmath.subtract(100, 10):', math.subtract(100, 10))

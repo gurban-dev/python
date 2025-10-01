@@ -16,12 +16,29 @@ while keep_going == 'y':
   # follows.
   comm_rate = float(input('Enter the commission rate: '))
 
+  # In Python, multiplying an integer by a float will
+  # compute to be a float.
+
   # Calculate the commission.
   commission = sales * comm_rate
 
+  print(f'\ncommission: {commission}')
+
+  # Syntax:
+  # format(float, format_specifier)
+
+  # The comma in the format specifier inserts a
+  # comma after every three digits.
+
+  # The .2 means that only two digits after the
+  # decimal point will be shown.
+
+  # The f in the format specifier signifies that a
+  # float is being formatted.
+
   # Display the commission.
   print('\nThe commission is $',
-        format(commission, ',.2f'), sep='')
+        format(commission, '.2f'), sep='')
 
   '''
   The format specifier ',.2f' in Python is used to
@@ -51,3 +68,6 @@ while keep_going == 'y':
   # True, the while loop will continue iterating:
   # keep_going == 'y'
   print('\nkeep_going == \'y\':', keep_going == 'y', '\n')
+
+# Outside of the while loop because the indentation
+# level begins at the very beginning of the line.

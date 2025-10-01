@@ -1,3 +1,4 @@
+
 # Base/Parent class
 class Employee:
   # Class variables/attributes because they
@@ -11,11 +12,21 @@ class Employee:
     self.full_name = full_name
     self.position_name = position_name
 
+    # Employee.no_of_employees = Employee.no_of_employees + 1
     Employee.no_of_employees += 1
+
+    print('Employee constructor method invoked.', end='\n\n')
 
   '''
   @classmethod is called a decorator because it
   contains the @ character.
+
+  Class methods in Python serve the purpose of defining
+  operations that are related to the class itself, rather
+  than to a specific instance of the class. They are
+  distinguished by the @classmethod decorator and take
+  the class as their first argument, conventionally named cls.
+
 
   cls is the conventional name for the first parameter
   of a class method in Python.

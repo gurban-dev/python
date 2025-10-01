@@ -2,7 +2,7 @@
 # We know that "bucket_capacity" is a variable because
 # the assignment operator is to the right of it (=).
 
-# Total pieces of chicken the bucket can hold
+# Total pieces of chicken the bucket can hold.
 bucket_capacity = 4
 
 # Since 4 is an integer literal, assigning it to

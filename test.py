@@ -783,3 +783,21 @@ def test_note_topic_and_content_max_length(study_aid, python_course):
 
 	with pytest.raises(ValueError, match="Invalid note data"):
 		study_aid.add_note(course_name, "Topic", too_long)
+
+
+
+
+
+
+sausage_name = "kolbaska"
+
+# <variable_name> = <value_being_assigned>
+dumpling = "pierogi"
+
+cabbage_rolls = "holubtsi"
+
+# Variable name: cured_pork_far
+# Value being assigned to the variable: "salo"
+cured_pork_fat = "salo"
+
+number_to_add = 10
