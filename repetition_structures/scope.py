@@ -1,3 +1,5 @@
+# Indexes/indices
+#                 0           1         2         3          4
 countries = ['Australia', 'Canada', 'Germany', 'Japan', 'Australia']
 
 # When you use a for loop or a while loop, it means
@@ -9,7 +11,7 @@ countries = ['Australia', 'Canada', 'Germany', 'Japan', 'Australia']
 # Global scope, meaning that indexes_for_australia
 # is a variable that can be accessed anywhere in
 # this program.
-# indexes_for_australia = []
+indexes_for_australia = []
 
 def get_indexes_for_australia(countries):
   indexes_for_australia = []
@@ -28,28 +30,32 @@ def get_indexes_for_australia(countries):
       indexes_for_australia.append(index)
   return indexes_for_australia
 
-print(f'get_indexes_for_australia(countries):'
-      f'{get_indexes_for_australia(countries)}')
+print(f'\nget_indexes_for_australia(countries): '
+      f'{get_indexes_for_australia(countries)}\n')
 
 for index, value in enumerate(countries):
   # Initialising the empty list inside the for loop
   # would be a mistake, because it resets the list
   # on every iteration.
+
   # As a result, you would only keep the last match for
   # 'Australia', or none at all.
 
-  # Instead, initialise the list once before the loop so
+  # Instead, initialise the list one time before the loop so
   # it can accumulate results properly.
 
   # Note: Python loops do not have their own scope.
   # Variables declared inside a loop are still accessible
   # after the loop ends.
 
-  indexes_for_australia = []
+  # indexes_for_australia = []
 
   print(f"index: {index}, value: {value}")
 
   if value == 'Australia':
     indexes_for_australia.append(index)
 
-print('indexes_for_australia:', indexes_for_australia)
+# In spite of being outside of the for loop, the
+# indexes_for_australia variable is still accessible
+# because for loops do not have their own scope.
+print('\nindexes_for_australia:', indexes_for_australia)

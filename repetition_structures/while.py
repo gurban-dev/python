@@ -38,7 +38,7 @@ while keep_going == 'y':
 
   # Display the commission.
   print('\nThe commission is $',
-        format(commission, '.2f'), sep='')
+        format(commission, ',.2f'), sep='')
 
   '''
   The format specifier ',.2f' in Python is used to
@@ -62,12 +62,13 @@ while keep_going == 'y':
   # literal. The while loop will terminate after
   # this.
   keep_going = input('\nDo you want to calculate another ' +
-  'commission (Enter y for yes): ').lower()
+                     'commission (Enter y for yes): ').lower()
 
   # So long as the following condition evaluates to
   # True, the while loop will continue iterating:
   # keep_going == 'y'
   print('\nkeep_going == \'y\':', keep_going == 'y', '\n')
 
-# Outside of the while loop because the indentation
-# level begins at the very beginning of the line.
+# Now this is located outside of the while loop
+# because the indentation level begins at the
+# very beginning of the line.
