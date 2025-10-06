@@ -25,8 +25,8 @@ class Employee:
   operations that are related to the class itself, rather
   than to a specific instance of the class. They are
   distinguished by the @classmethod decorator and take
-  the class as their first argument, conventionally named cls.
-
+  the class as their first argument, conventionally named
+  cls.
 
   cls is the conventional name for the first parameter
   of a class method in Python.
@@ -41,11 +41,11 @@ class Employee:
   def get_total_employees(cls):
     # This class method returns the number
     # of Employee instances created.
-    return f"Total employees created: {cls.no_of_employees}"
+    return f"Total employees created: {cls.no_of_employees}\n"
 
   @classmethod
   def print_field_name(cls):
-    print(f'\ncls.field: {cls.field}\n')
+    print(f'cls.field: {cls.field}\n')
 
   # Remember that a method with the same name
   # will overwrite the previous one written with
@@ -54,10 +54,12 @@ class Employee:
   #   print(f'\nEmployee.field: {Employee.field}\n')
 
   @staticmethod
-  def name_is_valid(full_name):
-    # This static method checks if the given
-    # title is valid (non-empty string).
-    return isinstance(full_name, str) and len(full_name.strip()) > 0
+  def name_is_valid(employee_name):
+    # This static method checks if the employee
+    # name is valid (non-empty string).
+    return f'name_is_valid({employee_name}): ' \
+           f'{isinstance(employee_name, str) and len(employee_name.strip()) > 0}\n'
+
 
 # Derived/child class
 class Manager(Employee):
@@ -71,8 +73,13 @@ employee2 = Employee("Pythagoras", "Senior Software Engineer")
 # Calling a class method.
 print(Employee.get_total_employees())
 
+Employee.print_field_name()
+
 # Calling a static method.
 print(Employee.name_is_valid("René Descartes"))
+
+print(Employee.name_is_valid(2))
+
 print(Employee.name_is_valid(""))
 
 Manager.print_field_name()
