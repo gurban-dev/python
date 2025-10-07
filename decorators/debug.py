@@ -43,5 +43,7 @@ def make_greeting(name, age=None):
     return f"Hello {name}!"
   else:
     return f"Whoa {name}! {age} already, you're growing up!"
+
+# make_greeting = debug(make_greeting)
   
 make_greeting('Alexander', age=20)

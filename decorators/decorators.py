@@ -13,11 +13,14 @@ def func(f):
   def wrapper(*args, **kwargs):
     print('Started')
 
-    returnVal = f(*args, **kwargs)
+    # Invokes func3(5, 6).
+    return_val = f(*args, **kwargs)
+
+    print('return_val:', return_val)
 
     print('Ended\n')
 
-    return returnVal
+    return return_val
 
   # Calls wrapper immediately and returns its
   # return value
@@ -43,13 +46,18 @@ def func2():
 @func
 def func3(num1, num2):
   print('I am func3.')
+
   print(f'num1: {num1}, num2: {num2}')
 
   return num2
 
+# The same as:
+# func3 = func(func3)
+
 print('func2():')
 func2()
 
+print('func3(5, 6):')
 func3(5, 6)
 
 x = func3(5, 6)
