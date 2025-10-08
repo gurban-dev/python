@@ -59,3 +59,7 @@ for index, value in enumerate(countries):
 # indexes_for_australia variable is still accessible
 # because for loops do not have their own scope.
 print('\nindexes_for_australia:', indexes_for_australia)
+
+# Scoped globally.
+print('\nindex:', index)
+print('value:', value)

@@ -72,5 +72,9 @@ number of iterations in the outer for loop
 multiplied by the number of iterations in the
 inner for loop.
 
+n represents the size of the input.
+
+In other words, the number of elements/items.
+
 Time complexity: O(n^2)
 '''

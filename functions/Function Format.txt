@@ -26,6 +26,7 @@ and where it ends.
 Single-responsibility principle:
 A function should only perform one specific task.
 
+-Shorten to the most important.
 The single responsibility principle makes code easier
 to read because each function focuses on one clear task,
 so you can understand its purpose quickly without
@@ -33,7 +34,7 @@ confusion. It simplifies testing since you only need to
 verify one specific behaviour per function, making tests
 more straightforward and reliable. It also makes code
 easier to change because modifying one function's behaviour
-won’t unintentionally affect others, reducing bugs and
+won't unintentionally affect others, reducing bugs and
 making maintenance safer and faster.
 
 Functions written with function annotations syntax:

@@ -32,6 +32,11 @@ def func(f):
 
   # Remember that functions are first-class objects, so
   # they can be assigned to variables.
+
+  # If you don't return anything, then the decorator has
+  # nothing to replace the original function with so the
+  # decorated function name (func2) gets overwritten with
+  # None.
   return wrapper
 
 # func2() is being decorated with @func.

@@ -72,4 +72,23 @@ carol has access.
 
 
 class User:
-  pass
+  # Class variable to track total users
+  user_count = 0
+
+  def __init__(self, username, role):
+    self.username = username
+    self.role = role.lower()
+
+    # validate role
+    if not User.is_valid_role(self.role):
+      raise ValueError(f"Invalid role: {self.role}")
+
+    # increment count when a new valid user is created
+    User._user_count += 1
+
+  @staticmethod
+  def is_valid_role(role):
+    """Check if role is valid."""
+    valid_roles = {"admin", "editor", "viewer"}
+
+    return role.lower() in valid_roles

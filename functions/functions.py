@@ -33,8 +33,12 @@ function_name()
 def say_hello() -> None:
   print("Hello, World!")
 
+  # return "Hello, World!"
+
 # Output: Hello, World!
-say_hello()
+return_val = say_hello()
+
+print('\nreturn_val:', return_val)
 
 '''
 Parameters in a function definition are separated
@@ -101,7 +105,7 @@ arguments were passed to the add() function
 in.'''
 
 # Output: 8
-print('add(num1, num2):', add(num1, num2))
+print('\nadd(num1, num2):', add(num1, num2))
 
 # What does the subsequent line output
 # in the terminal?
