@@ -13,6 +13,8 @@ print('list_data_structure:', list_data_structure, '\n')
 # 'black'
 colours = ['lilac', 'turquoise', 'magenta', 'black']
 
+print(f'type(colours): {type(colours)}\n')
+
 # What is the data type of each of these elements?
 # Hint: Notice how they all have quotes around them.
 
@@ -45,4 +47,4 @@ print('\npets[2]:', pets[2])
 
 # Keep in mind that the largest index in
 # the list is 2.
-print('\npets[3]:', pets[3])
+# print('\npets[3]:', pets[3])
