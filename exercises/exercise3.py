@@ -45,7 +45,7 @@ def student_grade():
 
   print('\nstudents_dict:\n', students_dict, sep="")
 
-  #Adding a new students_dict to the dictionary 
+  # Adding a new students_dict to the dictionary 
   new_name = input("\nEnter the name of the students_dict to be added: ")
   new_grade = float(input("\nEnter the students_dict's grade: "))
 

@@ -7,6 +7,10 @@ The name of the subsequent function is "message".
 Open and closed parentheses as well as a colon
 must follow the name of a declared function.'''
 def message():
+  # The lines of code that follow a return statement
+  # are unreachable by the program.
+  # return 10
+
   '''
   Printing "I am Arthur,\nKing of the Britons"
   inside this function assigns a responsibility
@@ -21,17 +25,24 @@ def message():
 
   # Local variable because it is declared
   # inside of the message() function.
-  entire_message = 'I am Arthur,\nKing of the Britons.'
+  # entire_message = 'I am Arthur,\nKing of the Britons.'
+
+  entire_message = int(10)
 
   """
   If the following line is uncommented, this
   function is no longer a void function because
   it would be returning a value.
-  
+
   A void function is one that doesn't return a value."""
   return entire_message
 # This line is already outside of the function's
 # body because it is not indented.
+
+# Generate a NameError because the variable entire_message
+# is declared inside the message() function and functions
+# have their own local scope.
+# print('entire_message:', entire_message)
 
 """
 This code defines a function named message.
@@ -70,4 +81,4 @@ print('\nmessage():', message())
 Once all of the statements in a function are executed,
 the interpreter jumps back to the part of the program
 that called the function, and the program resumes
-execution at that point (line 65 and 73 in this case)."""
+execution at that point (lines 64 and 72 in this case)."""

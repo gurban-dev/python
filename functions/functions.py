@@ -84,12 +84,14 @@ is assigned to the first parameter, "first_num".
 '''
 
 # Function with parameters.
-def add(first_num, second_num) -> int:
+def add(first_num: int, second_num: int) -> int:
+  print('\nfirst_num + second_num:', first_num + second_num)
+
   return first_num + second_num
 
 # Two integer variables declared.
-num1 = 3
-num2 = 5
+num1: int = 3
+num2: int = 5
 
 '''
 Pass the arguments to the add() function.
@@ -105,7 +107,7 @@ arguments were passed to the add() function
 in.'''
 
 # Output: 8
-print('\nadd(num1, num2):', add(num1, num2))
+# print('add(num1, num2):', add(num1, num2))
 
 # What does the subsequent line output
 # in the terminal?
