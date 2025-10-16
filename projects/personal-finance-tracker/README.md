@@ -41,4 +41,6 @@ data_entry.py
 Create a .csv file which will act as the database:
 .csv
 
-Timestamp: 10:12
+Timestamp: 14:29
+
+https://youtu.be/Dn1EjhcQk64?si=7ZoOK1EAwnPjXLx8
