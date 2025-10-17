@@ -8,12 +8,14 @@ earned month over month.
 Create a virtual environment:
 
 Windows:
+
 python -m venv <env_name>
 
 E.g.
 python -m venv venv
 
 Mac or linux:
+
 python3 -m venv <env_name>
 
 E.g.
@@ -26,11 +28,13 @@ Once you've activated your virtual environment,
 the time is ripe for installing dependencies.
 
 Windows:
+
 pip install matplotlib
 
 pip install pandas
 
 Mac or linux:
+
 pip3 install matplotlib
 
 pip3 install pandas
