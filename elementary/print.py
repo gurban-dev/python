@@ -3,11 +3,11 @@
 # screen.
 print("Hello World!")
 
-# Both double and single quotes can be utilised
+# Both double and single quotation marks can be utilised
 # in Python for printing text to the screen.
-print('Good morning.')
+print('\nGood morning.')
 
-# Below on line 28, a variable named "name" is declared.
+# Below on line 28, a variable named "given_name" is declared.
 # This variable will store the value 'John' because
 # the assignment operator (=) assigns the text 'John'
 # to the variable.
@@ -24,16 +24,16 @@ print('Good morning.')
 # change what's inside.
 
 # In this case, 'John' is being put into a jar labeled
-# "name".
-name = 'John'
+# "given_name".
+given_name = 'John'
 
 # The print() function is accepting two arguments:
-# "name:"
-# name
+# "given_name:"
+# given_name
 
 # A comma (,) is used to separate arguments that are
 # passed to the print() function.
-print("name:", name)
+print("\ngiven_name:", given_name)
 
 # Python is an interpreted language, which means it uses
 # a program called an interpreter to read and execute
