@@ -8,5 +8,5 @@
 # How can you tell that these are integers?
 
 # Answer:
-# They are numbers without quotation marks and
-# without decimal points.
+# They are numbers without quotation marks ("", '') and
+# without decimal points (.).

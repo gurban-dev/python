@@ -10,5 +10,6 @@
 # How can you tell that these are strings?
 
 # Answer:
-# They have quotation marks around them.
-# Think of text that you read in a book.
+# They all have either single or double quotation
+# marks around them.
+# Think of text that you would read in a book.

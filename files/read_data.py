@@ -25,13 +25,27 @@ def main():
   above where the Python program is located.'''
 
   # Open a file named philosophers.txt.
-  infile = open('philosophers.txt', 'r')
+  infile = open('./philosophers.txt', 'r')
+
+  '''
+  Can the open() function open files of all extensions?
+
+  Answer:
+  The open() function can access any file that exists on the
+  filesystem, regardless of its type or extension. What matters
+  is how you read it:
+  Text files: open in text mode ('r', 'w'), Python treats contents
+  as strings.
+
+  Binary files: open in binary mode ('rb', 'wb'), Python treats
+  contents as bytes.
+  '''
 
   '''
   If a file has been opened for reading (using
   the 'r' mode) you can use the file object's
-  read method to read its entire contents into
-  memory. When you call the read method, it
+  read() method to read its entire contents into
+  memory. When you call the read() method, it
   returns the file's contents as a string.'''
   file_contents = infile.read()
 

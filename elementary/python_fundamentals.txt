@@ -9,23 +9,22 @@ For-loops
 The following built-in functions:
 print(), input(), type(), range()
 
-
 Practice Questions
 1. What is declared in Python to store data?
    Answer: Variables are declared in Python
            to store data.
 
 2. How can the data type of a variable be identified?
-   Answer: Look at the value being assigned to the
-           variable.
+   Answer: Look at the value/data being assigned to
+           the variable.
 
 3. How do you know if a value is an integer in Python?
    Answer: The value must be a number without a decimal
-           and without quotes surrounding it.
+           point and without quotes surrounding it.
            E.g. -1
 4. How do you know if a value is a string in Python?
    Answer: The value must be enclosed or surrounded by
-           either single or double quotes.
+           either single or double quotation marks.
            E.g. '-1', "True"
 5. What does typing python or python3 in the command-line
    load?
@@ -44,7 +43,7 @@ Practice Questions
    type of the argument passed to it?
    Answer: type()
 
-8. What does is the argument being passed to the type()
+8. What is the argument being passed to the type()
    function below?
    type('Copernicus')
 

@@ -1,4 +1,4 @@
-# Syntax:
+# Syntax for variable declaration:
 # <variable_name> = <value_being_assigned>
 
 # The variable name is ALWAYS on the left side
@@ -36,7 +36,7 @@ print('type(num2):', type(num2))
 
 # Why is sum a variable?
 # Answer:
-# To the right of sum is an assignment operator.
+# It is to the left of the assignment operator.
 
 # String concatenation
 # The two strings num1 and num2 are being put

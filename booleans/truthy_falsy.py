@@ -11,6 +11,8 @@ In Python there are truthy and falsy values which
 are not explicitly a boolean True or False, but
 can be interpreted as such.
 
+-Does the Python interpreter treat 0 and 1 as booleans?
+
 Assigning any of the following falsy values will
 make a variable be interpreted as False.
 
@@ -81,6 +83,7 @@ refresh_token = 'random content'
 '''
 The program enters the indented block directly under
 the "if" keyword if "refresh_token" evaluates as True.
+
 The program will enter the else block is "refresh_token"
 evaluates as False.'''
 if refresh_token:
