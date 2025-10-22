@@ -2,7 +2,7 @@
 # about an automobile in inventory.
 
 class Automobile:
-	# The __init__ method accepts arguments for the
+	# The __init__() method accepts arguments for the
 	# make, model, mileage, and price. It initializes
 	# the data attributes with these values.
 

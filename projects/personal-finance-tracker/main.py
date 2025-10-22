@@ -58,6 +58,25 @@ class CSV:
 
     # Argument "a" makes it clear that the CSV file should be
     # opened in append mode.
+
+    # Whenever you see a with statement in Python, you can deduce
+    # that you are looking at a context manager.
+
+    # The open() function returns a file object that is itself a
+    # context manager.
+
+    # The file object satisfies the context manager protocol
+    # (__enter__, __exit__) because when the program enters the
+    # with block, the file object's __enter__() method is called
+    # and after exiting the with block, the file object's __exit__()
+    # method is called, which closes the file.
+
+    # The advantage of using a context manager is that there is zero
+    # possibility for memory leaks.
+
+    # A memory leak occurs when a program retains references to memory
+    # that is no longer needed, preventing the operating system (or
+    # the Python garbage collector) from reclaiming it.
     with open(cls.CSV_FILE, "a", newline="") as csv_file:
       # The DictWriter() class takes a dictionary and writes
       # it to a CSV file.

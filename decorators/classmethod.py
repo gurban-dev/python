@@ -2,6 +2,11 @@ class HomoHeidelbergensis:
   # Class variable
   species_name = 'Homo Heidelbergensis'
 
+  # Here there are actually three methods because
+  # the Python interpreter will internally created
+  # a constructor for a class if the programmer
+  # doesn't write one out.
+
   @classmethod
   def get_species(cls):
     return cls.species_name
