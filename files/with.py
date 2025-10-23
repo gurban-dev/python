@@ -13,19 +13,21 @@ with open(file_name, "w") as f:
 When used with a with statement, the open() function
 acts as a context manager.
 
-It calls the file's __enter__() method when entering
-the block (opening the file) and __exit__() when
-leaving it (closing the file).
+It calls the file object's __enter__() method when
+entering the block (opening the file) and __exit__()
+when leaving it (closing the file).
 
-The as f part assigns the opened file object to f.
-When the block ends, the file is automatically closed,
-releasing system resources such as file handles and
+The file_object part assigns the opened file object to
+file_object.
+
+When the program exits the block, the file is automatically
+closed, releasing system resources such as file handles and
 memory buffers.
 '''
 
 # Read the file.
-with open(file_name, "r") as f:
-  contents = f.read()
+with open(file_name, "r") as file_object:
+  contents = file_object.read()
 
 print(contents)
 

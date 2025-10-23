@@ -32,7 +32,7 @@ class CSV:
       # The CSV file will have the name that is assigned to
       # the class variable and will be generated in the same
       # directory as this Python program.
-  
+
   @classmethod
   def add_entry(cls, date, amount, category, description):
     # A Python dictionary containing all of the data that

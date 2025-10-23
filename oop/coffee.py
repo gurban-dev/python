@@ -36,19 +36,21 @@ class Coffee:
   The constructor should always be the first function
   declared within a class.
 
-  The constructor is also a method. Every method
-  in a class must accept the "self" keyword as
-  its first parameter.'''
+  The constructor is also a method. Every instance method
+  in a class must accept the "self" keyword as its first
+  first parameter.
+
+  Functions that have two leading and trailing underscores
+  (__) are known as dunder methods in Python.'''
   def __init__(self, bean_type):
     '''
     Instance variable/data member
 
-    Prepending the "bean_type" with "self."
-    makes it clear that the following is an
-    instance variable.'''
+    Prepending "bean_type" with "self." makes it
+    clear that the following is an instance variable.'''
     self.bean_type = bean_type
 
-    print('\nCoffee class\' __init__ method invoked.')
+    print('\nCoffee class\' __init__() method invoked.')
 
     print('\nself.bean_type:', self.bean_type, '\n')
 
@@ -123,20 +125,25 @@ for bean_type in bean_types:
 # print(bean_types)
 
 # Accept input from the end user.
+# Try inputting "Excelsa".
 bean_type = input(
   '\nEnter the bean type of your preference\n' \
   'from the above menu: '
 )
 
 # Create an instance or an object of the Coffee class.
+# An argument doesn't need to be supplied for the
+# self parameter in the constructor method because
+# Python automatically passes the new object being
+# created to the self parameter.
 espresso = Coffee(bean_type)
 
-# espresso = Coffee('arabica')
+# espresso = Coffee('Arabica')
 
 # Invoke the selector/getter method.
 print('espresso.get_bean_type():', espresso.get_bean_type())
 
 # Invoke the setter/mutator method.
-espresso.set_bean_type('robusta')
+espresso.set_bean_type('Robusta')
 
 print('espresso.get_bean_type():', espresso.get_bean_type())
