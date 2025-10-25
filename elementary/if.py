@@ -1,5 +1,11 @@
+# Argument is the following string literal:
+# "Welcome to the Cat Adoption Center!"
 print("Welcome to the Cat Adoption Center!")
-print("Here's one of our cutest cats:\n")
+
+# String literals always text that is surrounded
+# by single or double quotation marks.
+
+print('Here\'s one of our cutest cats:\n')
 
 print(" /\_/\ ")
 print("( o.o )")

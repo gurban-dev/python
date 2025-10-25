@@ -1,14 +1,39 @@
-We are going to create a simple Battleship game using Turtle as a graphical interface.
-The player will play against the computer, and each side will have two ships, each one occupying 3 squares.
-The game board consists of 10 squares horizontally and 10 squares vertically.
-The squares are arranged as follows: 5 squares to the right and 5 squares to the left of the origin, which is therefore located at the center of the board.
-The game begins with the program asking the player to place the bow (the front part) of each ship on the board using coordinates. For each ship, the program also asks the player to specify the orientation — North, South, East, or West — which will later be used to draw the ships. For now, the coordinates and each part of the ships will be stored in lists.
-Challenge: The player cannot choose positions outside the board. This means using a while loop to keep asking for coordinates as long as they are out of bounds.
-Next, the program decides to place the computer’s two ships (without displaying them on screen) in unoccupied positions. At first, these positions will be known to the programmer to make debugging easier; later, they will be chosen randomly among the available spots.
-Challenge: You must check whether the proposed positions are free, based on the lists representing the player’s two ships.
-At the beginning, you should not create a graphical Turtle interface; the program should run using only the position lists of the ships.
-In turn, the player and the computer will propose coordinates for their torpedo strikes. The results (hits and misses) will be stored in memory using lists.
-Once the program is fully functional, a graphical interface will be added.
+We are going to create a simple Battleship game using Turtle
+as a graphical interface.
+The player will play against the computer, and each side will
+have two ships, each one occupying 3 squares.
+The game board consists of 10 squares horizontally and 10 squares
+vertically.
+The squares are arranged as follows: 5 squares to the right and 5
+squares to the left of the origin, which is therefore located at
+the center of the board.
+The game begins with the program asking the player to place the bow
+(the front part) of each ship on the board using coordinates. For
+each ship, the program also asks the player to specify the orientation
+ — North, South, East, or West — which will later be used to draw the
+ships. For now, the coordinates and each part of the ships will be
+stored in lists.
+
+Challenge: The player cannot choose positions outside the board.
+This means using a while loop to keep asking for coordinates as
+long as they are out of bounds.
+Next, the program decides to place the computer’s two ships (without
+displaying them on screen) in unoccupied positions. At first, these
+positions will be known to the programmer to make debugging easier;
+later, they will be chosen randomly among the available spots.
+
+Challenge: You must check whether the proposed positions are free,
+based on the lists representing the player’s two ships.
+
+At the beginning, you should not create a graphical Turtle interface;
+the program should run using only the position lists of the ships.
+
+In turn, the player and the computer will propose coordinates for
+their torpedo strikes. The results (hits and misses) will be stored
+in memory using lists.
+
+Once the program is fully functional, a graphical interface will be
+added.
 
 So far:
 We've prompted the end user to select coordnates.

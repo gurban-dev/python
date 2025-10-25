@@ -5,6 +5,14 @@
 # of the assignment operator.
 given_name = input('Please input your given name: ')
 
+# Two arguments being passed to the print() function:
+# First argument: '\ngiven_name:'
+# Second argument: given_name
+
+# The following is a newline escape sequence: \n
+# It adds a newline depending on where it is put.
+print('\ngiven_name:', given_name)
+
 # What data on the next line is being stored?
 # Answer: The value that is assigned to the variable
 #         is the data being stored.
@@ -16,14 +24,14 @@ given_name = 'William Shakespeare'
 
 print('\ngiven_name:', given_name)
 
-# Python's built-in input() functon will
+# Python's built-in input() function will
 # ask the user to input a particular piece
 # of information.
 num1 = input('\nPlease input an integer: ')
 
 num2 = input('\nPlease input another integer: ')
 
-# Concatenate the two inputted integers.
+# String concatenation
 sum = num1 + num2
 
 print('\nHave a look at the data types for num1 and num2:')
@@ -34,9 +42,9 @@ print('type(num1):', type(num1))
 
 print('type(num2):', type(num2))
 
-# Why is sum a variable?
+# Why is "sum" a variable?
 # Answer:
-# It is to the left of the assignment operator.
+# It is to the left of an assignment operator.
 
 # String concatenation
 # The two strings num1 and num2 are being put
@@ -45,6 +53,8 @@ print('\nnum1 + num2:', num1 + num2)
 
 print('\nsum:', sum)
 
+# The string that is returned by the input() function
+# is converted to an integer data type.
 num1 = int(input('\nPlease input an integer: '))
 
 num2 = int(input('\nPlease input another integer: '))

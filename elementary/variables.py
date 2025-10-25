@@ -12,23 +12,25 @@ tutor_name = "Dennis"
 
 # Python's built-in type() function reveals the data
 # type of variables.
+# Arguments in functions are separated by commas (,).
 print('type(student_name):', type(student_name))
 
 '''
 = (called the equals sign in mathematics) is
 called the assignment operator in programming.
 
-The assignment operator assigns data:
+The assignment operator assigns data:'''
 flavour = 'vanilla '
 
-'vanilla ' is the data being assigned. 'vannilla '
+"""
+'vanilla ' is the data being assigned. 'vanilla '
 is a string literal because it is surrounded by
-quotes on its left and right sides.
+quotation marks on its left and right sides.
 
 When you see data surrounded by quotes (single or
 double quotes), you immediately know that you are
 working with a string data type.
 
-flavour is assigned the string literal 'vanilla '
-which makes flavour a string variable.
-'''
+Since flavour is assigned the string literal
+'vanilla ' it is a string variable.
+"""
