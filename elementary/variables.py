@@ -1,6 +1,6 @@
-# 'Sofiia' is a string literal because
+# 'Alexander' is a string literal because
 # it is surrounded by quotes.
-student_name = 'Sofiia'
+student_name = 'Alexander'
 
 # Assigning a string literal to a variable
 # creates a string variable.
