@@ -1,6 +1,7 @@
 # 🎉 Welcome to the Mini Trivia Quiz! 🎉
 # This game asks a few trivia questions and keeps score.
-# You’ll learn about input, comparison, .lower(), .upper(), and if-else logic.
+# You’ll learn about input, comparison, .lower(),
+# .upper(), and if-else logic.
 
 print("Welcome to the Mini Trivia Quiz!")
 print("Answer the questions correctly to earn points!\n")
@@ -11,26 +12,28 @@ score = 0
 # 🟣 Question 1
 answer1 = input("What color do you get when you mix red and blue? ").lower()
 
-# We use .lower() so the answer isn't case-sensitive
+# Use .lower() so the answer isn't case-sensitive.
 if answer1 == "purple":
   print("Correct! 🟣")
   score += 1
 else:
   print("Oops! The correct answer was purple.")
 
-print()  # blank line for readability
+# Blank line for readability.
+print()
 
 # 🗼 Question 2
-answer2 = input("What is the capital city of France? ").upper()
+answer2 = input("What is the capital city of Austria? ").upper()
 
-# We use .upper() so 'paris', 'Paris', and 'PARIS' all count the same
-if answer2 == "PARIS":
+# We use .upper() so 'vienna', 'Vienna', and 'VIENNA'
+# are all equal to each other.
+if answer2 == "VIENNA":
   print("Correct! 🗼")
   score += 1
 elif answer2 == "LONDON":
   print("Close, but that's in the UK!")
 else:
-  print("Nope! The answer is PARIS.")
+  print("Nope! The answer is VIENNA.")
 
 print()
 

@@ -4,7 +4,7 @@ Assignment operator (=)
 Integer data type
 String data type
 Float data type
-For-loops
+for-loops
 
 The following built-in functions:
 print(), input(), type(), range()

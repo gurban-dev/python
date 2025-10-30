@@ -20,6 +20,7 @@ age = 115
 monthly_salary = 2500
 
 # What if I want to store whether Alexander lives in gdansk?
+
 # The variable "lives_in_gdansk" is a boolean
 # data type because True is assigned to it.
 # True and False are boolean values.

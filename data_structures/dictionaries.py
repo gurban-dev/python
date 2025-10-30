@@ -1,20 +1,26 @@
 """
 The concept or abstract idea of a dictionary:
 
-A dictionary is a collection of data where
-the structure of the data is key-value pairs.
+A dictionary is a collection of data where the
+structure of the data is key-value pairs.
+
 Each element in a dictionary has two parts:
 a key and a value. You use a key to locate a
 specific value.
 
 Key-value pairs are often referred to as mappings
-because each key is mapped to a value.
+because each key is mapped to a value or corresponds
+to a value.
 
-You can create a dictionary by enclosing the
-elements inside a set of curly braces ( {} ).
+You can create a dictionary by enclosing key-value
+pair elements inside a set of curly braces ( {} ).
+dict_name = {
+  <key>: <value>,
+  <key>: <value>
+}
 
-An element consists of a key, followed by a
-colon, followed by a value:
+An element consists of a key, followed by a colon,
+followed by a value:
 'John': 41
 
 The keys of a dictionary do not have to be string
@@ -53,7 +59,6 @@ names: Chris, Katie, and Joanne.
 How could we create a dictionary where the keys
 are the names of the employees and the values are
 their respective phone numbers?
-
 """
 phonebook = {
   'Chris': '555-1111',
@@ -62,13 +67,14 @@ phonebook = {
 }
 
 """
-When accessing a string literal dictionary key,
-in an f-string, the quotation type wrapped around
-the f-string cannot be the same as the quotation
-type used for access the string literal dictionary
-key.
+In an f-string, make sure the f-string uses the opposite type of
+quotes (e.g., use double quotes outside if you use single quotes
+inside).
+
+However, within the f-string's curly braces, it's legal to use
+the same quote type.
 """
-print(f"\nphonebook[\'Chris\']: {phonebook['Chris']}")
+print(f"\nphonebook['Chris']: {phonebook['Chris']}")
 
 name = 'Thomas'
 age = 300
