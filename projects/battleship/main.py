@@ -1153,7 +1153,7 @@ def play_round(human_ships, computer_ships):
                     # Display message on screen
                     display_message("🔥 Your ship was sunk!")
 
-            # If shot was a miss
+            # If the shot was a miss.
             else:
                 # Print miss message
                 print("💧 Computer missed.")
@@ -1218,9 +1218,10 @@ def play_game():
     # Print board coordinate information
     print(f"Board coordinates range from {BOARD_MIN} to {BOARD_MAX} on both x and y axes.")
 
-    # human_turn_choice = input("\nEnter \"yes\" if you would like to play first: ")
+    human_turn_choice = input("\nEnter \"yes\" if you would like to play first: ")
+
     # Auto-set human to go first (turn input disabled)
-    human_turn_choice = "yes"
+    # human_turn_choice = "yes"
 
     # Check if human goes first
     if human_turn_choice.lower() == "yes":
@@ -1264,7 +1265,7 @@ def play_game():
     # Print human ships for debugging
     print("\nHuman player ships:", human_ships)
 
-    print("\nComputer player ships:", computer_ships)
+    # print("\nComputer player ships:", computer_ships)
 
     # Play game
     # Start the main game loop

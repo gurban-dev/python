@@ -1,5 +1,2 @@
 What needs to be added:
-Add comments so that the code can be clearly
-articulated.
-
-Add red overlay to legend.
+The winner of the game needs to be displayed on GUI.
