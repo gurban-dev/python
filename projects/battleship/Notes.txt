@@ -1,12 +1,16 @@
 We are going to create a simple Battleship game using Turtle
 as a graphical interface.
+
 The player will play against the computer, and each side will
 have two ships, each one occupying 3 squares.
+
 The game board consists of 10 squares horizontally and 10 squares
 vertically.
+
 The squares are arranged as follows: 5 squares to the right and 5
 squares to the left of the origin, which is therefore located at
-the center of the board.
+the centre of the board.
+
 The game begins with the program asking the player to place the bow
 (the front part) of each ship on the board using coordinates. For
 each ship, the program also asks the player to specify the orientation
@@ -17,6 +21,7 @@ stored in lists.
 Challenge: The player cannot choose positions outside the board.
 This means using a while loop to keep asking for coordinates as
 long as they are out of bounds.
+
 Next, the program decides to place the computer’s two ships (without
 displaying them on screen) in unoccupied positions. At first, these
 positions will be known to the programmer to make debugging easier;

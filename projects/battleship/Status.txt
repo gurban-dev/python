@@ -1,0 +1,5 @@
+What needs to be added:
+Add comments so that the code can be clearly
+articulated.
+
+Add red overlay to legend.

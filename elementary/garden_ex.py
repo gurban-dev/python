@@ -6,7 +6,7 @@ Fill in the blanks with either += or -=.
 
 Practices positive and negative number changes
 (adding points for good things, losing points for
-challenges)
+challenges).
 
 Has a built-in check at the end to see if 69 points
 was the outcome.
@@ -21,12 +21,13 @@ You're taking care of a magical garden!
 Let's keep track of your magic points as you do
 different activities.
 
-Your job: Fill in the blanks with += or -= to make the
-program work correctly!
+Your job: Fill in the blanks with += or -= to make
+the program work correctly!
 '''
 
-# Start with 50 magic points
+# Start with 50 magic points.
 magic_points = 50
+
 print("🌷 Welcome to your Magic Garden! 🌷")
 print(f"Starting magic points: {magic_points}")
 print()
