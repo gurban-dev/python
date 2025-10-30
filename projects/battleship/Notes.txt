@@ -39,15 +39,3 @@ in memory using lists.
 
 Once the program is fully functional, a graphical interface will be
 added.
-
-So far:
-We've prompted the end user to select coordinates.
-
-The coordinates have been validated.
-
-The ship orientation has been validated.
-
-Computer player must place the battleships.
-
-Due date:
-Thursday, the 30th
