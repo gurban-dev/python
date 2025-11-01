@@ -69,6 +69,8 @@ print('lst2:', lst2)
 print('\nhex(id(lst1[1])):', hex(id(lst1[1])))
 print('hex(id(lst2[0])):', hex(id(lst2[0])))
 
+# Assigning a new value in index 0 forces that index to
+# point to a new memory address.
 lst2[0] = 10
 
 print('\nlst1:', lst1)
@@ -79,3 +81,26 @@ print('lst2:', lst2)
 # assigned to it.
 print('\nhex(id(lst1[1])):', hex(id(lst1[1])))
 print('hex(id(lst2[0])):', hex(id(lst2[0])))
+
+# Two-dimensional list.
+nested_list = [[0]]
+
+# The return value from slicing a list is a shallow copy.
+shallow_copy_of_nested_list = nested_list[:]
+
+# Mutating an item located inside the inner list doesn't
+# create a new object with its own distinct memory address.
+shallow_copy_of_nested_list[0][0] = 0
+
+print('\nhex(id(nested_list[0][0])):', hex(id(nested_list[0][0])))
+print('hex(id(shallow_copy_of_nested_list[0][0])):', hex(id(shallow_copy_of_nested_list[0][0])))
+
+print('\nshallow_copy_of_nested_list:', shallow_copy_of_nested_list)
+
+# Forces the first indice of "shallow_copy_of_nested_list"
+# to point to a new memory address. A new list object is
+# created in memory.
+shallow_copy_of_nested_list[0] = [0]
+
+print('\nhex(id(nested_list[0])):', hex(id(nested_list[0])))
+print('hex(id(shallow_copy_of_nested_list[0])):', hex(id(shallow_copy_of_nested_list[0])))
