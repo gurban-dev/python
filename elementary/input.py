@@ -89,8 +89,9 @@ sum = num1 + num2
 print('\nsum:', sum)
 
 '''
-Notice how functions in Python have parentheses
-after their names:
+Notice how calling functions in Python requires that
+you include open and closed parentheses after their
+names:
 print()
 type()
 input()

@@ -18,7 +18,7 @@ Example run:
 
 🎮 Welcome to the Character Creator! 🎮
 
-What is your character's name? Thunder Girl
+What is your character's name? Thunder Boy
 How old is your character? 9
 What is their superpower? Lightning bolts
 Can they fly? yes
