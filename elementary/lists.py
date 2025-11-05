@@ -48,3 +48,9 @@ print('\npets[2]:', pets[2])
 # Keep in mind that the largest index in
 # the list is 2.
 # print('\npets[3]:', pets[3])
+
+if pets[1] == 'Cat':
+  print('\nThe value at index 1 is \'Cat\'.')
+
+if pets[-1] == 'Parrot':
+  print('\nThe value at index -1 is \'Parrot\'.')

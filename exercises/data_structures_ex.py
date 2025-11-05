@@ -37,13 +37,13 @@ names_and_numbers = zip(employee_names, phone_numbers)
 print('next(names_and_numbers):', next(names_and_numbers))
 
 # Repeat to see the next tuple.
-print('next(names_and_numbers):', next(names_and_numbers))
+print('\nnext(names_and_numbers):', next(names_and_numbers))
 
 # Another way to view all of the tuples in the zip object
 # is to convert the zip object to a list.
 names_and_numbers = list(names_and_numbers)
 
-print('names_and_numbers:', names_and_numbers)
+print('\nnames_and_numbers:', names_and_numbers)
 
 # Add a duplicate tuple.
 names_and_numbers.append(('Chris', '555-1111'))

@@ -1,11 +1,10 @@
 # Character Creator Game!
 
-print("🎮 Welcome to the Character Creator! 🎮")
-print()
+print("🎮 Welcome to the Character Creator! 🎮\n")
 
 # Get character information
 name = input("What is your character's name? ")
-age = int(input("How old is your character? "))
+age = int(input("What is your character's age? "))
 power = input("What is their superpower? ")
 can_fly = input("Can they fly? (yes or no) ")
 
@@ -27,7 +26,7 @@ print("Power Level:", power_level)
 print("="*40)
 
 # Fun message based on age
-if age >= 10:
-  print("\nWow! Your character is very experienced!")
+if power_level > 500:
+  print("\nYou are a super human being!")
 else:
-  print("\nYour character is young but mighty!")
+  print("\nYou are !")

@@ -5,8 +5,9 @@ A dictionary is a collection of data where the
 structure of the data is key-value pairs.
 
 Each element in a dictionary has two parts:
-a key and a value. You use a key to locate a
-specific value.
+a key and a value.
+
+You use a key to locate a specific value.
 
 Key-value pairs are often referred to as mappings
 because each key is mapped to a value or corresponds
@@ -20,10 +21,11 @@ dict_name = {
 }
 
 An element consists of a key, followed by a colon,
-followed by a value:
+followed by a whitespace character followed by a
+value:
 'John': 41
 
-The keys of a dictionary do not have to be string
+-The keys of a dictionary do not have to be string
 literals like 'John', but remember that they must
 be immutable or unchangeable.
 """
@@ -48,23 +50,9 @@ returns the value that is associated with the key.
 If the key does not exist, a KeyError exception is
 raised.
 """
-# print('integers[0]: ', integers[0])
+# print('integers[0]:', integers[0])
 
 print(f'integers[1]: {integers[1]}')
-
-"""
-Suppose you had employees with the following given
-names: Chris, Katie, and Joanne.
-
-How could we create a dictionary where the keys
-are the names of the employees and the values are
-their respective phone numbers?
-"""
-phonebook = {
-  'Chris': '555-1111',
-  'Katie': '555-2222',
-  'Joanne': '555-3333'
-}
 
 """
 In an f-string, make sure the f-string uses the opposite type of

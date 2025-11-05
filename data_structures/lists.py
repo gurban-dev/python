@@ -18,7 +18,7 @@ even_numbers = [2, 2, 4, 6, 8, 10]
 names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
 
 # A list can hold items of different types:
-info = ['Alicia', 27, 1550.87]
+info = ['Alicia', 27, 1550.87, True]
 
 # The print() function can be used display an
 # entire list.
@@ -40,14 +40,21 @@ print(f'\nzero_to_five: {zero_to_five}')
 
 '''
 When passing three arguments to the range() function,
-the first argument is the starting value, the second
-argument is the ending limit, and the third argument
-is the step value.
+the first argument is the starting index, the second
+argument is the stopping index (exclusive), and the
+third argument is the step value.
 
-range(start, stop_and_exclude, step)
+range(start, stop (exclusive), step)
 
 range(1, 10, 2) returns an iterable containing
 [1, 3, 5, 7, 9] which will then be assigned to
 the variable "numbers".'''
 numbers = list(range(1, 10, 2))
+
+print('\nnumbers:', numbers)
+
+# Lists are mutable, meaning that their elements
+# can be changed after the list is created.
+numbers[-1] = "Nine"
+
 print('\nnumbers:', numbers)
