@@ -5,8 +5,16 @@
 100.2
 
 # Question:
-# How can you tell that these are floats?
+# How can you tell that these are all floats?
+
+
+
+
+
+
+
+
 
 # Answer:
-# They are numbers with decimal points and
+# They are all numbers containing decimal points and
 # without quotation marks.

@@ -10,7 +10,7 @@
 # How can you tell that these are all string literals?
 
 # Answer:
-# They all have either single or double quotation
-# marks around them.
+# They all have either single or double quotation marks
+# around them.
 
 # Think of text that you would read in a book.
