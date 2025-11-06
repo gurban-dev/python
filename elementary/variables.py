@@ -1,5 +1,5 @@
 # 'Alexander' is a string literal because
-# it is surrounded by quotes.
+# it is surrounded by quotation marks.
 student_name = 'Alexander'
 
 # Assigning a string literal to a variable
@@ -14,6 +14,10 @@ tutor_name = "Dennis"
 # type of variables.
 # Arguments in functions are separated by commas (,).
 print('type(student_name):', type(student_name))
+
+# Literals can also be passed to the type() functions
+# as arguments.
+print('\ntype(\"Dennis\"):', type("Dennis"))
 
 '''
 = (called the equals sign in mathematics) is

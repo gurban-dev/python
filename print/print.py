@@ -3,8 +3,8 @@
 # invoked on their own without objects.
 print("Hello World 🐱")
 
-# The print() function will accept data and
-# print it to the screen.
+# The print() function accepts and argument and
+# prints it to the screen.
 
 """
 The asterisk surrounded by double quotes ("*")
@@ -19,24 +19,23 @@ print("*" * 10)
 # greeting is the string variable.
 # 'Good morning!' is the string literal
 # that is assigned to the greeting variable.
-greeting = 'Good morning!'
+greeting: str = 'Good morning!'
 
 print('type(greeting):', type(greeting), '\n')
 
-print(type(type(1)))
+print('type(1):', type(1), end='\n\n')
 
 # The print() function in Python automatically appends
-# a newline sequence (\n) by default at the end of the
-# outputted string.
+# a newline escape sequence (\n) by default at the end
+# of the outputted string.
 print('One', end='\n')
 print('Two')
 print('Three')
 
 """
-If you do not want the print() function to
-start a new line of output when it finishes
-displaying its output, you can pass the following
-keyword argument:
+If you do not want the print() function to start a
+new line of output when it finishes displaying its
+output, you can pass the following keyword argument:
 end='':
 """
 print('One', end='')

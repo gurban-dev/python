@@ -1,13 +1,16 @@
 # Python's built-in print() function accepts one
 # or multiple arguments and prints them to the
 # screen.
-print("Hello World!")
+print("Hello World!\n")
 
 # Both double and single quotation marks can be utilised
 # in Python for printing text to the screen.
-print('\nGood morning.')
+print('Good morning.\n')
 
-# Below on line 28, a variable named "given_name" is declared.
+# The print() function can also print numbers.
+print(12345)
+
+# Below on line 31, a variable named "given_name" is declared.
 # This variable will store the value 'John' because
 # the assignment operator (=) assigns the text 'John'
 # to the variable.
@@ -28,7 +31,7 @@ print('\nGood morning.')
 given_name = 'John'
 
 # The print() function is accepting two arguments:
-# "given_name:"
+# "\ngiven_name:"
 # given_name
 
 # A comma (,) is used to separate arguments that are
