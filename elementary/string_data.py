@@ -2,7 +2,7 @@
 
 'I have 2 apples.'
 
-"Today is Monday."
+"100.5"
 
 "4"
 
