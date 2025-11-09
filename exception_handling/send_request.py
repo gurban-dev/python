@@ -40,5 +40,7 @@ def main():
   except Timeout:
     print('The request timed out. The server took too long to respond.')
 
+# If this module send_request.py is imported, the main() function
+# will not automatically be executed as a result of the import.
 if __name__ == '__main__':
   main()
