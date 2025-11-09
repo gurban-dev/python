@@ -1,15 +1,20 @@
-# This program displays the total of the
-# amounts in the sales_data.txt file.
+# This program displays the total of the amounts in
+# the sales_data.txt file.
+
+# Objective:
+# When a Python program encounters an error, rather
+# than crashing the entire program, it should handle
+# the error gracefully. This is done with exception
+# handling with try and except blocks.
 
 def main():
-  # Initialize an accumulator.
+  # Initialise an accumulator.
   total = 0
 
   '''
-  Any source code that may generate an exception
-  should be put in the try block. This way, it
-  is caught rather than crashing the entire
-  program.'''
+  Any source code that may generate an exception should be
+  put in the try block. This way, it is caught rather than
+  crashing the entire program.'''
   try:
     '''
     Open the sales_data.txt file.
@@ -21,7 +26,10 @@ def main():
     a file object was returned.
     
     ./ tells Python to search for the file in the
-    current directory.'''
+    current directory.
+    
+    'r' passed as the second argument indicates that the
+    file is being opened for reading.'''
     infile = open('./sales_data.txt', 'r')
 
     # If the sale_data.txt file was one directory
@@ -32,10 +40,17 @@ def main():
     # level below.
     # infile = open('./sub_directory_name/sales_data.txt', 'r')
 
-    # Read the values from the file and
-    # accumulate them.
+    # Read the values from each line in the file and accumulate
+    # them.
     for line in infile:
-      print('type(line):', type(line))
+      # The data type of "line" will be a string.
+
+      # Remove the newline character from the end of the line.
+      # The .strip() method remove any leading and trailing
+      # whitespace character (spaces, newlines) from a string.
+      line = line.strip()
+
+      print(f'type({line}): {type(line)}\n')
 
       '''
       If the value being casted as a float, is not
@@ -47,10 +62,9 @@ def main():
       total += float(line)
 
       '''
-      If the program were to cast '50.00'
-      as an integer, '50.00' would have to
-      be cast as a float first before being
-      cast as an integer.'''      
+      If the program were to cast '50.00' as an integer, '50.00'
+      would have to be cast as a float first before being cast
+      as an integer.'''
       # total += int(float(line))
 
     # Close the file.
@@ -62,14 +76,26 @@ def main():
     # above with the float() function.
     # print('\n', format(total, ',.2f'))
 
-    print('\ntotal:', total)
-
-    # print('total:', total)
+    # To see the following print() statement executed, remove
+    # the last line from the sales_data.txt file that triggers
+    # a ValueError exception.
+    print('\nInside try block\ntotal:', total)
   except IOError:
-    print('\nAn error occured trying to read the file.')
+    print('An error occured trying to read the file.')
   except ValueError:
-    print('\nNon-numeric data found in the file.')
+    # A ValueError exception is raised when an invalid
+    # value is included in a some kind of operation.
+    print('Non-numeric data found in the file.')
+    print('line:', line)
   except:
-    print('\nAn error occured.')
+    print('An error occured.')
+  
+  # Once an exception is raised, the program will cease to
+  # continue executing the remaining code in the try block.
+  print('\nOutside try block\ntotal:', total)
 
 main()
+
+# It's good practice to use try catch whenever data may not
+# be appropriate for an operation being performed.
+# E.g. Reading from a file, user input, network connections, etc.
