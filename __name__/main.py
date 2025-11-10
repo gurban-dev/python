@@ -18,7 +18,7 @@ After the source code in greet.py is executed, the lines
 in this file will follow suit.
 '''
 
-print("Now inside main.py\n")
+print("\nNow inside main.py\n")
 
 # However, functions from greet.py can still be imported
 # and invoked in this file.

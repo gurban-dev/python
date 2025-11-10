@@ -16,6 +16,7 @@ phonebook = {
 # Then create another list for the employee phone numbers.
 
 employee_names = ['Chris', 'Katie', 'Joanne']
+
 phone_numbers = ['555-1111', '555-2222', '555-3333']
 
 '''
