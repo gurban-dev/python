@@ -16,8 +16,9 @@ elif condition3:
 else:
   print('None of the conditions evaluated to True.')
 
-# If you still wanted conidtion2 and condition3 evaluated
-# after condition1 evaluates to True.
+# The following two if statements are necessary if you
+# still wanted conidtion2 and condition3 evaluated after
+# condition1 evaluates to True.
 
 # This is done when two conditions are indepenent of each other.
 if condition2:

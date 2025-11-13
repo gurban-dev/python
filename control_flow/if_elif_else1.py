@@ -63,7 +63,7 @@ if is_hot and is_rainy:
 inflation_rate = 7.5
 unemployment_rate = 8
 
-# Write two separate if statements if there are two
+# Write two separate if statements when there are two
 # separate conditions that can both be true.
 # In other words, these conditions are independent of
 # each other.

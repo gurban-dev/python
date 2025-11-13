@@ -7,21 +7,29 @@ Let's keep track of your magic points as you do different activities.
 
 # Start with 50 magic points
 magic_points = 50
+
 print("🌷 Welcome to your Magic Garden! 🌷")
-print(f"Starting magic points: {magic_points}")
-print()
+print(f"Starting magic points: {magic_points}\n")
 
-# Activity 1: Plant some flowers (adds 10 points)
+# Activity 1: Plant some flowers (adds 10 points).
 print("🌺 You planted beautiful flowers!")
-magic_points += 10  # Use += because we're ADDING points (good thing!)
-print(f"Magic points now: {magic_points}")
-print()
 
-# Activity 2: Oh no! Weeds appeared (lose 15 points)
+# Use += because we're ADDING points (good thing!).
+
+# magic_points = magic_points + 10 -> 50 + 10 -> 60
+magic_points += 10
+
+print(f"Magic points now: {magic_points}\n")
+
+# Activity 2: Oh no! Weeds appeared (lose 15 points).
 print("🥀 Oh no! Weeds appeared in the garden!")
-magic_points -= 15  # Use -= because we're LOSING points (bad thing!)
-print(f"Magic points now: {magic_points}")
-print()
+
+# Use -= because we're LOSING points (bad thing!).
+
+# magic_points = magic_points - 15
+magic_points -= 15
+
+print(f"Magic points now: {magic_points}\n")
 
 # Activity 3: You watered the plants (adds 20 points)
 print("💧 You watered all the plants!")

@@ -1,7 +1,7 @@
 import random
 
-# Dictionary of all 195 UN-recognized countries and
-# their capitals.
+# A dictionary of all 195 UN-recognized countries
+# and their capitals.
 COUNTRIES = {
   "Afghanistan": "Kabul",
   "Albania": "Tirana",
@@ -41,7 +41,7 @@ COUNTRIES = {
   "China": "Beijing",
   "Colombia": "Bogotá",
   "Comoros": "Moroni",
-  "Congo (Congo-Brazzaville)": "Brazzaville",
+  "Republic of the Congo": "Brazzaville",
   "Costa Rica": "San José",
   "Croatia": "Zagreb",
   "Cuba": "Havana",
@@ -216,6 +216,7 @@ def run_quiz():
     print("Choose quiz mode:")
     print("1. All countries (195 questions)")
     print("2. Random sample (specify number)")
+
     mode = input("\nEnter your choice (1 or 2): ").strip()
     
     if mode == "1":
@@ -224,6 +225,7 @@ def run_quiz():
     elif mode == "2":
       try:
         num = int(input("How many questions? (1-195): "))
+
         if 1 <= num <= 195:
           countries_list = random.sample(list(COUNTRIES.items()), num)
           break
@@ -232,7 +234,7 @@ def run_quiz():
       except ValueError:
         print("Invalid input. Please enter a number.")
     else:
-        print("Invalid choice. Please enter 1 or 2.")
+      print("Invalid choice. Please enter 1 or 2.")
   
   # Shuffle questions
   random.shuffle(countries_list)
@@ -245,20 +247,20 @@ def run_quiz():
   print(f"{'=' * 60}\n")
   
   for i, (country, capital) in enumerate(countries_list, 1):
-      print(f"Question {i}/{total}")
-      print(f"What is the capital of {country}?")
-      
-      user_answer = input("Your answer: ").strip()
-      
-      if user_answer.lower() == 'quit':
-          print(f"\nQuiz ended early. Final score: {score}/{i-1}")
-          return
-      
-      if normalize_answer(user_answer) == normalize_answer(capital):
-          print("✓ Correct!\n")
-          score += 1
-      else:
-          print(f"✗ Incorrect. The correct answer is: {capital}\n")
+    print(f"Question {i}/{total}")
+    print(f"What is the capital of {country}?")
+
+    user_answer = input("Your answer: ").strip()
+    
+    if user_answer.lower() == 'quit':
+      print(f"\nQuiz ended early. Final score: {score}/{i-1}")
+      return
+    
+    if normalize_answer(user_answer) == normalize_answer(capital):
+      print("✓ Correct!\n")
+      score += 1
+    else:
+      print(f"✗ Incorrect. The correct answer is: {capital}\n")
   
   # Final results
   percentage = (score / total) * 100
