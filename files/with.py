@@ -1,13 +1,15 @@
 # Since os is a built-in library module, it
 # doesn't need to be installed with pip.
 import os
+
 import time
 
-file_name = "notes.txt"
+# : str is a type hint/annotation.
+file_name: str = "notes.txt"
 
 # Create a sample file.
-with open(file_name, "w") as f:
-  f.write("First line\nSecond line\nThird line")
+with open(file_name, "w") as file_object:
+  file_object.write("First line\nSecond line\nThird line")
 
 '''
 When used with a with statement, the open() function
@@ -17,8 +19,9 @@ It calls the file object's __enter__() method when
 entering the block (opening the file) and __exit__()
 when leaving it (closing the file).
 
-The file_object part assigns the opened file object to
-file_object.
+The with open("notes.txt") as f: statement:
+1. Calls open("notes.txt").
+2. Assigns the resulting file object to the variable file_object.
 
 When the program exits the block, the file is automatically
 closed, releasing system resources such as file handles and
@@ -61,11 +64,13 @@ print('\nProgram paused for 3 seconds...')
 
 time.sleep(3)
 
+# os.getcwd() will return the current working directory.
 # print('os.getcwd():', os.getcwd())
 
 entire_file_path = os.getcwd() + '/notes.txt'
 
 print('\nentire_file_path:', entire_file_path)
 
+# Deletes the notes.txt file.
 if os.path.exists(file_name):
   os.remove(file_name)
