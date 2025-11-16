@@ -9,7 +9,6 @@
 
 
 
-
 # Answer:
-# They are all numbers without quotation marks ("", '')
-# and without decimal points (.).
+# They are all numbers without decimal points (.)
+# and without quotation marks ("", '').

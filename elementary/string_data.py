@@ -14,3 +14,7 @@
 # around them.
 
 # Think of text that you would read in a book.
+
+# A string literal in Python is a sequence of characters
+# enclosed in quotation marks, written directly in the
+# source code. Its data type is str.
