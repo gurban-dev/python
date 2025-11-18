@@ -15,8 +15,8 @@ a positional argument.
 print("Hello World!")
 
 '''
-The print() function has a parameter named end.
-The end parameter is implicitly or internally passed a
+The print() function has a parameter named "end".
+The "end" parameter is implicitly or internally passed a
 newline escape sequence ("\n") by default.
 
 For this reason, the print() function by default has a
@@ -30,7 +30,7 @@ print("Hello World!", end="")
 '''
 end="" is a keyword argument.
 
-end is the name of a parameter in the print() function:
+"end" is the name of a parameter in the print() function:
 https://docs.python.org/3/library/functions.html#print
 
 Passing an empty string ("") to the end parameter removes
