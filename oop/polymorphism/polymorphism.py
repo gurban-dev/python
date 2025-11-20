@@ -5,8 +5,8 @@ take more than one form.
 A class is a blueprint that defines the data and behaviour
 encapsulated or grouped together in a single unit.
 
-An instance of a class is an actual object created
-from that blueprint.
+An instance of a class is an actual object created from
+that blueprint.
 
 1. Create a superclass Transport with:
    A constructor that sets a name attribute.
@@ -40,11 +40,12 @@ from that blueprint.
    Use a loop to call start_journey() on each one.
 '''
 
-# Sometimes a superlcass is also called a parent
+# Sometimes a superclass is also called a parent
 # class or a base class.
 
 # Superclass class
 class Transport:
+  # Constructor method.
   def __init__(self, name):
     self.name = name
 
@@ -60,13 +61,12 @@ class Transport:
 # Subclass
 class Car(Transport):
   # The move() method in the subclass overwrites the
-  # move() class in the superclass.
+  # move() method in the superclass.
 
   # What would happen if the following move() method
   # was commented out and the program was run again?
   def move(self):
     print(f"{self.name}: Car is driving on the road.")
-  # pass
 
 # Subclass
 class Bicycle(Transport):

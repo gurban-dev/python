@@ -1,6 +1,6 @@
-# In Python, text that is surrounded by quotes,
-# are called string literals. They could be
-# surrounded by either "double quotes" or 'single
+# In Python, content that is surrounded by quotation
+# marks, is called a string literal. The content can
+# be surrounded by either "double quotes" or 'single
 # quotes'.
 
 # "Emilka" is not only a string, but also a string
@@ -14,10 +14,12 @@
 # created in memory.
 cat_name = "Emilka"
 
-# A whole number without quotes, is an integer.
-# The data type of the variable "no_of_houses"
-# is an integer.
-no_of_houses = 2
+# A number without quotation marks and without a decimal
+# point, is an integer.
+
+# The data type of the variable "no_of_cat_houses" is an
+# integer.
+no_of_cat_houses = 2
 
 # This is how old the cat is. It's a number with
 # a decimal, like 0.5.
@@ -30,7 +32,7 @@ kitten_age = 0.5
 # cat_age is also a float.
 cat_age = 2.0
 
-print('type(cat_age):', type(cat_age))
+print('type(cat_age):', type(cat_age), '\n')
 
 # This is a True or False fact. This cat likes
 # milk, so we write True (with a capital T).
@@ -48,11 +50,11 @@ likes_milk = True
 # 4. The string literal 'years old.'
 # 5. cat_name
 # 6. The string literal 'has'
-# 7. The variable storing the number of houses (no_of_houses)
+# 7. The variable storing the number of houses (no_of_cat_houses)
 # 8. The string literal 'houses.'
 
 # Each piece is separated by a comma. When you use
 # commas in print(), Python adds a space between
 # each part automatically.
 print(cat_name, 'is', cat_age, 'years old.',
-      cat_name, 'has', no_of_houses, 'houses.')
+      cat_name, 'has', no_of_cat_houses, 'houses.')
