@@ -8,9 +8,11 @@ object.
 Therefore, the focus can be on what the object does as
 opposed to how it does it.
 
-Key abstraction ideas:
-You never instantiate BankAccount directly as it is an
-abstract class.
+Program summary:
+This program defines what every bank account should be able to do
+(deposit, withdraw), but it doesn't define how it does it.
+
+BankAccount is an abstract class so it cannot be instantiated.
 
 You only know that each account must support deposit and withdraw.
 
@@ -21,7 +23,11 @@ How they actually do this is hidden (abstracted).
 class BankAccount(ABC):
   def __init__(self, balance):
     # Encapsulation:
-    # _balance is a protected attribute.
+    # The balance is kept hidden using a protected attribute
+    # (_balance).
+
+    # The outside world must use methods (deposit, withdraw, get_balance)
+    # to interact with it.
     self._balance = balance
 
   # Abstract method forces subclasses to implement withdrawal rules.
@@ -30,15 +36,14 @@ class BankAccount(ABC):
   def withdraw(self, amount):
     pass
 
-  # Concrete method shared by all accounts
   def deposit(self, amount):
     self._balance += amount
 
   def get_balance(self):
     return self._balance
 
-
-# A concrete subclass
+# Inheritance:
+# SavingsAccount and CheckingAccount inherit from BankAccount.
 class SavingsAccount(BankAccount):
 
   def withdraw(self, amount):
@@ -47,8 +52,6 @@ class SavingsAccount(BankAccount):
     else:
       self._balance -= amount
 
-
-# Another concrete subclass
 class CheckingAccount(BankAccount):
 
   def withdraw(self, amount):
@@ -63,8 +66,10 @@ accounts = [
   CheckingAccount(100)
 ]
 
-# Polymorphism in action since the withdraw() method
-# takes more than one form.
+# Polymorphism:
+# Each subclass implements the withdrawal() method differently,
+# but acc.withdraw() is invoked the same way.
+# The withdraw() method takes more than one form.
 for acc in accounts:
   acc.withdraw(120)
   print(acc.get_balance())
