@@ -2,18 +2,17 @@
 This program demonstrates variable re-assignment.
 Assign a value to the dollars variable.
 
-2.75 is a floating-point number which means
-that the variable "dollars" will be of the
-float data type.'''
+2.75 is a float data type because it is a number with
+a decimal point and without quotation marks.'''
 dollars = 2.75
 
 '''
 The comma in a print statement automatically
 appends or adds a whitespace character before
 the end or the beginning of a string literal.'''
-print('I have', dollars, 'in my account.')
+print('I have $', dollars, 'in my account.')
 
-# With f-string
+# With f-string:
 # print(f'I have {dollars} in my account.')
 
 '''

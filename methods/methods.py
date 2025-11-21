@@ -2,9 +2,10 @@
 In Python, a method is a function that
 "belongs to" an object.
 
-Functions are different because they are
-standalone blocks of code that are not
-tied to any object.
+Functions are different because they are standalone
+blocks of code that are not tied to any object, meaning
+they can be invoked independently without needing to
+be called on an object.
 
 Python documentation:
 https://docs.python.org/3/tutorial/classes.html#instance-objects

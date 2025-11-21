@@ -1,5 +1,5 @@
 '''
-Python has a built-in function called print().
+Python has a built-in function named print().
 This function accepts an argument and prints it
 to the screen.
 
@@ -9,8 +9,8 @@ us that we are working with a function.
 "Hello World!" is a string literal and it is being
 passed as an argument to the print() function.
 
-To be more specific, "Hello World!" is being passed as
-a positional argument.
+How is it known that "Hello World!" is a string literal?
+Answer: The quotation marks are hardcoded into the source code.
 '''
 print("Hello World!")
 
@@ -28,12 +28,16 @@ newline escape sequence at the end of its output:
 print("Hello World!", end="")
 
 '''
-end="" is a keyword argument.
+"Hello World!" is a positional argument because the
+name of the parameter is not explicitly written out.
+
+end="" is a keyword argument because the name of the
+parameter "end" is explicitly written out.
 
 "end" is the name of a parameter in the print() function:
 https://docs.python.org/3/library/functions.html#print
 
-Passing an empty string ("") to the end parameter removes
+Passing an empty string ("") to the "end" parameter removes
 this default behaviour:
 "Hello World!"
 '''
@@ -45,8 +49,9 @@ the "Auto Save" option in Visual Studio Code after clicking the
 "File" button at the top left.
 
 Once the Python file has been saved, the program can be run by
-clicking what looks like a "play" button at the top right or
-by executing the following command in the terminal:
+clicking on what looks like a "play" button at the top right of
+the Visual Studio Code window, or by executing the following
+command in the terminal:
 python3 <name_of_file>.py
 
 In this case, the following command should be executed:
@@ -80,8 +85,10 @@ print('\nThere is a newline character at '
       'the beginning of\nthis string and '
       'an automatically included one at\nthe end.')
 
-# Does the print() function have a character limit?
 '''
+Does the print() function have a character limit?
+
+Answer:
 The print() function in Python itself doesn't have
 a strict character limit.
 
