@@ -1,17 +1,20 @@
 '''
-Python provides a built-in function named range() that
-simplifies the process of writing a count-controlled
-for loop. The range() function creates a type of object
-known as an iterable.
+range() is a built-in function that creates an iterable,
+an object that holds a sequence of values you can loop over.
 
-An iterable is an object that is similar to a list.
-It contains a sequence of values that can be iterated
-over with something like a loop.
+Syntax for the range() function:
+range(start_index, stop_index (exclusive), step_value)
 
-If you pass one argument to the range() function, that
-argument is used as the ending limit of the sequence
-of numbers.
+If you provide one argument, it becomes the stop_value.
+
+The start_index defaults to 0.
+
+The step_value defaults to 1.
+
+range(5) returns:
+0 1 2 3 4
 '''
+
 print('for num in range(5):')
 for num in range(5):
   if num != 4:
@@ -20,7 +23,6 @@ for num in range(5):
     print(num)
 print('')
 
-# range(start, stop (exclusive), step)
 print('for num in range(0, 5, 1):')
 for num in range(0, 5, 1):
   if num != 4:

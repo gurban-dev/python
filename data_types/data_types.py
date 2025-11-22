@@ -10,7 +10,7 @@ int_var = 10
 # The data type is a float because the number contains
 # a decimal point and is not enclosed in quotation
 # marks.
-float_var = 10.
+float_var = 10.0
 
 # Utilise the built-in type() function to output
 # the data type of variables and literals likewise.
@@ -64,3 +64,5 @@ print('return_value:', return_value, '\n')
 return_value = True
 
 print('return_value:', return_value)
+
+print('\ntype(return_value):', type(return_value))

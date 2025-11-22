@@ -4,7 +4,9 @@
 # A boolean variable is one that has been assigned
 # a value of True or False.
 is_hot = False
+
 is_cold = True
+
 is_rainy = True
 
 """
@@ -36,10 +38,13 @@ print('bool(is_hot):', bool(is_hot), '\n')
 
 # if statement
 if is_hot:
-	print("It's a warm day.")
+	print("It's a hot day.")
 	print("Drink plenty of water.")
 
 # if-elif-else statement
+# If "is_cold" evalutes to True, Python will not check
+# the condition on line 51. It'll move on to the next
+# part of the program.
 if is_cold:
 	print("It is a cold day.")
 	print("Wear warm clothes.")
@@ -50,34 +55,31 @@ else:
   print("It's a lovely day.")
 
 # The "and" keyword makes sure that both
-# conditions to the left and right of it
+# conditions to its left and to its  right
 # evaluate to True before entering the block.
 if is_cold and is_rainy:
   print('\nIt\'s cold and rainy.')
 
+# Short-circuit evaluation:
+# If the condition to the left of the "and" operator
+# evaluates to False, Python will not even bother checking
+# condition on the right side of the "and" operator because
+# both conditions must evaluate to True for the compound
+# expression to return to True.
 if is_hot and is_rainy:
   print('It\'s either hot or rainy.')
 
-# The two subsequent float literals represent
-# percentage values.
-inflation_rate = 7.5
-unemployment_rate = 8
+# When should two if statements be written separately?
+# Answer:
+# Two separate if statements are used when the conditions 
+# are independent of each other, meaning both can be true 
+# at the same time. Each condition is evaluated separately.
 
-# Write two separate if statements when there are two
-# separate conditions that can both be true.
-# In other words, these conditions are independent of
-# each other.
+developed_country = True
+lacks_crude_oil = False
 
-# Floats and integers can be compared to each other with
-# comparison operators.
-if inflation_rate > 5:
+if developed_country:
   print("\nInflation is high! Prices are rising quickly.")
 
-if unemployment_rate > 7.0:
-  print("\nUnemployment is high! Many people are not\n" \
-	"participating in the labour market.")
-
-# The below print statement always executes regardless
-# of any boolean value because it is not part of the
-# above if-statement.
-print("\nEnjoy your day.")
+if lacks_crude_oil:
+  print("\nDoes not have crude oil.")

@@ -1,4 +1,5 @@
-# Three variables are being created
+# Three variables are being created.
+
 # Each store the value 10, but have different data types.
 
 # This variable stores the number 10 as a string.
