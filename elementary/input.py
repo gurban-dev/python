@@ -39,7 +39,7 @@ num1 = input('\nPlease input an integer: ')
 
 num2 = input('\nPlease input another integer: ')
 
-# String concatenation
+# String concatenation.
 sum = num1 + num2
 
 print('\nHave a look at the data types for num1 and num2:')
