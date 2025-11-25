@@ -1,5 +1,6 @@
 '''
 Python has a built-in function named print().
+
 This function accepts an argument and prints it
 to the screen.
 
@@ -76,14 +77,14 @@ print("'2' + '2':", '2' + '2')
 '''
 Putting a newline escape sequence at the beginning of the
 print statement is merely to demonstrate that a newline
-can be included at beginning of a print statement.
+can be included at beginning of the output.
 
 Inserting a newline escape sequence after "of" and before
 "this" makes the output more readable.
 '''
-print('\nThere is a newline character at '
-      'the beginning of\nthis string and '
-      'an automatically included one at\nthe end.')
+print('\nThere is a newline character at the beginning of\n'
+      'this string and an automatically included one at\n'
+      'the end.')
 
 '''
 Does the print() function have a character limit?
@@ -98,3 +99,7 @@ memory issues.
 
 However, this would be more of a memory error rather
 than a strict character limit for the print() function.'''
+
+# E.g. Repeating a character by a billion times and then
+#      attempting to print it to the screen.
+# print('*' * 1_000_000_000)
