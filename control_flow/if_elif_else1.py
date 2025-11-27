@@ -7,8 +7,6 @@ is_hot = False
 
 is_cold = True
 
-is_rainy = True
-
 """
 In if statements, conditions are evaluated.
 
@@ -36,23 +34,21 @@ of indented statements is executed.
 
 print('bool(is_hot):', bool(is_hot), '\n')
 
-# if statement
+# if-elif-else statement
+# Notice how only one of these conditions can be True at
+# the same time which is why if "is_hot" evalutes to True,
+# Python will not check the condition on line 47. It'll
+# move on to the next part of the program.
 if is_hot:
 	print("It's a hot day.")
 	print("Drink plenty of water.")
-
-# if-elif-else statement
-# If "is_cold" evalutes to True, Python will not check
-# the condition on line 51. It'll move on to the next
-# part of the program.
-if is_cold:
+elif is_cold:
 	print("It is a cold day.")
 	print("Wear warm clothes.")
-elif is_rainy:
-	print('It is a rainy day.')
-	print('Wear a rain coat.')
 else:
-  print("It's a lovely day.")
+  print("It is neither cold nor hot.")
+
+is_rainy = False
 
 # The "and" keyword makes sure that both
 # conditions to its left and to its  right
@@ -66,8 +62,8 @@ if is_cold and is_rainy:
 # condition on the right side of the "and" operator because
 # both conditions must evaluate to True for the compound
 # expression to return to True.
-if is_hot and is_rainy:
-  print('It\'s either hot or rainy.')
+if is_hot or is_rainy:
+  print('It\'s either hot or cold.')
 
 # When should two if statements be written separately?
 # Answer:

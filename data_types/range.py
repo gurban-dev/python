@@ -5,7 +5,7 @@ an object that holds a sequence of values you can loop over.
 Syntax for the range() function:
 range(start_index, stop_index (exclusive), step_value)
 
-If you provide one argument, it becomes the stop_value.
+If you provide one argument, it becomes the stop_index.
 
 The start_index defaults to 0.
 

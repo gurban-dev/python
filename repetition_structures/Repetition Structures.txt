@@ -9,7 +9,7 @@ Python provides two main types of loops: while loops and for loops.
 While Loops (Condition-Controlled)
 
 A while loop executes as long as a condition is true, making it a
-pretest loop (the condition is tested before each iteration).
+pretest loop (the condition is tested/evaluated before each iteration).
 
 Use a while loop when you need to validate user input or repeat
 an action until a certain condition is met (e.g., entering an
@@ -21,8 +21,6 @@ while condition:
   statement
   statement
 
-
-condition is evaluated before each iteration.
 
 The indented statements are executed repeatedly while the condition
 is true.

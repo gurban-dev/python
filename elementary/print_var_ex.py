@@ -17,7 +17,7 @@ Prints a message in the following format:
 "[customer_name] placed [amount] order of [main_course]."
 
 Example outputs:
-Alice placed 1 order of paella.
+Alice placed 1 order of Spanish seafood paella.
 
 Alice placed 2 orders of lamb chops.
 '''

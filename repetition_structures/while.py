@@ -46,12 +46,12 @@ while keep_going == 'y':
 
   A breakdown of ',.2f':
 
-  , → Adds commas as thousands separators.
-  Example: 1234567.89 → 1,234,567.89
+  , -> Adds commas as thousands separators.
+  Example: 1234567.89 -> 1,234,567.89
 
-  .2f → Formats the number as a floating point
+  .2f -> Formats the number as a floating point
   with 2 digits after the decimal point.
-  Example: 45.6789 → 45.68
+  Example: 45.6789 -> 45.68
   '''
 
   # See if the user wants to input another pair
@@ -69,6 +69,7 @@ while keep_going == 'y':
   # keep_going == 'y'
   print('\nkeep_going == \'y\':', keep_going == 'y', '\n')
 
-# Now this is located outside of the while loop
-# because the indentation level begins at the
-# very beginning of the line.
+# This is located outside of the while loop because
+# the indentation level begins at the very beginning
+# of the line.
+print('The program has finished.')

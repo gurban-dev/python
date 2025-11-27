@@ -7,21 +7,30 @@
 # E.g.
 given_name = 'Alexander'
 
-# How do I assign the value 115 to a variable?
+# How do I assign the value 115 to a variable named "age"?
+
+
+
+
+
+
+
 age = 115
 
+# When should integers and string be used?
 # If you have to perform an arithmetic operation
 # (think of addition or subtraction), then you'd
-# assign an integer.
+# use an integer.
 
-# If you have to print out a sentence, a string
+# If you have to construct a sentence, a string
 # is appropriate.
 
 monthly_salary = 2500
 
-# What if I want to store whether Alexander lives in gdansk?
+# What if I want to keep track of whether Alexander lives
+# in the city Gdansk?
 
-# The variable "lives_in_gdansk" is a boolean
-# data type because True is assigned to it.
+# The variable "lives_in_gdansk" has a boolean
+# data type because False is assigned to it.
 # True and False are boolean values.
 lives_in_gdansk = False

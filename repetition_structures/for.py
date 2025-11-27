@@ -6,11 +6,12 @@
 
 # Traverse the items/elements in the list.
 
-print('I will display the numbers 1 through 5.')
+print('The numbers 1 through 5:')
 
 # This for loop iterates exactly 5 times because
 # there are 5 elements inside of the list that it
-# iterates over. Remember that a list is an iterable.
+# iterates over. Remember that a list is an iterable
+# also known as a sequence of values.
 for num in [1, 2, 3, 4, 5]:
   '''
   On each iteration, the "num" variable will be
@@ -31,9 +32,9 @@ for num in [1, 2, 3, 4, 5]:
     print(num, end=', ')
 print('\n')
 
-# Python lists can store elements that have
-# different data types.
-for item in ['Alexander', 30, 20.0, True]:
+# Python lists can store elements that have different
+# data types.
+for item in ['Alexander', 30, 20.0, True, [], range(2)]:
   print('item:', item)
 print('')
 
