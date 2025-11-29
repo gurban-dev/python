@@ -6,7 +6,7 @@ video_game = input('Do you prefer fortnite or minecraft? ').lower()
 
 # An empty string has a length of zero because it does
 # not contain any characters.
-print('\nlen(video_game):', len(video_game))
+print(f'\nlen({video_game}): {len(video_game)}')
 
 print(f'\n{video_game} == \'fornite\': {video_game == "fortnite"}')
 print(f'{video_game} == \'minecraft\': {video_game == "minecraft"}')
