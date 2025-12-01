@@ -1,6 +1,6 @@
 video_game = input('Do you prefer fortnite or minecraft? ').lower()
 
-# If I just click the "Enter" button on my keyboard
+# If the "Enter" button is clicked on the keyboard
 # without typing anything in, an empty string will
 # be returned by the input() function on line 1.
 
@@ -11,8 +11,8 @@ print(f'\nlen({video_game}): {len(video_game)}')
 print(f'\n{video_game} == \'fornite\': {video_game == "fortnite"}')
 print(f'{video_game} == \'minecraft\': {video_game == "minecraft"}')
 
-# If the condition on line number 4 evaluates to
-# True, then the condition on line number 8 will
+# If the condition on line number 19 evaluates to
+# True, then the condition on line number 21 will
 # not be evaluated.
 
 # Only one of the print statements will be executed.

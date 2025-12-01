@@ -1,16 +1,23 @@
-"""
-An escape character is a special character
-that is preceded with a backslash ( \ ).
+# An escape character is a special character preceded
+# by a backslash (\).
 
-\n is the newline escape character. When the \n
-escape character is printed, it isn't displayed
-on the screen. Instead, it causes output to
-advance to the next line.
-"""
+# It signals Python to treat the following character as
+# a control character or escape sequence.
+
+# A control character is a non-printable character that
+# directs the program or terminal to perform a specific
+# action (e.g., moving to a new line or inserting a tab)
+# instead of displaying a literal symbol.
+
+# \n is the newline escape sequence. When printed, it
+# doesn't appear as "\n"; instead, it moves the output 
+# position to the beginning of the next line in the
+# terminal or console.
+
 print('One\nTwo\nThree')
 
 """
-The tab escape character (\t) advances the
+The tab escape sequence (\t) advances the
 output to the next horizontal tab position.
 
 A tab position normally appears after every
@@ -34,8 +41,8 @@ print(f'\nfirst_half_of_week[0]: {first_half_of_week[0]}'
       f'\nfirst_half_of_week[9]: {first_half_of_week[9]}')
 
 """
-You can use the \' and \" escape characters
-to display quotation marks.
+You can use the single quote (\') and double quote (\")
+escape sequences to display quotation marks.
 """
 print('\nYour assignment is to read "Hamlet" by tomorrow.')
 
@@ -43,8 +50,9 @@ print("\nYour assignment is to read \"Hamlet\" by tomorrow.")
 
 print('I\'m ready to begin.')
 
-# The \\ escape character can be made
-# use of to display a backslash.
-# Two backslashes will output to be
-# a single backslash.
+# The \\ escape character can be made use of to
+# display a backslash.
+
+# Use two backslashes (\\) to represent a single
+# backslash (\) in the output.
 print('\nThe path is C:\\temp\\data.')

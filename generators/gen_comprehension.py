@@ -3,7 +3,7 @@
 # not all at once.
 generator_obj = (i for i in range(10))
 
-print('generator_obj:', generator_obj, '\n')
+print('generator_obj.__next__():', generator_obj.__next__(), '\n')
 
 # List comprehension.
 lst = [i for i in range(1_000)]
@@ -25,6 +25,8 @@ print('\nnext(generator):', next(generator))
 print('\nnext(generator):', next(generator))
 
 # Iterate through the generator object without using "yield".
+# The for loop implicitly or internally calls the next() function
+# on the generator object.
 for num in generator_obj:
   if num != 9:
     print('num:', num, end=', ')

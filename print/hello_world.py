@@ -47,7 +47,8 @@ this default behaviour:
 Whenever new source code in a Python file is written, the file
 must be saved. The file can be automatically saved by enabling
 the "Auto Save" option in Visual Studio Code after clicking the
-"File" button at the top left.
+"File" button at the top left, and then clicking "Auto Save" in
+the dropdown menu.
 
 Once the Python file has been saved, the program can be run by
 clicking on what looks like a "play" button at the top right of
@@ -72,7 +73,11 @@ keyboard.
 # The 2nd argument 2 + 2 will perform an arithmetic operation.
 print('2 + 2:', 2 + 2)
 
-print("'2' + '2':", '2' + '2')
+# Preceding a single or double quotation mark with a
+# backslash, forms an escape sequence.
+print("\'2\' + \'2\':", '2' + '2')
+
+print(f"\"2\" + \"2\": {'2' + '2'}")
 
 '''
 Putting a newline escape sequence at the beginning of the
