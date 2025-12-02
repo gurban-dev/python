@@ -21,7 +21,6 @@ while condition:
   statement
   statement
 
-
 The indented statements are executed repeatedly while the condition
 is true.
 
