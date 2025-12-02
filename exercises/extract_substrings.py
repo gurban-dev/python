@@ -54,6 +54,6 @@ def analyze_ab(s: str):
 
   return len(indices), indices, extracted
 
-s = "ababxababc"
+s: str = "ababxababc"
 
-print('analyze_ab(s):', analyze_ab(s))
+print(f'analyze_ab({s}): {analyze_ab(s)}')
