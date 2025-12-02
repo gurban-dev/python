@@ -1,6 +1,7 @@
 import random
 
 # Step 1: Generate a secret number between 1 and 20
+# -randint(low (inclusive), high (exclusive))
 secret = random.randint(1, 20)
 
 # Step 2: Initialise variables
@@ -13,6 +14,7 @@ while not correct:
   try:
     # Ask for user input
     user_input = input("Enter your guess: ")
+
     guess = int(user_input)
   except ValueError:
     print("Please enter a valid integer.")
@@ -33,8 +35,8 @@ while not correct:
 
 # Step 5: Display all guesses
 print("\nYour guesses:")
-for i, g in enumerate(guesses, start=1):
-  print(f"Guess #{i}: {g}")
+for index, guess in enumerate(guesses, start=1):
+  print(f"Guess #{index}: {guess}")
 
 # Step 6: Calculate and display average guess value
 average = sum(guesses) / len(guesses)

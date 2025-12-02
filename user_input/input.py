@@ -1,19 +1,26 @@
 '''
-The built-in input() function accepts input from
-the user's keyboard and then returns that input
-as a string.
+The built-in input() function that temporarily pauses
+the program, and waits until the user clicks the "Enter"
+key on their keyboard.
 
-Include a whitespace character after the prompt
-statement because the input() function does not
-automatically include one.'''
+Conventionally, the user is supposed to type in some content
+before clicking the "Enter" key.
+
+Include a whitespace character after the prompt statement
+because the input() function does not automatically include
+one.'''
 
 # The prompt statement in the following example:
-# 'What is your name? '
-name = input('What is your name? ')
+# 'What is your given_name? '
+given_name = input('What is your given name? ')
+
+# Notice how the size of given_name is zero if the user
+# just clicks the "Enter" key without typing anything in.
+print('\nlen(given_name):', len(given_name))
 
 # F-string
-# print('name:', name, end='')
-print(f'name: {name}')
+# print('given_name:', given_name, end='')
+print(f'\ngiven_name: {given_name}')
 
 """
 Since the input() function returns a string,
@@ -51,7 +58,7 @@ generates a ValueError because "fish" converted to
 an integer."""
 
 # Input the number 2.
-num1_int = input('\nInput a number: ')
+num1_int = int(input('\nInput a number: '))
 
 # Change the above int() function to float().
 # Let's see how the calculation will be different.
@@ -62,6 +69,6 @@ num1_int = input('\nInput a number: ')
 # Input the number 2 again.
 num2_int = int(input('Input a second number: '))
 
-print(f'num1_int + num2_int: {num1_int + num2_int}')
+print(f'\nnum1_int + num2_int: {num1_int + num2_int}')
 
 print(f'num1_int ** num2_int: {num1_int ** num2_int}')

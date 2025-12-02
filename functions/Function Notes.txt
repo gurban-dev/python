@@ -5,14 +5,13 @@ User-defined functions are created by the programmer:
 def greet():
   print("Hello!")
 
+To invoke/call the user-defined greet() function:
+greet()
+
 Functions are different than methods.
 
 # A built-in function.
 print("Hello")
-
-# A user-defined function.
-def greet():
-  print("Hi!")
 
 A method is a function that belongs to an object.
 (like a string, list, etc.).
