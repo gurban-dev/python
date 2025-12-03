@@ -1,5 +1,10 @@
-# Encapsulation hides data using private attributes which
-# means access to instance variables is more restricted.
+# Encapsulation is the principle of restricting direct access
+# to an object's internal state (attributes) and internal methods,
+# typically using private or protected naming conventions.
+
+# Controlled access is provided through public methods, which allow
+# getting or setting the object's internal state in a safe and
+# controlled way.
 
 class BankAccount():
   def __init__(self, balance):
@@ -25,7 +30,7 @@ class BankAccount():
     # += is called the augmented assignment operator.
 
     # self.__balance += amount is equivalent to:
-    # self.__balance = self.__balance + amount.
+    # self.__balance = self.__balance + amount
     self.__balance += amount
 
 bankAccount = BankAccount(5_000)
@@ -43,6 +48,8 @@ bankAccount = BankAccount(5_000)
 # but it's discouraged in practice.
 
 # E.g. _BankAccount_balance
-bankAccount._BankAccount__balance += 500
+# bankAccount._BankAccount__balance += 500
 
-# bankAccount.deposit(500)
+bankAccount.deposit(500)
+
+print('bankAccount.get_balance():', bankAccount.get_balance())

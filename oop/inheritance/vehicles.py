@@ -70,7 +70,12 @@ class Car(Automobile):
 
 # Notice how only four arguments are explicitly being
 # passed. "self" is not explicitly included.
-dune_buggy = Automobile('Meyers', 'Manx Classic', 8400, 14995)
+dune_buggy = Automobile(
+	make='Meyers',
+	model='Manx Classic',
+	mileage=8400,
+	price=14995
+)
 
 '''
 Are the following arguments being passed to the Car class'
@@ -99,5 +104,5 @@ toyota_camry_se_car = Car(
 # print('toyota_camry_se_auto.get_no_of_doors():',
 # 			toyota_camry_se_auto.get_no_of_doors())
 
-print('\ntoyota_camry_se_car.get_no_of_doors():',
+print('toyota_camry_se_car.get_no_of_doors():',
 			toyota_camry_se_car.get_no_of_doors())
