@@ -2,8 +2,9 @@
 # it is surrounded by quotation marks.
 student_name = 'Alexander'
 
-# Reveals the memory address on the heap of the string
-# object that the variable student_name points to.
+# Reveals the memory address on the Python private heap
+# of the string object that the variable student_name
+# has a reference to.
 print('hex(id(student_name)):', hex(id(student_name)))
 
 # Assigning a string literal to a variable
