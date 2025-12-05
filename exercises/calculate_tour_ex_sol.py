@@ -6,7 +6,6 @@
 # Output:
 # The total cost of the tour.
 
-
 def calculate_price(
   # Remember that a parameter that has a default
   # argument must not precede a parameter that
@@ -25,12 +24,18 @@ def calculate_price(
   # If has_child evaluates to True.
   if has_child and tour_price >= 30:
     tour_price -= 15
-  
+
   return tour_price
 
 cost_of_tour1 = calculate_price('High Season', 4)
 
-cost_of_tour2 = calculate_price('High Season', 4, True)
+# cost_of_tour2 = calculate_price('High Season', 4, True)
+
+cost_of_tour2 = calculate_price(
+  season_type='High Season',
+  no_of_tourists=4,
+  has_child=True
+)
 
 print('\ncost_of_tour1:', cost_of_tour1, '\n')
 

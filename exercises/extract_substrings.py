@@ -26,7 +26,7 @@ Extracted substrings:
 "ab" only -> (because fewer than 2 characters remain)
 '''
 
-def analyze_ab(s: str):
+def analyze_ab(s: str) -> tuple[int, list[int], list[str]]:
   target: str = "ab"
   indices: list[int] = []
   extracted: list[str] = []
@@ -52,6 +52,8 @@ def analyze_ab(s: str):
     # Move the start forward by 1 to allow overlapping matches.
     starting_index = index + 1
 
+  # Any function that uses a comma-separated return statement
+  # automatically returns a tuple.
   return len(indices), indices, extracted
 
 s: str = "ababxababc"

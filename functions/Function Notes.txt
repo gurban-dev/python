@@ -10,7 +10,7 @@ greet()
 
 Functions are different than methods.
 
-# A built-in function.
+A built-in function:
 print("Hello")
 
 A method is a function that belongs to an object.

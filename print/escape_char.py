@@ -1,8 +1,8 @@
 # An escape character is a special character preceded
 # by a backslash (\).
 
-# It signals Python to treat the following character as
-# a control character or escape sequence.
+# It signals to Python to treat the following character
+# as a control character or escape sequence.
 
 # A control character is a non-printable character that
 # directs the program or terminal to perform a specific
@@ -24,7 +24,7 @@ A tab position normally appears after every
 eighth character.
 
 This means that the first character after a
-tab escape character will begin on the eighth
+tab escape sequence will begin on the eighth
 position.
 """
 print('\n0123456789012345678')
@@ -32,12 +32,12 @@ print('Mon\tTues\tWed')
 
 first_half_of_week = 'Mon\tTues\tWed'
 
-# Each \t (tab) escape character will increase the
+# Each \t (tab) escape sequence will increase the
 # length or size of the string by one character.
 print(f'\nlen(first_half_of_week): {len(first_half_of_week)}')
 
 print(f'\nfirst_half_of_week[0]: {first_half_of_week[0]}'
-      f'\nfirst_half_of_week[5]: {first_half_of_week[5]}'
+      f'\nfirst_half_of_week[4]: {first_half_of_week[4]}'
       f'\nfirst_half_of_week[9]: {first_half_of_week[9]}')
 
 """
@@ -48,7 +48,7 @@ print('\nYour assignment is to read "Hamlet" by tomorrow.')
 
 print("\nYour assignment is to read \"Hamlet\" by tomorrow.")
 
-print('I\'m ready to begin.')
+print('\nI\'m ready to begin.')
 
 # The \\ escape character can be made use of to
 # display a backslash.

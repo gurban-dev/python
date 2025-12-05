@@ -1,41 +1,33 @@
-'''
-The "def" keyword indicates that a function has
-been declared.
-
-The name of the subsequent function is "message".
-
-Open and closed parentheses as well as a colon
-must follow the name of a declared function.'''
+# The name of the subsequent function is "message".
 def message():
   # The lines of code that follow a return statement
   # are unreachable by the program.
-  # return 10
+  # return ""
 
   '''
   Printing "I am Arthur,\nKing of the Britons"
   inside this function assigns a responsibility
   to this function.
 
-  This is a more organised way of writing
-  source code than calling print() in the main
-  function.'''
+  This is a more organised way of writing source
+  code than calling print() in the main function.'''
 
   # print('I am Arthur,')
   # print('King of the Britons.')
 
   # Local variable because it is declared
   # inside of the message() function.
-  # entire_message = 'I am Arthur,\nKing of the Britons.'
-
-  entire_message = int(10)
+  entire_message = 'I am Arthur,\nKing of the Britons.'
 
   """
-  If the following line is uncommented, this
-  function is no longer a void function because
-  it would be returning a value.
+  If the following line is uncommented, this function no longer 
+  implicitly returns None because it explicitly returns a string.
 
-  A void function is one that doesn't return a value."""
-  return entire_message
+  In Python, a function that returns None is equivalent to a void 
+  function in other programming languages like TypeScript.
+  """
+  # return entire_message
+
 # This line is already outside of the function's
 # body because it is not indented.
 
@@ -75,10 +67,10 @@ print('type(msg):', type(msg))
 # The value returned from the function message()
 # will be outputted to the terminal. The return
 # value doesn't need to be assigned to a variable.
-print('\nmessage():', message())
+print('\nmessage():\n', message(), sep='')
 
 """
 Once all of the statements in a function are executed,
 the interpreter jumps back to the part of the program
 that called the function, and the program resumes
-execution at that point (lines 64 and 72 in this case)."""
+execution at that point (lines 60 and 68 in this case)."""

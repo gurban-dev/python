@@ -6,9 +6,9 @@ and then reuse that code all throughout the
 program. These are referred to as user-defined
 functions.
 
-When declaring a user-defined function in
-Python, be sure to include the "def" keyword
-before the name of the of the function.
+If there aren't any names between the open and closed
+parentheses, this indicates that the function does not
+accept any parameters.
 
 Syntax for a parameterless function:
 def function_name():
@@ -18,25 +18,36 @@ def function_name():
 
   ...
 
+  etc.
+
 To invoke/call a declared function, type the
 name of the function followed by a pair of open
 and closed parentheses:
+
 function_name()
 '''
 
 # Function without parameters.
-# This is a void function because it does not
-# return any value.
-# The function say_hello() prints a message but
-# does not send a value back to where it was invoked
-# in the program.
-def say_hello() -> None:
+# This is a void function because it returns None.
+
+# The function say_hello() prints a message but does
+# not send a value back to where it was invoked in the
+# program.
+def say_hello(orders) -> None:
   print("Hello, World!")
 
+  total = 10 * orders
+
+  print('total:', total)
+
+  # return total
+
+  # Have the function return a value if you need to
+  # access that value outside of the function.
   # return "Hello, World!"
 
 # Output: Hello, World!
-return_val = say_hello()
+return_val = say_hello(5)
 
 print('\nreturn_val:', return_val)
 
@@ -87,7 +98,7 @@ is assigned to the first parameter, "first_num".
 def add(first_num: int, second_num: int) -> int:
   print('\nfirst_num + second_num:', first_num + second_num)
 
-  return first_num + second_num
+  # return first_num + second_num
 
 # Two integer variables declared.
 num1: int = 3
@@ -107,10 +118,14 @@ arguments were passed to the add() function
 in.'''
 
 # Output: 8
-# print('add(num1, num2):', add(num1, num2))
+print('add(num1, num2):', add(num1, num2))
 
-# What does the subsequent line output
-# in the terminal?
+num1 = 1
+num2 = 2
+add(num1, num2)
+
+# What does the subsequent line output in the
+# terminal?
 add(3, 5)
 
 '''
@@ -118,5 +133,5 @@ The output "8" is not seen anymore in the
 terminal because the function call add(3, 5)
 is not inside of a print statement.
 
-If nothing is printed out with print(),
-nothing will be outputted to the terminal.'''
+If nothing is printed out with print(), nothing
+will be outputted to the terminal.'''

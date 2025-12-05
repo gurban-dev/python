@@ -23,30 +23,48 @@ indentation is required, because the Python
 interpreter uses it to tell where the block begins
 and where it ends.
 
-Single-responsibility principle:
+The single-responsibility software design principle:
 A function should only perform one specific task.
 
--Shorten to the most important.
-The single responsibility principle makes code easier
-to read because each function focuses on one clear task,
-so you can understand its purpose quickly without
-confusion. It simplifies testing since you only need to
-verify one specific behaviour per function, making tests
-more straightforward and reliable. It also makes code
-easier to change because modifying one function's behaviour
-won't unintentionally affect others, reducing bugs and
-making maintenance safer and faster.
+A function that does only one thing can be safely used in
+different parts of a program, because it won’t carry extra
+actions that could interfere with other code.
 
-Functions written with function annotations syntax:
-def function_name() -> return_type:
+If a bug occurs, you only have to check one small function.
+You don't have to search through lines of unrelated code to
+find the problem.
+
+Type annotations in Python improve readability by providing hints
+about the expected types of variables, function parameters, and
+return values.
+
+Function annotations syntax:
+def function_name(
+  parameter1: data_type, parameter2: data_type) -> return_type:
+  variable_name: data_type = value_being_assigned
+
   statement
-  statement
+
+  ...
+
   etc.
 
--> return_type is known as a function annotation
-or type hint.
+Parameter type annotation:
+parameter1: data_type
 
-It behaves as a placeholder for the type of value
-that the function is expected to return.
+Indicates the expected type of a function parameter.
 
-return_type could be None, int, string, etc.
+Return type annotation:
+-> return_type
+
+Indicates the expected type the function will return.
+
+Variable type annotation:
+variable_name: data_type
+
+Indicates the expected type of a variable.
+
+Notes:
+- Type annotations are optional.
+- Python programs run the same with or without them.
+- They are mainly used for documentation and readability.

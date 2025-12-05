@@ -3,9 +3,9 @@ The not operator takes a Boolean expression as its operand
 and reverses its logical value. It reverses the truth of its
 operand.
 
-If it is applied to an expression that is true, the operator
-returns false. If it is applied to an expression that is false,
-the operator returns true.
+If the not operator is applied to an expression that is true,
+the operator returns false. If it is applied to an expression
+that is false, the operator returns true.
 '''
 temperature = 101
 
@@ -27,4 +27,6 @@ make it clear that the not operator is applied not to the temperature
 variable, but to the expression temperature > 100.
 '''
 if not(temperature > 100):
-  print('This is below the maximum temperature.')
+  print('The temperature is not greater than 100.')
+else:
+  print('The temperature is greater than 100.')

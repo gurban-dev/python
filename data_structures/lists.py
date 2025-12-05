@@ -16,14 +16,14 @@ The items that are enclosed in brackets and separated
 by commas are the list elements. 2 is the first element
 for instance, its index is 0 (zero).'''
 
-# Indices:      0  1  2  3  4   5
-even_numbers = [2, 2, 4, 6, 8, 10]
+# Indices:      0  1  2  3   4
+even_numbers = [2, 4, 6, 8, 10]
 
 # List of string literals.
 names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
 
 # A list can hold items of different data types:
-info = ['Alicia', 27, 1550.87, True]
+info = ['Alicia', 27, 1550.87, True, []]
 
 # The print() function can be used display an
 # entire list.
@@ -37,11 +37,12 @@ Recall that the range() function returns an iterable,
 which is an object that holds a series of values that
 can be iterated over.
 
-In the following context, range() returns an iterable
-or a collection of items containing the values
-0, 1, 2, 3, and 4.
+In the following context, range() returns an iterable or
+a collection of items containing the values 0, 1, 2, 3,
+and 4.
 '''
 zero_to_four = list(range(5))
+
 print(f'\nzero_to_four: {zero_to_four}')
 
 '''
@@ -50,11 +51,10 @@ the first argument is the starting index, the second
 argument is the stopping index (exclusive), and the
 third argument is the step value.
 
-range(start_index, stop_index (exclusive), step)
+range(starting_index, stopping_index (exclusive), step_value)
 
-range(1, 10, 2) returns an iterable containing
-[1, 3, 5, 7, 9] which will then be assigned to
-the variable "numbers".
+range(1, 10, 2) returns an iterable containing [1, 3, 5, 7, 9]
+which will then be assigned to the variable "numbers".
 
 The list() function casts the range to a list.'''
 numbers = list(range(1, 10, 2))
@@ -65,9 +65,10 @@ print('\nnumbers:', numbers)
 # can be changed after the list is created.
 
 # Assign "Nine" to the last index in the "numbers" list.
-numbers[-1] = "Nine"
+numbers[4] = "Nine"
 
-# The following line produces the same outcome as the one above:
-# numbers[4] = "Nine"
+# The following line produces the same outcome as the one above
+# because the last item in a list is always at index -1:
+# numbers[-1] = "Nine"
 
 print('\nnumbers:', numbers)
