@@ -1,5 +1,5 @@
 # Syntax:
-# <variable_name> = <value_being_assigned_to_variable>
+# <variable_name> = <value_being_assigned_to_the_variable>
 
 # What looks like an equals sign (=) is called
 # the "assignment operator" in Python.
@@ -19,7 +19,7 @@ age = 115
 # If you have to construct a sentence, a string
 # is appropriate.
 
-monthly_salary = 2500
+monthly_salary = 2_500
 
 # What if I want to keep track of whether Alexander lives
 # in the city Gdansk?

@@ -14,8 +14,8 @@ of RAM where Python allocates objects at runtime.
 
 Stack (variables / references)          Heap (actual objects)
 +-----------------+                     +-------------------------+
-| given_name       |  ---> Reference --> | "Alexander"            |
-| (reference)      |                     | [unique ID / id()]     |
+| given_name      |  ---> Reference --> | "Alexander"             |
+| (reference)     |                     | [unique ID / id()]      |
 +-----------------+                     +-------------------------+
 
 '''

@@ -5,9 +5,13 @@
 100
 
 # Question:
-# How can you tell that these are all integers?
+# How can you tell that these are all integers (int)?
+
+
+
+
 
 
 # Answer:
-# They are all numbers without decimal points (.)
-# and without quotation marks ("", '').
+# They are all numbers without quotation marks ("", '')
+# and without decimal points (.).
