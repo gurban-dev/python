@@ -10,19 +10,22 @@ header.'''
 
 # The subsequent two function headers are invalid:
 # def greet(msg="Hello", name, punctuation="!"):
+#   pass
+
 # def greet(msg="Hello", punctuation="!", name):
+#   pass
 
 '''
-Valid function header because the default parameter
-is declared before the non-default ones.
+Below is a valid function header because all non-default
+parameters come before parameters with default values.
 
-greet() is a void function because it doesn't
-return anything back to where it was invoked.'''
+If a function does not explicitly return anything, Python
+automatically returns None.'''
 def greet(name, msg="Hello", punctuation="!"):
   # F-string
   print(f"{msg}, {name}{punctuation}")
 
-# Invoking the greet() function with providing
+# Invoking the greet() function by providing
 # all arguments.
 greet("Alice", "Hi", "?")
 # Output: Hi, Alice?

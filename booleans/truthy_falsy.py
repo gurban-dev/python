@@ -1,5 +1,5 @@
 '''
-Boolean values are True or False.
+Explicit boolean values are True or False.
 
 In Python, they are written as "True" and "False"
 (without the quotation marks).
@@ -11,7 +11,8 @@ In Python there are truthy and falsy values which
 are not explicitly a boolean True or False, but
 can be interpreted as such.
 
--Does the Python interpreter treat 0 and 1 as booleans?
+In Python, 0 and 1 are treated as booleans because bool
+is a subclass of int.
 
 Assigning any of the following falsy values will
 make a variable be interpreted as False.
@@ -78,14 +79,16 @@ print('\nbool(-1.5):', bool(-1.5), end='\n\n')
 # This evaluates to False.
 refresh_token = None
 
+# What needs to be changed for refresh_token to be
+# interpreted as False?
 refresh_token = 'random content'
 
 '''
 The program enters the indented block directly under
-the "if" keyword if "refresh_token" evaluates as True.
+the "if" keyword if "refresh_token" evaluates to True.
 
-The program will enter the else block is "refresh_token"
-evaluates as False.'''
+The program will enter the else block if "refresh_token"
+evaluates to False.'''
 if refresh_token:
   print('refresh_token evaluated to True.')
 else:

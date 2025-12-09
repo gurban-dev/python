@@ -27,11 +27,11 @@ def calculate_price(
 
   return tour_price
 
-cost_of_tour1 = calculate_price('High Season', 4)
+cost_of_tour1: float = calculate_price('High Season', 4)
 
-# cost_of_tour2 = calculate_price('High Season', 4, True)
+# cost_of_tour2: float = calculate_price('High Season', 4, True)
 
-cost_of_tour2 = calculate_price(
+cost_of_tour2: float = calculate_price(
   season_type='High Season',
   no_of_tourists=4,
   has_child=True
