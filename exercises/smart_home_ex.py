@@ -1,5 +1,9 @@
 '''
-Python OOP Exercise — Abstraction, Encapsulation, Inheritance, and Polymorphism
+Concepts:
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
 
 Task:
 Design a simple Smart Home system using OOP. Your design must demonstrate:
