@@ -1,0 +1,31 @@
+Jupyter Notebook and JupyterLab are environments designed
+mainly for data science, math, and experiments.
+
+Features:
+- Run code in small units calls "cells".
+- See graphs and tables immediately.
+
+
+The primary difference between Jupyter Notebook and JupyterLab
+is their interface and functionality:
+
+Jupyter Notebook:
+It provides a single-document interface. Each notebook opens in
+its own browser tab, and it mainly focuses on running code cells,
+writing markdown, and visualizing outputs. It's simpler and more
+straightforward for running individual notebooks.
+
+JupyterLab:
+It is a full-featured interactive development environment (IDE)
+for Jupyter. It allows multiple notebooks, consoles, terminals,
+and files to be open in tabs and panels in the same window. It
+supports drag-and-drop layouts, file browsers, extensions, and
+a more modular workflow.
+
+
+Anaconda is a distribution or large installer that provides
+you with:
+- Python
+- Jupyter
+- Spyder
+- Hundreds of scientific libraries that are pre-installed
