@@ -1,28 +1,37 @@
-name_of_country = 'LLiechtenstein'
+# The variable "name_of_country" holds a reference to the
+# string object 'Liechtenstein'.
+name_of_country: str = 'Liechtenstein'
 
-# A new object is not being created.
-# Likewise, this does not create a shallow copy since
-# both variables still point to the same memory address.
-same_country = name_of_country
+# Assigning "same_country" to "name_of_country" does NOT create a new string object.
+# Both variables point to the same string in memory.
+same_country: str = name_of_country
 
-# Display the memory location/address of the variable.
+# Display the memory location/address of the string object that
+# "name_of_country" references.
 print('hex(id(name_of_country)):', hex(id(name_of_country)))
 
 print('\nhex(id(same_country)):', hex(id(same_country)))
 
-# Reveal the memory location/address of the string
-# literal/raw value.
-print('\nhex(id(\'LLiechtenstein\')):', hex(id('LLiechtenstein')))
+# Note: In CPython, some strings may be interned automatically.
+# The id() of the literal may or may not match the id() of the variable.
+
+# CPython is one of the engines that can run Python code.
+# Interning is a technique Python uses to reuse objects in memory to
+# save space and improve performance.
+
+# For strings, it means: if two strings have the same value, Python may
+# store only one copy in memory and have both variables point to it.
+print('\nhex(id(\'Liechtenstein\')):', hex(id('Liechtenstein')))
 
 # Strings are immutable. Their contents can never change
 # after creation.
 
 # Because of that, Python can safely let multiple variables
-# reference the same string object in memory.
+# hold a reference to the same string object in memory.
 
 # There's no risk that changing one variable would
 # accidentally affect another because modifying the
-# string in place isn't possible.
+# string object in place isn't possible.
 
 # This is how memory is optimised in Python.
 

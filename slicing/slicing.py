@@ -3,29 +3,49 @@
 
 # To obtain a slice of a list, an expression
 # must be written in the following format:
-# list_name[start : end]
+# list_name[start_index : end_index]
 
 """
-"start" is the index of the first element in
-the slice, and "end" is the index marking the
-end of the slice.
+"start_index" is the index of the first element to
+include in the slice, and "end_index" is the index
+marking the end of the slice.
 
 The expression returns a list containing a copy of the
-elements from "start" up to (but not including) "end".
+elements from "start_index" up to (but not including)
+"end_index".
 """
 
-days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
-        'Thursday', 'Friday', 'Saturday']
+days_of_the_week: list[str] = [
+  'Monday', 'Tuesday', 'Wednesday',
+  'Thursday', 'Friday', 'Saturday',
+  'Sunday'
+]
 
 """
 The below statement uses a slicing expression to
-get the elements from indexes 2 up to, but not
-including, 5.
+get the elements from index 2, and up to but not
+including, index 5.
+
 Notice how snake case is the predominant naming
-convention utilized is Python.
+convention utilised is Python.
 """
-mid_days = days[2:5]
+mid_days = days_of_the_week[2:5]
 
 # Output the slice of elements returned from the
 # expression:
 print(f'mid_days: {mid_days}')
+
+# What if all of the days of the week must be included
+# in the slice?
+
+# Notice how if the start and end indexes aren't explicitly
+# included, then the internally, 0 is assigned to the start_index
+# and the length of the list is assigned to the end_index.
+print(f'\ndays_of_the_week[0:en(days_of_the_week)]]: '
+      f'{days_of_the_week[0:len(days_of_the_week)]}')
+
+# How can everything after the first index be included in the slice?
+print(f'\ndays_of_the_week[1:]: {days_of_the_week[1:]}')
+
+# How can everything before the last index be included in the slice?
+print(f'\ndays_of_the_week[:len(days_of_the_week)-1]: {days_of_the_week[:len(days_of_the_week)-1]}')

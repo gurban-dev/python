@@ -1,8 +1,9 @@
-# An escape character is a special character preceded
-# by a backslash (\).
+# In Python, a backslash (\) is called an escape character,
+# and its purpose is to introduce escape sequences.
 
-# It signals to Python to treat the following character
-# as a control character or escape sequence.
+# It signals Python to treat the following character
+# as part of an escape sequence (e.g., \n for newline,
+# \t for tab, \\ for a backslash).
 
 # A control character is a non-printable character that
 # directs the program or terminal to perform a specific
@@ -23,8 +24,8 @@ output to the next horizontal tab position.
 A tab position normally appears after every
 eighth character.
 
-This means that the first character after a
-tab escape sequence will begin on the eighth
+This means that the first character after a tab
+escape sequence will begin on the next eighth
 position.
 """
 print('\n0123456789012345678')

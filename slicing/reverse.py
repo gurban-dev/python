@@ -1,33 +1,35 @@
-'''
-Syntax:
-string[start:stop:step]
+# Syntax:
+# string[start_index:stop_index:step_value]
 
-Assuming the step value is not negative:
-start: The index where the slice begins (inclusive).
-       If omitted, it defaults to the beginning of the sequence
-       (index 0).
+# For slicing with a negative step:
+# start_index: the index where slicing starts (inclusive).
+#              If omitted, it defaults to the end of the string (len(string) - 1).
 
-stop: The index where the slice ends (exclusive).
-      If omitted, it defaults to one past the last index of the
-      sequence.
+# stop_index:  the index where slicing stops (exclusive).
+#              If omitted, it defaults to one before the beginning of the string (-1).
 
-step: The increment between elements. If omitted, it defaults to 1.
+# step_value:  the increment between elements. Negative means move backwards.
 
-"!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"[::-2]
+# If step_value is positive, it includes characters while current_index < stop.
 
-In the context of the above example:
+# If step_value is negative, it includes characters while current_index > stop.
 
-Taking into account that the step value is negative:
-The absence of a value before the first colon indicates that
-the slice starts from one index past the end of the string
-(len("!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI")).
+# The stop_index is interpreted as 4, so current_index is not less than the
+# stop. None of the characters in "Hello" will be outputted.
+print("\"Hello\"[4:-1:-1]", "Hello"[4:-1:-1])
 
-The absence of a value before the second colon indicates that
-the slice stops at one index before the beginning of the string.
+# Reversing "Hello" by explicitly specifying the start and stop indexes:
+print("\"Hello\"[4:-6:-1]:", "Hello"[4:-6:-1])
 
-The -2 is the step value, which means move backward by 2
-characters each time. The negative makes the slicing occur
-in reverse order.
-'''
-print('\n!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"[::-2]:\n',
-      "!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"[::-2], sep='')
+# Start index 4 corresponds to the last character 'o'.
+# Stop index -6 is one before the first character (essentially stops before 'H').
+# The indices of "Hello" are:
+# -5  -4  -3  -2  -1
+#  H   e   l   l   o
+# The slice [4:-6:-1] goes from index 4 down to index -5 (exclusive) in reverse.
+
+# Example:
+s = "!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"
+
+# Slice the string backwards taking every 2nd character.
+print('Sliced string [::-2]:\n', s[::-2], sep='')
