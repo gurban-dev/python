@@ -33,22 +33,21 @@ function_name()
 # The function say_hello() prints a message but does
 # not send a value back to where it was invoked in the
 # program.
-def say_hello(orders) -> None:
+def say_hello(no_of_orders: int) -> None:
   print("Hello, World!")
 
-  total = 10 * orders
+  total: int = 10 * no_of_orders
 
   print('total:', total)
 
-  # return total
-
   # Have the function return a value if you need to
   # access that value outside of the function.
-  # return "Hello, World!"
+  # return total
 
-# Output: Hello, World!
-return_val = say_hello(5)
+return_val: int | None = say_hello(5)
 
+# Output:
+# return_val: 50
 print('\nreturn_val:', return_val)
 
 '''
