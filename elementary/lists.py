@@ -1,3 +1,8 @@
+# The open and closed square brackets indicate that
+# the following is a list.
+
+# A list a data structure that is made up of ordered
+# elements/items separated by commas.
 list_data_structure = [
   'First element',
   'Second element',
