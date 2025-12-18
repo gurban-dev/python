@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# Part 1 — Abstract Base Class (Abstraction + Encapsulation)
+# Part 1 - Abstract Base Class (Abstraction + Encapsulation)
 
 # A Python class must inherit from ABC for it to be
 # abstract class.
@@ -29,18 +29,21 @@ class SmartDevice(ABC):
   def status(self):
     pass
 
-  # Encapsulated power state getter and setter
+  # Mutator/setter because it changes the value of the
+  # instance variable '__is_on'.
   def _set_power(self, value: bool):
     self.__is_on = value
 
+  # Selector/Getter because it returns the instance variable
+  # '__is_on'.
   def _is_on(self):
     return self.__is_on
 
 
-# Part 2 — Subclasses (Inheritance + Polymorphism)
+# Part 2 - Subclasses (Inheritance + Polymorphism)
 
 class LightBulb(SmartDevice):
-  def __init__(self, name: str, brightness=0):
+  def __init__(self, name: str, brightness: int=0):
     # Invokes the parent class' (SmartDevice) constructor method.
     super().__init__(name)
 
@@ -49,7 +52,7 @@ class LightBulb(SmartDevice):
   def turn_on(self):
     self._set_power(True)
 
-    # default behavior
+    # Default behavior.
     self.brightness = 50
 
     print(f"{self._name} turned on. Brightness set to 50.")
@@ -58,6 +61,12 @@ class LightBulb(SmartDevice):
     self._set_power(False)
     self.brightness = 0
     print(f"{self._name} turned off.")
+
+  def set_brightness(self, new_brightness):
+    self.brightness = new_brightness
+
+  def get_brightness(self):
+    return self.brightness
 
   def status(self):
     state = "ON" if self._is_on() else "OFF"
@@ -79,7 +88,7 @@ class Thermostat(SmartDevice):
   # Mutator/Setter with validation
   def set_temperature(self, value):
     if value < 40:
-      raise ValueError("Temperature cannot be lower than 40°F.")
+      raise ValueError("Temperature cannot be lower than 40°F or 4.5 Celsius.")
 
     self.__temperature = value
 
@@ -102,6 +111,9 @@ class Thermostat(SmartDevice):
     # state = value1 if condition else value2
     state = "ON" if self._is_on() else "OFF"
 
+    return f"Thermostat [{self._name}]: {state}, Temperature = {self.__temperature}"
+
+
 class SecurityCamera(SmartDevice):
   def __init__(self, name: str, resolution="1080p"):
     # Invokes the parent class' constructor method.
@@ -119,22 +131,20 @@ class SecurityCamera(SmartDevice):
 
   def status(self):
     state = "ON" if self._is_on() else "OFF"
+
     return f"SecurityCamera [{self._name}]: {state}, Resolution = {self.resolution}"
 
 
-# Part 3 — Polymorphic Function
-
-
+# Part 3 - Polymorphic Function
 def show_device_status(devices):
   print("\n--- DEVICE STATUS REPORT ---")
+
   for device in devices:
     print(device.status())
-    print("-----------------------------\n")
 
-# Part 5 — Demo Script
-
+# Part 5 - Demo Script
 if __name__ == "__main__":
-  # Instantiate one of each device
+  # Instantiate one of each device.
   bulb = LightBulb("Living Room Light")
 
   thermo = Thermostat("Hallway Thermostat")
@@ -148,13 +158,15 @@ if __name__ == "__main__":
   thermo.turn_on()
   camera.turn_off()
 
-  # Adjust settings
+  # Adjust settings.
   thermo.set_temperature(72)
 
   # Allowed because brightness instance attribute is not private.
-  bulb.brightness = 80
+  # bulb.brightness = 80
 
-  # Show full system status (polymorphism demonstration)
+  bulb.set_brightness(80)
+
+  # Show full system status (polymorphism demonstration).
   devices: list[SmartDevice] = [bulb, thermo, camera]
 
   show_device_status(devices)

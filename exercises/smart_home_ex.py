@@ -6,7 +6,7 @@ Inheritance
 Polymorphism
 
 Task:
-Design a simple Smart Home system using OOP. Your design must demonstrate:
+Design a Smart Home system using OOP. Your design must demonstrate:
 
 * Abstraction (via abstract base classes)
 * Encapsulation (private/protected attributes + getters/setters)
@@ -15,7 +15,7 @@ Design a simple Smart Home system using OOP. Your design must demonstrate:
 
 ---
 
-Part 1 — Abstract Base Class
+Part 1 - Abstract Base Class
 
 Create an abstract class SmartDevice that includes:
 
@@ -27,11 +27,11 @@ Create an abstract class SmartDevice that includes:
   turn_off()
   status()
 
-Use abc.ABC and @abstractmethod.
+Use from abc import ABC, abstractmethod.
 
 ---
 
-Part 2 — Subclasses via Inheritance
+Part 2 - Subclasses via Inheritance
 
 Create three subclasses:
 
@@ -52,7 +52,7 @@ Each subclass must:
 
 ---
 
-Part 3 — Demonstrate Polymorphism
+Part 3 - Demonstrate Polymorphism
 
 Write a function:
 show_device_status(device_list)
@@ -65,7 +65,7 @@ It should:
 
 ---
 
-Part 4 — Encapsulation Requirement
+Part 4 - Encapsulation Requirement
 
 For at least one subclass:
 
@@ -75,7 +75,7 @@ For at least one subclass:
 
 ---
 
-Part 5 — Demo Script
+Part 5 - Demo Script
 
 Write a script that:
 
