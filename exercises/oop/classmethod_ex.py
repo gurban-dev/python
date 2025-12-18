@@ -7,23 +7,21 @@ Each end user can be an Admin, Editor, or Viewer.
 Class and static methods will be utilised to manage
 them.
 
-Requirements
-
+Requirements:
 Create a class called User.
 
-Each User has:
-
+Each User has a:
 username
 
 role (one of "admin", "editor", "viewer")
 
 The class should keep track of how many users have been created.
 
-Methods to Implement
-
+Methods to Implement:
 @classmethod def from_string(cls, user_str)
 
 Accepts a string like "alice:admin" and returns a new User instance.
+
 
 @staticmethod def is_valid_role(role)
 
@@ -31,16 +29,18 @@ Returns True if the role is one of "admin", "editor", or "viewer".
 
 Returns False otherwise.
 
+
 @classmethod def total_users(cls)
 
 Returns the total number of created users.
+
 
 def has_access(self)
 
 Returns True if the user is an admin or editor, and False otherwise.
 
-In the main code:
 
+In the main code:
 Try creating users both directly and via from_string().
 
 Print whether each has access (using truthy/falsy evaluation).
@@ -69,26 +69,3 @@ alice has access.
 bob has no access.
 carol has access.
 '''
-
-
-class User:
-  # Class variable to track total users
-  user_count = 0
-
-  def __init__(self, username, role):
-    self.username = username
-    self.role = role.lower()
-
-    # validate role
-    if not User.is_valid_role(self.role):
-      raise ValueError(f"Invalid role: {self.role}")
-
-    # increment count when a new valid user is created
-    User._user_count += 1
-
-  @staticmethod
-  def is_valid_role(role):
-    """Check if role is valid."""
-    valid_roles = {"admin", "editor", "viewer"}
-
-    return role.lower() in valid_roles
