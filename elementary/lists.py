@@ -23,24 +23,25 @@ print(f'type(colours): {type(colours)}\n')
 # What is the data type of each of these elements?
 # Hint: Notice how they all have quotation marks around them.
 
-# Notice that lists always use square brackets [].
+# Notice that lists always have square brackets [].
 # In other programming languages they're called "arrays",
 # but in Python they're called "lists".
 
-for colour in colours:
+# For loop.
+for colour in ['lilac', 'turquoise', 'magenta', 'black']:
   print('colour:', colour)
 print()
 
-for letter in 'wordwoll':
-  print(letter)
+for letter in 'ABC':
+  print('letter:', letter)
 
 # The following Python list has indexes.
 # The first index begins at 0.
 # The first element has an index of 0.
 
 # Indexes:
-#          0        1       2
-pets = ['Kitten', 'Cat', 'Parrot']
+#          0         1       2
+pets = ['Tapirus', 'Cat', 'Parrot']
 
 # Access the element stored at index 0.
 print('\npets[0]:', pets[0])
@@ -55,5 +56,6 @@ print('\npets[2]:', pets[2])
 if pets[1] == 'Cat':
   print('\nThe item at index 1 is \'Cat\'.')
 
+# Check if the last item is equal to 'Parrot'.
 if pets[-1] == 'Parrot':
   print('\nThe item at index -1 is \'Parrot\'.')
