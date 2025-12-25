@@ -1,5 +1,9 @@
 # Task 1 solution
-season = input("What is your favorite season? ")
+season = input("What is your favourite season? ")
+
+print('\nseason:', season)
+
+print('season.lower() == "summer":', season.lower() == "summer", '\n')
 
 if season.lower() == "summer":
   print("Summer is great for swimming!")
@@ -10,16 +14,18 @@ elif season.lower() == "spring":
 elif season.lower() == "autumn" or season.lower() == "fall":
   print("Autumn has the best colors!")
 else:
-  print("That's a cool choice! Every season is unique.")
+  print("That's an interesting choice, but that is not a season.")
 
 
 # Task 2 solution
-age = int(input("How old are you? "))
+age = int(input("\nHow old are you? "))
 
 city = input("What city do you live in? ")
 
 if age >= 13:
-  print("You are a teenager or older.")
+  print("\nYou are a teenager or older.")
 
-if city.lower() == "new york":
-  print("Cool! You live in New York.")
+if city.lower() == "Washington DC":
+  print("You live in Washington DC.")
+else:
+  print("You don't live in Washington DC.")

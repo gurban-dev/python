@@ -77,7 +77,7 @@ print('2 + 2:', 2 + 2)
 # backslash, forms an escape sequence.
 print("\'2\' + \'2\':", '2' + '2')
 
-print(f"\"2\" + \"2\": {'2' + '2'}")
+print(f"\"2\" + \"2\": {"2" + "2"}")
 
 '''
 Putting a newline escape sequence at the beginning of the
