@@ -37,7 +37,7 @@ print('bool(is_hot):', bool(is_hot), '\n')
 # if-elif-else statement
 # Notice how only one of these conditions can be True at
 # the same time which is why if "is_hot" evalutes to True,
-# Python will not check the condition on line 47. It'll
+# Python will not check the condition on line 45. It'll
 # move on to the next part of the program.
 if is_hot:
 	print("It's a hot day.")
@@ -51,7 +51,7 @@ else:
 is_rainy = False
 
 # The "and" keyword makes sure that both
-# conditions to its left and to its  right
+# conditions to its left and to its right
 # evaluate to True before entering the block.
 if is_cold and is_rainy:
   print('\nIt\'s cold and rainy.')
@@ -71,11 +71,15 @@ if is_hot or is_rainy:
 # are independent of each other, meaning both can be true 
 # at the same time. Each condition is evaluated separately.
 
-developed_country = True
-lacks_crude_oil = False
+developed_country = False
+has_crude_oil = True
 
 if developed_country:
-  print("\nInflation is high! Prices are rising quickly.")
+  print("\nThe country ranks highly on the human development index report.")
+else:
+  print("\nThe country is still developing.")
 
-if lacks_crude_oil:
-  print("\nDoes not have crude oil.")
+if has_crude_oil:
+  print("\nThe country has crude oil.")
+else:
+  print("\nThe country does not have crude oil.")

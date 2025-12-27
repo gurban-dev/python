@@ -10,8 +10,8 @@ venice_upper_case = "VENICE"
 print('venice_lower_case == venice_upper_case:',
       venice_lower_case == venice_upper_case)
 
-# "1" == 1 evaluates to False because Python first
-# compares the data types.
+# "1" == 1 evaluates to False because Python first compares
+# the data types.
 
 # It determines that "1" is a string (text), while 1 is
 # an integer (number), and values of different types
