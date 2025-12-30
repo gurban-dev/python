@@ -33,3 +33,13 @@ if fruits[0] == "apple":
   print("The first fruit is apple!")
 else:
   print("The first fruit is not apple.")
+
+# Add an item to the list.
+fruits.append("persimmon")
+
+print('fruits:\n', fruits)
+
+# Remove an item from the list.
+fruits.remove("apple")
+
+print('fruits:\n', fruits)
