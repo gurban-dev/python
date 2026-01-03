@@ -6,14 +6,16 @@ video_game = input('Do you prefer roblox or age of empires? ').lower()
 
 # An empty string has a length of zero because it does
 # not contain any characters.
-print(f'\nlen({video_game}): {len(video_game)}')
+print(f'\nlen("{video_game}"): {len(video_game)}')
 
-print(f'\n{video_game} == \'fornite\': {video_game == "roblox"}')
+print('\nvideo_game:', video_game)
 
-print(f'{video_game} == \'age of empires\': {video_game == "age of empires"}')
+print(f'video_game == \'roblox\': {video_game == 'roblox'}')
 
-# If the condition on line number 20 evaluates to
-# True, then the condition on line number 22 will
+print(f'video_game == \'age of empires\': {video_game == 'age of empires'}')
+
+# If the condition on line number 22 evaluates to
+# True, then the condition on line number 24 will
 # not be evaluated.
 
 # Only one of the print statements will be executed.

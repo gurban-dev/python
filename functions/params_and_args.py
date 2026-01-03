@@ -4,8 +4,8 @@ add() is a user-defined function.
 Parameters are the variables listed inside the
 parentheses in a function header.
 
-They act as placeholders for the arguments that
-will be passed to the function.
+They act as placeholders for the arguments that will
+be passed to the function.
 
 Arguments are the actual values passed to a function
 when it is called. These values are assigned to the
@@ -13,8 +13,9 @@ parameters defined in the function header.'''
 
 # "first_num" and "second_num" are parameters.
 def add(
-    first_num: int | float,
-    second_num: int | float) -> int | float:
+  first_num: int | float,
+  second_num: int | float) -> int | float:
+
   print('first_num:', first_num)
   print('second_num:', second_num, '\n')
 
@@ -46,6 +47,6 @@ in an actual print statement.
 Since 2 is being added with 2.0, the return value
 is a floating point number rather than an integer.
 
-In Python, the sum of an integer and float is always
-a float.'''
+In Python, the sum as well as the product of an
+integer and float is always a float.'''
 print(f'add(num1, num2): {add(num1, num2)}')
