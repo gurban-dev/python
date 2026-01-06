@@ -2,10 +2,10 @@
 Python has a built-in function named print().
 
 This function accepts an argument and prints it
-to the screen.
+to the terminal.
 
-The open and closed parentheses pair () tells
-us that we are working with a function.
+The open and closed parentheses pair () indicates that
+a function is being called/invoked.
 
 "Hello World!" is a string literal and it is being
 passed as an argument to the print() function.
@@ -107,4 +107,4 @@ than a strict character limit for the print() function.'''
 
 # E.g. Repeating a character by a billion times and then
 #      attempting to print it to the screen.
-# print('*' * 1_000_000_000)
+print('*' * 1_000_000_000)

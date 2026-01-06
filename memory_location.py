@@ -2,12 +2,15 @@
 # string object 'Liechtenstein'.
 name_of_country: str = 'Liechtenstein'
 
-# Assigning "same_country" to "name_of_country" does NOT create a new string object.
-# Both variables point to the same string in memory.
+# Assigning "name_of_country" to "same_country" does not
+# create a new string object.
+
+# Both variables point to the same string object that exists
+# in memory.
 same_country: str = name_of_country
 
 # Display the memory location/address of the string object that
-# "name_of_country" references.
+# 'name_of_country' and 'same_country' reference.
 print('hex(id(name_of_country)):', hex(id(name_of_country)))
 
 print('\nhex(id(same_country)):', hex(id(same_country)))
@@ -69,8 +72,7 @@ lst2 = lst1[1:]
 # unless a new value is assigned to them.
 
 print('\nhex(id(lst1)):', hex(id(lst1)))
-
-print('\nhex(id(lst2)):', hex(id(lst2)))
+print('hex(id(lst2)):', hex(id(lst2)))
 
 print('\nlst1:', lst1)
 print('lst2:', lst2)
@@ -97,12 +99,16 @@ nested_list = [[0]]
 # The return value from slicing a list is a shallow copy.
 shallow_copy_of_nested_list = nested_list[:]
 
+print('\nnested_list:', nested_list)
+print('shallow_copy_of_nested_list:', shallow_copy_of_nested_list)
+
 # Mutating an item located inside the inner list doesn't
 # create a new object with its own distinct memory address.
-shallow_copy_of_nested_list[0][0] = 0
+shallow_copy_of_nested_list[0][0] = 1
 
 print('\nhex(id(nested_list[0][0])):', hex(id(nested_list[0][0])))
-print('hex(id(shallow_copy_of_nested_list[0][0])):', hex(id(shallow_copy_of_nested_list[0][0])))
+print('hex(id(shallow_copy_of_nested_list[0][0])):',
+      hex(id(shallow_copy_of_nested_list[0][0])))
 
 print('\nshallow_copy_of_nested_list:', shallow_copy_of_nested_list)
 
@@ -112,4 +118,5 @@ print('\nshallow_copy_of_nested_list:', shallow_copy_of_nested_list)
 shallow_copy_of_nested_list[0] = [0]
 
 print('\nhex(id(nested_list[0])):', hex(id(nested_list[0])))
-print('hex(id(shallow_copy_of_nested_list[0])):', hex(id(shallow_copy_of_nested_list[0])))
+print('hex(id(shallow_copy_of_nested_list[0])):',
+      hex(id(shallow_copy_of_nested_list[0])))

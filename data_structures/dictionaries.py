@@ -64,9 +64,9 @@ The values can also be of different data types.
 # 'abc' is a string.
 # 999 is an integer.
 # (3, 6, 9) is a tuple.
-mixed_up = { 'abc': 1, 999: 'yada yada', (3, 6, 9): [3, 6, 9] }
+mixed_up = {'abc': 1, 999: 'yada yada', (3, 6, 9): [3, 6, 9]}
 
-print(f'\nmixed_up: {mixed_up}\n')
+print(f'\nmixed_up: {mixed_up}')
 
 # In some programs, an empty dictionary is
 # initialised for the purpose of inserting
