@@ -28,6 +28,7 @@ Anytime you see a name followed by parentheses,
 you can conclude that it is a function.
 
 print()
+type()
 input()
 range()
 '''
