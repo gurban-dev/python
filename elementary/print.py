@@ -28,7 +28,7 @@ print(12345)
 # change what's inside.
 
 # In this case, 'Alexander' is being put into a jar labeled
-# "given_name".
+# 'given_name'.
 given_name = 'Alexander'
 
 # The print() function is accepting two arguments:

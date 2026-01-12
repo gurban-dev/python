@@ -24,7 +24,7 @@ class BankAccount():
   # Selector/getter method.
   def get_balance(self):
     return self.__balance
-  
+
   # Mutator/setter method.
   def deposit(self, amount):
     # += is called the augmented assignment operator.

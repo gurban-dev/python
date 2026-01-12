@@ -77,6 +77,8 @@ print('2 + 2:', 2 + 2)
 # backslash, forms an escape sequence.
 print("\'2\' + \'2\':", '2' + '2')
 
+# The lowercase f that precedes the quotation marks
+# tells us that it is the start of an f-string.
 print(f"\"2\" + \"2\": {"2" + "2"}")
 
 '''
@@ -107,4 +109,4 @@ than a strict character limit for the print() function.'''
 
 # E.g. Repeating a character by a billion times and then
 #      attempting to print it to the screen.
-print('*' * 1_000_000_000)
+# print('*' * 1_000_000_000)

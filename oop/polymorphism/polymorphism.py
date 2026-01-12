@@ -87,7 +87,7 @@ def start_journey(transport):
   # Think about which move() method will be invoked.
   transport.move()
 
-  print("-" * 40)
+  print("-" * 55)
 
 def main():
   # List data structure.

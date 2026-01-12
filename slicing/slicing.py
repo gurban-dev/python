@@ -3,16 +3,16 @@
 
 # To obtain a slice of a list, an expression
 # must be written in the following format:
-# list_name[start_index : end_index]
+# list_name[start_index:stop_index]
 
 """
 "start_index" is the index of the first element to
-include in the slice, and "end_index" is the index
+include in the slice, and "stop_index" is the index
 marking the end of the slice.
 
 The expression returns a list containing a copy of the
 elements from "start_index" up to (but not including)
-"end_index".
+"stop_index".
 """
 
 days_of_the_week: list[str] = [
@@ -40,8 +40,8 @@ print(f'mid_days: {mid_days}')
 
 # Notice how if the start and end indexes aren't explicitly
 # included, then the internally, 0 is assigned to the start_index
-# and the length of the list is assigned to the end_index.
-print(f'\ndays_of_the_week[0:en(days_of_the_week)]]: '
+# and the length of the list is assigned to the stop_index.
+print(f'\ndays_of_the_week[0:len(days_of_the_week)]]: '
       f'{days_of_the_week[0:len(days_of_the_week)]}')
 
 # How can everything after the first index be included in the slice?

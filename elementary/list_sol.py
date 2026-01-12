@@ -5,7 +5,7 @@
 # in memory.
 # Indexes:
 #         0 or -5   1 or -4   2 or -3  3 or -2   4 or -1
-fruits = ["apple", "banana", "cherry", "mango", "orange"]
+fruits = ["Apple", "banana", "cherry", "mango", "orange"]
 
 # Print the first fruit.
 print("First fruit:", fruits[0])
@@ -18,8 +18,10 @@ print("\nAll fruits in the list:")
 for fruit in fruits:
   print(fruit)
 
+print('\ntype(fruits[0]):', type(fruits[0]), '\n')
+
 # Check if the first fruit is "apple".
-if fruits[0] == "apple":
+if fruits[0].lower() == "apple":
   print("The first fruit is apple!")
 else:
   print("The first fruit is not apple.")
@@ -37,9 +39,10 @@ else:
 # Add an item to the list.
 fruits.append("persimmon")
 
-print('fruits:\n', fruits)
+print('fruits:\n', fruits, sep='')
 
 # Remove an item from the list.
+# Is "apple" still in the list?
 fruits.remove("apple")
 
 print('fruits:\n', fruits)
