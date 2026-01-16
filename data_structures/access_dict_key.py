@@ -4,7 +4,7 @@ employees = {
   103: {"name": "John", "years_at_company": 1}
 }
 
-# -Get the first employee's record.
+# Get the mapping with the key 101.
 # The following line returns:
 # {"name": "Alexander", "years_at_company": 2}
 first_employee = employees[101]

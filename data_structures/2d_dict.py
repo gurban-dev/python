@@ -21,11 +21,13 @@ print('\ngoldfish_dict:', goldfish_dict)
 print('\ngoldfish_dict[\'aggressiveness\']:',
       goldfish_dict['aggressiveness'])
 
-# -The .items() method returns the key-value pair on the current
-# iteration in the dictionary.
+# The .items() method returns each key-value pair in the dictionary.
 for key, value in species_data.items():
   print(f"\nSpecies: {key}")
 
+  # 'value' is itself a dictionary, e.g.,
   # {"aggressiveness": 1, "survival_rate": 0.95}
+
+  # Iterate over its key-value pairs.
   for key, value in value.items():
-    print(f" - {key}: {value}")
+      print(f" - {key}: {value}")
