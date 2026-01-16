@@ -12,8 +12,8 @@ social_security_beneficiary = (
   False
 )
 
-# social_security_beneficiary is a variable that
-# references the tuple that exists in memory.
+# 'social_security_beneficiary' is a variable that
+# references the tuple object that exists in memory.
 
 print('type(social_security_beneficiary):',
   type(social_security_beneficiary))
@@ -21,12 +21,18 @@ print('type(social_security_beneficiary):',
 print('\nsocial_security_beneficiary:',
   social_security_beneficiary)
 
-# Make an attempt to mutate the first
-# element of the tuple.
+# Make an attempt to mutate the first element of
+# the tuple. Notice how the same integer value
+# is being assigned.
 # social_security_beneficiary[0] = 111223333
 
 # If I am assigning the same exact integer, why
 # is this illegal?
+
+# Answer:
+# Python doesn't care about the value of what you're
+# assigning, it simply forbids assignment to tuple
+# index.
 
 num1: int = 10
 num2: int = 10

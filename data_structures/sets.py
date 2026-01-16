@@ -11,6 +11,11 @@
 # items.
 items = {1.0, 1.0, 1, 1, 'Venice', 'Venice'}
 
+# In the case of 1.0 and 1, the set considers these to
+# duplicates.
+
+# Since 1.0 was written first in the set, 1 will be excluded.
+
 # Also, remember that sets do not supporting indexing.
 # Unlike a list, you cannot access the first element
 # in a set by doing the following:
@@ -28,6 +33,9 @@ print('items:', items)
 # order to the set.
 items.add('Istanbul')
 
-print('items:', items)
+# Notice that if you run this program multiple times
+# you will eventually see that the items in the set
+# are not outputted in the same order.
 
-nums = []
+# This is because unlike lists, sets are unordered.
+print('items:', items)

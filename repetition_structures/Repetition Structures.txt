@@ -17,9 +17,9 @@ email address and password).
 
 Syntax:
 
-while condition:
-  statement
-  statement
+while <condition>:
+  <statement>
+  <statement>
 
 The indented statements are executed repeatedly while the condition
 is true.
@@ -34,9 +34,9 @@ that repeat a known number of times.
 
 Syntax:
 
-for variable in [value1, value2, ...]:
-  statement
-  statement
+for <variable> in [value1, value2, ...]:
+  <statement>
+  <statement>
 
 [value1, value2, ...] is an iterable, a collection of items the loop can
 process one by one.

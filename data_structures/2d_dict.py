@@ -9,7 +9,9 @@ species_data = {
 
 print('species_data["Goldfish"]:', species_data["Goldfish"])
 
-print('\nspecies_data["Goldfish"][\'aggressiveness\']:',
+# Notice that whenever you access a key in a dictionary, you
+# must put square brackets around it.
+print('\nspecies_data["Goldfish"]["aggressiveness"]:',
       species_data['Goldfish']['aggressiveness'])
 
 goldfish_dict = species_data["Goldfish"]
@@ -19,6 +21,8 @@ print('\ngoldfish_dict:', goldfish_dict)
 print('\ngoldfish_dict[\'aggressiveness\']:',
       goldfish_dict['aggressiveness'])
 
+# -The .items() method returns the key-value pair on the current
+# iteration in the dictionary.
 for key, value in species_data.items():
   print(f"\nSpecies: {key}")
 
