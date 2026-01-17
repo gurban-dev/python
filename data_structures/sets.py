@@ -1,3 +1,6 @@
+# A set is a mutable, unordered collection of unique elements
+# that does not support indexing.
+
 # The built-in set data structure can be declared with
 # the set() function so long as a list is passed to it
 # as an argument.
@@ -11,32 +14,26 @@ items = set(list([1, 1, 'Venice', 'Venice']))
 # values.
 items = {1.0, 1.0, 1, 1, 'Venice', "Venice"}
 
-# In the case of 1.0 and 1, the set considers these to be
-# duplicates because they are equal to each other:
-# 1 == 1.0 returns True
+# Sets keep only unique elements.
+# Two values are considered the same if:
+#   - their hashes are equal, and
+#   - they compare equal with ==
 
-# Since 1.0 is encountered first when the set is constructed, it is
-# added to the set.
+# Since 1 == 1.0 is True and hash(1) == hash(1.0),
+# the set treats them as duplicates and keeps only one.
 
-# When 1 is later encountered, Python sees that it has the same hash
-# as 1.0. A hash is an integer value produced by the hash() function
-# and is used by hash-based collections (like sets and dictionary keys)
-# to quickly group and look up values.
+# Strings with the same content are also equal,
+# so 'Venice' and "Venice" collapse into one element.
 
-# Since 1 and 1.0 produce the same hash and the equality check
-# (1 == 1.0) evaluates to True, Python treats 1 as a duplicate
-# of 1.0 and discards it.
-
-# Also, remember that sets do not supporting indexing.
-# Unlike a list, you cannot access the first element
-# in a set by doing the following:
+# Also, remember that since sets do not supporting indexing,
+# you cannot access the first element in a set by doing the
+# following:
 # print('items[0]:', items[0])
 
 # It is not possible to obtain the first element from a set because
 # sets are unordered and have no defined iteration order.
 
-# If you need to access elements via indexing, stick
-# with lists.
+# If you need to access elements via indexing, stick with lists.
 
 print('items:', items)
 

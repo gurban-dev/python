@@ -13,26 +13,25 @@ phonebook = {
 }
 
 """
-In an f-string, make sure the f-string uses the opposite type of
-quotes (e.g., use double quotes outside if you use single quotes
-inside).
+Inside of an f-string, make sure the opposite type of quotation
+marks are used than the one that declared the f-string (e.g., use
+double quotes outside if you use single quotes inside).
 
 However, within the f-string's curly braces, it's legal to use
-the same quote type.
+the same quotation mark type.
 """
-print(f"\nphonebook['Chris']: {phonebook['Chris']}")
+print(f"phonebook['Chris']: {phonebook["Chris"]}")
 
 name = 'Thomas'
-age = 300
+age = 30
 
 print(f'Hello, my name is {name}. I am {age} years old.')
 
 # Remember that string comparisons are case sensitive.
-# The expression phonebook['chris'] will not locate the
-# key 'Chris' in the dictionary.
+# The expression phonebook['chris'] will fail to map to
+# a value because the key 'Chris' exists in the dictionary
+# as opposed to 'chris'.
 # print(f'phonebook[\"chris\"]: {phonebook["chris"]}')
-
-# print(f'phonebook[Chris]: {phonebook[Chris]}')
 
 # There is no such key as '555-3333' in the phonebook
 # dictionary, so a KeyError exception is raised.
@@ -64,8 +63,8 @@ dictionary_name[key] = value
 '''
 print(f'\nphonebook: {phonebook}')
 
-# Adding a new key-value pair or element
-# to the phonebook dictionary.
+# The subsequent line demonstrates how a new key-value
+# pair can be added to the 'phonebook' dictionary.
 phonebook['Joe'] = '555-0123'
 
 print(f'\nphonebook: {phonebook}')
@@ -101,13 +100,13 @@ else:
 
 # Use the len() function to obtain the number
 # of elements inside of a dictionary:
-print(f'\nNumber of elements in phonebook: {len(phonebook)}')
+print(f'\nNumber of contacts in the phonebook: {len(phonebook)}\n')
 
 for given_name in phonebook:
   print(f'key: {given_name}, phonebook[\'{given_name}\']: {phonebook[given_name]}')
 
 # Delete all of the elements in a dictionary by
-# calling the clear() method on the dictionary.
+# calling the .clear() method on the dictionary.
 phonebook.clear()
 
 print(f'\nphonebook: {phonebook}')
@@ -131,7 +130,7 @@ dictionary_name.get(key, default)
 is not found.
 '''
 print('\nphonebook.get(\'Joe\', \'Entry not found\'):',
-  phonebook.get('Joe', 'Entry not found'))
+      phonebook.get('Joe', 'Entry not found'))
 
 # Create a list for the employee names.
 # Then create another list for the employee phone numbers.

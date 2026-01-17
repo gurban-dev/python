@@ -20,7 +20,7 @@ Dictionaries
 Sets
 - Unordered collections of unique elements
 - No indexing or .append()
-- Set operations: equality, difference, union
+- Set operations: equality, difference
 
 for Loops
 - Iterating over lists and dictionaries
@@ -32,8 +32,8 @@ Type Errors & Illegal Operations
 
 
 Goal:
-Practice Python data structures and iteration, and learn what can't
-be done.
+Practice Python data structures and iteration, and learn what operations
+are illegal.
 
 
 Starter Code:

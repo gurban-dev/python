@@ -40,18 +40,8 @@ print("social_security_beneficiary[0]:", social_security_beneficiary[0])
 # assigning, it simply forbids assignment to an index
 # inside of a tuple.
 
-# Similar to tuples, integers and strings are also
+# Similar to tuples, strings, integers and floats are also
 # immutable in Python.
-
-num1: int = 10
-num2: int = 10
-num3: int = 10.0
-
-# Print the memory addresses that these three variables
-# reference.
-print('\nhex(id(num1)):', hex(id(num1)))
-print('hex(id(num2)):', hex(id(num2)))
-print('hex(id(num3)):', hex(id(num3)))
 
 str1: str = "a"
 str2: str = "a"
@@ -60,3 +50,16 @@ str3: str = "A"
 print('\nhex(id(str1)):', hex(id(str1)))
 print('hex(id(str2)):', hex(id(str2)))
 print('hex(id(str3)):', hex(id(str3)))
+
+int1: int = 10
+int2: int = 10
+float1: float = 10.0
+float2: float = 10.0
+
+# Print the memory addresses that these three variables
+# reference.
+print('hex(id(int1)):', hex(id(int1)))
+print('hex(id(int2)):', hex(id(int2)))
+
+print('\nhex(id(float1)):', hex(id(float1)))
+print('hex(id(float2)):', hex(id(float2)))
