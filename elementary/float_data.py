@@ -5,7 +5,9 @@
 100.2
 
 # Question:
-# How can you tell that these are all floats?
+# How can you tell that these are all float literals?
+
+
 
 # Answer:
 # They are all numbers containing decimal points

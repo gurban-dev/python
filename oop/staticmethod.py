@@ -35,7 +35,7 @@ print('MathUtils.add(10, 10):', MathUtils.add(10, 10))
 # Instantiating the MathUtils class in spite of the
 # fact that it doesn't have a constructor method.
 
-# If you do not explicitly define an __init__ method
+# If you do not explicitly define an __init__() method
 # (which serves as the constructor in Python) for a
 # class, Python will automatically provide a default
 # constructor.
