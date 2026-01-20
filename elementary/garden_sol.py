@@ -2,7 +2,9 @@
 🌸 MAGIC GARDEN POINTS GAME - SOLUTION 🌸
 
 You're taking care of a magical garden!
-Let's keep track of your magic points as you do different activities.
+
+Let's keep track of your magic points as you do
+different activities.
 """
 
 # Start with 50 magic points.
