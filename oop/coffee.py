@@ -3,18 +3,18 @@ A class is a blueprint for an object that will
 have state and behaviour.
 
 The state of an object is defined with instance
-variables.
+variables and class variables.
 
 The behaviour of an object is defined with methods
 that are defined within the class.
 
-Unlike Java, the name of the Python file isn't
-required to match the name of the class declared
-inside of it.
+Unlike Java, the name of a Python file isn't required
+to match the name of the class declared inside of it.
 
 Although not a strict requirement, it is conventional
 practice to make the name of a file the same as the
-class declared in it, but written in snake case:
+class declared in it, but written in the snake case
+naming convention.
 
 Class name (pascal naming convention):
 CoffeeMachine
@@ -44,7 +44,7 @@ class Coffee:
   (__) are known as dunder methods in Python.'''
   def __init__(self, bean_type):
     '''
-    Instance variable/data member
+    Instance variable/data member.
 
     Prepending "bean_type" with "self." makes it
     clear that the following is an instance variable.'''

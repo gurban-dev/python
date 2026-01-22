@@ -1,21 +1,34 @@
 from textwrap import dedent
+
+# The datetime class is being imported from the datetime module.
+
+# from <module_name> import <class_name>
 from datetime import datetime
 
 # Get the current date and time.
 current_datetime = datetime.now()
+
+print('\ncurrent_datetime:', current_datetime)
 
 # Extract the day of the month
 day = current_datetime.day
 
 # Determine the appropriate suffix for the day.
 if 11 <= day <= 13:
-    suffix = "th"
+	suffix = "th"
 else:
-    suffix = {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
+  # {1: "st", 2: "nd", 3: "rd"} is a dictionary.
+  
+	# If the key returned by day % 10 does not exist in the dictionary,
+  # the .get() method returns "th" as the default value.
+  suffix = {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
 
 print('day:', day, '\n')
 
-# Format the date with the suffix
+# Use the strftime() method to format the datetime object as
+# a string.
+
+# '%B' is just the entire month name.
 formatted_date = f"{day}{suffix} of {current_datetime.strftime('%B')}"
 
 '''
