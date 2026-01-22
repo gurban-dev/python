@@ -1,0 +1,29 @@
+Establishing a virtual environment on a Windows OS:
+Create a virtual environment folder in the directory where all of your
+programs are:
+python -m venv .venv
+
+It is a good practice to have the name of the virtual environment folder
+begin with a dot so that it is not committed to a Git repository.
+
+Navigate to the parent folder of .venv in a terminal:
+cd path\to\your\project\.venv
+
+Install the virtual environment:
+.\.venv\Scripts\Activate.ps1
+
+With .venv activated, update pip (the Python package manager) inside the
+virtual environment:
+python -m pip install --upgrade pip
+
+Install Jupyter and ipykernel inside .venv:
+python -m pip install jupyter ipykernel
+
+Register the kernel:
+python -m ipykernel install --user --name .venv --display-name "Python .venv"
+
+Launch Jupyter Notebook:
+juptyer notebook
+
+Click on the "Kernel" button, then hover over "Change kernel", and select:
+.venv
