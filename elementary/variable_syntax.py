@@ -7,7 +7,7 @@
 # E.g.
 given_name = 'Alexander'
 
-# How do I assign the value 115 to a variable named "age"?
+# How can the integer literal 115 be assigned to a variable named "age"?
 
 age = 115
 
