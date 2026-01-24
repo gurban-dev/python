@@ -1,14 +1,16 @@
 # Syntax for variable declaration:
 # <variable_name> = <value_being_assigned_to_the_variable>
 
-# The variable name is always on the left side
-# of the assignment operator.
+# The variable name is always on the left side of the
+# assignment operator.
 
-# The data inputted by the end user is returned by the
-# input() function as a string.
+# The input() function temporarily pauses the program and
+# waits until the user clicks the Enter button on their
+# keyboard. After this, the data inputted by the user is
+# returned by the input() function as a string.
 
-# That data returned by the input() function is then
-# assigned to the variable named "".
+# The data returned by the input() function is then
+# assigned to the variable named 'given_name'.
 given_name = input('Please input your given name: ')
 
 # Two arguments being passed to the print() function:
@@ -19,22 +21,6 @@ given_name = input('Please input your given name: ')
 # It adds a newline depending on where it is put.
 print('\ngiven_name:', given_name)
 
-# What data on the next line is being stored?
-# Answer: The value that is assigned to the variable
-#         is the data being stored.
-given_name = 'William Shakespeare'
-
-# The assignment operator (=) is in
-# between the left and right sides.
-# left_side = right_side
-
-print('\ngiven_name:', given_name)
-
-# Python's built-in input() function will ask the end
-# user to input a particular piece of information.
-
-# The input() function returns that information as a
-# string by default.
 num1 = input('\nPlease input an integer: ')
 
 num2 = input('\nPlease input another integer: ')

@@ -1,8 +1,10 @@
 '''
 Concepts:
 The print() function.
+The f-string.
 String variables.
 Integer variables.
+Float variables.
 
 A customer is ordering their main course at a restaurant.
 
@@ -11,13 +13,18 @@ Stores the customer's given name in a variable.
 
 Stores the main course they want to order in another variable.
 
-Stores the amount of the main course they want to order as an integer.
+Stores the quantity of the main course they want to order as an integer.
+
+Stores the total_cost of the main course that they are ordering as
+a float.
 
 Prints a message in the following format:
-"[customer_name] placed [amount] order of [main_course]."
+"[customer_name] placed [quantity] order of [main_course]."
 
-Example outputs:
+"The total cost was [total_cost]".
+
+Example output:
 Alice placed 1 order of Spanish seafood paella.
 
-Alice placed 2 orders of lamb chops.
+The total cost was 15.75 dollars.
 '''

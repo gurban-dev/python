@@ -1,39 +1,38 @@
-# 'Alexander' is a string literal because
-# it is surrounded by quotation marks.
-student_name = 'Alexander'
+# A variable is name that holds a reference to an
+# object that exists in memory.
 
-# The id() function returns a unique identifier for
-# an object, which is often its memory address in
-# CPython (the standard Python implementation).
-print('id(student_name):', id(student_name))
+# 'Alexander the Great' is a string literal because
+# it is surrounded by quotation marks.
+famous_leader = 'Alexander the Great'
+
+print('famous_leader:', famous_leader)
 
 # Assigning a string literal to a variable creates a
 # variable that has a reference to a string object.
 
-# The variable student_name on line 3 is a variable
+# The variable 'famous_leader' on line 6 is a variable
 # that has a reference to a string object because it
 # was assigned a string literal.
 
-tutor_name = "Dennis"
-
 # Python's built-in type() function reveals the data
-# type of variables.
+# type of a variable.
 
 # Arguments in functions are separated by commas (,), and
 # by default, are outputted with spaces between them.
-print('type(student_name):', type(student_name))
+print("\ntype('Alexander the Great'):", type('Alexander the Great'))
 
 # Literals can also be passed to the type() function
 # as arguments.
-print('\ntype(\"Dennis\"):', type("Dennis"))
+print('\ntype(famous_leader):', type(famous_leader))
 
 '''
-= (called the equals sign in mathematics) is
-called the assignment operator in programming.
+= (called the equals sign in mathematics) is called
+the assignment operator in programming.
 
 The assignment operator (=) does not check equality.
+'''
 
-It is used for assigning data to a variable:'''
+# It is used for assigning data to a variable:
 flavour = 'vanilla'
 
 """
@@ -41,10 +40,10 @@ flavour = 'vanilla'
 is a string literal because it is surrounded by
 quotation marks on its left and right sides.
 
-When you see data surrounded by quotes (single or
+When you see content surrounded by quotes (single or
 double quotes), you immediately know that you are
 working with a string data type.
 
-Since flavour is assigned the string literal
-'vanilla' it is a string variable.
+Since the variable 'flavour' is assigned the string
+literal 'vanilla' it is a string variable.
 """

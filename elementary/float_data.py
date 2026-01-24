@@ -1,6 +1,6 @@
 -1.5
 
-0.0
+0.1
 
 100.2
 
@@ -10,8 +10,8 @@
 
 
 # Answer:
-# They are all numbers containing decimal points
-# and without quotation marks ("", '').
+# They are all numbers without quotation marks ("", '') and
+# contain decimal points.
 
 two_point_zero = 2.0
 

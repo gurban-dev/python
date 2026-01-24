@@ -30,7 +30,6 @@ Type Errors & Illegal Operations
 - Understanding common Python exceptions (TypeError, AttributeError)
 - Recognising which operations are valid for each data structure
 
-
 Goal:
 Practice Python data structures and iteration, and learn what operations
 are illegal.

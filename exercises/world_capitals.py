@@ -199,6 +199,8 @@ COUNTRIES = {
   "Zimbabwe": "Harare"
 }
 
+print('COUNTRIES["Tunisia"]', COUNTRIES["Tunisia"])
+
 def normalize_answer(answer):
   """Normalize answer for comparison"""
   return answer.lower().strip().replace("'", "'")

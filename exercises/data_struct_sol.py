@@ -45,7 +45,7 @@ for student, course_set in completed_courses.items():
   print(f"{student} has completed: {course_list}")
 
   # Print how many courses each student has completed.
-  print(f"{student} has completed {len(course_set)} courses")
+  print(f"{student} has completed {len(course_set)} courses.")
 
 print("\nTASK 4: SETS")
 
@@ -55,9 +55,10 @@ all_courses_set = set(courses)
 # Check for each student if they completed all courses or not.
 for student, course_set in completed_courses.items():
   if course_set == all_courses_set:
-    print(f"{student} has completed all courses")
+    print(f"{student} has completed all courses.")
   else:
     # Show which courses the student is missing.
+    
     missing = all_courses_set - course_set
 
     print(f"{student} is missing: {', '.join(missing)}")

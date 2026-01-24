@@ -11,7 +11,7 @@ An effective way to distinguish a function from a
 method in Python is to look at how it's called in
 the source code.
 
-Functions are called as: function(argument)
+Functions are called as: function_name()
 
 E.g.
 print("Hello World!")
