@@ -18,7 +18,13 @@ print(f'video_game == \'age of empires\': {video_game == 'age of empires'}')
 # True, then the condition on line number 24 will
 # not be evaluated.
 
-# Only one of the print statements will be executed.
+# Only one of the print statements in the if-elif-else statement
+# below will be executed.
+
+# The flow of this Python program enters the block associated
+# with the if statement on line 27 and executes the source code
+# inside of the block if the condition on line 27
+# (video_game == 'roblox') evaluates to True.
 if video_game == 'roblox':
   print('\nYou selected roblox.')
 elif video_game == 'age of empires':
