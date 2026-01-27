@@ -1,10 +1,18 @@
-# The Automobile class holds general data
-# about an automobile in inventory.
+# Suppose a program needed to store different types of vehicles.
+
+# Cars, trucks, and motorcycles all share common attributes:
+# make, model, mileage, and price.
+
+# Writing separate classes for each would duplicate code.
+
+# Automobile is the parent (base) class.
+# It defines attributes and methods that are common to all types
+# of automobiles.
 
 class Automobile:
-	# The __init__() method is explicitly passed arguments
-	# for the make, model, mileage, and price. It initialises
-	# the data attributes with the values from its parameters.
+	# The __init__() method is explicitly passed arguments for
+	# the make, model, mileage, and price. It initialises the
+	# data attributes with the values from its parameters.
 
 	def __init__(self, make, model, mileage, price):
 		self.make = make
@@ -13,9 +21,15 @@ class Automobile:
 		self.price = price
 
 	# The following methods are mutators for the
-	# class's data attributes.
+	# class' data attributes.
 
 	def set_make(self, make):
+		# How can it be concluded that 'self.make' is an
+		# instance variable?
+
+		# Answer:
+		# The 'self' keyword refers to the current instance of the class,
+		# so attributes attached to 'self' belong to that specific object.
 		self.make = make
 
 	def set_model(self, model):
@@ -42,18 +56,36 @@ class Automobile:
 	def get_price(self):
 		return self.price
 
+# The problem that inheritance solves:
+# Car is a type of Automobile, so it should reuse Automobile's
+# behavior instead of re-implementing it.
+
+# A Car is an Automobile, but with additional features.
+
+# Explain:
+# A Car automatically inherits all attributes and methods from
+# a generic automobile.
+
+# A Car can have additional attributes that a generic automobile
+# doesn't have.
+
+# A Car can override the behaviour of a generic automobile.
 
 # The Car class represents a car. It is a subclass
 # of the Automobile class.
 class Car(Automobile):
-	# The __init__() method accepts parameters for the
-	# car's make, model, mileage, price, and doors.
+	# The __init__() method accepts parameters for the car's make,
+	# model, mileage, price, and doors.
 
 	def __init__(self, make, model, mileage, price, no_of_doors):
+		# super() calls the parent class' method, ensuring the Automobile
+		# part of the object is initialised correctly.
+		super().__init__(make, model, mileage, price)
+
 		# Call the superclass' __init__() method and pass
 		# the required arguments. Note that we also have
 		# to pass "self" as the first argument.
-		Automobile.__init__(self, make, model, mileage, price)
+		# Automobile.__init__(self, make, model, mileage, price)
 
 		# Initialise the "no_of_doors" attribute.
 		self.no_of_doors = no_of_doors
@@ -91,7 +123,7 @@ the parameter names are not included. That's why the arguments
 being passed are positional arguments.
 '''
 
-toyota_camry_se_car = Car(
+car = Car(
 	make='Toyota',
 	model='Camry SE',
 	mileage=45200,
@@ -104,5 +136,10 @@ toyota_camry_se_car = Car(
 # print('toyota_camry_se_auto.get_no_of_doors():',
 # 			toyota_camry_se_auto.get_no_of_doors())
 
-print('toyota_camry_se_car.get_no_of_doors():',
-			toyota_camry_se_car.get_no_of_doors())
+print('car.get_no_of_doors():',
+			car.get_no_of_doors())
+
+# The .get_make() method is not defined in the Car class. It is defined in
+# the Automobile class, but it still works on Car objects because Car
+# inherits the attributes and method from its parent class Automobile.
+print('\ncar.get_make():', car.get_make())

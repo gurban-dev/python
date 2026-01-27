@@ -56,9 +56,9 @@ class Coffee:
 
   '''
   Python does not support true method overloading
-  for __init__ (or any method) in the way that
+  for __init__() (or any method) in the way that
   programming languages like Java or C++ do. If you
-  define multiple __init__ methods within a single
+  define multiple __init__() methods within a single
   class, only the last one defined will be used.'''
 
   '''

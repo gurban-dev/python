@@ -7,8 +7,8 @@ to the terminal.
 The open and closed parentheses pair () indicates that
 a function is being called/invoked.
 
-"Hello World!" is a string literal and it is being
-passed as an argument to the print() function.
+"Hello World!" is a string literal and it is being passed
+as an argument to the print() function.
 
 How is it known that "Hello World!" is a string literal?
 Answer: The quotation marks are hardcoded into the source code.
