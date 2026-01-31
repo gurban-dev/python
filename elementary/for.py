@@ -20,8 +20,6 @@ for i in range(3):
   # This shows which loop number we are on.
   print('i:', i, '\n')
 
-print('')
-
 # The subsequent line is a list data structure:
 # ['Sofiia', 0, 1, 2]
 

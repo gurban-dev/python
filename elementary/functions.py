@@ -1,4 +1,4 @@
-# Think of a function as a resuable block of code.
+# Think of a function as a standalone reusable block of code.
 
 # 'num1' and 'num2' are the parameters that the function
 # accepts.

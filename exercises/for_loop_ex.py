@@ -6,9 +6,9 @@ numbers with different start points, end points, and step
 values.
 
 Tasks:
-Print all numbers from 1 to 20.
+1. Print all numbers from 1 to 20.
 
-Print all even numbers from 2 to 20.
+2. Print all even numbers from 2 to 20.
 
-Print numbers from 10 down to 1.
+3. Print numbers from 10 down to 1.
 '''

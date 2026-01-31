@@ -1,4 +1,10 @@
 '''
+Concepts:
+Class variables
+Instance variables
+@classmethod decorator
+.__str__() method
+
 You are designing a small aquarium simulator.
 Each fish species has general traits (shared by all
 fish of that species) and individual characteristics

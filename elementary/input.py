@@ -81,5 +81,5 @@ names:
 print()
 type()
 input()
-int()
+range()
 '''
