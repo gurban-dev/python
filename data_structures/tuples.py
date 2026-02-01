@@ -32,6 +32,7 @@ print('\nsocial_security_beneficiary:',
 # Tuples support indexing. They are indexable.
 print("social_security_beneficiary[0]:", social_security_beneficiary[0])
 
+# Question:
 # If I am assigning the same exact integer, why
 # is this illegal?
 
@@ -56,8 +57,7 @@ int2: int = 10
 float1: float = 10.0
 float2: float = 10.0
 
-# Print the memory addresses that these three variables
-# reference.
+# Print the identity of these three variables.
 print('hex(id(int1)):', hex(id(int1)))
 print('hex(id(int2)):', hex(id(int2)))
 

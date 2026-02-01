@@ -6,7 +6,7 @@ of a Python program.
 This means that the size of a list can change throughout
 the runtime of a Python program.
 
-You can use indexing, slicing, and various methods
+You can use indexing, slicing and various methods to
 to work with lists in a program.
 
 Below is a statement that creates a list of integer
@@ -17,17 +17,24 @@ by commas are the list elements. 2 is the first element
 for instance, its index is 0 (zero).'''
 
 # Indices:      0  1  2  3   4
-even_numbers = [2, 4, 6, 8, 10]
+even_numbers = [2, 2, 6, 8, 10]
 
-# List of string literals.
-names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
+# Remember that a list can store duplicate values.
 
 # A list can hold items of different data types:
 info = ['Alicia', 27, 1550.87, True, []]
 
-# The print() function can be used display an
-# entire list.
+# The print() function can be used display an entire list.
 print('info:', info)
+
+# Index the first item.
+print('\ninfo[0]:', info[0])
+
+# Index the last item.
+print('\ninfo[-1]:', info[-1])
+
+# Index the second to last item.
+print('\ninfo[-2]:', info[-2])
 
 '''
 Python also has a built-in list() function that can
@@ -47,11 +54,11 @@ print(f'\nzero_to_four: {zero_to_four}')
 
 '''
 When passing three arguments to the range() function,
-the first argument is the starting index, the second
-argument is the stopping index (exclusive), and the
-third argument is the step value.
+the first argument is the start value, the second
+argument is the stop value (exclusive), and the third
+argument is the step value.
 
-range(starting_index, stopping_index (exclusive), step_value)
+range(start_value, stop_value (exclusive), step_value)
 
 range(1, 10, 2) returns an iterable containing [1, 3, 5, 7, 9]
 which will then be assigned to the variable "numbers".

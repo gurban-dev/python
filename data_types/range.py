@@ -1,13 +1,14 @@
 '''
 range() is a built-in function that creates an iterable,
-an object that holds a sequence of values you can loop over.
+an object that holds a sequence of values you can loop
+over.
 
 Syntax for the range() function:
-range(start_index, stop_index (exclusive), step_value)
+range(start_value, stop_value (exclusive), step_value)
 
-If you provide one argument, it becomes the stop_index.
+If you provide one argument, it becomes the stop_value.
 
-The start_index defaults to 0.
+The start_value defaults to 0.
 
 The step_value defaults to 1.
 
@@ -18,10 +19,15 @@ range(5) returns:
 print('for num in range(5):')
 for num in range(5):
   if num != 4:
+    # 'num' is a positional argument because the name of the
+    # parameter is not included.
+
+    # end=', ' is a keyword argument because the name of the
+    # parameter (end) is included.
     print(num, end=', ')
   else:
     print(num)
-print('')
+print()
 
 print('for num in range(0, 5, 1):')
 for num in range(0, 5, 1):
@@ -50,6 +56,8 @@ print('')
 
 # A list data structure is an iterable.
 for num in [0, 1, 2, 3, 4]:
+  # The lowercase f indicates that the following is an
+  # F-string.
   print(f'num: {num}')
 print('')
 
@@ -58,4 +66,3 @@ print('')
 # but its value won't be accessed anywhere in the code.
 for _ in range(5):
   print('Hello world')
-print('')

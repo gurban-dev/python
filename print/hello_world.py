@@ -43,6 +43,13 @@ this default behaviour:
 "Hello World!"
 '''
 
+# Real-world use case:
+# Log or API data may include '\n' (newline escape sequences) that
+# split records across lines.
+
+# Removing them keeps each record on one line for easier storage and
+# processing.
+
 '''
 Whenever new source code in a Python file is written, the file
 must be saved. The file can be automatically saved by enabling
@@ -89,8 +96,8 @@ can be included at beginning of the output.
 Inserting a newline escape sequence after "of" and before
 "this" makes the output more readable.
 '''
-print('\nThere is a newline character at the beginning of\n'
-      'this string and an automatically included one at\n'
+print('\nThere is a newline escape sequence at the beginning\n'
+      'of this string and an automatically included one at\n'
       'the end.')
 
 '''

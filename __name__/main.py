@@ -1,4 +1,9 @@
+# Just by importing greet.py, the source code written
+# in it will be executed.
 import greet
+
+# For the subsequent specific line to work, the greet.py
+# file must be located in the same directory.
 from greet import say_hello
 
 '''
@@ -7,8 +12,8 @@ greet.py becomes "greet", so the code inside
 if __name__ == "__main__": does not run.
 
 When greet.py is run directly (python3 greet.py), the
-__name__ variable becomes "__main__", and that block does
-run.
+__name__ variable becomes "__main__", and that block
+does run.
 
 Notice how just by importing the greet module, the
 lines of source code or instructions written globally
@@ -18,7 +23,7 @@ After the source code in greet.py is executed, the lines
 in this file will follow suit.
 '''
 
-print("\nNow inside main.py\n")
+print("\nNow inside main.py.")
 
 # However, functions from greet.py can still be imported
 # and invoked in this file.

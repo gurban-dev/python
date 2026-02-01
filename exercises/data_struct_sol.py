@@ -58,7 +58,7 @@ for student, course_set in completed_courses.items():
     print(f"{student} has completed all courses.")
   else:
     # Show which courses the student is missing.
-    
+
     missing = all_courses_set - course_set
 
     print(f"{student} is missing: {', '.join(missing)}")
@@ -71,7 +71,7 @@ try:
 except TypeError as e:
   print("Cannot index into a set:", e)
 
-# Trying to append to a set (not allowed).
+# Trying to append a duplicate value to a set (not allowed).
 try:
   completed_courses["Alex"].append("SQL")
 except AttributeError as e:

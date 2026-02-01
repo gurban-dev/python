@@ -54,6 +54,14 @@ items.add("Venice")
 # This is because unlike lists, sets are unordered.
 print('items:', items)
 
+# However, in the Python interactive shell the items in the same set
+# will always be printed in the same order because the same hash table
+# is being reprinted, but in a file that hash table is rebuilt on each
+# run, so the display order can change.
+
+# A hash table is how Python stores set items so they can be found quickly,
+# which is why sets do not keep items in a predictable order.
+
 # The set difference operator.
 
 courses = [
