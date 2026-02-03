@@ -44,6 +44,13 @@
 # Only the argument for the step parameter must be
 # non-zero.
 
+# The start value defaults to 0 (zero) when only one argument
+# is passed to the range() function. The step value default to
+# 1 in this case.
+
+# The stop value is simply the one argument that was passed to
+# the range() function.
+
 print('Printing for i in range(6):')
 for i in range(6):
   if i != 5:
@@ -52,16 +59,32 @@ for i in range(6):
     print(i, end="")
 print()
 
+# In the case that the range() function is given three
+# arguments:
+# The start value is the first argument.
+# The stop value (exclusive) is the second argument.
+# The step value is the third argument.
+
 print('\nPrinting for i in range(-1, 6, 1):')
+
+# Start value: -1
+# Stop value (exclusive): 6 (5 is the last integer in the range)
+# Step value: 1
 
 # The variable "i" is assigned the element from
 # the current iteration.
 for i in range(-1, 6, 1):
   print('i:', i)
 
+# In the case that the range() function is given two
+# arguments:
+# The start value is the first argument.
+# The stop value (exclusive) is the second argument.
+# The step value is implicitly 1 by default.
+
 print('\nPrinting for i in range(-1, 6):')
 
-# The default step is set to 1. This means that if this
+# The default step value is set to 1. This means that if this
 # is the behaviour your program needs to have, it is not
 # necessary to explicitly write out 1 for the step parameter.
 # It happens implicitly or internally.

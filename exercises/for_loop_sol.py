@@ -1,8 +1,8 @@
-print('Printing for i in range(1, 20):')
+print('Printing for i in range(1, 21):')
 for i in range(1, 21):
   print(i)
 
-print('\nPrinting for i in range(2, 20, 2):')
+print('\nPrinting for i in range(2, 21, 2):')
 for i in range(2, 21, 2):
   print(i)
 

@@ -18,7 +18,8 @@ my_dog.bark()
 
 2. Which class is the child class?
 
-3. Why is my_dog.speak() allowed even though Dog does not define speak()?
+3. Why is my_dog.speak() allowed even though Dog does
+   not define speak()?
 
 
 Add a new child class called Cat that:

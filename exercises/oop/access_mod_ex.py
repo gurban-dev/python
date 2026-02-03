@@ -1,14 +1,14 @@
 '''
-Exercise: Employee System with Polymorphism and Attribute Naming Conventions
+Exercise:
+Employee System with Polymorphism and Attribute Naming Conventions
 
 
 Concepts:
-
 Polymorphism in Python
 
 Public, protected, and private attribute naming conventions
 
-__str__ and __repr__ methods
+__str__() and __repr__() methods
 
 You are building a small system that models employees at a company.
 

@@ -9,7 +9,7 @@ An instance of a class is an actual object created from
 that blueprint.
 
 1. Create a superclass Transport with:
-   A constructor that sets a name attribute.
+   A constructor method that sets a name attribute.
 
    A generic move() method (default message
    like "Transport is moving").
@@ -49,7 +49,7 @@ class Transport:
   def __init__(self, name):
     self.name = name
 
-    # \n is a newline escape sequence.
+    # "\n" is a newline escape sequence.
     print(f'Transport constructor:\nself.name: {self.name}\n')
 
   def move(self):
@@ -66,17 +66,17 @@ class Car(Transport):
   # What would happen if the following move() method
   # was commented out and the program was run again?
   def move(self):
-    print(f"{self.name}: Car is driving on the road.")
+    print(f"{self.name}: The car is driving along the road.")
 
 # Subclass
 class Bicycle(Transport):
   def move(self):
-    print(f"{self.name}: Bicycle is pedaling on the bike lane.")
+    print(f"{self.name}: The bicycle is being pedaled along the bike lane.")
 
 # Subclass
 class Boat(Transport):
   def move(self):
-    print(f"{self.name}: Boat is sailing through the water.")
+    print(f"{self.name}: The boat is sailing across the water.")
 
 # Function demonstrating polymorphism.
 def start_journey(transport):
@@ -91,7 +91,7 @@ def start_journey(transport):
 
 def main():
   # List data structure.
-  transports = [
+  vehicles = [
     Car("Toyota Corolla"),
     Bicycle("Mountain Bike"),
     Boat("Sea Ray 320")
@@ -104,8 +104,8 @@ def main():
   # Which move() method is being invoked for each of
   # these objects?
 
-  for vehicle in transports:
-    # Pass each object in transports as an argument
+  for vehicle in vehicles:
+    # Pass each object in 'vehicles' as an argument
     # to the start_journey() function.
     start_journey(vehicle)
 
