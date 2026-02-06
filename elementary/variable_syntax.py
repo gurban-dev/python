@@ -24,7 +24,7 @@ monthly_salary = 2_500
 # What if I want to keep track of whether Alexander lives
 # in the city Gdansk?
 
-# The variable "lives_in_gdansk" has a boolean
-# data type because False is assigned to it.
-# True and False are boolean values.
+# The variable "lives_in_gdansk" has a boolean data
+# type because False is assigned to it. True and False
+# are boolean values.
 lives_in_gdansk = False

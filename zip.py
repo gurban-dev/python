@@ -29,3 +29,5 @@ print('list(zip(y, x):', list(zip(y, x)))
 
 # Only two tuples will be returned because list 'z' contains only two elements.
 print('list(zip(x, y, z):', list(zip(x, y, z)))
+
+# list(zip(x, y, z)) returns [(1, 11, 'one'), (2, 12, 'two')]

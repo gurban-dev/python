@@ -1,51 +1,118 @@
-items = ['apples', 'kefir', 'eggs']
-prices = [0.95, 1.25, 2.99]
+'''
+Concepts:
+Lists and list indexing
 
-# Print out how many items there are.
-print('len(items):', len(items))
+The len() function
 
-# The input() function temporarily pauses the program
-# and waits until the user inputs some data and clicks
-# the "Enter" key on their keyboard.
-choice = input('\nWhat would you like to buy? ').lower()
+User input with input()
 
-print('\nchoice:', choice)
+String methods (.lower(), .capitalize())
 
-# Reveal how many characters the user inputted.
-print('\nlen(choice):', len(choice))
+Membership operator (in)
 
-# The following is the equality operator:
-# ==
+Equality operator (==)
 
-# The equality operator tests if the operand on its left
-# is equal to the one on its right.
+Conditional statements (if, elif, else)
 
-# Python is case-sensitive when it comes to determining
-# whether two strings are equal to each other.
-print('\n"KEFIR" == "kefir":', "KEFIR" == "kefir")
+Nested conditionals
 
-print('\nchoice in items:', choice in items, '\n')
+Accessing characters in a string using indexing
 
-if choice in items:
-  index = items.index(choice)
+Basic program flow and decision making
 
-  # Capitalise the first letter of choice after
-  # finding the index in "items" list.
-  choice = choice.capitalize()
+Variables and reassignment
 
-  price = prices[index]
 
-  # Get the last letter in the item.
-  if choice[-1] == 's':
-    choice += " are"
-  else:
-    choice += " is"
+Exercise Instructions:
+Create a simple shopping assistant program that asks the user what
+item they want to buy and tells them whether the item is affordable,
+moderately priced, or expensive.
 
-  if price < 5:
-    print(choice, "affordable.")
-  elif price >= 5 and price <= 10:
-    print(choice, "moderately priced.")
-  else:
-    print(choice, "expensive.")
-else:
-  print("Sorry, we don't sell that item.")
+
+Program Overview
+
+The program uses two lists:
+items — contains product names
+
+prices — contains the price corresponding to each item
+
+
+The user will input the item they want, and the program will:
+Check if the item exists in the store.
+
+Find the item's price.
+
+Print a message describing its price category.
+
+
+Step-by-Step Tasks
+1. Review the Lists
+
+Look at the items and prices lists.
+
+Notice that both lists share matching indexes.
+
+
+Example:
+items[0] corresponds to prices[0].
+
+
+2. Understand Program Output
+
+The program prints the number of available items using len().
+
+It then asks the user to input an item name.
+
+The user input is converted to lowercase so comparisons work correctly.
+
+
+3. Analyse User Input
+
+Print the user's choice.
+
+Print the number of characters in the user's input.
+
+Observe how Python compares strings using the equality operator (==).
+
+
+4. Membership Testing
+
+The program checks whether the user's choice exists in the items list using:
+choice in items
+
+
+If the item exists:
+Find its index.
+
+Retrieve the corresponding price.
+
+Format the item name for display.
+
+
+5. String Handling
+
+Capitalise the item name.
+
+Determine whether the item name ends in "s":
+
+If yes -> add " are"
+
+If no -> add " is"
+
+
+6. Price Classification
+
+Use conditional logic to categorise the price:
+
+Less than $5 -> affordable
+
+Between $5 and $10 -> moderately priced
+
+Greater than $10 -> expensive
+
+
+7. Invalid Items
+
+If the user enters an item not sold by the store, print:
+Sorry, we don't sell that item.
+'''

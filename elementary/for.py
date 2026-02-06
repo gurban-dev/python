@@ -1,6 +1,6 @@
 # Repetition structure
 # One or multiple lines of code in a section of
-# the program will be executed one or mutliple
+# the program will be executed one or multiple
 # times.
 
 # Python's built-in range() function accepts an
@@ -26,15 +26,28 @@ for i in range(3):
 # This is a list because the items are separated by commas
 # and surrounded by square brackets [].
 
-# For-loop
-for element in ['Sofiia', 0, 1, 2]:
+# On the 1st iteration, the variable named 'element'
+# is assigned the string literal 'Sofiia'.
+
+# On the 2nd iteration, 'element' is assigned the integer
+# literal 0.
+for element in ['Sofiia', 0, 1, 2, 3]:
   print('element:', element)
 
-print('')
+print('\nPrinting for i in range(0, 3, -1):')
 for i in range(0, 3, -1):
+  # This loop never runs because the range is empty.
+
+  # range(0, 3, -1) starts at 0 and moves backward by -1,
+  # but the stop value (3) is greater than the start value.
+
+  # Since the step is negative, Python expects the start
+  # to be greater than the stop — which is not the case here.
+
+  # Therefore, list(range(0, 3, -1)) returns an empty list.
+
+  # Note that the step value cannot be 0.
+
   print('i:', i)
 
-  print('Oh yeah!\n')
-
-for expression in ['Oh', 'yeah!']:
-  print(expression)
+  print('Printing line 53.\n')

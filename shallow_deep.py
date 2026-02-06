@@ -3,6 +3,11 @@ import copy
 # The original list with a nested list inside.
 lst = [[1], 2]
 
+# [1] is called a nested list becaused it's a list inside of a list.
+first_item = lst[0]
+
+print('type(first_item):', type(first_item), '\n')
+
 # Make a shallow copy of 'lst' with the .copy() method.
 shallow_copy = lst.copy()
 
@@ -18,8 +23,8 @@ print('\nBefore assigning anything:')
 
 # hex(id()) will return a hexadecimal representation of an object's identity.
 
-# The term "memory address" is being avoided here since not every implementation of
-# Python has them as CPython does.
+# The term "memory address" is being avoided here since not every implementation
+# of Python has them as CPython does.
 
 # Compare the identities of the 'lst', 'shallow_copy' and 'deep_copy'.
 print('hex(id(lst)):', hex(id(lst)))
