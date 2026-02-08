@@ -52,7 +52,7 @@ items.add("Venice")
 # are not outputted in the same order.
 
 # This is because unlike lists, sets are unordered.
-print('items:', items)
+print('items:', items, '\n')
 
 # However, in the Python interactive shell the items in the same set
 # will always be printed in the same order because the same hash table

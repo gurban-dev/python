@@ -10,12 +10,10 @@ This exercise is designed to reinforce your understanding of:
 - The __name__ dunder variable
 - Basic iteration and conditional logic
 
-Read each section carefully and complete the tasks in order.
-
-
 PART 1: Working with Lists
 
-1. Create a list called numbers that contains the integers 1 through 1 000.
+1. Create a list called numbers that contains the integers
+   1 through 1 000.
 
 2. Print the entire list.
 
@@ -24,9 +22,9 @@ PART 1: Working with Lists
    - If the number is NOT equal to 5, print: "<number> is not 5"
    - If the number IS equal to 5, print: "Found 5!"
 
-4. Create a new list called even_numbers.
-   - Add only the even numbers from the numbers list to even_numbers.
-   - Print even_numbers when finished.
+4. Create a new list called 'even_numbers'.
+   - Add only the even numbers from the numbers list to 'even_numbers'.
+   - Print 'even_numbers' when finished.
 
 
 PART 2: Using range()
@@ -45,19 +43,15 @@ PART 2: Using range()
 
 PART 3: Working with Sets
 
-8. Create a list called duplicate_numbers with the following values:
+8. Create a list called duplicate_nums with the following values:
    [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
 
-9. Convert duplicate_numbers into a set called unique_numbers.
-   - Print unique_numbers.
+9. Convert duplicate_nums into a set called unique_nums.
+   - Print unique_nums.
    - Observe what happened to the duplicates.
 
-10. Loop through unique_numbers:
-    - If a number is NOT equal to 3, print: "<number> is not 3"
-    - If a number IS equal to 3, print: "Found the number 3!"
 
-
-PART 4: Equality vs Not Equality
+PART 4: Equality vs. Not Equality
 
 11. Ask the user to input a number (use input()).
     - Convert the input to an integer.
@@ -66,11 +60,25 @@ PART 4: Equality vs Not Equality
     - If it == 10, print: "You entered 10."
     - If it != 10, print: "This is not 10."
 
-13. Add the user's number to a list called user_numbers.
+13. Add the user's number to a list called user_nums.
     - If the number already exists in the list, print: "Duplicate detected."
     - Otherwise, add it and print the updated list.
+'''
+
+# Python's built-in input() function temporarily pauses the
+# execution of a Python program and waits for the user to
+# click the 'Enter' button on their keyboard.
+
+# Irregardless of the content inputted, the input() function
+# always returns a string object.
+num = int(float(input('Enter a number: ')))
+
+print('type(num):', type(num), '\n')
+
+print('num:', num, '\n')
 
 
+'''
 PART 5: The __name__ Dunder Variable
 
 14. At the bottom of your script, add the following conditional:

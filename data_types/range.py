@@ -3,14 +3,21 @@ range() is a built-in function that creates an iterable,
 an object that holds a sequence of values you can loop
 over.
 
-Syntax for the range() function:
+Syntax for the range() function when passing three arguments:
 range(start_value, stop_value (exclusive), step_value)
+
+The stop_value cannot be zero.
+
 
 If you provide one argument, it becomes the stop_value.
 
 The start_value defaults to 0.
 
 The step_value defaults to 1.
+
+The step value controls how much the number changes between
+each value in the sequence. This is the increment or decrement
+size.
 
 range(5) returns:
 0 1 2 3 4
@@ -27,6 +34,9 @@ for num in range(5):
     print(num, end=', ')
   else:
     print(num)
+
+# A print() function without any arguments just adds
+# an empty line to the output.
 print()
 
 print('for num in range(0, 5, 1):')
@@ -39,12 +49,12 @@ print('')
 
 '''
 When two arguments are passed to the range() function,
-the first argument is used as the starting value of
-the sequence, and the second argument is used as the
-ending limit.
+the first argument is used as the start value of the
+sequence, and the second argument is used as the stop
+value.
 
 The for loop below begins at 1 and stops a 5 without
-outputting five.
+including 5.
 '''
 print('for num in range(1, 5):')
 for num in range(1, 5):
