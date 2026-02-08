@@ -25,7 +25,7 @@ newline escape sequence at the end of its output:
 "Hello World!\n"
 '''
 
-# This default behaviour of the print() function can be altered.
+# The default behaviour of the print() function can be altered.
 print("Hello World!", end="")
 
 '''
@@ -114,6 +114,6 @@ memory issues.
 However, this would be more of a memory error rather
 than a strict character limit for the print() function.'''
 
-# E.g. Repeating a character by a billion times and then
+# E.g. Repeating a character a thousand times and then
 #      attempting to print it to the screen.
-# print('*' * 1_000_000_000)
+print('*' * 1_000)

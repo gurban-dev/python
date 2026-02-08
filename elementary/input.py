@@ -2,15 +2,15 @@
 # <variable_name> = <value_being_assigned_to_the_variable>
 
 # The variable name is always on the left side of the
-# assignment operator.
+# assignment operator (=).
 
 # The input() function temporarily pauses the program and
 # waits until the user clicks the Enter button on their
 # keyboard. After this, the data inputted by the user is
 # returned by the input() function as a string.
 
-# The data returned by the input() function is then
-# assigned to the variable named 'given_name'.
+# The user input returned by the input() function is
+# then assigned to the variable named 'given_name'.
 given_name = input('Please input your given name: ')
 
 # Two arguments being passed to the print() function:

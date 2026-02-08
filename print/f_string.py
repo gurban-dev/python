@@ -19,9 +19,22 @@ print(f"The father of history is {name}.\n"
 # An advantage of using f-strings is that variables that reference
 # integers, are automatically converted to strings.
 
+# When should you use an f-string?
+
+# Answer:
+# Use an f-string when variables need to automatically be converted to
+# strings and when spacing around variables is inconsistent.
+
+# In other words, certain variables need whitespace characters before
+# or after them whereas others do not.
+
 # Without an f-string:
 print("The father of history is " + name + ".\n"
       "He lived during the " + str(century) + "th century BC.\n")
+
+# Or:
+print("\nThe father of history is ", name, ".\n"
+      "He lived during the ", str(century), "th century BC.\n", sep="")
 
 '''
 Practice Exercise
@@ -35,6 +48,7 @@ times_per_week -> how many times you eat it in a week (integer)
 
 
 Use an f-string to print a sentence about your fruit:
+
 E.g.
 My favourite fruit is banana. It is yellow, and I eat it
 3 times per week.

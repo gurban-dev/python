@@ -9,9 +9,6 @@
 
 
 
-
-
-
 # Answer:
-# They are all numbers without quotation marks ("", '')
+# They all contain only numbers without quotation marks ("", '')
 # and without decimal points (.).

@@ -1,6 +1,9 @@
-"""
-Concepts: Iterators — Complete Solution
-"""
+# Concepts:
+# Iterators
+# An iterator object's .__iter__() method.
+# An iterator object's .__next__() method.
+# Python's built-in iter() function.
+# Python's built-in next() function.
 
 # ------------------------------------------------------------
 # 1. Definition
@@ -34,48 +37,50 @@ string_iterator = iter(string)
 range_iterator = iter(rng)
 dict_iterator = iter(dct)
 
-print(next(list_iterator))
-print(next(tuple_iterator))
-print(next(string_iterator))
-print(next(range_iterator))
-print(next(dict_iterator))  # Iterates over keys
+print('next(list_iterator):', next(list_iterator))
+print('next(tuple_iterator):', next(tuple_iterator))
+print('next(string_iterator):', next(string_iterator))
+print('next(range_iterator):', next(range_iterator))
+
+# Iterates over keys
+print('next(dict_iterator):', next(dict_iterator))
 
 
 # ------------------------------------------------------------
 # 3. Using iterator methods directly
 # ------------------------------------------------------------
 
-print("\nUsing iterator methods directly:\n")
+print("\nUsing iterator methods directly:")
 
 nums = [100, 200, 300]
 it = iter(nums)
 
-# __iter__ returns the iterator itself
-print(it.__iter__())
+# .__iter__() returns the iterator itself.
+print('it.__iter__():', it.__iter__())
 
-# calling __next__ manually
-print(it.__next__())
-print(it.__next__())
-print(it.__next__())
+# Calling the .__next__() method manually.
+print('it.__next__():', it.__next__())
+print('it.__next__():', it.__next__())
+print('it.__next__():', it.__next__())
 
 try:
-  print(it.__next__())
+  print('it.__next__():', it.__next__())
 except StopIteration:
-  print("StopIteration raised — iterator exhausted.")
+  print("StopIteration raised: Iterator exhausted.")
 
 
 # ------------------------------------------------------------
 # 4. Using next() built-in function
 # ------------------------------------------------------------
 
-print("\nUsing next() built-in:\n")
+print("\nUsing next() built-in:")
 
 values = iter([1, 2, 3])
 
 while True:
   try:
     value = next(values)
-    print(value)
+    print('value:', value)
   except StopIteration:
     print("No more values.")
     break
@@ -85,30 +90,30 @@ while True:
 # 5. Demonstrating how for-loop uses iterators
 # ------------------------------------------------------------
 
-print("\nFor-loop iteration:\n")
+print("\nFor-loop iteration:")
 
 numbers = [7, 8, 9]
 
 for n in numbers:
   print(n)
 
-print("\nEquivalent manual iteration:\n")
+print("\nEquivalent manual iteration:")
 
 it = iter(numbers)
 
 while True:
   try:
     n = next(it)
-    print(n)
+    print('n:', n)
   except StopIteration:
     break
 
 
 # ------------------------------------------------------------
-# 6. Custom iterator implementation (Challenge)
+# 6. Custom iterator implementation
 # ------------------------------------------------------------
 
-print("\nCustom iterator example:\n")
+print("\nCustom iterator example:")
 
 
 class CountUpTo:
@@ -131,8 +136,8 @@ class CountUpTo:
 
 counter = CountUpTo(5)
 
-for number in counter:
-  print(number)
+for num in counter:
+  print('num:', num)
 
 
 '''

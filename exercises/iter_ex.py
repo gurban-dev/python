@@ -18,7 +18,9 @@ Tasks:
    - range
    - dictionary
 
-3. Use the methods required by iterators:
+3. Take the list from task 2 and have the same iterator start
+   from the beginning of the list and then invoke the following
+   methods:
    - __iter__()
    - __next__()
 
@@ -29,8 +31,7 @@ Tasks:
 
 5. Demonstrate how a for-loop internally uses iterators.
 
-6. Challenge:
-   Implement a custom iterator class that generates a sequence
+6. Implement a custom iterator class that generates a sequence
    of numbers.
 
 Expected Learning Outcomes:
