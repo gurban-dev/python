@@ -7,37 +7,6 @@ encapsulated or grouped together in a single unit.
 
 An instance of a class is an actual object created from
 that blueprint.
-
-1. Create a superclass Transport with:
-   A constructor method that sets a name attribute.
-
-   A generic move() method (default message
-   like "Transport is moving").
-
-2. Create at least 3 subclasses of Transport:
-
-   Car: overrides move() with "Car is driving
-   on the road."
-
-   Bicycle: overrides move() with "Bicycle is
-   pedaling on the bike lane."
-
-   Boat: overrides move() with "Boat is sailing
-   through the water."
-
-3. Write a function start_journey(transport) that:
-
-   Accepts any Transport object.
-
-   Calls its move() method.
-
-   Prints the type of transport.
-
-4. In the main() function:
-
-   Create a list of different transport objects.
-
-   Use a loop to call start_journey() on each one.
 '''
 
 # Sometimes a superclass is also called a parent

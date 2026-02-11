@@ -6,25 +6,20 @@ video_game = input('Do you prefer roblox or age of empires? ').lower()
 
 # An empty string has a length of zero because it does
 # not contain any characters.
-print(f'\nlen("{video_game}"): {len(video_game)}')
+print(f'\nlen(video_game): {len(video_game)}')
 
-print('\nvideo_game:', video_game)
+print('\nvideo_game:', video_game, '\n')
 
 print(f'video_game == \'roblox\': {video_game == 'roblox'}')
 
 print(f'video_game == \'age of empires\': {video_game == 'age of empires'}')
 
-# If the condition on line number 22 evaluates to
-# True, then the condition on line number 24 will
-# not be evaluated.
+# If the condition on line number 23 evaluates to True, the
+# instruction on line 24 will be executed and no other
+# conditions in the if-elif-else statement will be evaluated.
 
 # Only one of the print statements in the if-elif-else statement
 # below will be executed.
-
-# The flow of this Python program enters the block associated
-# with the if statement on line 27 and executes the source code
-# inside of the block if the condition on line 27
-# (video_game == 'roblox') evaluates to True.
 if video_game == 'roblox':
   print('\nYou selected roblox.')
 elif video_game == 'age of empires':

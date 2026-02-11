@@ -1,42 +1,52 @@
-# This program demonstrates a simple for loop
-# that iterates through a list of numbers.
+# One of the repetition structures in Python is
+# called a for loop.
+
+# A for loop executes a block of source code zero
+# or more times. A for loop in Python iterates over
+# an iterable (an object that can return values one
+# at a time).
 
 # [1, 2, 3, 4, 5] is a list data structure in
 # Python.
 
 # Traverse the items/elements in the list.
 
-# print('The numbers 1 through 5:')
+print('for num in [1, 2, 3, 4, 5]:')
 
 # This for loop iterates exactly 5 times because
 # there are 5 elements inside of the list that it
 # iterates over. Remember that a list is an iterable
 # also known as a sequence of values.
-# for num in [1, 2, 3, 4, 5]:
-#   '''
-#   On each iteration, the "num" variable will be
-#   assigned the value of the current item/element
-#   in the [1, 2, 3, 4, 5] list.
+for num in [1, 2, 3, 4, 5]:
+  '''
+  On each iteration, the 'num' variable will be
+  assigned the value of the current item/element
+  in the [1, 2, 3, 4, 5] list.
   
-#   The print() function will output the value of
-#   the "num" variable.
+  The print() function will output the value of
+  the 'num' variable.
   
-#   The print() function automatically appends a
-#   newline escape sequence at the end of its
-#   output.'''
-#   # print(num, end='\n')
+  The print() function automatically appends a
+  newline escape sequence at the end of its
+  output.'''
+  # print(num, end='\n')
+  # print(num)
 
-#   if num == 5:
-#     print(num, end='')
-#   else:
-#     print(num, end=', ')
-# print('\n')
+  # The following is the equality operator: ==
 
-# # Python lists can store elements that have different
-# # data types.
-# for item in ['Alexander', 30, 20.0, True, [], range(2)]:
-#   print('item:', item)
-# print('')
+  # It returns True if the operands it compares are
+  # seen as equal by Python. Otherwise, it returns False.
+  if num == 5:
+    print(num, end='')
+  else:
+    print(num, end=', ')
+print('\n')
+
+# Python lists can store elements that have different
+# data types.
+for item in ['Alexander', 30, 20.0, True, [], range(2)]:
+  print('item:', item)
+print('')
 
 # range(start (inclusive), stop (exclusive), step)
 

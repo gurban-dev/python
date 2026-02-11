@@ -14,7 +14,8 @@ class BankAccount():
     # Prefixing an attribute with __ triggers name mangling,
     # making it less accessible from outside of the class.
 
-    # self.__balance becomes _BankAccount__balance internally.
+    # Name mangling causes self.__balance becomes
+    # self._BankAccount__balance internally.
 
     # Conventionally, or by standard procedure, variables that
     # that have two underscores preceding their names are treated
@@ -25,13 +26,20 @@ class BankAccount():
   def get_balance(self):
     return self.__balance
 
-  # Mutator/setter method.
+  # Mutator/setter methods.
   def deposit(self, amount):
     # += is called the augmented assignment operator.
 
     # self.__balance += amount is equivalent to:
     # self.__balance = self.__balance + amount
     self.__balance += amount
+  
+  def withdraw(self, amount):
+    if amount > self.__balance:
+      print("Insufficient funds.")
+      return
+    self.__balance -= amount
+
 
 bankAccount = BankAccount(5_000)
 
@@ -49,6 +57,15 @@ bankAccount = BankAccount(5_000)
 
 # E.g. _BankAccount_balance
 # bankAccount._BankAccount__balance += 500
+
+# The following is bad practice because it breaks encapsulation.
+bankAccount._BankAccount__balance = -9999
+
+# Should a bank account ever have negative thousands?
+
+# Encapsulation ensures that business rules are checked before
+# an object's internal state can change.
+print(bankAccount.get_balance())
 
 bankAccount.deposit(500)
 

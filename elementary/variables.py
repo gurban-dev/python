@@ -1,32 +1,24 @@
 # A variable is a name that holds a reference to an object
-# that exists in memory throughout the runtime of a Python
-# program.
+# that exists in memory.
 
 # The variable 'famous_leader' holds a reference to the
 # string object 'Alexander the Great'.
 
 # 'Alexander the Great' is a string literal because it is
 # surrounded by quotation marks.
+
+# The variable 'famous_leader' references a string object.
 famous_leader = 'Alexander the Great'
 
 print('famous_leader:', famous_leader)
 
-# Assigning a string literal to a variable creates a
-# variable that has a reference to a string object.
-
-# The variable 'famous_leader' on line 6 is a variable
-# that has a reference to a string object because it
-# was assigned a string literal.
-
 # Python's built-in type() function reveals the data type
-# of data that is passed to it as an argument.
+# of an argument that is passed to it.
 
 # Arguments in functions are separated by commas (,), and
 # by default, are outputted with spaces between them.
 print("\ntype('Alexander the Great'):", type('Alexander the Great'))
 
-# Literals can also be passed to the type() function
-# as arguments.
 print('\ntype(famous_leader):', type(famous_leader))
 
 '''

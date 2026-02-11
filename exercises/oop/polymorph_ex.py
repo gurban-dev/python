@@ -81,7 +81,7 @@ class PushNotification(Notification):
 # before sending the message.
 #
 # Run the program and observe how the SAME function call
-# results in DIFFERENT behavior at runtime.
+# results in DIFFERENT behaviour at runtime.
 # ------------------------------------------------------
 
 
@@ -102,11 +102,6 @@ class SlackNotification:
     print("SlackNotification handling message")
     print(f"Slack message: {message}")
 
-
-# --------------------------------------------------
-# Program Execution
-# --------------------------------------------------
-
 if __name__ == "__main__":
   notifications = [
     EmailNotification(),
@@ -121,6 +116,6 @@ if __name__ == "__main__":
 # ---------------------------------------------------------------
 # FINAL REFLECTION
 #
-# In 1–2 sentences:
+# In 1-2 sentences:
 # What is polymorphism, and how did this exercise demonstrate it?
 # ---------------------------------------------------------------
