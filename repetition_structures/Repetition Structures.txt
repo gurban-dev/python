@@ -1,8 +1,8 @@
 Loops in Python
 
 A loop is a repetition structure that allows a statement or group
-of statements to execute multiple times. Loops are useful when a
-task needs to be repeated.
+of statements to execute zero or multiple times. Loops are useful
+when a task may need to be repeated in a program.
 
 Python provides two main types of loops: while loops and for loops.
 
@@ -20,6 +20,8 @@ Syntax:
 while <condition>:
   <statement>
   <statement>
+  ...
+  etc.
 
 The indented statements are executed repeatedly while the condition
 is true.

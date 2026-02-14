@@ -32,9 +32,9 @@ moderately priced, or expensive.
 Program Overview
 
 The program uses two lists:
-items — contains product names
+items - contains product names
 
-prices — contains the price corresponding to each item
+prices - contains the price corresponding to each item
 
 
 The user will input the item they want, and the program will:
@@ -43,8 +43,15 @@ Check if the item exists in the store.
 Find the item's price.
 
 Print a message describing its price category.
+'''
+items = ['persimmon', 'mango', 'quince']
 
+prices = [2.99, 2.5, 3.99]
 
+for item in items:
+    print(item)
+
+'''
 Step-by-Step Tasks
 1. Review the Lists
 

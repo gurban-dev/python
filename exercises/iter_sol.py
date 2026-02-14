@@ -94,8 +94,8 @@ print("\nFor-loop iteration:")
 
 numbers = [7, 8, 9]
 
-for n in numbers:
-  print(n)
+for num in numbers:
+  print(num)
 
 print("\nEquivalent manual iteration:")
 
@@ -103,8 +103,9 @@ it = iter(numbers)
 
 while True:
   try:
-    n = next(it)
-    print('n:', n)
+    num = next(it)
+
+    print('num:', num)
   except StopIteration:
     break
 

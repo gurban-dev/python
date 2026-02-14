@@ -14,8 +14,8 @@ can be interpreted as such.
 In Python, 0 and 1 are treated as booleans because bool
 is a subclass of int.
 
-Assigning any of the following falsy values will
-make a variable be interpreted as False.
+Assigning any of the following falsy values will make a
+variable be interpreted as False.
 
 Examples of falsy values:
 Empty strings: '', ""

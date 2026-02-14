@@ -11,6 +11,7 @@ while keep_going == 'y':
   sales = float(input('Enter the amount of sales: '))
 
 	# Python's built-in input() function returns a string.
+
   # In this case, that string must be converted to a
   # float data type because of the multiplication that
   # follows.
@@ -69,7 +70,6 @@ while keep_going == 'y':
   # keep_going == 'y'
   print('\nkeep_going == \'y\':', keep_going == 'y', '\n')
 
-# This is located outside of the while loop because
-# the indentation level begins at the very beginning
-# of the line.
+# This is located outside of the while loop because the indentation
+# level begins at the very beginning of the line.
 print('The program has finished.')

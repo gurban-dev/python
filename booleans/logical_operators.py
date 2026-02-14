@@ -1,3 +1,15 @@
+# Logical operators are used to combine or modify Boolean expressions.
+
+# They allow you to make decisions based on multiple conditions.
+
+# The main logical operators in Python are:
+# 1. and  - True if both subexpressions are True
+# 2. or   - True if at least one subexpression is True
+# 3. not  - Reverses the truth value of a Boolean expression
+
+# These operators are commonly used in conditional statements, comparisons,
+# and controlling program flow.
+
 x = 3
 y = 5
 
@@ -50,7 +62,7 @@ The expression x < y becomes 3 < 5, which
 evaluates to True.
 
 Therefore: False or True yields True.'''
-print('\ny < x or x < y):', y < x or x < y)
+print('\ny < x or x < y:', y < x or x < y)
 
 '''
 The expression y < x becomes 5 < 3, which
