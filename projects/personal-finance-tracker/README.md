@@ -1,3 +1,5 @@
+https://youtu.be/Dn1EjhcQk64?si=2Xl4igTuJSAzqIJo
+
 A personal finance tracker that logs different transactions.
 
 Organise the transactions, get summaries of income and expense.
@@ -9,20 +11,20 @@ Create a virtual environment:
 
 Windows:
 
-python -m venv <env_name>
+python -m venv .<env_name>
 
 E.g.
-python -m venv venv
+python -m venv .venv
 
 Mac or linux:
 
-python3 -m venv <env_name>
+python3 -m venv .<env_name>
 
 E.g.
-python3 -m venv venv
+python3 -m venv .venv
 
 Activate the virtual environment:
-source ./venv/bin/activate
+source ./.venv/bin/activate
 
 Once you've activated your virtual environment,
 the time is ripe for installing dependencies.
