@@ -23,8 +23,9 @@ print('type(float_numeral):', type(float_numeral))
 
 # Implicit type casting is performed automatically by Python when combining
 # different data types in an expression:
-sum = 2.0 + 2
+sum = 0 + .0
 
-# Before 2 is added to 2.0, Python internally converts 2 to 2.0.
-# Integers are always converted to floats when involved in the same arithmetic
-# operation.
+# Before .0 is added to 0, Python internally converts 0 to .0.
+
+# When an int and a float are used in the same arithmetic expression, the
+# int is converted to a float.

@@ -57,12 +57,13 @@ PART 4: Equality vs. Not Equality
     - Convert the input to an integer.
 
 12. Compare the user's number to the number 10:
-    - If it == 10, print: "You entered 10."
-    - If it != 10, print: "This is not 10."
+    - If num == 10, print: "You entered 10."
+    - If num != 10, print: "This is not 10."
 
 13. Add the user's number to a list called user_nums.
-    - If the number already exists in the list, print: "Duplicate detected."
-    - Otherwise, add it and print the updated list.
+    - Check if 'num' already exists in the list.
+	  Print: "Duplicate detected." in this scenario.
+    - Otherwise, add 'num' and print the updated list.
 '''
 
 # Python's built-in input() function temporarily pauses the
@@ -87,15 +88,24 @@ PART 5: The __name__ Dunder Variable
 
 15. Inside this block:
     - Print: "This script is being run directly."
-    - Call a function of your choice from earlier in the exercise.
+    - Create a function named deliver_msg that prints:
+      "deliver_msg() only invoked when this file is
+       directly run."
 
 16. Outside of the if __name__ == "__main__" block:
-    - Print: "This code was imported as a module."
+    - Print: "This file was imported as a module."
 
 (Think about when each message would appear and why.)
-
-- Refactor repeated logic into functions.
-- Try converting a list to a set and back to a list.
-- Experiment with different range() step values.
-- Add comments explaining what each section does.
 '''
+
+def deliver_msg():
+    print('deliver_msg() only invoked when this file is directly run.')
+
+if __name__ == "__main__":
+    # Only execute the source code in this file if this
+    # file is run directly:
+    # python lists_sets_ranges_ex.py
+
+	deliver_msg()
+else:
+    print('This file was imported as a module.')

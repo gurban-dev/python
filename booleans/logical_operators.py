@@ -23,10 +23,10 @@ x is odd if x % 2 != 0
 3 % 2 returns 1. != is called the not equal
 operator.
 
-1 != 0 evalutes to True.
+1 != 0 evaluates to True.
 5 % 2 returns 1. == returns True if the two values
 being compared are equal to each other.
-1 == 0 evalutes to False.
+1 == 0 evaluates to False.
 y is even if y % 2 == 0
 '''
 print('x % 2 != 0 and y % 2 == 0:', x % 2 != 0 and y % 2 == 0)
@@ -146,7 +146,8 @@ x > y is False
 print('\n(x % 2 != 0 and (y % 2 == 0 or (x == 3 and\nnot '
       'y < 6))) or (x > y and not y == 5):', (x % 2 != 0
        and (y % 2 == 0 or (x == 3 and not y < 6))) or \
-       (x > y and not y == 5))
+       (x > y and not y == 5)
+)
 
 '''
 Both the "and" and "or" operators perform short-circuit
@@ -159,7 +160,7 @@ waste CPU time to check the remaining expression. So,
 when the "and" operator finds that the expression on its
 left is false, it short-circuits and does not evaluate
 the expression on its right.'''
-print('False and True', False and True)
+print('\nFalse and True', False and True)
 
 '''
 Here's how short-circuit evaluation works with the "or"
@@ -168,4 +169,4 @@ operator: If the expression on the left side of the
 will not be checked. Because it is only necessary for
 one of the expressions to be true, it would waste CPU
 time to check the remaining expression.'''
-print('True or False:', True or False)
+print('\nTrue or False:', True or False)

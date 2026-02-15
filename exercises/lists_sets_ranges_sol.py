@@ -95,24 +95,25 @@ def user_input_logic():
   user_numbers = []
 
   # 11. Ask user for input
-  user_value = int(input("Enter a number: "))
+  num = int(input("Enter a number: "))
 
   # 12. Compare to 10
-  if user_value == 10:
+  if num == 10:
     print("You entered 10.")
   else:
     print("This is not 10.")
 
   # 13. Check for duplicates
-  if user_value in user_numbers:
+  if num in user_numbers:
     print("Duplicate detected.")
   else:
-    user_numbers.append(user_value)
+    user_numbers.append(num)
+
     print("Updated user_numbers list:")
+
     print(user_numbers)
 
   return user_numbers
-
 
 # ---------------- PART 5: __name__ ----------------
 
@@ -127,7 +128,8 @@ def main():
 # This block runs ONLY when the script is executed directly.
 if __name__ == "__main__":
   print("This script is being run directly.")
+
   main()
 # This line runs ONLY when the file is imported as a module.
 else:
-  print("This code was imported as a module.")
+  print("This file was imported as a module.")
