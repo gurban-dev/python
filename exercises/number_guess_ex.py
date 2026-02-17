@@ -4,12 +4,12 @@ Practice using for loops, while loops, boolean expressions,
 the input() function, and f-strings with format specifiers.
 
 Instructions:
-1. Generate a Secret Number
+1. Generate a secret random number.
 
 Use the random module to generate a random number between 1 and 20.
 
 import random
-secret = random.randint(1, 20)
+secret_no = random.randint(1, 20)
 
 
 2. Let the User Guess

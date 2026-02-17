@@ -14,8 +14,10 @@
 # created in memory.
 cat_name = "Emilka"
 
-# A number without quotation marks and without a decimal
-# point, is an integer.
+# An integer is a value composed of exclusively numeric
+# digits without quotation marks and without a decimal
+# point. Keep in mind that underscores in certain places
+# can be included in integers.
 
 # The data type of the variable "no_of_cat_houses" is an
 # integer.

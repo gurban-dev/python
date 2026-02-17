@@ -11,10 +11,13 @@ given_name = 'Alexander'
 
 age = 115
 
-# When should integers and strings be used?
+# Question:
+# When should integers/floats and strings be used?
+
+# Answer:
 # If you have to perform an arithmetic operation
 # (think of addition or subtraction), then you'd
-# use an integer.
+# use an integer/float.
 
 # If you have to construct a sentence, a string
 # is appropriate.
@@ -22,9 +25,9 @@ age = 115
 monthly_salary = 2_500
 
 # What if I want to keep track of whether Alexander lives
-# in the city Gdansk?
+# in the city Rome?
 
-# The variable "lives_in_gdansk" has a boolean data
-# type because False is assigned to it. True and False
-# are boolean values.
-lives_in_gdansk = False
+# The variable "lives_in_rome" has a boolean data type
+# because False is assigned to it. True and False are
+# boolean values.
+lives_in_rome = False

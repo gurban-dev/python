@@ -1,7 +1,9 @@
 import random
 
-# Step 1: Generate a secret number between 1 and 20
-# -randint(low (inclusive), high (exclusive))
+# Step 1: Generate a secret number between 1 and 20.
+
+# randint(low (inclusive), high (inclusive)) returns an integer
+# between low and high, both inclusive.
 secret = random.randint(1, 20)
 
 # Step 2: Initialise variables
