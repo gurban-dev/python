@@ -37,16 +37,14 @@ Create three subclasses:
 
 1. LightBulb
 2. Thermostat
-3. SecurityCamera
 
 Each subclass must:
 
 * Inherit from SmartDevice
 * Override turn_on(), turn_off(), and status()
 * Add at least one custom attribute:
-  LightBulb → brightness
-  Thermostat → temperature
-  SecurityCamera → resolution
+  LightBulb -> brightness
+  Thermostat -> temperature
 * Implement custom behavior. Example:
   Turning on a LightBulb sets brightness to 50 by default.
 

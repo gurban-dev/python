@@ -115,27 +115,6 @@ class Thermostat(SmartDevice):
         return f"Thermostat [{self._name}]: {state}, Temperature = {self.__temperature}"
 
 
-class SecurityCamera(SmartDevice):
-    def __init__(self, name: str, resolution="1080p"):
-        # Invokes the parent class' constructor method.
-        super().__init__(name)
-
-        self.resolution = resolution
-
-    def turn_on(self):
-        self._set_power(True)
-        print(f"{self._name} activated at {self.resolution} resolution.")
-
-    def turn_off(self):
-        self._set_power(False)
-        print(f"{self._name} deactivated.")
-
-    def status(self):
-        state = "ON" if self._is_on() else "OFF"
-
-        return f"SecurityCamera [{self._name}]: {state}, Resolution = {self.resolution}"
-
-
 # Part 3 - Polymorphic Function
 def show_device_status(devices):
     print("\n--- DEVICE STATUS REPORT ---")
@@ -150,14 +129,9 @@ if __name__ == "__main__":
 
     thermo = Thermostat("Hallway Thermostat")
 
-    # The argument "Front Door Camera" will be passed to the
-    # constructor method, and assigned to the "name" parameter.
-    camera = SecurityCamera("Front Door Camera")
-
     # Turn devices on/off
     bulb.turn_on()
     thermo.turn_on()
-    camera.turn_off()
 
     # Adjust settings.
     thermo.set_temperature(72)
@@ -168,6 +142,6 @@ if __name__ == "__main__":
     bulb.set_brightness(80)
 
     # Show full system status (polymorphism demonstration).
-    devices: list[SmartDevice] = [bulb, thermo, camera]
+    devices: list[SmartDevice] = [bulb, thermo]
 
     show_device_status(devices)
