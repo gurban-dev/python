@@ -23,70 +23,68 @@ How they actually do this is hidden (abstracted).
 # BankAccount is an abstract base class because its inheriting
 # from ABC.
 class BankAccount(ABC):
-  def __init__(self, balance):
-    # Encapsulation:
-    # The balance is kept hidden using a protected attribute
-    # (_balance).
+	def __init__(self, balance):
+		# Encapsulation:
+		# The balance is kept hidden using a protected attribute
+		# (_balance).
 
-    # The outside world must use methods (deposit, withdraw,
-    # get_balance) to interact with it.
-    self._balance = balance
+		# The outside world must use methods (deposit, withdraw,
+		# get_balance) to interact with it.
+		self._balance = balance
 
-  # An abstract method forces subclasses to implement withdrawal
-  # rules.
-  # withdraw() is merely an interface in this superclass.
-  @abstractmethod
-  def withdraw(self, amount):
-    # pass is a placeholder statement used when Python requires
-    # a code block, but no action needs to be executed.
+	# An abstract method forces subclasses to implement withdrawal
+	# rules.
 
-    pass
+	# withdraw() is merely an interface in this superclass.
+	@abstractmethod
+	def withdraw(self, amount):
+		# pass is a placeholder statement used when Python requires
+		# a code block, but no action needs to be executed.
+		pass
 
-  # Mutator/setter
-  def deposit(self, amount):
-    self._balance += amount
+	# Mutator/setter
+	def deposit(self, amount):
+		self._balance += amount
 
-  # Selector/getter
-  def get_balance(self):
-    return self._balance
+	# Selector/getter
+	def get_balance(self):
+		return self._balance
 
 # Inheritance:
 # CheckingAccount and SavingsAccount inherit from BankAccount.
 class CheckingAccount(BankAccount):
-
-  def withdraw(self, amount):
-    # Allows an overdraft up to -50.
-    if self._balance - amount < -50:
-      print("Overdraft limit exceeded!")
-    else:
-      # self._balance = self._balance - amount
-      self._balance -= amount
+	def withdraw(self, amount):
+		# Allows an overdraft up to -50.
+		if self._balance - amount < -50:
+			print("Overdraft limit exceeded!")
+		else:
+			# self._balance = self._balance - amount
+			self._balance -= amount
 
 
 class SavingsAccount(BankAccount):
-
-  def withdraw(self, amount):
-    if amount > self._balance:
-      print("Insufficient funds!")
-    else:
-      # self._balance = self._balance - amount
-      self._balance -= amount
+	def withdraw(self, amount):
+		if amount > self._balance:
+			print("Insufficient funds!")
+		else:
+			# self._balance = self._balance - amount
+			self._balance -= amount
 
 accounts = [
-  CheckingAccount(balance=100),
-  SavingsAccount(balance=100)
+	CheckingAccount(balance=100),
+	SavingsAccount(balance=100)
 ]
 
 # Polymorphism:
 # Each subclass implements the withdraw() method differently,
-# but acc.withdraw() is invoked the same way.
+# but account.withdraw() is invoked the same way.
 
 # The withdraw() method takes more than one form.
-for acc in accounts:
-  print('acc.__class__.__name__:', acc.__class__.__name__)
+for account in accounts:
+	print('account.__class__.__name__:', account.__class__.__name__)
 
-  # Notice how for the SavingsAccount object, withdrawing
-  # 120 cannot occur.
-  acc.withdraw(120)
+	# Notice how for the SavingsAccount object, withdrawing
+	# 120 in monetary currency cannot occur.
+	account.withdraw(120)
 
-  print('acc.get_balance():', acc.get_balance(), '\n')
+	print('account.get_balance():', account.get_balance(), '\n')

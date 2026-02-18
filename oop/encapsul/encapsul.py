@@ -6,39 +6,39 @@
 # getting or setting the object's internal state in a safe and
 # controlled way.
 
-class BankAccount():
-  def __init__(self, balance):
-    # Python does not have strict access modifiers like
-    # TypeScript.
+class BankAccount:
+	def __init__(self, balance):
+		# Python does not have strict access modifiers like
+		# TypeScript.
 
-    # Prefixing an attribute with __ triggers name mangling,
-    # making it less accessible from outside of the class.
+		# Prefixing an attribute with __ triggers name mangling,
+		# making it less accessible from outside of the class.
 
-    # Name mangling causes self.__balance becomes
-    # self._BankAccount__balance internally.
+		# Name mangling causes self.__balance to become
+		# self._BankAccount__balance internally at runtime.
 
-    # Conventionally, or by standard procedure, variables that
-    # that have two underscores preceding their names are treated
-    # as private attributes.
-    self.__balance = balance
-  
-  # Selector/getter method.
-  def get_balance(self):
-    return self.__balance
+		# Conventionally, or by standard procedure, variables that
+		# have two underscores preceding their names are treated
+		# as private attributes.
+		self.__balance = balance
+	
+	# Selector/getter method.
+	def get_balance(self):
+		return self.__balance
 
-  # Mutator/setter methods.
-  def deposit(self, amount):
-    # += is called the augmented assignment operator.
+	# Mutator/setter methods.
+	def deposit(self, amount):
+		# += is called the augmented assignment operator.
 
-    # self.__balance += amount is equivalent to:
-    # self.__balance = self.__balance + amount
-    self.__balance += amount
-  
-  def withdraw(self, amount):
-    if amount > self.__balance:
-      print("Insufficient funds.")
-      return
-    self.__balance -= amount
+		# self.__balance += amount is equivalent to:
+		# self.__balance = self.__balance + amount
+		self.__balance += amount
+	
+	def withdraw(self, amount):
+		if amount > self.__balance:
+			print("Insufficient funds.")
+			return
+		self.__balance -= amount
 
 
 bankAccount = BankAccount(5_000)
