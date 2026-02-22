@@ -59,7 +59,7 @@ pip install ipykernel
 Register the kernel:
 python -m ipykernel install --user --name .venv --display-name ".venv"
 
-If on Windows, run the PowerShell as an administrator:
+If on Windows, run PowerShell as an administrator:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
