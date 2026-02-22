@@ -9,6 +9,7 @@
 
 def check():
     print("Checked!")
+
     return True
 
 # Since the first subexpression evaluates to False, the Python
@@ -18,18 +19,25 @@ def check():
 # 'and' operator requires that both subexpressions evaluate to True.
 
 # "Checked!" is never printed.
-print(False and check())
+print('False and check():', False and check(), '\n')
 
-# In the below example, the Python interpreter realises that the
-# first subexpression evaluates to True, and since the 'or' operator
-# requires only one of the subexpressions to be True, it already knows
-# that the entire expression will evaluate to True.
+# check() is evaluated since the interpreter doesn't yet know what
+# the compound expression evaluates to by simply looking at the first
+# subexpression (False). This is because the or logical operator
+# requires that only one subexpression must evaluate to True in order
+# for the entire expression to also evaluate to True.
+print('False or check():', False or check())
+
+# In the below example, the interpreter realises that the first
+# subexpression evaluates to True, and since the 'or' operator
+# requires only one of the subexpressions to be True, it already
+# knows that the entire expression will evaluate to True.
 
 # "Checked!" is never printed.
-print(True or check())
+print('\nTrue or check():', True or check())
 
-watermelon_on_sale = True
 it_is_sunny = False
+watermelon_on_sale = True
 
 # Output:
 # it_is_sunny and watermelon_on_sale: False

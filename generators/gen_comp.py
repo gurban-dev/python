@@ -6,7 +6,10 @@
 # Lazy evaluation: values are produced on-the-fly as you iterate,
 # not all at once, saving memory. A generator remembers where it
 # left off in the sequence.
-generator_obj = (i for i in range(1, 10))
+generator_obj = (i for i in range(100))
+
+# List comprehension.
+lst = [i for i in range(100)]
 
 print('type(generator_obj):', type(generator_obj), '\n')
 
@@ -21,11 +24,8 @@ for num in generator_obj:
   else:
     print('num:', num)
 
-# List comprehension.
-lst = [i for i in range(100)]
-
-# Unlike the list comprehension above, this for loop uses the
-# same memory space as the generator expression below.
+# This for loop uses the same memory space as the generator
+# expression below.
 print('\nfor i in range(100):')
 for i in range(100):
   print('i:', i, end=' ')
@@ -37,12 +37,16 @@ def gen():
 
     # yield pauses the function, sends the value of 'i' back
     # to where this function was invoked and can resume later
-    # on from where generator left off in the sequence.
+    # on from where the generator left off in the sequence.
     yield i
 
 generator = gen()
 
-print('\niter(generator):', iter(generator))
+# The iter() function returns an iterator for the argument passed
+# to it.
+# print('\niter(generator):', iter(generator))
+
+print('\nnext(generator):', next(generator))
 
 print('\nnext(generator):', next(generator))
 

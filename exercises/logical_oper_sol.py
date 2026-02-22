@@ -55,26 +55,26 @@ y = not(False) -> True
 
 Now evaluate each print statement:
 
-print('\na and b:', a and b)
-False and False -> False
+print('\na or b:', a or b)
+False or False -> False
 
-print('\na and x', a and x)
-False and True -> False
-
-print('\ny and b:', y and b)
+print('\nx and a:', x and a)
 True and False -> False
 
-print('\nx and y:', x and y)
-True and True -> True
+print('\ny or b:', y or b)
+True or False -> True
+
+print('\nb and y:', b and y)
+False and True -> False
 
 
 Expected output:
 
-a and b: False
+a or b: False
 
-a and x False
+x and a: False
 
-y and b: False
+y or b: True
 
-x and y: True
+b and y: False
 '''

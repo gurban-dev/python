@@ -26,11 +26,11 @@ b = False
 x = not(a)
 y = not(b)
 
-print('\na and b:', a and b)
+print('\na or b:', a or b)
 
-print('\na and x', a and x)
+print('\nx and a', x and a)
 
-print('\ny and b:', y and b)
+print('\ny or b:', y or b)
 
-print('\nx and y:', x and y)
+print('\nb and y:', b and y)
 '''
