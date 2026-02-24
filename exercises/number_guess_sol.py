@@ -13,32 +13,33 @@ correct = False
 
 # Step 3: Start the guessing loop
 while not correct:
-  try:
-    # Ask for user input
-    user_input = input("Enter your guess: ")
+	try:
+		# Ask for user input
+		user_input = input("Enter your guess: ")
 
-    guess = int(user_input)
-  except ValueError:
-    print("Please enter a valid integer.")
-    continue
+		guess = int(user_input)
+	except ValueError:
+		print("Please enter a valid integer.")
+		continue
 
-  # Count the guess and store it
-  guesses.append(guess)
-  guess_count += 1
+	# Count the guess and store it.
+	guesses.append(guess)
 
-  # Step 4: Check the guess
-  if guess < secret:
-    print("Too low!")
-  elif guess > secret:
-    print("Too high!")
-  else:
-    print("Correct!")
-    correct = True
+	guess_count += 1
+
+	# Step 4: Check the guess
+	if guess < secret:
+		print("Too low!")
+	elif guess > secret:
+		print("Too high!")
+	else:
+		print("Correct!")
+		correct = True
 
 # Step 5: Display all guesses
 print("\nYour guesses:")
 for index, guess in enumerate(guesses, start=1):
-  print(f"Guess #{index}: {guess}")
+	print(f"Guess #{index}: {guess}")
 
 # Step 6: Calculate and display average guess value
 average = sum(guesses) / len(guesses)

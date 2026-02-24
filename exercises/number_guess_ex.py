@@ -1,7 +1,10 @@
 '''
-Objective:
-Practice using for loops, while loops, boolean expressions,
-the input() function, and f-strings with format specifiers.
+Concepts:
+for loops
+while loops
+Boolean expressions
+The input() function
+F-strings with format specifiers
 
 Instructions:
 1. Generate a secret random number.
@@ -9,6 +12,8 @@ Instructions:
 Use the random module to generate a random number between 1 and 20.
 
 import random
+
+random.randint(start (inclusive), stop (inclusive))
 secret_no = random.randint(1, 20)
 
 
