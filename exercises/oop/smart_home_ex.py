@@ -33,7 +33,7 @@ Use from abc import ABC, abstractmethod.
 
 Part 2 - Subclasses via Inheritance
 
-Create three subclasses:
+Create two subclasses:
 
 1. LightBulb
 2. Thermostat

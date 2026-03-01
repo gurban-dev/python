@@ -10,6 +10,14 @@
 int_number = None
 
 try:
+    # int() can only convert strings that represent whole numbers (no decimal
+    # point).
+
+    # If the user enters a value like "1.5", Python raises a ValueError because
+    # "1.5" is not a valid base-10 integer literal.
+
+    # A base-10 integer literal is a number composed of only digits 0-9 with
+    # no decimal point.
     int_number = int(input('Enter a number with a decimal point (e.g., 1.5): '))
 except ValueError as err:
     print(f"Invalid input: {err}")

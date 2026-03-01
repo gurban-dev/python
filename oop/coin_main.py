@@ -1,5 +1,5 @@
 '''
-Programmers commonly organize their class
+Programmers commonly organise their class
 definitions by storing them in their own
 separate modules.
 

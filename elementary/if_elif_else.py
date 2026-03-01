@@ -21,8 +21,8 @@ print(f'video_game == \'age of empires\': {video_game == 'age of empires'}')
 # Only one of the print statements in the if-elif-else statement
 # below will be executed.
 if video_game == 'roblox':
-  print('\nYou selected roblox.')
+	print('\nYou selected roblox.')
 elif video_game == 'age of empires':
-  print('\nYou selected age of empires.')
+	print('\nYou selected age of empires.')
 else:
-  print('\nYou selected neither roblox nor age of empires.')
+	print('\nYou selected neither roblox nor age of empires.')

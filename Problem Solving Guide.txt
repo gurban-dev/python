@@ -1,8 +1,10 @@
-1. State the input.
-2. State the expected output.
+1. State the data that will be inputted into the program.
+2. State the program's expected output.
 3. Describe the process in one sentence.
 4. Break the idea into steps.
-5. Choose a programming pattern.
+5. Choose the tools to use in your program by understanding
+   when to use tools such as an if-elif-else statement, a
+   while loop, a user-defined function, etc.
 6. Write pseudocode.
 7. Convert the pseudocode to Python source code.
 

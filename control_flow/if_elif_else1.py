@@ -46,15 +46,15 @@ elif is_cold:
 	print("It is a cold day.")
 	print("Wear warm clothes.")
 else:
-  print("It is neither cold nor hot.")
+  	print("It is neither cold nor hot.")
 
-is_rainy = False
+is_rainy = True
 
 # The "and" keyword makes sure that both
 # conditions to its left and to its right
 # evaluate to True before entering the block.
-if is_cold and is_rainy:
-  print('\nIt\'s cold and rainy.')
+if is_hot and is_rainy:
+	print('\nIt\'s cold and rainy.')
 
 # Short-circuit evaluation:
 # If the condition to the left of the "and" operator
@@ -62,24 +62,25 @@ if is_cold and is_rainy:
 # condition on the right side of the "and" operator because
 # both conditions must evaluate to True for the compound
 # expression to return to True.
-if is_hot or is_rainy:
-  print('It\'s either hot or cold.')
+if is_rainy or is_hot:
+	print('It\'s either hot or cold.')
 
 # When should two if statements be written separately?
 # Answer:
 # Two separate if statements are used when the conditions 
 # are independent of each other, meaning both can be true 
-# at the same time. Each condition is evaluated separately.
+# at the same time. Each condition is therefore evaluated
+# separately.
 
 developed_country = False
 has_crude_oil = True
 
 if developed_country:
-  print("\nThe country ranks highly on the human development index report.")
+  	print("\nThe country ranks highly on the human development index report.")
 else:
-  print("\nThe country is still developing.")
+  	print("\nThe country is still developing.")
 
 if has_crude_oil:
-  print("\nThe country has crude oil.")
+  	print("\nThe country has crude oil.")
 else:
-  print("\nThe country does not have crude oil.")
+  	print("\nThe country does not have crude oil.")

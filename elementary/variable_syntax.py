@@ -24,6 +24,8 @@ age = 115
 
 monthly_salary = 2_500
 
+print("monthly_salary:", monthly_salary)
+
 # What if I want to keep track of whether Alexander lives
 # in the city Rome?
 

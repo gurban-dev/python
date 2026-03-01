@@ -87,11 +87,13 @@ class Thermostat(SmartDevice):
         return self.__temperature
 
     # Mutator/Setter with validation
-    def set_temperature(self, value):
-        if value < 40:
-            raise ValueError("Temperature cannot be lower than 40°F or 4.5 Celsius.")
-
-        self.__temperature = value
+    def set_temperature(self, temp):
+        try:
+            if temp < 40:
+                raise ValueError("Temperature cannot be lower than 40°F or 4.5 Celsius.")
+            self.__temperature = temp
+        except ValueError as e:
+            print(f"Error setting temperature: {e}")
 
     # turn_on() is a mutator/setter method because it changes
     # the value of an instance variable/attribute.
