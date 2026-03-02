@@ -30,19 +30,24 @@ In pricing.py:
 
 Define a constant tax rate (for example, 0.08).
 
-Write a function final_price(price) that returns the price including tax.
+Write a function final_price(price) that returns the price including
+tax.
 
 Print the value of the __name__ variable.
 
-Only if the file is run directly:
-
-Print: "Running pricing.py directly"
+Inside the pricing.py file, print the following only if the file
+was run directly:
+"Running pricing.py directly"
 
 Prompt the user for a price
 
 Display the final price using final_price()
 
 When this file is imported, no user input should occur.
+
+If the file was not run directly, then print the subsequent text
+inside the pricing.py file:
+"pricing.py is being imported."
 
 
 Part 3: Implement checkout.py

@@ -25,7 +25,7 @@ while (1):
     n = int(a)
 
     # Check if the number is non-negative.
-    if (n >= 0):
+    if n >= 0:
         # Calculate and display the square root.
         print(f'The square root of the number is {n**(0.5)}.')
     else:
