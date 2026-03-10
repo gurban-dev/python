@@ -1,26 +1,22 @@
-def calculate_monthly_savings(
-  income: float, expenditure: float) -> float | str:
-  difference = income - expenditure
+def compute_savings(income=None, expenses=None):
+	if not income:
+		income = int(input("Please input monthly income: "))
 
-  # print('difference:', difference)
+	if not expenses:
+		expenses = int(input("Please input expenses: "))
 
-  if difference > 0:
-    return difference
-  else:
-    return "You did not save anything for this month."
+	savings = income - expenses
 
-monthly_income = 2500.00
-monthly_expenditure = 2000.00
 
-result = calculate_monthly_savings(monthly_income, monthly_expenditure)
+	if savings < 1:
+		print("You didn't save anything.")
+	else:
+		print(f"You saved {savings} this month" )
 
-statement = ""
+	return savings
 
-if isinstance(result, float):
-  # statement = "Your monthly savings: " + str(result)
+savings = compute_savings()
 
-  statement = f"Your monthly savings: {result}"
-else:
-  statement = result
+print("\nsavings:", savings)
 
-print(statement)
+compute_savings(income=100, expenses=50)
