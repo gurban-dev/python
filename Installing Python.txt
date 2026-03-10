@@ -1,0 +1,72 @@
+If one of the following errors appear, it indicates that
+Python was installed, but it wasn't added to PATH:
+
+'pip' is not recognized as an internal or external command,
+operable program or batch file.
+
+The term 'pip' is not recognized as the name of a cmdlet,
+function, script file, or operable program.
+
+Windows OS:
+
+If not installed, download a stable release of Python from
+the official Python website:
+https://www.python.org/downloads/
+
+Download the installer:
+python-3.x.x-amd64.exe
+
+Run the installer by double-clicking the downloaded file.
+
+On Windows OS:
+python-3.x.x-amd64.exe
+
+E.g.
+python-3.12.2-amd64.exe
+
+At the bottom of the installer window check the following:
+Add Python to PATH
+
+Click "Install Now".
+
+Verify installation:
+python --version
+
+pip --version
+
+-----------------------------------------------------------
+Linux OS:
+
+sudo apt update
+sudo apt install python3 python3-pip
+
+or
+
+Download the source code from the Python website:
+Python-3.x.x.tgz
+
+Extract the archive:
+tar -xf Python-3.x.x.tgz
+
+Move into the directory:
+cd Python-3.x.x
+
+Install build dependencies:
+sudo apt update
+sudo apt install build-essential libssl-dev zlib1g-dev \
+libncurses5-dev libbz2-dev libreadline-dev libsqlite3-dev \
+libffi-dev wget
+
+Configure the build:
+./configure --enable-optimizations
+
+Compile Python:
+make -j $(nproc)
+
+Install Python:
+sudo make altinstall
+
+Verify installation:
+python --version
+
+pip --version

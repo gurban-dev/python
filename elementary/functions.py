@@ -3,10 +3,10 @@
 # 'num1' and 'num2' are the parameters that the function
 # accepts.
 def sum(num1, num2):
-  print('num1:', num1)
-  print('num2:', num2)
+	print('num1:', num1)
+	print('num2:', num2)
 
-  print(f'sum of {num1} and {num2}: {num1 + num2}')
+	print(f'\nsum of {num1} and {num2}: {num1 + num2}')
 
 # Find the sum of two numbers.
 # Whenever you call a function in Python, remember
