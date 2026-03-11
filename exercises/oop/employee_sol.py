@@ -1,21 +1,3 @@
-'''
-Concepts covered:
-Class variables: Define company_name and employee_count
-                 shared across all instances.
-
-Instance variables: Store employee_name, salary, and
-                    department for each object.
-
-Instance methods: Implement give_raise() and get_info() that
-                  work with instance data.
-
-Class methods: Create get_employee_count() and from_monthly_salary()
-               (an alternative constructor).
-
-Inheritance: Make a child/derived class called "Manager" inherit
-             from the Employee class and override get_info().
-'''
-
 class Employee:
 	# Class variables.
 	company_name = "Eco Fishing"

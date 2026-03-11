@@ -7,10 +7,26 @@ operable program or batch file.
 The term 'pip' is not recognized as the name of a cmdlet,
 function, script file, or operable program.
 
-Windows OS:
+Find out where the python.exe file is.
 
-If not installed, download a stable release of Python from
-the official Python website:
+Windows OS:
+Search for python.exe in the search bar next to the Windows
+button.
+
+Select Path under User variables.
+
+Click Edit...
+
+Click New.
+
+Paste the file path for python.exe and click the Enter.
+
+Click 'Ok' and then 'Ok' again.
+
+Restart the terminal.
+
+If Python is not installed, download a stable release of
+Python from the official Python website:
 https://www.python.org/downloads/
 
 Download the installer:

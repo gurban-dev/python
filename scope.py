@@ -1,16 +1,10 @@
-# -----------------------------
-# Example data
-# -----------------------------
 # Indexes:        0           1         2         3          4
 countries = ['Australia', 'Canada', 'Germany', 'Japan', 'Australia']
 
 # Global variable (accessible anywhere in this file)
 indexes_for_australia = []
 
-
-# -----------------------------
-# Function demonstrating LOCAL scope
-# -----------------------------
+# Function demonstrating local scope.
 def get_indexes_for_australia(countries):
 
     # Local variable (only exists inside this function)
@@ -19,13 +13,13 @@ def get_indexes_for_australia(countries):
     """
     Python resolves variable names in the following order (LEGB rule):
 
-    1. Local      – inside the current function
-    2. Enclosing  – outer function if nested
-    3. Global     – defined at the module level
-    4. Built-in   – Python's built-in names (print, len, etc.)
+    1. Local      - inside the current function
+    2. Enclosing  - outer function if nested
+    3. Global     - defined at the module level
+    4. Built-in   - Python's built-in names (print, len, etc.)
     """
 
-    # enumerate() returns both the index and value
+    # enumerate() returns both the index and value.
     for index, value in enumerate(countries):
         print(f"index: {index}, value: {value}")
 
@@ -39,11 +33,12 @@ print("\nAustralia indexes:", get_indexes_for_australia(countries))
 
 
 # -----------------------------
-# Demonstrating that FOR loops
-# do NOT create their own scope
+# Demonstrating that for loops
+# do not create their own scope
 # -----------------------------
 
-indexes_for_canada = []   # Initialize BEFORE the loop
+# Initialise before the loop.
+indexes_for_canada = []
 
 for index, value in enumerate(countries):
 
@@ -54,15 +49,15 @@ for index, value in enumerate(countries):
 
 print("\nindexes_for_canada:", indexes_for_canada)
 
-# Variables defined in the loop are still accessible afterwards
+# Variables defined in the loop are still accessible afterwards.
 print("\nLast index:", index)
 print("Last value:", value)
 
 
-# -----------------------------
-# Demonstrating that WHILE loops
-# also do NOT create scope
-# -----------------------------
+# ------------------------------
+# Demonstrating that while loops
+# also do not create scope
+# ------------------------------
 
 nums = [1, 2, 3, 4]
 index = 0
@@ -74,5 +69,5 @@ while index < len(nums):
 
     index += 1
 
-# 'found_value' is accessible outside the loop
+# 'found_value' is accessible outside the loop.
 print("\nfound_value:", found_value)
