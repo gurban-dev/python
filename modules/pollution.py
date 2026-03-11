@@ -1,6 +1,9 @@
+# Global namespace pollution...
+
 # Import everything from math.__all__.
 
-# math.__all__ is a attribute that references a list.
+# -math.__all__ is a attribute that references a list that contains
+# all of the function that are built into the math module.
 
 # The asterisk (*) indicates that everything will be imported.
 from math import *
@@ -15,7 +18,8 @@ With from math import *, the global namespace would look roughly like:
     ...
 }
 
-There are now fifty-four new names all the same level as your variables.
+There are now fifty-four new names all located at the same level
+as your variables.
 
 A cleaner way to use functions defined in the math module:
 import math
