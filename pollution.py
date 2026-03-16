@@ -1,25 +1,28 @@
-# Global namespace pollution...
+# Global namespace pollution happens when too many names (variables,
+# functions, classes, etc.) are placed into the program’s global
+# scope, increasing the chance that names will conflict, overwrite
+# each other, or make the code harder to understand.
 
-# Import everything from math.__all__.
+# Import all names listed in math.__all__ into the current namespace.
 
-# -math.__all__ is a attribute that references a list that contains
-# all of the function that are built into the math module.
+# __all__ defines which names are imported when from module import
+# * is used.
 
 # The asterisk (*) indicates that everything will be imported.
 from math import *
 
 '''
 With from math import *, the global namespace would look roughly like:
+
 {
-    'sin': <built-in function sin>,
-    'cos': <built-in function cos>,
-    'sqrt': <built-in function sqrt>,
-    'pi': 3.14159,
+    'sin': <function math.sin>,
+    'cos': <function math.cos>,
+    'sqrt': <function math.sqrt>,
+    'pi': 3.141592653589793,
     ...
 }
 
-There are now fifty-four new names all located at the same level
-as your variables.
+There are now dozens of new names at the same level as your variables.
 
 A cleaner way to use functions defined in the math module:
 import math
@@ -40,7 +43,7 @@ functions, and classes, so that they can be used.
 '''
 print('sqrt(16):', sqrt(16), '\n')
 
-# Accidentally overwrite it the math.sqrt() function.
+# Accidentally overwrite the math.sqrt() function.
 sqrt = 10
 
 try:

@@ -1,152 +1,125 @@
 '''
-A class is a blueprint for an object that will
-have state/data and behaviour/methods.
+A class is a blueprint for an object that contains
+state (data) and behaviour (methods).
 
 The state of an object is defined with instance
 variables and class variables.
 
-The behaviour of an object is defined with methods
-that are defined within the class.
+The behaviour of an object is defined with methods.
 
-Unlike Java, the name of a Python file isn't required
-to match the name of the class declared inside of it.
+Although not required, it is conventional practice
+to make the file name match the class name.
 
-Although not a strict requirement, it is conventional
-practice to make the name of a file the same as the
-class declared in it, but written in the snake case
-naming convention.
-
-File name (snake case naming convention):
+File name (snake case):
 coffee_machine.py
 
-Class name (pascal naming convention):
+Class name (pascal case):
 CoffeeMachine
 
-Keep two empty lines above each class definition.'''
+Keep two empty lines above each class definition.
+'''
 
-
-class Coffee:
+# All Python classes implicitly inherit from the built-in base
+# class object.
+class Coffee(object):
 	'''
-	The following is the constructor of this class.
+	The constructor initialises the state of an object
+	when it is created.
 
-	The constructor of a class is responsible for
-	initialising the state of an object upon its
-	creation. This means that the constructor is
-	invoked every time a new object/instance of
+	It runs automatically every time a new instance of
 	the Coffee class is created.
 
-	The constructor should always be the first function
-	declared within a class.
-
-	The constructor is also a method. Every instance method
-	in a class must accept the "self" keyword as its first
+	Every instance method must accept "self" as the
 	first parameter.
 
-	Functions that have two leading and trailing underscores
-	(__) are known as dunder methods in Python.'''
+	Methods with two leading and trailing underscores
+	are called dunder methods in Python.
+	'''
 	def __init__(self, bean_type):
-		'''
-		Instance variable/data member.
 
-		Prepending "bean_type" with "self." makes it
-		clear that the following is an instance variable.'''
+		'''
+		Instance variable.
+
+		Using "self." indicates that this variable
+		belongs to the object.
+		'''
 		self.bean_type = bean_type
 
 		print('\nCoffee class\' __init__() method invoked.')
-
 		print('\nself.bean_type:', self.bean_type, '\n')
 
-	'''
-	Python does not support true method overloading
-	for __init__() (or any method) in the way that
-	programming languages like Java or C++ do. If you
-	define multiple __init__() methods within a single
-	class, only the last one defined will be used.'''
 
 	'''
-	The get_bean_type() function is a method.
-	A method is a function that "belongs to" an object.
-
-	The subsequent method is often called a "selector"
-	or "getter" function because it returns an instance
-	variable/data member that belongs to an object.'''
-
-	# Getter/selector
+	A getter (selector) returns the value of an
+	instance variable belonging to an object.
+	'''
 	def get_bean_type(self):
-		'''
-		Notice that the "self" keyword must be
-		included in order to reference the instance
-		variable that is unique to this particular
-		object/instance.'''
 		return self.bean_type
-	
-	'''
-	The ensuing method is often referred to as a setter
-	/mutator because it changes the value of an instance
-	variable/data member that belongs to an object.'''
 
-	# Setter/mutator
+
+	'''
+	A setter (mutator) changes the value of an
+	instance variable belonging to an object.
+	'''
 	def set_bean_type(self, bean_type):
 		self.bean_type = bean_type
-
 		print(f'\nself.bean_type updated to {bean_type}.\n')
 
+	'''
+	The __repr__() method returns an unambiguous
+	string representation of the object.
+
+	It is mainly intended for developers and debugging.
+	'''
+	def __repr__(self):
+		return f"Coffee(bean_type='{self.bean_type}')"
+
+	'''
+	The __str__() method returns a readable string
+	representation of the object.
+
+	It is intended for end users.
+	'''
+	def __str__(self):
+		return f"Coffee made from {self.bean_type} beans"
+
+
 '''
-Create an instance/object of the class Coffee.
+Create an instance/object of the Coffee class.
 
-You must use the same name of the class when
-creating an object/instance of that class.
+The constructor requires an argument because it
+expects the parameter "bean_type".
+'''
 
-The name of the object, "espresso" in this case,
-is less important.
-
-An argument must be provided when invoking the
-class name "Coffee" because in the class constructor,
-there is a parameter called "bean_type".
-
-The argument being passed to the constructor is
-'arabica'.'''
-
-# The square brackets [] indicate that what
-# follows is a list data structure.
+# List of bean types.
 bean_types = [
 	'Arabica',
 	'Robusta',
 	'Liberica'
 ]
 
-# The vertical way of creating a list
-# data structure is more readable as
-# visible above.
-# bean_types = ['Arabica', 'Robusta', 'Liberica']
-
 print("Bean Types:")
 
-# Iterate through all of the elements
-# in the "bean_types" list.
+# Iterate through all elements in the list.
 for bean_type in bean_types:
 	print(bean_type)
 
-# Accept input from the end user.
-# Try inputting "Excelsa".
+# Accept input from the user.
 bean_type = input(
-  '\nEnter the bean type of your preference\n' \
+  '\nEnter the bean type of your preference\n'
   'from the above menu: '
 )
 
-# Create an instance or an object of the Coffee class.
-# An argument doesn't need to be supplied for the
-# self parameter in the constructor method because
-# Python automatically passes the new object being
-# created to the self parameter.
+# Create an object of the Coffee class.
 espresso = Coffee(bean_type)
 
-# espresso = Coffee('Arabica')
-
-# Invoke the selector/getter method.
+# Call the getter method.
 print('espresso.get_bean_type():', espresso.get_bean_type())
 
-# Invoke the setter/mutator method.
+# Call the setter method.
 espresso.set_bean_type('Robusta')
 
 print('espresso.get_bean_type():', espresso.get_bean_type())
+
+print('\nespresso:\n', espresso, sep="")
+print('\nrepr(espresso):\n', repr(espresso), sep="")

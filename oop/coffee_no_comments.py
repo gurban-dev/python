@@ -2,13 +2,13 @@ class Coffee:
   def __init__(self, bean_type):
     self.bean_type = bean_type
 
-    print('\nCoffee class\' __init__ method invoked.')
+    print('\nCoffee class\' __init__() method invoked.')
 
     print('\nself.bean_type:', self.bean_type, '\n')
 
   def get_bean_type(self):
     return self.bean_type
-  
+
   def set_bean_type(self, bean_type):
     self.bean_type = bean_type
 

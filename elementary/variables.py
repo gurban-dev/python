@@ -39,7 +39,17 @@ quotation marks on its left and right sides.
 When you see content surrounded by quotes (single or
 double quotes), you immediately know that you are
 working with a string data type.
-
-Since the variable 'flavour' is assigned the string
-literal 'vanilla' it is a string variable.
 """
+
+# The variable 'monarch' references initially what 'famous_leader'
+# references.
+monarch = famous_leader
+
+print("\nmonarch:", monarch)
+
+famous_leader = "Charles the Great"
+
+print("After famous_leader is assigned new string.")
+print("\nmonarch:", monarch)
+
+print("famous_leader:", famous_leader)

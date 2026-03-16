@@ -56,46 +56,47 @@ class Product:
 
 	def get_name_and_price(self):
 		return (f'\nself.name: {self.name}, '
-						f'self.price: {self.price}')
+				f'self.price: {self.price}')
 
 # Create three different instances/objects
 # of the Product class.
-product1 = Product("Laptop", 999.99)
+laptop = Product("Laptop", 999.99)
 
-print(f'product1.get_total_products(): '
-      f'{product1.get_total_products()}')
+print(f'laptop.get_total_products(): '
+      f'{laptop.get_total_products()}')
 
-product2 = Product("Smartphone", 499.99)
-product3 = Product("Headphones", 99.99)
+smartphone = Product("Smartphone", 499.99)
+headphones = Product("Headphones", 99.99)
 
-laptop = Product("Laptop", 1200.99)
-
-print('\nAfter the Product class has be instantiated four times:')
+print('\nAfter the Product class has be instantiated three times:')
 
 # Output the class variable that is
 # the same for each object.
-print(f'product1.get_total_products(): '
-      f'{product1.get_total_products()}')
+print(f'laptop.get_total_products(): '
+      f'{laptop.get_total_products()}')
 
-print(f'\nproduct2.get_total_products(): '
-      f'{product2.get_total_products()}')
+print(f'\nsmartphone.get_total_products(): '
+      f'{smartphone.get_total_products()}')
 
-print(f'\nproduct3.get_total_products(): '
-      f'{product3.get_total_products()}')
+print(f'\nheadphones.get_total_products(): '
+      f'{headphones.get_total_products()}')
 
 # Output the instance variables
 # that are unique to each object.
-print(f'\nproduct1.get_name_and_price():'
-      f'{product1.get_name_and_price()}'
-      f'\nproduct2.get_name_and_price():'
-      f'{product2.get_name_and_price()}'
-      f'\nproduct3.get_name_and_price():'
-      f'{product3.get_name_and_price()}')
+print(f'\nlaptop.get_name_and_price():'
+      f'{laptop.get_name_and_price()}'
+      f'\nsmartphone.get_name_and_price():'
+      f'{smartphone.get_name_and_price()}'
+      f'\nheadphones.get_name_and_price():'
+      f'{headphones.get_name_and_price()}')
+
+# Create a product with a duplicate name.
+laptop2 = Product("Laptop", 1200.99)
+
+print(f'\nlaptop2.get_name_and_price():'
+      f'{laptop2.get_name_and_price()}')
 
 print('\nlaptop.get_unique_products_count():',
 			laptop.get_unique_products_count())
 
-print('\nlaptop.get_product_names():', laptop.get_product_names())
-
-print('\nlaptop.get_name_and_price():',
-			laptop.get_name_and_price())
+print('\nlaptop2.get_product_names():', laptop2.get_product_names())
