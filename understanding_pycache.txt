@@ -1,0 +1,14 @@
+In Python, the __pycache__ directory is an automatically
+generated folder that stores compiled versions of your
+Python files.
+
+When you first run a .py source file, the Python interpreter
+compiles it into bytecode, an intermediate representation of
+your code. This bytecode is then executed by the Python Virtual
+Machine (PVM).
+
+To improve performance and avoid recompiling each time, Python
+caches these .pyc files in the __pycache__ directory.
+
+Each source file (e.g., main.py) has a corresponding .pyc
+file inside this folder.

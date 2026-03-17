@@ -1,0 +1,70 @@
+Format of a function definition:
+
+def function_name():
+  statement
+  statement
+  etc.
+
+The first line is known as the function header.
+It marks the beginning of the function definition.
+
+The function header begins with the key word "def",
+followed by the name of the function, followed by
+a set of parentheses, followed by a colon.
+
+Beginning at the next line is a set of statements
+known as a block. A block is simply a set of
+statements that belong together as a group.
+
+These statements are performed any time the function
+is executed. Notice in the general format that all
+of the statements in the block are indented. This
+indentation is required, because the Python
+interpreter uses it to tell where the block begins
+and where it ends.
+
+The single-responsibility software design principle:
+A function should only perform one specific task.
+
+A function that does only one thing can be safely used in
+different parts of a program, because it won’t carry extra
+actions that could interfere with other code.
+
+If a bug occurs, you only have to check one small function.
+You don't have to search through lines of unrelated code to
+find the problem.
+
+Type annotations in Python improve readability by providing hints
+about the expected types of variables, function parameters, and
+return values.
+
+Function annotations syntax:
+def function_name(
+  parameter1: data_type, parameter2: data_type) -> return_type:
+  variable_name: data_type = value_being_assigned
+
+  statement
+
+  ...
+
+  etc.
+
+Parameter type annotation:
+parameter1: data_type
+
+Indicates the expected type of a function parameter.
+
+Return type annotation:
+-> return_type
+
+Indicates the expected type the function will return.
+
+Variable type annotation:
+variable_name: data_type
+
+Indicates the expected type of a variable.
+
+Notes:
+- Type annotations are optional.
+- Python programs run the same with or without them.
+- They are mainly used for documentation and readability.

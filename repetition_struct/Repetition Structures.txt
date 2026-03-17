@@ -1,0 +1,47 @@
+Loops in Python
+
+A loop is a repetition structure that allows an instruction or group
+of instructions to execute zero or multiple times. Loops are useful
+when a task may need to be repeated in a program.
+
+Python provides two main types of loops: while loops and for loops.
+
+While Loops (Condition-Controlled)
+
+A while loop executes as long as a condition is true, making it a
+pretest loop (the condition is tested/evaluated before each iteration).
+
+Use a while loop when you need to validate user input or repeat
+an action until a certain condition is met (e.g., entering an
+email address and password).
+
+Syntax:
+
+while <condition>:
+  <instruction>
+  <instruction>
+  ...
+  etc.
+
+The indented instructions are executed repeatedly while the condition
+is true.
+
+For Loops (Count-Controlled)
+
+A for loop iterates over a sequence of items (like a list, string,
+or range).
+
+Each iteration executes once per item, making it ideal for tasks
+that repeat a known number of times.
+
+Syntax:
+
+for <variable> in [value1, value2, ...]:
+  <instruction>
+  <instruction>
+
+[value1, value2, ...] is an iterable, a collection of items the loop can
+process one by one.
+
+The for clause defines the loop variable that takes the value
+of each item in turn.

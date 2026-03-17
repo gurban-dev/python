@@ -1,0 +1,52 @@
+When you see the keyword "class" in a programming
+language, it immediately suggests you're working
+within the Object-Oriented Programming (OOP) paradigm.
+
+Object-oriented programming revolves around
+organizing and structuring software by
+defining classes and objects, which help make
+code more modular, reusable, and easier to
+maintain.
+
+Four pillars of object-oriented programming:
+Inheritance, Abstraction, Encapsulation, Polymorphism
+
+Procedural Programming is often more straightforward
+and used for smaller, simpler tasks. It focuses on
+writing functions that execute a sequence of actions,
+but it lacks the modularity OOP provides.
+
+Modularity in OOP is about breaking down a program
+into smaller, independent classes that can be easily
+modified, extended, or reused. In procedural programming,
+you'd likely put all functions together, making it
+harder to manage complex projects.
+
+In OOP, a class acts as a blueprint or template,
+while an object (also known as an instance) is a
+concrete entity created based on that blueprint.
+
+Instantiating that class will create an object
+or instance of that class. Here, instance and
+object of a class have the same meaning.
+
+Remember that a class has a constructor which
+is where the instance variables are initialised:
+def __init__(self):
+
+Note that the "self" keyword must be accepted as
+the first parameter in each class method/function.
+
+There are also class variables which are different.
+Class variables are shared among instances/objects
+of a class. In contrast, instance variable are
+unique to each instance.
+
+class Employee:
+  def __init__():
+
+The file main.py is the entry-point or the starting
+point of the program.
+
+In the command line:
+python3 main.py

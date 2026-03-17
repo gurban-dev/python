@@ -1,0 +1,6 @@
+A primitive type in Java is one with no methods
+or attributes. It's not an instance of a class.
+
+These types do not exist in Python which is why
+Python does not have primitive types in the strict
+sense. Everything in Python is an object.

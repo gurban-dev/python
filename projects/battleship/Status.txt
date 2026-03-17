@@ -1,0 +1,2 @@
+What needs to be added:
+The winner of the game needs to be displayed on GUI.

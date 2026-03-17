@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./imports/folder1",
+    "./king/python_for_outlook"
+  ]
+}

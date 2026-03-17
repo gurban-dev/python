@@ -1,0 +1,5 @@
+Kids Python:
+https://kidspython.com/#/
+
+Learn Python by playing a game:
+https://codingforkids.io/en/play/python/intro-level1

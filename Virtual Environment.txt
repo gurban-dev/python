@@ -1,0 +1,81 @@
+Establishing a virtual environment on a Windows OS:
+
+Navigate to the directory where all of your programs are.
+
+Create a virtual environment folder in that same directory:
+python -m venv .venv
+
+It is a good practice to have the name of the virtual environment folder
+begin with a dot so that it is not committed to a Git repository.
+
+In that same directory, run the following command to activate the virtual
+environment:
+.\.venv\Scripts\Activate.ps1
+
+With .venv activated, update pip (the Python package manager) inside the
+virtual environment:
+python -m pip install --upgrade pip
+
+Install Jupyter and ipykernel inside .venv:
+python -m pip install jupyter ipykernel
+
+Register the kernel:
+python -m ipykernel install --user --name .venv --display-name ".venv"
+
+Launch Jupyter Notebook:
+juptyer notebook
+
+If you already have a Jupyter Notebook file open, restart the kernel.
+
+Click on the "Kernel" button, then hover over "Change kernel", and select:
+.venv
+
+-------------------------------------------------------------------------------
+Creating a virtual environment with a different version of Python:
+py install <python_version>
+
+E.g.
+py install 3.13
+
+
+Verify that it has been installed:
+py -<python_version> --version
+
+E.g.
+py -3.13 --version
+
+
+Create the virtual environment with the specific version of Python:
+py -<python_version> -m venv .venv
+
+E.g.
+py -3.13.12 -m venv .venv
+
+
+Make sure that ipykernel is installed:
+pip install ipykernel
+
+
+Register the kernel:
+python -m ipykernel install --user --name .venv --display-name ".venv"
+
+If on Windows, run PowerShell as an administrator:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+Activate the virtual environment:
+
+Linux:
+. .venv/bin/activate
+
+Windows:
+.\.venv\Scripts\Activate.ps1
+
+
+Launch jupyter notebook:
+jupyter notebook
+
+
+The following line can be added to a cell in Jupyter notebook to ensure
+that the proper version of Python is in use:
+!python --version

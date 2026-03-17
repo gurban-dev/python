@@ -1,0 +1,104 @@
+1. Install the libraries office365, sharepy, requests,
+   for interacting with SharePoint using Python:
+   pip3 install office365 sharepy requests
+
+   office365 provides access to SharePoint REST APIs, enabling
+   operations such as reading, writing, and managing SharePoint
+   resources like lists, files, and document libraries.
+
+   A document library in SharePoint is a centralised repository
+   where users can store, organize, share, and collaborate on
+   documents.
+
+   sharepy is supposed to simplify the process of interacting
+   with SharePoint Online from Python through handling
+   authentication for your SharePoint Online site.
+
+2. Authenticate with SharePoint
+
+   Use office365 or sharepy to connect to your SharePoint site
+   and retrieve project collaborators.
+
+   from office365.sharepoint.client_context import ClientContext
+
+   def connect_to_sharepoint(site_url, username, password):
+     ctx = ClientContext(site_url).with_user_credentials(username, password)
+     return ctx
+
+3. Prompt the end user for the project name
+   Ask the user to input the name of the project.
+
+   project_name = input("Enter the name of the SharePoint project: ")
+
+4. Retrieve collaborators from SharePoint
+   Query the SharePoint list to get collaborators for the specified
+   project.
+
+   def get_collaborators(ctx, list_name, project_name):
+     list_obj = ctx.web.lists.get_by_title(list_name)
+     items = list_obj.items.filter(f"Project eq '{project_name}'").get().execute_query()
+    
+     collaborators = []
+     for item in items:
+       # Assuming 'Collaborators' is a field containing emails
+       collaborators.append(item.properties['Collaborators'])
+
+     return collaborators
+
+5. Authenticate with Microsoft Graph API
+   access_token = get_access_token(
+     application_id=APPLICATION_ID,
+     client_secret=CLIENT_SECRET,
+     scopes=SCOPES
+   )
+
+6. Send emails to collaborators
+   Use Microsoft Graph API to send emails.
+
+   import requests
+
+   def send_emails(access_token, collaborators):
+     graph_url = "https://graph.microsoft.com/v1.0/me/sendMail"
+    
+     for email in collaborators:
+       message = {
+         "message": {
+           "subject": "Important Update for Your Project",
+           "body": {
+             "contentType": "Text",
+             "content": "Hello,\n\nThis is an important update regarding your project."
+           },
+           "toRecipients": [{"emailAddress": {"address": email}}]
+          }
+        }
+        
+        headers = {
+          "Authorization": f"Bearer {access_token}",
+          "Content-Type": "application/json"
+        }
+        
+        response = requests.post(graph_url, json=message, headers=headers)
+
+        if response.status_code == 202:
+          print(f"Email sent successfully to {email}")
+        else:
+          print(f"Failed to send email to {email}: {response.text}")
+
+How can this program be altered to send a different email
+body to members that are part of the quality assurance team?
+
+1. Identify Quality Assurance Team Members: You need to identify
+   which collaborators are part of the quality assurance team.
+   This could be done by adding a field in your SharePoint list
+   that indicates whether a collaborator is part of QA or not.
+
+2. Modify the get_collaborators Function: Modify the
+   get_collaborators function to also retrieve the QA
+   status of each collaborator.
+
+3. Modify the send_emails Function: Modify the send_emails function
+   to send a different email body based on whether the collaborator
+   is part of QA or not.
+
+Step 1: Modify get_collaborators Function
+Assuming you have a field named IsQA in your SharePoint list:

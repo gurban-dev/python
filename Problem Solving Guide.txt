@@ -1,0 +1,46 @@
+1. State the data that will be inputted into the program.
+2. State the program's expected output.
+3. Describe the process in one sentence.
+4. Break the idea into steps.
+5. Choose the tools to use in your program by understanding
+   when to use tools such as an if-elif-else statement, a
+   while loop, a user-defined function, etc.
+6. Write pseudocode.
+7. Convert the pseudocode to Python source code.
+
+Problem:
+Find the sum of all numbers in a list.
+
+Before jumping straight into writing source code:
+1. Understand the goal/objective.
+
+   Think about what you are trying to accomplish.
+   
+   What data is needed for the program?
+   
+   Will the data be inputted?
+   
+   What is the expected output?
+   
+   What action is performed on that data?
+   
+   E.g. Find the sum of all numbers in a list.
+
+2. Break the problem into steps.
+
+   Use natural language, not Python:
+   1. Initialise "sum" with zero.
+   2. Loop through each item in the list.
+      a. Add the value of the current item to "sum".
+   3. Print "sum".
+
+3. Identify the pattern that you need:
+   Loop (for/while) Repeat an action for each element.
+   
+   A while loop is helpful when you need to repeatedly ask for input
+   until a condition is met. Use a for loop when you already know
+   beforehand the maximum amount of times you need to iteration.
+
+4. Handle edge cases:
+   The list might be empty.
+   The list may contain non-numeric data.
