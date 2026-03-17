@@ -1,11 +1,17 @@
+# Environment Variables / Secrets
 *.env
 timestamp.txt
 
+# Virtual Environments
 .venv/
-venv/
-env/
+
+# Python Libraries
 Lib/
 site-packages/
+
+# Python Cache / Compiled Files
 __pycache__/
 *.pyc
+
+# Jupyter Notebook Artifacts
 .ipynb_checkpoints/
