@@ -22,10 +22,12 @@ Basic program flow and decision making
 
 Variables and reassignment
 
+
 Exercise Instructions:
 Create a simple shopping assistant program that asks the user what
 item they want to buy and tells them whether the item is affordable,
 moderately priced, or expensive.
+
 
 Program Overview
 
@@ -57,8 +59,10 @@ Look at the items and prices lists.
 
 Notice that both lists share matching indexes.
 
+
 Example:
 items[0] corresponds to prices[0].
+
 
 2. Understand Program Output
 
@@ -68,6 +72,7 @@ It then asks the user to input an item name.
 
 The user input is converted to lowercase so comparisons work correctly.
 
+
 3. Analyse User Input
 
 Print the user's choice.
@@ -76,10 +81,12 @@ Print the number of characters in the user's input.
 
 Observe how Python compares strings using the equality operator (==).
 
+
 4. Membership Testing
 
 The program checks whether the user's choice exists in the items list using:
 choice in items
+
 
 If the item exists:
 Find its index.
@@ -87,6 +94,7 @@ Find its index.
 Retrieve the corresponding price.
 
 Format the item name for display.
+
 
 5. String Handling
 
@@ -98,6 +106,7 @@ If yes -> add " are"
 
 If no -> add " is"
 
+
 6. Price Classification
 
 Use conditional logic to categorise the price:
@@ -107,6 +116,7 @@ Less than $5 -> affordable
 Between $5 and $10 -> moderately priced
 
 Greater than $10 -> expensive
+
 
 7. Invalid Items
 

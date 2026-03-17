@@ -15,13 +15,13 @@ The number of items in each tuple in the list, will be equal
 to the number of iterables being passed to the zip() function.
 '''
 
-strings = ['one', 'two']
-integers = [1, 2, 3]
-floats = [1.0, 2.0, 3.0, 4.0]
+x = ['zero', 'one']
+y = [10, 11, 12]
+z = [20, 21, 22, 23]
 
-# When passing strings, integers and floats to zip(), only the first two
-# elements from each list are paired, because 'strings' has only two elements.
-# The remaining elements of integers (12) and floats (22, 23) are ignored.
+# When passing x, y and z to zip(), only the first two elements
+# from each list are paired, because 'x' has only two elements.
+# The remaining elements of y (12) and z (22, 23) are ignored.
 
 '''
 The zip() function returns a zip object which is an iterator.
@@ -29,14 +29,14 @@ The zip() function returns a zip object which is an iterator.
 If outputted, the identity of the iterator would be seen. Therefore,
 the zip object must be converted to a list data structure, so that
 the paired tuples can be seen.'''
-print('list(zip(strings, integers):', list(zip(strings, integers)), '\n')
+print('list(zip(x, y):', list(zip(x, y)), '\n')
 
-# Since 'integers' was passed as the first argument to the zip() function,
-# the items from 'integers' will be positioned first in each of the tuples.
-print('list(zip(integers, strings):', list(zip(integers, strings)), '\n')
+# Since 'y' was passed as the first argument to the zip() function,
+# the items from 'y' will be positioned first in each of the tuples.
+print('list(zip(y, x):', list(zip(y, x)), '\n')
 
-# Only two tuples will be returned because list 'floats' contains only
+# Only two tuples will be returned because list 'z' contains only
 # two elements.
-print('list(zip(strings, integers, floats):', list(zip(strings, integers, floats)))
+print('list(zip(x, y, z):', list(zip(x, y, z)))
 
-# list(zip(strings, integers, floats)) returns [(1, 11, 'one'), (2, 12, 'two')]
+# list(zip(x, y, z)) returns [(1, 11, 'one'), (2, 12, 'two')]
