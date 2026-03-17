@@ -1,6 +1,11 @@
 *.env
 timestamp.txt
-.ipynb_checkpoints/
+
+.venv/
+venv/
+env/
+Lib/
+site-packages/
 __pycache__/
 *.pyc
-.venv/
+.ipynb_checkpoints/
