@@ -1,5 +1,0 @@
-NumPy (Numerical Python) is a Python library for scientific
-computing and data manipulation. It contains high-performance
-tools for working with large arrays and matrices (two-dimensional
-arrays) of numeric data, along with a collection of mathematical
-functions to operate on them efficiently.
