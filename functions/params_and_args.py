@@ -13,16 +13,16 @@ parameters defined in the function header.'''
 
 # "first_num" and "second_num" are parameters.
 def add(
-  first_num: int | float,
-  second_num: int | float) -> int | float:
+	first_num: int | float,
+	second_num: int | float) -> int | float:
 
-  print('first_num:', first_num)
-  print('second_num:', second_num, '\n')
+	print('first_num:', first_num)
+	print('second_num:', second_num, '\n')
 
-  # Send the sum of first_num and second_num
-  # back to where the add() function was
-  # invoked in this program.
-  return first_num + second_num
+	# Send the sum of first_num and second_num
+	# back to where the add() function was
+	# invoked in this program.
+	return first_num + second_num
 
 # 5 and 6 are arguments.
 sum1: int = add(5, 6)
