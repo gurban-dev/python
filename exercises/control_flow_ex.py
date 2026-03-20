@@ -1,49 +1,86 @@
-'''
-Concepts:
-Lists and list indexing
+"""
+Simple Grocery Price Checker
 
-The len() function
+CONCEPTS:
+- Lists (creating and accessing elements)
+- The len() function
+- User input with input()
+- String methods (.lower(), .capitalize())
+- Membership operator (in)
+- Index lookup (.index())
+- Conditional statements (if / elif / else)
+- Comparison operators (==, <, >=, <=)
+- Boolean expressions
+- String indexing (accessing characters like choice[-1])
+- Basic output formatting with print()
 
-User input with input()
+--------------------------------------------------
 
-String methods (.lower(), .capitalize())
+OBJECTIVE
+Build a simple program that:
+1. Stores a list of items and their corresponding prices.
+2. Asks the user what they would like to buy.
+3. Checks whether the item exists in the store.
+4. If it exists:
+   - Finds its price
+   - Formats the item name nicely
+   - Determines whether it is affordable, moderately priced, or expensive
+5. If it does not exist:
+   - Displays an appropriate message
 
-Membership operator (in)
+STEP-BY-STEP INSTRUCTIONS
 
-Equality operator (==)
+1. CREATE DATA STRUCTURES
+- Create a list called 'items' containing strings:
+  ['persimmon', 'mango', 'quince']
+- Create a second list called 'prices' with corresponding float values:
+  [0.95, 1.25, 2.99]
 
-Conditional statements (if, elif, else)
+2. PRINT NUMBER OF ITEMS
+- Use len(items) to display how many items are available.
 
-Nested conditionals
+3. GET USER INPUT
+- Prompt the user with:
+  "What would you like to buy?"
+- Convert the input to lowercase using .lower()
+  (This ensures case-insensitive comparison)
 
-Accessing characters in a string using indexing
+4. DEBUG / LEARNING OUTPUT
+- Print:
+  - The user's choice
+  - The length of the input string
+- Demonstrate case sensitivity:
+  Compare "KEFIR" == "kefir"
 
-Basic program flow and decision making
+5. CHECK IF ITEM EXISTS
+- Use:
+  choice in items
+- This returns True or False
 
-Variables and reassignment
+6. IF ITEM EXISTS
+- Find its index using:
+  items.index(choice)
+- Use that index to get the corresponding price from 'prices'
 
+7. FORMAT THE ITEM NAME
+- Capitalize the first letter using .capitalize()
 
-Exercise Instructions:
-Create a simple shopping assistant program that asks the user what
-item they want to buy and tells them whether the item is affordable,
-moderately priced, or expensive.
+8. HANDLE GRAMMAR (IS vs ARE)
+- Check the last character:
+  choice[-1]
+- If it ends with 's', use "are"
+- Otherwise, use "is"
 
+9. DETERMINE PRICE CATEGORY
+- If price < 5 -> "affordable"
+- If price between 5 and 10 -> "moderately priced"
+- Otherwise -> "expensive"
 
-Program Overview
+10. IF ITEM DOES NOT EXIST
+- Print:
+  "Sorry, we don't sell that item."
+"""
 
-The program uses two lists:
-items - contains product names
-
-prices - contains the price corresponding to each item
-
-
-The user will input the item they want, and the program will:
-Check if the item exists in the store.
-
-Find the item's price.
-
-Print a message describing its price category.
-'''
 items = ['persimmon', 'mango', 'quince']
 
 prices = [2.99, 2.5, 3.99]

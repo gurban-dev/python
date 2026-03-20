@@ -27,25 +27,25 @@ print('\n"KEFIR" == "kefir":', "KEFIR" == "kefir")
 print('\nchoice in items:', choice in items, '\n')
 
 if choice in items:
-  index = items.index(choice)
+	index = items.index(choice)
 
-  # Capitalise the first letter of choice after
-  # finding the index in "items" list.
-  choice = choice.capitalize()
+	# Capitalise the first letter of choice after
+	# finding the index in "items" list.
+	choice = choice.capitalize()
 
-  price = prices[index]
+	price = prices[index]
 
-  # Get the last letter in the item.
-  if choice[-1] == 's':
-    choice += " are"
-  else:
-    choice += " is"
+	# Get the last letter in the item.
+	if choice[-1] == 's':
+		choice += " are"
+	else:
+		choice += " is"
 
-  if price < 5:
-    print(choice, "affordable.")
-  elif price >= 5 and price <= 10:
-    print(choice, "moderately priced.")
-  else:
-    print(choice, "expensive.")
+	if price < 5:
+		print(choice, "affordable.")
+	elif price >= 5 and price <= 10:
+		print(choice, "moderately priced.")
+	else:
+		print(choice, "expensive.")
 else:
-  print("Sorry, we don't sell that item.")
+	print("Sorry, we don't sell that item.")

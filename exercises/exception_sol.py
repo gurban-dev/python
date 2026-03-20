@@ -27,5 +27,8 @@ print()
 # Prompt the user again without exception handling.
 num = int(input(prompt_msg))
 
-# Confirm that the program continues executing.
+# This demonstrates that when an exception is rasied and not caught,
+# a Python program ceases to continue. Whereas when an exception is
+# caught with a try / except block, the program continues to the next
+# lines of source code.
 print("\nProgram continued!")
