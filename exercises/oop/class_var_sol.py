@@ -11,14 +11,23 @@ class Book:
         # Increase the class variable each time a Book is created.
         Book.total_books += 1
 
+    # Function to print the total number of books.
+    # def print_total_books():
+    #     print("Total books registered:", Book.total_books)
 
-# Function to print the total number of books.
-def print_total_books():
-    print("Total books registered:", Book.total_books)
+    @classmethod
+    def print_total_books(cls):
+        print("Total books registered:", cls.total_books)
 
 
 b1 = Book("1984", "George Orwell")
 b2 = Book("The Hobbit", "J.R.R. Tolkien")
 b3 = Book("Dune", "Frank Herbert")
 
-print_total_books()
+# Works with both versions of the print_total_books() method.
+Book.print_total_books()
+
+# Without the class method, the following would be illegal
+# because implicitly, the 'self' argument is being passed
+# to the print_total_books() method.
+b1.print_total_books()

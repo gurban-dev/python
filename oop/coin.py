@@ -24,9 +24,9 @@ class Coin:
 	def __init__(self):
 
 		'''
-		Two underscores (__) preceding the name of an
-		instance variable signals that it should be treated
-		as private by convention.
+		Two underscores (__) preceding the name of an instance
+		variable signals that it should be treated as private
+		by convention.
 
 		Python does not strictly enforce private access,
 		but this naming style tells other developers that
@@ -38,7 +38,7 @@ class Coin:
 		self.__sideup = 'Heads'
 
 		'''
-		Public instance variable.
+		Treated as a public instance variable.
 
 		Upon creating an object of this class,
 		the default value of toss_count is zero.
@@ -53,6 +53,9 @@ class Coin:
 	'''
 	def get_sideup(self):
 		return self.__sideup
+	
+	def get_toss_count(self):
+		return self.toss_count
 
 	'''
 	Mutator method because it changes the value
@@ -66,3 +69,5 @@ class Coin:
 			self.__sideup = 'Heads'
 		else:
 			self.__sideup = 'Tails'
+		
+		self.toss_count += 1

@@ -11,56 +11,61 @@ from coin import Coin
 
 # "c" is an alias for the Coin class
 # defined in the coin.py module.
-from coin import Coin as c
+# from coin import Coin as c
 
 def main():
-  '''
-  Create an object from the Coin class that was
-  defined in coin.py.
+	'''
+	Create an object from the Coin class that was
+	defined in coin.py.
 
-  my_coin is the name of the object being generated.
-  my_coin is also called an instance of the Coin class.
+	my_coin is the variable that references the object being
+	generated.
 
-  Notice that to qualify the name of the Coin class,
-  the name of the module was prefixed followed by a
-  dot.'''
-  # my_coin = coin.Coin()
+	Notice that to qualify the name of the Coin class, the name
+	of the module was prefixed followed by a dot.'''
+	# my_coin = coin.Coin()
 
-  # Object created with alias "c".
-  # my_coin = c()
+	# Object created with alias "c".
+	# my_coin = c()
 
-  my_coin = Coin()
+	my_coin = Coin()
 
-  # Display the side of the coin that is facing up.
-  print('This side is up:', my_coin.get_sideup())
+	# Display the side of the coin that is facing up.
+	print('This side is up:', my_coin.get_sideup())
 
-  # Toss the coin.
-  print('\nI am tossing the coin ...')
-  my_coin.toss()
+	# Toss the coin.
+	print('\nI am tossing the coin ...\n')
 
-  print('\nThis side is up:', my_coin.get_sideup())
+	my_coin.toss()
 
-  '''
-  The fact that the "sideup" instance variable is
-  able to be mutated or modified outside of the
-  Coin class, validates that private access modifiers
-  do not exist in Python.'''
+	# Legal, but an improper way to access instance variables.
+	# print("my_coin.toss_count:", my_coin.toss_count)
 
-  # Name-mangling occurs with an instance
-  # variable that is private by convention.
+	print("my_coin.get_toss_count():", my_coin.get_toss_count())
 
-  # This mean to directly access self.__sideup,
-  # my_coin._Coin__sideup must be invoked
-  # instead of my_coin.sideup.
-  my_coin._Coin__sideup = ''
+	print('\nThis side is up:', my_coin.get_sideup())
 
-  # Directly accessing the "sideup" instance
-  # variable is a testimony to the lack of
-  # the private access modifier in Python.
-  print('\nmy_coin._Coin__sideup:', my_coin._Coin__sideup)
+	# The following works, but should never be done in real code.
+	# Always use getter and setter methods instead.
 
-  # The get_sideup() method will return the same
-  # result.
-  print('\nThis side is up:', my_coin.get_sideup())
+	# Name-mangling occurs with an instance variable that is private by
+	# convention.
 
-main()
+	# This means to directly access self.__sideup, my_coin._Coin__sideup
+	# must be invoked instead of my_coin.__sideup.
+	# my_coin._Coin__sideup = ''
+
+	# Directly accessing the "__sideup" instance variable shows
+	# that Python does not enforce strict private access like some
+	# languages, but has name mangling (__var) to discourage external
+	# access.
+	print('\nmy_coin._Coin__sideup:', my_coin._Coin__sideup)
+
+	# The get_sideup() method will return the same
+	# result.
+	print('\nThis side is up:', my_coin.get_sideup())
+
+# Prevents the main() function from being run automatically if
+# this file is imported. 
+if __name__ == "__main__":
+	main()

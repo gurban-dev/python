@@ -29,10 +29,10 @@ Every time a new Book object is created:
 
 The total_books count should automatically increase by 1.
 
-Create a function called print_total_books that prints the total number
+Create a function called print_total_books() that prints the total number
 of books currently registered.
 
-Call print_total_books after creating several Book objects to verify
+Call print_total_books() after creating several Book objects to verify
 that the count updates correctly.
 
 

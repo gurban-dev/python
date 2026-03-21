@@ -20,7 +20,7 @@ Keep two empty lines above each class definition.
 '''
 
 # All Python classes implicitly inherit from the built-in base
-# class object.
+# class named object.
 class Coffee(object):
 	'''
 	The constructor initialises the state of an object
