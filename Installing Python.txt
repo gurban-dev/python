@@ -1,3 +1,14 @@
+If Windows suggests getting Python from the Microsoft store,
+do the following instead:
+
+Input the following into the Windows search bar:
+Manage app execution aliases
+
+Turn OFF:
+python.exe
+
+python3.exe
+
 If one of the following errors appear, it indicates that
 Python was installed, but it wasn't added to PATH:
 
@@ -7,11 +18,13 @@ operable program or batch file.
 The term 'pip' is not recognized as the name of a cmdlet,
 function, script file, or operable program.
 
-Find out where the python.exe file is.
-
 Windows OS:
 Search for python.exe in the search bar next to the Windows
 button.
+
+Click on Open file location.
+
+Copy the file path for python.exe.
 
 Select Path under User variables.
 
