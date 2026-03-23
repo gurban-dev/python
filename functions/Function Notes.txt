@@ -4,15 +4,9 @@ how functions can be called by themselves.
 
 E.g. print('Hello World!')
 
-Built-in functions are predefined by Python:
-print(), len(), type()
-
-User-defined functions are created by the programmer:
-def greet():
-  print("Kali mera!")
-
-To invoke/call the user-defined greet() function:
-greet()
+In contrast, the .lower() method is not standalone because it
+must be specifically called on a string object:
+"Hello World!".lower()
 
 Functions are different than methods.
 
@@ -27,3 +21,13 @@ A method of a string object.
 
 A method of a list object.
 [1, 2, 3].append(4)
+
+Built-in functions are predefined by Python:
+print(), type(), len()
+
+User-defined functions are created by the programmer:
+def greet():
+	print("Good day!")
+
+To invoke/call the user-defined greet() function:
+greet()
