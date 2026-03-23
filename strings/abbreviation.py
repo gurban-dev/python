@@ -6,10 +6,10 @@ string = input('Enter any string: ').strip()
 abbreviation = string[0] + "."
 
 for i in range(1, len(string), 1):
-  # Check if the current character in "string" is a
-  # whitespace character.
-  if string[i] == " ":
-    abbreviation += f"{string[i+1]}."
+	# Check if the current character in "string" is a
+	# whitespace character.
+	if string[i] == " ":
+		abbreviation += f"{string[i+1]}."
 
 # E.g.
 # United States

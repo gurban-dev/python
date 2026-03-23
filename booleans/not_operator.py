@@ -27,6 +27,6 @@ make it clear that the not operator is applied not to the temperature
 variable, but to the expression temperature > 100.
 '''
 if not(temperature > 100):
-  print('The temperature is not greater than 100.')
+	print('The temperature is not greater than 100.')
 else:
-  print('The temperature is greater than 100.')
+	print('The temperature is greater than 100.')

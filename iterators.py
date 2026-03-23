@@ -52,4 +52,4 @@ print('it.__iter__():', it.__iter__(), '\n')
 # Here, the iterator is being manually advanced using Python's built-in
 # next() function inside the body of the for loop.
 for i in range(len(nums)):
-  print(f'Iteration {i+1}:\nnext(it): {next(it)}\n')
+	print(f'Iteration {i+1}:\nnext(it): {next(it)}\n')

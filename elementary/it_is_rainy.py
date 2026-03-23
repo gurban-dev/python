@@ -17,8 +17,8 @@ print('\nbool(it_is_rainy):', bool(it_is_rainy))
 # When the variable "it_is_rainy" does not evaluate to True,
 # the flow of the Python program enters the else block.
 if it_is_rainy:
-  print('\nBring an umbrella.')
+  	print('\nBring an umbrella.')
 else:
-  # The following line is executed when the conidition in
-  # the if statement (it_is_rainy), evaluates to False.
-  print('\nDon\'t bring an umbrella.')
+	# The following line is executed when the conidition in
+	# the if statement (it_is_rainy), evaluates to False.
+	print('\nDon\'t bring an umbrella.')

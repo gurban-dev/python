@@ -17,11 +17,11 @@ day = current_datetime.day
 if 11 <= day <= 13:
 	suffix = "th"
 else:
-  # {1: "st", 2: "nd", 3: "rd"} is a dictionary.
-  
-	# If the key returned by day % 10 does not exist in the dictionary,
-  # the .get() method returns "th" as the default value.
-  suffix = {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
+	# {1: "st", 2: "nd", 3: "rd"} is a dictionary.
+	
+		# If the key returned by day % 10 does not exist in the dictionary,
+	# the .get() method returns "th" as the default value.
+	suffix = {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
 
 print('day:', day, '\n')
 
@@ -64,11 +64,11 @@ first and second.'''
 
 # Multi-line f-string with dedent().
 print(dedent(
-    	f'''
+		f'''
       	Hello! Today's date is the {formatted_date}.
        	This is a multi-line statement using Python's f-string.
-        	You can embed variables like the date above seamlessly!
-       '''))
+        You can embed variables like the date above seamlessly!
+       	'''))
 
 '''
 Without the dedent() function, the seven

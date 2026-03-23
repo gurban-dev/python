@@ -13,16 +13,16 @@ tasks = []
 
 # Step 2-5: get three tasks, clean them, validate, store
 for i in range(1, 4):
-  # Clean with strip()
-  user_input = input(f"Enter task #{i}: ").strip()
+	# Clean with strip()
+	user_input = input(f"Enter task #{i}: ").strip()
 
-  # Detect empty input using not operator
-  while not user_input:
-    print("You entered an empty task. Please try again.")
+	# Detect empty input using not operator
+	while not user_input:
+		print("You entered an empty task. Please try again.")
 
-    user_input = input(f"Re-enter task #{i}: ").strip()
+		user_input = input(f"Re-enter task #{i}: ").strip()
 
-  tasks.append(user_input)
+	tasks.append(user_input)
 
 # Step 6: join to produce final formatted list
 result = "\n".join(tasks)

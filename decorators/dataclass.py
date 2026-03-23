@@ -9,12 +9,12 @@ methods.
 
 @dataclass
 class Product:
-  name: str
-  price: float
-  quantity: int = 0
+	name: str
+	price: float
+	quantity: int = 0
 
-  def total_cost(self) -> float:
-    return self.price * self.quantity
+	def total_cost(self) -> float:
+		return self.price * self.quantity
 
 # Invokes the __init__() method.
 p1 = Product(name='Laptop', price=1000.0, quantity=3)

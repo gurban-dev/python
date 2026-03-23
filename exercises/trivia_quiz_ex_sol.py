@@ -14,10 +14,10 @@ answer1 = input("What color do you get when you mix red and blue? ").lower()
 
 # Use .lower() so the answer isn't case-sensitive.
 if answer1 == "purple":
-  print("Correct! 🟣")
-  score += 1
+	print("Correct! 🟣")
+	score += 1
 else:
-  print("Oops! The correct answer was purple.")
+  	print("Oops! The correct answer was purple.")
 
 # Blank line for readability.
 print()
@@ -28,12 +28,12 @@ answer2 = input("What is the capital city of Austria? ").upper()
 # We use .upper() so 'vienna', 'Vienna', and 'VIENNA'
 # are all equal to each other.
 if answer2 == "VIENNA":
-  print("Correct! 🗼")
-  score += 1
+	print("Correct! 🗼")
+	score += 1
 elif answer2 == "LONDON":
-  print("Close, but that's in the UK!")
+  	print("Close, but that's in the UK!")
 else:
-  print("Nope! The answer is VIENNA.")
+  	print("Nope! The answer is VIENNA.")
 
 print()
 
@@ -42,22 +42,22 @@ answer3 = input("How many legs does a spider have? ")
 
 # input() always returns a string, so we compare to a string ("8")
 if answer3 == "8":
-  print("Correct! 🕷️")
-  score += 1
+	print("Correct! 🕷️")
+	score += 1
 else:
-  print("Nope! Spiders have 8 legs.")
+  	print("Nope! Spiders have 8 legs.")
 
 print("\n🎯 Quiz Complete! 🎯")
 print("You got", score, "out of 3 correct!")
 
 # Final feedback
 if score == 3:
-  print("🏆 Perfect score! You’re a trivia master!")
+  	print("🏆 Perfect score! You’re a trivia master!")
 elif score == 2:
-  print("👏 Great job! Almost perfect!")
+  	print("👏 Great job! Almost perfect!")
 elif score == 1:
-  print("🙂 Nice try! You got one right.")
+  	print("🙂 Nice try! You got one right.")
 else:
-  print("😅 Better luck next time!")
+	print("😅 Better luck next time!")
 
 print("\nThanks for playing the Mini Trivia Quiz! 🥳")

@@ -1,29 +1,29 @@
 class BankAccount:
-  # The two underscores that precede the class and instance
-  # varibles indicate that they should be treated as private.
+	# The two underscores that precede the class and instance
+	# varibles indicate that they should be treated as private.
 
-  # Class variable/attribute.
-  __bank_name: str = "JP Morgan Chase"
+	# Class variable/attribute.
+	__bank_name: str = "JP Morgan Chase"
 
-  def __init__(self):
-    # Instance variable/attribute.
-    self.__balance: float = 1.0
-  
-  # Selector/getter
-  def get_account_balance(self) -> float:
-    return self.__balance
+	def __init__(self):
+		# Instance variable/attribute.
+		self.__balance: float = 1.0
+	
+	# Selector/getter
+	def get_account_balance(self) -> float:
+		return self.__balance
 
-  # Mutator/setter
-  def set_account_balance(self, amount: float) -> None:
-    self.__balance: float = amount
+	# Mutator/setter
+	def set_account_balance(self, amount: float) -> None:
+		self.__balance: float = amount
 
-  @classmethod
-  def get_bank_name(cls) -> str:
-    return cls.__bank_name
+	@classmethod
+	def get_bank_name(cls) -> str:
+		return cls.__bank_name
 
-  @classmethod
-  def set_bank_name(cls, new_bank_name) -> None:
-    cls.__bank_name: str = new_bank_name
+	@classmethod
+	def set_bank_name(cls, new_bank_name) -> None:
+		cls.__bank_name: str = new_bank_name
 
 bankAccountObj = BankAccount()
 

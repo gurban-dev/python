@@ -19,26 +19,26 @@ print('generator_obj.__next__():', generator_obj.__next__(), '\n')
 # The for loop implicitly or internally calls the next() function
 # on the generator object.
 for num in generator_obj:
-  if num != 9:
-    print('num:', num, end=', ')
-  else:
-    print('num:', num)
+	if num != 9:
+		print('num:', num, end=', ')
+	else:
+		print('num:', num)
 
 # This for loop uses the same memory space as the generator
 # expression below.
 print('\nfor i in range(100):')
 for i in range(100):
-  print('i:', i, end=' ')
+  	print('i:', i, end=' ')
 print()
 
 # Returns a generator object because of the "yield" keyword.
 def gen():
-  for i in range(100):
+	for i in range(100):
 
-    # yield pauses the function, sends the value of 'i' back
-    # to where this function was invoked and can resume later
-    # on from where the generator left off in the sequence.
-    yield i
+		# yield pauses the function, sends the value of 'i' back
+		# to where this function was invoked and can resume later
+		# on from where the generator left off in the sequence.
+		yield i
 
 generator = gen()
 

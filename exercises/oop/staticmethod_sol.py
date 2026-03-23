@@ -1,28 +1,28 @@
 class Book:
-  # Class variable.
-  total_books = 0
+	# Class variable.
+	total_books = 0
 
-  def __init__(self, title, author):
-    # Instance variables.
-    self.title = title
-    self.author = author
+	def __init__(self, title, author):
+		# Instance variables.
+		self.title = title
+		self.author = author
 
-    # Increment total_books whenever a new book is created.
-    Book.total_books += 1
+		# Increment total_books whenever a new book is created.
+		Book.total_books += 1
 
-  @classmethod
-  def get_total_books(cls):
-    return cls.total_books
+	@classmethod
+	def get_total_books(cls):
+		return cls.total_books
 
-  @staticmethod
-  def is_long_book(pages):
-    return pages >= 500
+	@staticmethod
+	def is_long_book(pages):
+		return pages >= 500
 
-  def __str__(self):
-    return f"Title: {self.title}, Author: {self.author}"
-  
-  def __repr__(self):
-    return f"Title: {self.title}, Author: {self.author}"
+	def __str__(self):
+		return f"Title: {self.title}, Author: {self.author}"
+	
+	def __repr__(self):
+		return f"Title: {self.title}, Author: {self.author}"
 
 # ---- Creating book instances ----
 

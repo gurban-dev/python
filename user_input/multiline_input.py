@@ -8,12 +8,11 @@ print(
 while True:
 	line = input()
 
-	# Output the current line that was inputted by
-	# the user.
+	# Output the current line that was inputted by the user.
 	# print('line:', line)
 
-	# If the user just clicked the "Enter" key on their
-	# keyboard without typing anything in.
+	# If the user just clicked the "Enter" key on their keyboard
+	# without typing anything in.
 	if not line:
 		break
 	else:

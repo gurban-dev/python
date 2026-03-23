@@ -15,15 +15,15 @@ print('\nanswer == \'yes\':', answer == 'yes', '\n')
 # Use .lower() so the condition is satisfied even
 # if they type "YES", "Yes", or "yEs".
 if answer.lower() == "yes":
-  # If the answer is yes, we print a happy watermelon message.
-  print("Yay! Here's a big juicy watermelon just for you! 🍉😋")
+	# If the answer is yes, we print a happy watermelon message.
+	print("Yay! Here's a big juicy watermelon just for you! 🍉😋")
 # This checks if the person typed "no".
 elif answer.lower() == "no":
-  # If the answer is no, we print the following instead:
-  # "Oh no! More watermelon for me then! 😎"
-  print("Oh no! More watermelon for me then! 😎")
+	# If the answer is no, we print the following instead:
+	# "Oh no! More watermelon for me then! 😎"
+	print("Oh no! More watermelon for me then! 😎")
 # If the person didn't type "yes" or "no", we get here.
 else:
-  # Inform the end user that their input wasn't understood
-  # and remind them to type the right answer next time.
-  print("Hmm, I didn't understand that. Try typing 'yes' or 'no' next time!")
+	# Inform the end user that their input wasn't understood
+	# and remind them to type the right answer next time.
+	print("Hmm, I didn't understand that. Try typing 'yes' or 'no' next time!")

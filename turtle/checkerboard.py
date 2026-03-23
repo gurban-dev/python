@@ -1,15 +1,15 @@
 import turtle
 
-# Create the drawing window and turtle
+# Create the drawing window and turtle.
 t = turtle.Turtle()
 
-# Make the turtle draw as quickly as possible
+# Make the turtle draw as quickly as possible.
 t.speed(0)
 
-# Hide the turtle arrow so we only see the drawing
+# Hide the turtle arrow so we only see the drawing.
 t.hideturtle()
 
-# Define the dimensions of our checkerboard
+# Define the dimensions of our checkerboard.
 
 # Each square will be 40 pixels wide.
 square_size = 40
@@ -39,23 +39,26 @@ for row in range(board_size):
     # Put the pen down to start drawing.
     t.pendown()
 
-    # Calculate which color this square should be
-    # By adding row + col, we get an alternating pattern
-    # Even sums (0, 2, 4...) will be red, odd sums (1, 3, 5...) will be black
-    color_value = (row + col) % 2
+    # Calculate which color this square should be.
+
+    # By adding row + col, we get an alternating pattern.
+
+    # Even sums (0, 2, 4...) will be red, odd sums (1, 3, 5...) will be
+	# black.
+    colour_value = (row + col) % 2
     
-    # Set the fill color based on whether color_value is even or odd.
-    if color_value == 0:
-      # Set both pen and fill color to red.
+    # Set the fill colour based on whether colour_value is even or odd.
+    if colour_value == 0:
+      # Set both pen and fill colour to red.
       t.color("black")
 
-      # Start filling with the current color.
+      # Start filling with the current colour.
       t.begin_fill()
     else:
-      # Set both pen and fill color to black.
+      # Set both pen and fill colour to black.
       t.color("red")
 
-      # Start filling with the current color.
+      # Start filling with the current colour.
       t.begin_fill()
     
     # Draw all 4 sides of the square.

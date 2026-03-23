@@ -52,15 +52,15 @@ num = 0
 # range(bucket_capacity) becomes range(4) in this case
 # because "bucket_capacity" was assigned .
 for i in range(bucket_capacity):
-  print('i:', i)
+	print('i:', i)
 
-  print('Sofiia')
+	print('Sofiia')
 
-  num = num + 1
+	num = num + 1
 
-  print('num:', num)
+	print('num:', num)
 
-  if num == 1:
-    print('The variable num is equal to 1.')
-  
-  print('')
+	if num == 1:
+		print('The variable num is equal to 1.')
+	
+	print('')

@@ -1,32 +1,32 @@
 # The name of the subsequent function is "message".
 def message():
-  # The lines of code that follow a return statement
-  # are unreachable by the program.
-  # return ""
+	# The lines of code that follow a return statement
+	# are unreachable by the program.
+	# return ""
 
-  '''
-  Printing "I am Arthur,\nKing of the Britons"
-  inside this function assigns a responsibility
-  to this function.
+	'''
+	Printing "I am Arthur,\nKing of the Britons"
+	inside this function assigns a responsibility
+	to this function.
 
-  This is a more organised way of writing source
-  code than calling print() in the main function.'''
+	This is a more organised way of writing source
+	code than calling print() in the main function.'''
 
-  # print('I am Arthur,')
-  # print('King of the Britons.')
+	# print('I am Arthur,')
+	# print('King of the Britons.')
 
-  # Local variable because it is declared
-  # inside of the message() function.
-  entire_message = 'I am Arthur,\nKing of the Britons.'
+	# Local variable because it is declared
+	# inside of the message() function.
+	entire_message = 'I am Arthur,\nKing of the Britons.'
 
-  """
-  If the following line is uncommented, this function no longer 
-  implicitly returns None because it explicitly returns a string.
+	"""
+	If the following line is uncommented, this function no longer 
+	implicitly returns None because it explicitly returns a string.
 
-  In Python, a function that returns None is equivalent to a void 
-  function in other programming languages like TypeScript.
-  """
-  # return entire_message
+	In Python, a function that returns None is equivalent to a void 
+	function in other programming languages like TypeScript.
+	"""
+	# return entire_message
 
 # This line is already outside of the function's
 # body because it is not indented.
@@ -73,4 +73,4 @@ print('\nmessage():\n', message(), sep='')
 Once all of the statements in a function are executed,
 the interpreter jumps back to the part of the program
 that called the function, and the program resumes
-execution at that point (lines 60 and 68 in this case)."""
+execution at that point (lines 62 and 70 in this case)."""

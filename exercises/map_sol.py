@@ -1,9 +1,9 @@
 def safe_to_float(entry: str) -> float | None:
-  """Attempt to convert a string to a float. Return None if invalid."""
-  try:
-    return float(entry)
-  except ValueError:
-    return None
+	"""Attempt to convert a string to a float. Return None if invalid."""
+	try:
+		return float(entry)
+	except ValueError:
+		return None
   
 user_input: str = "3.1 abc 7.0 -2.5 cat 9"
 

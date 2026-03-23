@@ -1,27 +1,27 @@
 import time
 
 def count():
-  print("One")
+    print("One")
 
-  time.sleep(1)
+    time.sleep(1)
 
-  print("Two")
+    print("Two")
 
-  time.sleep(1)
+    time.sleep(1)
 
 def main():
-  # Run sequentially, not concurrently.
-  count()
-  count()
-  count()
+    # Run sequentially, not concurrently.
+    count()
+    count()
+    count()
 
 if __name__ == "__main__":
-  start = time.perf_counter()
+    start = time.perf_counter()
 
-  main()
+    main()
 
-  elapsed = time.perf_counter() - start
+    elapsed = time.perf_counter() - start
 
-  # Compare how long this synchronous program takes with the
-  # asynchronous one.
-  print(f"{__file__} executed in {elapsed:0.2f} seconds.")
+    # Compare how long this synchronous program takes with the
+    # asynchronous one.
+    print(f"{__file__} executed in {elapsed:0.2f} seconds.")

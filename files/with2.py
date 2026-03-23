@@ -1,14 +1,16 @@
+
 def print_file_content(file_name: str) -> int:
-  line_count = 0
+	line_count = 0
 
-  with open(file_name) as file_object:
-    for line in file_object:
-      print(line)
-      # print(line.strip())
+	with open(file_name) as file_object:
+		for line in file_object:
+			print(line)
 
-      line_count += 1
+			# print(line.strip())
 
-    return line_count
+			line_count += 1
+
+		return line_count
 
 line_count = print_file_content('philosophers.txt')
 

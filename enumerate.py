@@ -7,4 +7,4 @@ lst: int = [1, 2, 3]
 # largest_index = len(lst) - 1
 
 for index, value in enumerate(lst):
-  print(f'index: {index}, value: {value}')
+	print(f'index: {index}, value: {value}')

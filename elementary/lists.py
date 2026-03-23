@@ -7,9 +7,9 @@
 # A list a data structure that is made up of ordered
 # elements/items separated by commas.
 list_data_structure = [
-  'First element',
-  'Second element',
-  'Third element'
+	'First element',
+	'Second element',
+	'Third element'
 ]
 
 print('list_data_structure:', list_data_structure, '\n')
@@ -32,11 +32,11 @@ print(f'type(colours): {type(colours)}\n')
 
 # For loop.
 for letter in ['a', 'b', 'c']:
-  print('letter:', letter)
+  	print('letter:', letter)
 print()
 
 for letter in 'abc':
-  print('letter:', letter)
+  	print('letter:', letter)
 
 # The following Python list has indexes.
 # The first index begins at 0.
@@ -57,12 +57,12 @@ print('\nanimals[2]:', animals[2])
 # print('\nanimals[3]:', animals[3])
 
 if animals[1] == 'Cat':
-  print('\nThe item at index 1 is \'Panda\'.')
+  	print('\nThe item at index 1 is \'Panda\'.')
 
 # Check if the last item is equal to 'Parrot'.
 if animals[-1] == 'Hedgehog':
-  print('\nThe item at index -1 is \'Hedgehog\'.')
+  	print('\nThe item at index -1 is \'Hedgehog\'.')
 elif animals[-1] == 'Giraffe':
-  print('\nThe item at index -1 is \'Giraffe\'.')
+  	print('\nThe item at index -1 is \'Giraffe\'.')
 else:
-  print('The last element is neither a \'Hedgehog\' nor \'Giraffe\'.')
+  	print('The last element is neither a \'Hedgehog\' nor \'Giraffe\'.')

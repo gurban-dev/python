@@ -27,16 +27,16 @@ nums: list[int] = [num for num in range(10)]
 # loop.
 # nums: list[int] = []
 # for num in range(10):
-#    nums.append(num)
+# 	nums.append(num)
 
 print("nums:", nums)
 
 def product_of_self(num: int) -> int:
-  # return num * num
-  return num**2
+	# return num * num
+	return num**2
 
 # for num in nums:
-#   product_of_self(num)
+# 	product_of_self(num)
 
 # Syntax:
 # map(function, iterable)

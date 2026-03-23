@@ -1,21 +1,21 @@
 from collections import defaultdict
 
 movies = [
-  "The Matrix",
-  "Gladiator",
-  "Inception",
-  "The Dark Knight",
-  "Interstellar"
+	"The Matrix",
+	"Gladiator",
+	"Inception",
+	"The Dark Knight",
+	"Interstellar"
 ]
 
 movies_tuple = tuple(movies)
 
 movies_dict = {
-  "The Matrix": 1999,
-  "Gladiator": 2000,
-  "Inception": 2010,
-  "The Dark Knight": 2008,
-  "Interstellar": 2014
+	"The Matrix": 1999,
+	"Gladiator": 2000,
+	"Inception": 2010,
+	"The Dark Knight": 2008,
+	"Interstellar": 2014
 }
 
 print("First movie in the list:", movies[0])
@@ -42,8 +42,8 @@ print('\nmovies:', movies)
 
 print('\nLoop through movies')
 for movie in movies:
-  print(movie, end=", ")
-  # print('movie:', movie)
+	print(movie, end=", ")
+	# print('movie:', movie)
 print('\n')
 
 # dict_movies = {}
@@ -58,11 +58,11 @@ dict_movies = defaultdict(str)
 print('\ntype(dict_movies):', type(dict_movies))
 
 for index, movie in enumerate(movies):
-  print(f'index: {index}, movie: {movie}')
-  # print('movie:', movie)
+	print(f'index: {index}, movie: {movie}')
+	# print('movie:', movie)
 
-  # On each iteration, add a key-value pair to dict_movies:
-  dict_movies[index] = movie
+	# On each iteration, add a key-value pair to dict_movies:
+	dict_movies[index] = movie
 
 print('\ndict_movies:\n', dict_movies, sep='', end='\n')
 

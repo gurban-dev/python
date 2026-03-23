@@ -1,7 +1,7 @@
 employees = {
-  101: {"name": "Alexander", "years_at_company": 2},
-  102: {"name": "Maria", "years_at_company": 5},
-  103: {"name": "John", "years_at_company": 1}
+	101: {"name": "Alexander", "years_at_company": 2},
+	102: {"name": "Maria", "years_at_company": 5},
+	103: {"name": "John", "years_at_company": 1}
 }
 
 # Get the mapping with the key 101.

@@ -16,19 +16,19 @@ Global namespace pollution refers to the practice of
 placing too many variables, functions, or classes in
 the global (top-level) scope of a module or program.'''
 class MathUtils:
-  # Utility functions.
+	# Utility functions.
 
-  # @staticmethod it indicates that a method belongs
-  # to a class, but it does not access:
-  # - self (represents an instance of the class)
-  # - cls (represents the class itself)
-  @staticmethod
-  def add(num1, num2):
-    return num1 + num2
+	# @staticmethod it indicates that a method belongs
+	# to a class, but it does not access:
+	# - self (represents an instance of the class)
+	# - cls (represents the class itself)
+	@staticmethod
+	def add(num1, num2):
+		return num1 + num2
 
-  @staticmethod
-  def subtract(num1, num2):
-    return num1 - num2
+	@staticmethod
+	def subtract(num1, num2):
+		return num1 - num2
 
 print('MathUtils.add(10, 10):', MathUtils.add(10, 10))
 

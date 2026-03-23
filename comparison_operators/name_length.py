@@ -21,8 +21,8 @@ print('\nfull_name[len(full_name)-1]:', full_name[len(full_name)-1])
 
 # The program can enter only one of these blocks.
 if len(full_name) < 3:
-  print("\nName must be at least 3 characters.")
+	print("\nName must be at least 3 characters.")
 elif len(full_name) > 50:
-  print("\nName can be a maximum of 50 characters.")
+	print("\nName can be a maximum of 50 characters.")
 else:
-  print("\nName looks good!")
+	print("\nName looks good!")

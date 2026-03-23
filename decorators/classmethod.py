@@ -1,18 +1,18 @@
 class HomoHeidelbergensis:
-  # Class variable
-  species_name = 'Homo Heidelbergensis'
+	# Class variable
+	species_name = 'Homo Heidelbergensis'
 
-  # Here there are actually three methods because
-  # the Python interpreter will internally created
-  # a constructor for a class if the programmer
-  # doesn't write one out.
+	# Here there are actually three methods because
+	# the Python interpreter will internally created
+	# a constructor for a class if the programmer
+	# doesn't write one out.
 
-  @classmethod
-  def get_species(cls):
-    return cls.species_name
+	@classmethod
+	def get_species(cls):
+		return cls.species_name
 
-  def get_species_name(self):
-    return self.species_name
+	def get_species_name(self):
+		return self.species_name
 
 # Why use @classmethod if the class variable can be accessed
 # with an instance method?
@@ -21,7 +21,7 @@ class HomoHeidelbergensis:
 # variable to be accessed without instantiating the class.
 
 class HomoSapiens(HomoHeidelbergensis):
-  species_name = 'Homo Sapiens'
+	species_name = 'Homo Sapiens'
 
 # Output: Homo Sapiens
 print('HomoSapiens.get_species():', HomoSapiens.get_species())

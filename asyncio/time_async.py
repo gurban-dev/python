@@ -1,26 +1,26 @@
 import asyncio
 
 async def count():
-  print("One")
+	print("One")
 
-  await asyncio.sleep(1)
+	await asyncio.sleep(1)
 
-  print("Two")
+	print("Two")
 
-  await asyncio.sleep(1)
+	await asyncio.sleep(1)
 
 async def main():
-  await asyncio.gather(count(), count(), count())
+	await asyncio.gather(count(), count(), count())
 
 if __name__ == "__main__":
-  import time
+	import time
 
-  start = time.perf_counter()
+	start = time.perf_counter()
 
-  asyncio.run(main())
+	asyncio.run(main())
 
-  elapsed = time.perf_counter() - start
+	elapsed = time.perf_counter() - start
 
-  # Compare how long this asynchronous program takes with the
-  # synchronous one.
-  print(f"{__file__} executed in {elapsed:0.2f} seconds.")
+	# Compare how long this asynchronous program takes with the
+	# synchronous one.
+	print(f"{__file__} executed in {elapsed:0.2f} seconds.")

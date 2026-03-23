@@ -13,8 +13,8 @@ lambda parameter(s): expression
 add_ten = lambda num: num + 10
 
 # Equivalent:
-# def add_ten(num: int) -> int:
-#   return num + 10
+def add_ten(num: int) -> int:
+    return num + 10
 
 # The argument 10 is being assigned to the parameter 'num'.
 print('add_ten(10):', add_ten(10))

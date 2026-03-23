@@ -78,7 +78,7 @@ print(f"🌈 Final magic points: {magic_points} 🌈\n")
 
 # Check if the correct number of magic points was calculated.
 if magic_points == 69:
-  print("✨ Perfect! You filled in all the operators correctly! ✨")
+  	print("✨ Perfect! You filled in all the operators correctly! ✨")
 else:
-  print("💭 Hmm, check your += and -= again!")
-  print(f"(Hint: You should end with 69 points)")
+	print("💭 Hmm, check your += and -= again!")
+	print(f"(Hint: You should end with 69 points)")

@@ -29,69 +29,69 @@ The class average
 '''
 
 def student_grade():
-  student_input = input("Enter the list of students separated by commas:\n")
+	student_input = input("Enter the list of students separated by commas:\n")
 
-  grade_input = input("\nEnter the grades of the students separated by commas:\n")
+	grade_input = input("\nEnter the grades of the students separated by commas:\n")
 
-  student_list = student_input.strip().split(",")
-  grade_list = grade_input.split(",")
+	student_list = student_input.strip().split(",")
+	grade_list = grade_input.split(",")
 
-  # Cast each grade as a float.
-  grade_list = [float(grade) for grade in grade_list]
+	# Cast each grade as a float.
+	grade_list = [float(grade) for grade in grade_list]
 
-  students = tuple(zip(student_list, grade_list))
+	students = tuple(zip(student_list, grade_list))
 
-  students_dict = dict(students)
+	students_dict = dict(students)
 
-  print('\nstudents_dict:\n', students_dict, sep="")
+	print('\nstudents_dict:\n', students_dict, sep="")
 
-  # Adding a new students_dict to the dictionary 
-  new_name = input("\nEnter the name of the students_dict to be added: ")
-  new_grade = float(input("\nEnter the students_dict's grade: "))
+	# Adding a new students_dict to the dictionary 
+	new_name = input("\nEnter the name of the students_dict to be added: ")
+	new_grade = float(input("\nEnter the students_dict's grade: "))
 
-  students_dict[new_name] = new_grade
+	students_dict[new_name] = new_grade
 
-  print('\nstudents_dict:\n', students_dict, sep="")
+	print('\nstudents_dict:\n', students_dict, sep="")
 
-  # Changing the existing students_dict's grade.
-  change_name = input(
-    "\nEnter the name of the students_dict " \
-    "whose grade has to be changed: ")
+	# Changing the existing students_dict's grade.
+	change_name = input(
+		"\nEnter the name of the students_dict " \
+		"whose grade has to be changed: ")
 
-  change_grade = float(input("Enter the new grade: "))
-  students_dict[change_name] = change_grade
+	change_grade = float(input("Enter the new grade: "))
+	students_dict[change_name] = change_grade
 
-  print('\nstudents_dict:\n', students_dict, end="")
+	print('\nstudents_dict:\n', students_dict, end="")
 
-  # Finding the highest grade, lowest grade, and the average.
+	# Finding the highest grade, lowest grade, and the average.
 
-  # The .values() method returns a dict_values view object.
-  # It is not indexable/subscriptable like a Python list.
-  values_lst = list(students_dict.values())
-  highest = values_lst[0]
-  highest_name = ''
+	# The .values() method returns a dict_values view object.
+	# It is not indexable/subscriptable like a Python list.
+	values_lst = list(students_dict.values())
+	highest = values_lst[0]
+	highest_name = ''
 
-  lowest = values_lst[0]
-  lowest_name = ''
-  c = 0
-  s = 0
+	lowest = values_lst[0]
+	lowest_name = ''
+	c = 0
+	s = 0
 
-  print('students_dict.values():', students_dict.values())
+	print('students_dict.values():', students_dict.values())
 
-  while c < len(students_dict):
-    if highest < students_dict.values[c]:
-      highest = students_dict.values[c]
-      highest_name = students_dict.keys[c]
+	while c < len(students_dict):
+		if highest < students_dict.values[c]:
+			highest = students_dict.values[c]
+			highest_name = students_dict.keys[c]
 
-    if lowest > students_dict.values[c]:
-      lowest = students_dict.values[c]
-      lowest_name = students_dict.keys[c]
-        
-    s += students_dict.values[c]
-    c += 1
+		if lowest > students_dict.values[c]:
+			lowest = students_dict.values[c]
+			lowest_name = students_dict.keys[c]
+			
+		s += students_dict.values[c]
+		c += 1
 
-  print(f"\nHighest grade: {highest} by {highest_name}")
-  print(f"Lowest grade: {lowest} by {lowest_name}")
-  print(f"Average: {s/len(students_dict)}")
+	print(f"\nHighest grade: {highest} by {highest_name}")
+	print(f"Lowest grade: {lowest} by {lowest_name}")
+	print(f"Average: {s/len(students_dict)}")
 
 student_grade()

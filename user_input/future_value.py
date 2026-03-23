@@ -38,9 +38,9 @@ future_value = float(input('Enter the desired future value: '))
 
 # Get the annual interest rate.
 rate = float(
-  input(
-  '\nEnter the annual interest rate in decimal\n'
-  'format (4 should be inputted as 0.04): ')
+	input(
+	'\nEnter the annual interest rate in decimal\n'
+	'format (4 should be inputted as 0.04): ')
 )
 
 # Get the number of years that the money will appreciate.

@@ -45,10 +45,10 @@ students = ["Sara", "Alex", "Jamal", "Priya"]
 
 # A dictionary mapping students to the courses they completed.
 completed_courses = {
-  "Sara": {"Python", "SQL"},
-  "Alex": {"Python"},
-  "Jamal": {"SQL", "Statistics"},
-  "Priya": {"Python", "SQL", "Statistics"}
+	"Sara": {"Python", "SQL"},
+	"Alex": {"Python"},
+	"Jamal": {"SQL", "Statistics"},
+	"Priya": {"Python", "SQL", "Statistics"}
 }
 
 

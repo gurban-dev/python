@@ -7,9 +7,9 @@ are the names of the employees and the values are
 their respective phone numbers?
 """
 phonebook = {
-  'Chris': '555-1111',
-  'Katie': '555-2222',
-  'Joanne': '555-3333'
+	'Chris': '555-1111',
+	'Katie': '555-2222',
+	'Joanne': '555-3333'
 }
 
 """
@@ -43,7 +43,7 @@ operator to determine whether a key exists in a
 dictionary before trying to use it to retrieve a value.
 """
 if '555-3333' in phonebook:
-  print(f"phonebook[\'555-3333\']: {phonebook['555-3333']}")
+	print(f"phonebook[\'555-3333\']: {phonebook['555-3333']}")
 
 # Generates a NameError because Chris is not defined.
 # if Chris in phonebook:
@@ -52,7 +52,7 @@ if '555-3333' in phonebook:
 # The not in operator determines whether
 # a key does not exist in a dictionary.
 if '555-3333' not in phonebook:
-  print('\nKey \'555-3333\' was not found.')
+	print('\nKey \'555-3333\' was not found.')
 
 '''
 Dictionaries are mutable objects. You can add new
@@ -94,16 +94,16 @@ print(f'\nphonebook: {phonebook}')
 # phonebook dictionary before attempting to
 # delete its pair.
 if 'Chris' in phonebook:
-  del phonebook['Chris']
+	del phonebook['Chris']
 else:
-  print('\nKey \'Chris\' not found in phonebook.')
+	print('\nKey \'Chris\' not found in phonebook.')
 
 # Use the len() function to obtain the number
 # of elements inside of a dictionary:
 print(f'\nNumber of contacts in the phonebook: {len(phonebook)}\n')
 
 for given_name in phonebook:
-  print(f'key: {given_name}, phonebook[\'{given_name}\']: {phonebook[given_name]}')
+	print(f'key: {given_name}, phonebook[\'{given_name}\']: {phonebook[given_name]}')
 
 # Delete all of the elements in a dictionary by
 # calling the .clear() method on the dictionary.

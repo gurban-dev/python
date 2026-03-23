@@ -20,28 +20,28 @@ this through name mangling, not through a true restriction.
 
 
 class Parent:
-  def __init__(self):
-    self.public_var = "I am public."
-    self._protected_var = "I am protected."
-    self.__private_var = "I am private."
-  
-  # The object of the parent class has direct access to
-  # all of its instance variables/attributes regardless
-  # of the naming convention.
-  def access_attributes(self):
-    print('Parent sees:')
-    print(self.public_var)
-    print(self._protected_var)
-    print(self.__private_var, '\n')
+	def __init__(self):
+		self.public_var = "I am public."
+		self._protected_var = "I am protected."
+		self.__private_var = "I am private."
+	
+	# The object of the parent class has direct access to
+	# all of its instance variables/attributes regardless
+	# of the naming convention.
+	def access_attributes(self):
+		print('Parent sees:')
+		print(self.public_var)
+		print(self._protected_var)
+		print(self.__private_var, '\n')
   
 
 class Child(Parent):
-  def access_parent_vars(self):
-    print('Child sees:')
-    print(self.public_var)
-    print(self._protected_var)
-    # print(self.__private_var)
-    print()
+	def access_parent_vars(self):
+		print('Child sees:')
+		print(self.public_var)
+		print(self._protected_var)
+		# print(self.__private_var)
+		print()
 
 parentObj = Parent()
 childObj = Child()

@@ -1,16 +1,16 @@
 class Animal:
-  def speak(self):
-    print("The animal makes a sound")
+	def speak(self):
+		print("The animal makes a sound")
 
 
 class Dog(Animal):
-  def bark(self):
-    print("The dog barks")
+	def bark(self):
+		print("The dog barks")
 
 
 class Cat(Animal):
-  def meow(self):
-    print("The cat meows")
+	def meow(self):
+		print("The cat meows")
 
 
 # Create objects.

@@ -13,6 +13,6 @@ std_deviation2 = numpy.std(speed2)
 
 print(f'std_deviation1: {std_deviation1}')
 
-# The round() method is used to handle the
-# precision of floating point numbers.
+# The round() method is used to handle the precision of
+# floating point numbers.
 print(f'std_deviation2: {round(std_deviation2, 2)}')

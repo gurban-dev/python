@@ -14,20 +14,20 @@ caring which type it is.
 # ------------------------------------------------------
 
 class Notification:
-  def send(self, message):
-    raise NotImplementedError("Subclasses must implement send()")
+	def send(self, message):
+		raise NotImplementedError("Subclasses must implement send()")
 
 
 class EmailNotification(Notification):
-  def send(self, message):
-    print("EmailNotification handling message")
-    print(f"Email sent: {message}")
+	def send(self, message):
+		print("EmailNotification handling message")
+		print(f"Email sent: {message}")
 
 
 class SMSNotification(Notification):
-  def send(self, message):
-    print("SMSNotification handling message")
-    print(f"SMS sent: {message}")
+	def send(self, message):
+		print("SMSNotification handling message")
+		print(f"SMS sent: {message}")
 
 
 # ------------------------------------------------------
@@ -55,8 +55,8 @@ class SMSNotification(Notification):
 # ------------------------------------------------------
 
 def notify_all(notifications, message):
-  # TODO: Implement this function
-  pass
+	# TODO: Implement this function
+	pass
 
 
 # ------------------------------------------------------
@@ -68,8 +68,8 @@ def notify_all(notifications, message):
 # ------------------------------------------------------
 
 class PushNotification(Notification):
-  # TODO: Implement send()
-  pass
+	# TODO: Implement send()
+	pass
 
 
 # ------------------------------------------------------
@@ -98,19 +98,19 @@ class PushNotification(Notification):
 # ------------------------------------------------------
 
 class SlackNotification:
-  def send(self, message):
-    print("SlackNotification handling message")
-    print(f"Slack message: {message}")
+	def send(self, message):
+		print("SlackNotification handling message")
+		print(f"Slack message: {message}")
 
 if __name__ == "__main__":
-  notifications = [
-    EmailNotification(),
-    SMSNotification(),
-    # TODO: Add PushNotification here
-    SlackNotification()
-  ]
+	notifications = [
+		EmailNotification(),
+		SMSNotification(),
+		# TODO: Add PushNotification here
+		SlackNotification()
+	]
 
-  notify_all(notifications, "Your order has shipped!")
+	notify_all(notifications, "Your order has shipped!")
 
 
 # ---------------------------------------------------------------

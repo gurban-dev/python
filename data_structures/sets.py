@@ -65,13 +65,13 @@ print('items:', items, '\n')
 # The set difference operator.
 
 courses = [
-  "Data Structures & Algorithms",
-  "Object-oriented Programming",
-  "Database Design"
+	"Data Structures & Algorithms",
+	"Object-oriented Programming",
+	"Database Design"
 ]
 
 courses_completed = [
-  "Database Design"
+  	"Database Design"
 ]
 
 # To find the difference between two lists, convert them to sets

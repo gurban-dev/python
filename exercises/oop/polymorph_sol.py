@@ -16,25 +16,25 @@ caring which type it is.
 # This base class defines the shared interface so all notifications
 # expose the same send() method and can be used interchangeably.
 class Notification:
-  def send(self, message):
-    raise NotImplementedError("Subclasses must implement send()")
+	def send(self, message):
+		raise NotImplementedError("Subclasses must implement send()")
 
 
 class EmailNotification(Notification):
-  def send(self, message):
-    # Using the class name dynamically helps demonstrate runtime
-    # method resolution by showing which implementation is called.
-    print(f"{self.__class__.__name__} handling message")
+	def send(self, message):
+		# Using the class name dynamically helps demonstrate runtime
+		# method resolution by showing which implementation is called.
+		print(f"{self.__class__.__name__} handling message")
 
-    print(f"Email sent: {message}")
+		print(f"Email sent: {message}")
 
 
 # This class provides a different implementation of the same method,
 # reinforcing that objects with a common interface can behave differently.
 class SMSNotification(Notification):
-  def send(self, message):
-    print(f"{self.__class__.__name__} handling message")
-    print(f"SMS sent: {message}")
+	def send(self, message):
+		print(f"{self.__class__.__name__} handling message")
+		print(f"SMS sent: {message}")
 
 
 # ----------------------------------------------------------------
@@ -57,15 +57,15 @@ class SMSNotification(Notification):
 # This function relies on behaviour instead of type checking, allowing
 # any object with a send() method to work without modification.
 def notify_all(notifications, message):
-  """
-  Sends a message using any object that provides a send() method.
-  This relies on polymorphism rather than type checking.
-  """
+	"""
+	Sends a message using any object that provides a send() method.
+	This relies on polymorphism rather than type checking.
+	"""
 
-  # Iterating through objects and calling the same method name allows
-  # Python to decide at runtime which implementation to execute.
-  for notification in notifications:
-    notification.send(message)
+	# Iterating through objects and calling the same method name allows
+	# Python to decide at runtime which implementation to execute.
+	for notification in notifications:
+		notification.send(message)
 
 
 # ----------------------------------------------------------------
@@ -76,9 +76,9 @@ def notify_all(notifications, message):
 # Adding a new subclass proves that extending functionality does not
 # require changes to existing polymorphic code when interfaces match.
 class PushNotification(Notification):
-  def send(self, message):
-    print(f"{self.__class__.__name__} handling message")
-    print(f"Push notification sent: {message}")
+	def send(self, message):
+		print(f"{self.__class__.__name__} handling message")
+		print(f"Push notification sent: {message}")
 
 
 # ----------------------------------------------------------------
@@ -93,9 +93,9 @@ class PushNotification(Notification):
 # determined by what it can do (its methods/behavior), not by its class
 # or inheritance.
 class SlackNotification:
-  def send(self, message):
-    print(f"{self.__class__.__name__} handling message")
-    print(f"Slack message: {message}")
+	def send(self, message):
+		print(f"{self.__class__.__name__} handling message")
+		print(f"Slack message: {message}")
 
 
 # ----------------------------------------------------------------
@@ -103,16 +103,16 @@ class SlackNotification:
 # ----------------------------------------------------------------
 
 if __name__ == "__main__":
-  # Creating a mixed list of objects demonstrates that the same function
-  # can operate on different classes without caring about their types.
-  notifications = [
-    EmailNotification(),
-    SMSNotification(),
-    PushNotification(),
-    SlackNotification()
-  ]
+	# Creating a mixed list of objects demonstrates that the same function
+	# can operate on different classes without caring about their types.
+	notifications = [
+		EmailNotification(),
+		SMSNotification(),
+		PushNotification(),
+		SlackNotification()
+	]
 
-  notify_all(notifications, "Your order has shipped!")
+	notify_all(notifications, "Your order has shipped!")
 
 
 # ----------------------------------------------------------------

@@ -25,15 +25,15 @@ range(5) returns:
 
 print('for num in range(5):')
 for num in range(5):
-  if num != 4:
-    # 'num' is a positional argument because the name of the
-    # parameter is not included.
+	if num != 4:
+		# 'num' is a positional argument because the name of the
+		# parameter is not included.
 
-    # end=', ' is a keyword argument because the name of the
-    # parameter (end) is included.
-    print(num, end=', ')
-  else:
-    print(num)
+		# end=', ' is a keyword argument because the name of the
+		# parameter (end) is included.
+		print(num, end=', ')
+	else:
+		print(num)
 
 # A print() function without any arguments just adds
 # an empty line to the output.
@@ -41,10 +41,10 @@ print()
 
 print('for num in range(0, 5, 1):')
 for num in range(0, 5, 1):
-  if num != 4:
-    print(num, end=', ')
-  else:
-    print(num)
+	if num != 4:
+		print(num, end=', ')
+	else:
+		print(num)
 print('')
 
 '''
@@ -58,21 +58,21 @@ including 5.
 '''
 print('for num in range(1, 5):')
 for num in range(1, 5):
-  if num != 4:
-    print(num, end=', ')
-  else:
-    print(num)
+	if num != 4:
+		print(num, end=', ')
+	else:
+		print(num)
 print('')
 
 # A list data structure is an iterable.
 for num in [0, 1, 2, 3, 4]:
-  # The lowercase f indicates that the following is an
-  # F-string.
-  print(f'num: {num}')
+	# The lowercase f indicates that the following is an
+	# F-string.
+	print(f'num: {num}')
 print('')
 
 # The underscore (_) acts as a throwaway variable.
 # It's used when a variable is required by syntax,
 # but its value won't be accessed anywhere in the code.
 for _ in range(5):
-  print('Hello world')
+	print('Hello world')

@@ -7,9 +7,9 @@
 
 # Tuple data structure.
 social_security_beneficiary = (
-  111223333,
-  '111-22-3333',
-  False
+	111223333,
+	'111-22-3333',
+  	False
 )
 
 # 'social_security_beneficiary' is a variable that

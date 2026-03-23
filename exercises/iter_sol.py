@@ -64,9 +64,9 @@ print('it.__next__():', it.__next__())
 print('it.__next__():', it.__next__())
 
 try:
-  print('it.__next__():', it.__next__())
+	print('it.__next__():', it.__next__())
 except StopIteration:
-  print("StopIteration raised: Iterator exhausted.")
+	print("StopIteration raised: Iterator exhausted.")
 
 
 # ------------------------------------------------------------
@@ -78,12 +78,12 @@ print("\nUsing next() built-in:")
 values = iter([1, 2, 3])
 
 while True:
-  try:
-    value = next(values)
-    print('value:', value)
-  except StopIteration:
-    print("No more values.")
-    break
+	try:
+		value = next(values)
+		print('value:', value)
+	except StopIteration:
+		print("No more values.")
+		break
 
 
 # ------------------------------------------------------------
@@ -95,19 +95,19 @@ print("\nFor-loop iteration:")
 numbers = [7, 8, 9]
 
 for num in numbers:
-  print(num)
+	print(num)
 
 print("\nEquivalent manual iteration:")
 
 it = iter(numbers)
 
 while True:
-  try:
-    num = next(it)
+	try:
+		num = next(it)
 
-    print('num:', num)
-  except StopIteration:
-    break
+		print('num:', num)
+	except StopIteration:
+		break
 
 
 # ------------------------------------------------------------
@@ -118,27 +118,26 @@ print("\nCustom iterator example:")
 
 
 class CountUpTo:
-  def __init__(self, limit):
-    self.limit = limit
-    self.current = 1
+	def __init__(self, limit):
+		self.limit = limit
+		self.current = 1
 
-  def __iter__(self):
-    return self
+	def __iter__(self):
+		return self
 
-  def __next__(self):
-    if self.current > self.limit:
-      raise StopIteration
+	def __next__(self):
+		if self.current > self.limit:
+			raise StopIteration
 
-    value = self.current
-    self.current += 1
+		value = self.current
+		self.current += 1
 
-    return value
-
+		return value
 
 counter = CountUpTo(5)
 
 for num in counter:
-  print('num:', num)
+	print('num:', num)
 
 
 '''

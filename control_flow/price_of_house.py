@@ -26,6 +26,5 @@ else:
 	print('else block entered.')
 	down_payment = 0.2 * house_price
 
-# A print statement with an f-string
-# passed to it.
+# A print statement with an f-string passed to it.
 print(f"\nDown payment: ${down_payment}")

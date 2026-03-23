@@ -18,18 +18,18 @@ speaks_the_local_tongue = True
 offers_token_of_respect = True
 
 if speaks_the_local_tongue and offers_token_of_respect:
-  print(
-    "The soldier enters the village. The villagers nod with cautious\n"
-    "respect, allowing him to pass and interact safely."
-  )
+	print(
+		"The soldier enters the village. The villagers nod with cautious\n"
+		"respect, allowing him to pass and interact safely."
+	)
 elif speaks_the_local_tongue or offers_token_of_respect:
-  print(
-    "The soldier manages to enter, but the villagers remain suspicious.\n"
-    "They keep a close eye on him and restrict his movements until his\n"
-    "intentions are clear."
-    )
+	print(
+		"The soldier manages to enter, but the villagers remain suspicious.\n"
+		"They keep a close eye on him and restrict his movements until his\n"
+		"intentions are clear."
+		)
 else:
-  print(
-    "The soldier cannot communicate and forgets to show a token of respect.\n"
-    "The villagers bar the gates, and he must return to Rome."
-  )
+	print(
+		"The soldier cannot communicate and forgets to show a token of respect.\n"
+		"The villagers bar the gates, and he must return to Rome."
+	)

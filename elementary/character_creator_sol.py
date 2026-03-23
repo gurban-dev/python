@@ -36,6 +36,6 @@ print("=" * 40)
 # variable power_level is greater than 500, then the
 # program will execute line number 36.
 if power_level > 500:
-  print("\nYou are a super human being!")
+	print("\nYou are a super human being!")
 else:
-  print("\nYou are a regular human being.")
+	print("\nYou are a regular human being.")

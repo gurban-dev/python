@@ -26,9 +26,9 @@ To remove the warning the following was added to
 the settings.json file inside of the python/.vscode
 directory:
 {
-  "python.analysis.extraPaths": [
-    "./imports/folder1"
-  ]
+	"python.analysis.extraPaths": [
+		"./imports/folder1"
+	]
 }
 '''
 

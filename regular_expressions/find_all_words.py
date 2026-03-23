@@ -8,9 +8,9 @@ or the first word in a sentence).
 '''
 
 def extract_capital_words(text):
-  pattern = r'\b[A-Z][a-z]*\b'
+	pattern = r'\b[A-Z][a-z]*\b'
 
-  return re.findall(pattern, text)
+	return re.findall(pattern, text)
 
 # Example input:
 text = "Alice went to Paris to visit the Eiffel Tower with Bob."

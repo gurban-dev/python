@@ -5,7 +5,7 @@
 # range(1, 11) returns an iterable which is an object
 # that can return an iterator using iter().
 for i in range(1, 11):
-  print(i)
+	print(i)
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -21,7 +21,7 @@ print('y.__next__():', y.__next__())
 
 print('\nFor loop begins')
 for i in y:
-  print(i)
+	print(i)
 print('')
 
 # Python's built-in range() function returns an iterable.
@@ -45,30 +45,30 @@ print('\niterator.__next__():', iterator.__next__())
 
 print('\nGenerator')
 def gen(num):
-  for i in range(num):
-    yield i
+	for i in range(num):
+		yield i
 
 for i in gen(5):
-  print(i)
+	print(i)
 
 print('\nManual Generator')
 
 # A manual implementation:
 def manual_gen():
-  yield 0
-  print('Pause 1\n')
+	yield 0
+	print('Pause 1\n')
 
-  yield 1
-  print('Pause 2\n')
-  
-  yield 2
-  print('Pause 3\n')
+	yield 1
+	print('Pause 2\n')
+	
+	yield 2
+	print('Pause 3\n')
 
-  yield 3
-  print('Pause 4\n')
+	yield 3
+	print('Pause 4\n')
 
-  yield 4
-  print('Pause 5\n')
+	yield 4
+	print('Pause 5\n')
 
 x = manual_gen()
 print(next(x))
@@ -88,7 +88,7 @@ internally.
 '''
 
 # for i in range(one_trillion):
-#   pass
+# 	pass
 
 '''
 yield makes the following a generator function.
@@ -103,10 +103,10 @@ From the perspective of memory storage, this is extremely efficient
 since only one number exists in memory at a time.
 '''
 def generator(num):
-  for i in range(num):
-    yield i
+	for i in range(num):
+		yield i
 
-    print(f'Pause {i}')
+		print(f'Pause {i}')
 
 generator_obj = generator(one_trillion)
 
@@ -114,7 +114,7 @@ print('\nnext(generator_obj):', next(generator_obj))
 
 # Outputs 0, 1, 2, ... N-1
 # for num in generator_obj:
-#   print('num:', num)
+# 	print('num:', num)
 
 '''
 Use case of a generator:

@@ -1,9 +1,9 @@
 Format of a function definition:
 
 def function_name():
-  statement
-  statement
-  etc.
+	statement
+	statement
+	etc.
 
 The first line is known as the function header.
 It marks the beginning of the function definition.
@@ -40,14 +40,14 @@ return values.
 
 Function annotations syntax:
 def function_name(
-  parameter1: data_type, parameter2: data_type) -> return_type:
-  variable_name: data_type = value_being_assigned
+	parameter1: data_type, parameter2: data_type) -> return_type:
+	variable_name: data_type = value_being_assigned
 
-  statement
+	statement
 
-  ...
+	...
 
-  etc.
+	etc.
 
 Parameter type annotation:
 parameter1: data_type

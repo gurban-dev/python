@@ -16,15 +16,15 @@ print("Last fruit:", fruits[-1])
 # Print all fruits using a for loop.
 print("\nAll fruits in the list:")
 for fruit in fruits:
-  print(fruit)
+ 	print(fruit)
 
 print('\ntype(fruits[0]):', type(fruits[0]), '\n')
 
 # Check if the first fruit is "apple".
 if fruits[0].lower() == "apple":
-  print("The first fruit is apple!")
+  	print("The first fruit is apple!")
 else:
-  print("The first fruit is not apple.")
+  	print("The first fruit is not apple.")
 
 # Lists are mutable. Changing the first fruit.
 fruits[0] = "kiwi"
@@ -32,9 +32,9 @@ fruits[0] = "kiwi"
 print("\nAfter changing the first fruit:")
 
 if fruits[0] == "apple":
-  print("The first fruit is apple!")
+  	print("The first fruit is apple!")
 else:
-  print("The first fruit is not apple.")
+  	print("The first fruit is not apple.")
 
 # Add an item to the list.
 fruits.append("persimmon")

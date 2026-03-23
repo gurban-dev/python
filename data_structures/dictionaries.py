@@ -16,8 +16,8 @@ to a value.
 You can create a dictionary by enclosing key-value
 pair elements inside a set of curly braces ( {} ).
 dict_name = {
-  <key>: <value>,
-  <key>: <value>
+	<key>: <value>,
+	<key>: <value>
 }
 
 An element consists of a key, followed by a colon,
@@ -30,9 +30,9 @@ literals like 'John', but remember that they must
 be immutable or unchangeable.
 """
 integers = {
-  1: 'One',
-  2: 'Two',
-  3: 'Three'
+	1: 'One',
+	2: 'Two',
+	3: 'Three'
 }
 
 """
@@ -65,11 +65,11 @@ The values can also be of different data types.
 # 99.9 is a float.
 # (3, 6, 9) is a tuple.
 mixed_up = {
-  'abc': 1,
+	'abc': 1,
 
-  99.9: 'yada yada',
+	99.9: 'yada yada',
 
-  (3, 6, 9): [3, 6, 9]
+	(3, 6, 9): [3, 6, 9]
 }
 
 print(f'\nmixed_up: {mixed_up}')

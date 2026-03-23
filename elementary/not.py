@@ -10,7 +10,7 @@ returns false. If it is applied to an expression that is false,
 the operator returns true.
 '''
 if not ania_likes_kefir:
-  print('Ania doesn\'t like kefir!')
+  	print('Ania doesn\'t like kefir!')
 
 if ania_likes_kefir:
-  print('Ania likes kefir!')
+  	print('Ania likes kefir!')

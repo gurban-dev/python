@@ -1,21 +1,19 @@
 '''
-The built-in input() function that temporarily pauses
-the program, and waits until the user clicks the "Enter"
-key on their keyboard.
+The built-in input() function that temporarily pauses the program,
+and waits until the user clicks the "Enter" key on their keyboard.
 
-Conventionally, the user is supposed to type in some content
-before clicking the "Enter" key.
+Conventionally, the user is supposed to type in some content before
+clicking the "Enter" key.
 
-Include a whitespace character after the prompt statement
-because the input() function does not automatically include
-one.'''
+Include a whitespace character after the prompt statement because
+the input() function does not automatically include one.'''
 
 # The prompt statement in the following example:
 # 'What is your given_name? '
 given_name = input('What is your given name? ')
 
-# Notice how the size of given_name is zero if the user
-# just clicks the "Enter" key without typing anything in.
+# Notice how the size of given_name is zero if the user just clicks
+# the "Enter" key without typing anything in.
 print('\nlen(given_name):', len(given_name))
 
 # F-string
@@ -23,9 +21,8 @@ print('\nlen(given_name):', len(given_name))
 print(f'\ngiven_name: {given_name}')
 
 """
-Since the input() function returns a string,
-adding two inputted numbers as strings will
-simply concatenate them.
+Since the input() function returns a string, adding two inputted
+numbers as strings will simply concatenate them.
 "1" + "2" = "12"
 """
 
@@ -35,27 +32,23 @@ num1_str = input('\nInput a number: ')
 # Input the number 2 again.
 num2_str = input('Input a second number: ')
 
-# The output is 22 because variables
-# "num1_str" and "num2_str" are strings
-# rather than integers.
+# The output is 22 because variables "num1_str" and "num2_str" are
+# strings rather than integers.
 # The following is known as string concatenation.
 print(f'num1_str + num2_str: {num1_str + num2_str}')
 
 """
-Invoke the int() function for the sake of
-converting the string returned by the
-input() function to an integer.
+Invoke the int() function for the sake of converting the string
+returned by the input() function to an integer.
 
-In this context, doing this is necessary
-because addition must be performed with
-numbers rather than strings.
+In this context, doing this is necessary because addition must be
+performed with numbers rather than strings.
 
 Numeric literal: '1'
 
-Remember that inputting a non-numerical value like
-"fish" and then trying to cast it as an integer
-generates a ValueError because "fish" converted to
-an integer."""
+Remember that inputting a non-numerical value like "fish" and then
+trying to cast it as an integer generates a ValueError because
+"fish" converted to an integer."""
 
 # Input the number 2.
 num1_int = int(input('\nInput a number: '))
@@ -63,8 +56,8 @@ num1_int = int(input('\nInput a number: '))
 # Change the above int() function to float().
 # Let's see how the calculation will be different.
 
-# Now change the above int() function to a string(),
-# but leave the subsequent one as int().
+# Now change the above int() function to a string(), but leave the
+# subsequent one as int().
 
 # Input the number 2 again.
 num2_int = int(input('Input a second number: '))

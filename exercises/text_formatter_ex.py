@@ -20,7 +20,7 @@ Part 1: Truthy/Falsy Message Validator
 Write a function:
 
 def validate_message(msg):
-  # Your code here
+	# Your code here
 
 
 Requirements:
@@ -38,7 +38,7 @@ Part 2: Parameter Practice: Create a Repeater
 Write a function:
 
 def repeat_text(text, times):
-  # Your code here
+	# Your code here
 
 
 Requirements:
@@ -57,7 +57,7 @@ Part 3: Default Parameters + Escape Sequences
 
 Write a function:
 def fancy_print(text, prefix=">>> ", suffix=" <<<", new_line=True):
-  # Your code here
+	# Your code here
 
 
 Requirements:
@@ -93,7 +93,7 @@ Part 4: Combine Everything
 
 Write a function:
 def process_message(msg, repeat=1):
-  # Your code here
+	# Your code here
 
 
 Requirements:
