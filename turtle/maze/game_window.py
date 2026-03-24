@@ -44,7 +44,7 @@ player.penup()
 # (stretch_wid=2, stretch_len=2) makes the square 40x40 pixels.
 
 # 30x30 pixels
-player.shapesize(stretch_wid=0.5, stretch_len=0.5)
+player.shapesize(stretch_wid=0.75, stretch_len=0.75)
 
 
 def move_up():
@@ -210,20 +210,39 @@ window.onkeyrelease(release_left, "Left")
 window.onkeypress(press_right, "Right")
 window.onkeyrelease(release_right, "Right")
 
-def game_loop():
-	if moving_up:
-		player.sety(player.ycor() + 5)
-			
-	if moving_down:
-		player.sety(player.ycor() - 5)
-			
-	if moving_right:
-		player.setx(player.xcor() + 5)
-    
-	if moving_left:
-		player.setx(player.xcor() - 5)
+def can_move(x, y):
+    for wall in walls:
+        if abs(x - wall[0]) < 25 and abs(y - wall[1]) < 25:
+            return False
+    return True
 
-	window.ontimer(game_loop, 20)
+# dx represents the change in x.
+# dy represents the change in y.
+def move_player(dx, dy):
+    new_x = player.xcor() + dx
+    new_y = player.ycor() + dy
+
+    # print("can_move(new_x, new_y):", can_move(new_x, new_y))
+
+    if can_move(new_x, new_y):
+        player.setx(new_x)
+        player.sety(new_y)
+
+def game_loop():
+    if moving_up:
+        move_player(0, 5)
+            
+    if moving_down:            
+        move_player(0, -5)
+
+    if moving_right:
+        move_player(5, 0)
+
+    if moving_left:
+        move_player(-5, 0)
+
+    # Call the function game_loop() again after twenty milliseconds.
+    window.ontimer(game_loop, 20)
 
 game_loop()
 

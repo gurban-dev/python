@@ -1,6 +1,16 @@
 # A set is a mutable, unordered collection of unique elements
 # that does not support indexing.
 
+# If you need to initialise an empty set, you must use the built-in
+# set() function because then Python will think that you are declaring
+# a dictionary.
+
+# Empty set:
+# items = set()
+
+# Empty dictionary:
+# items = {}
+
 # The built-in set data structure can be declared with
 # the set() function so long as a list is passed to it
 # as an argument.
@@ -19,8 +29,9 @@ items = {1.0, 1.0, 1, 1, 'Venice', "Venice"}
 #   - their hashes are equal, and
 #   - they compare equal with ==
 
-# Since 1 == 1.0 is True and hash(1) == hash(1.0),
-# the set treats them as duplicates and keeps only one.
+# Since 1 == 1.0 evaluates to True and hash(1) == hash(1.0) evaluates
+# to True, the set treats them as duplicates and keeps only the first
+# -one that is included in the set.
 
 # Strings with the same content are also equal,
 # so 'Venice' and "Venice" collapse into one element.
@@ -40,8 +51,7 @@ print('items:', items)
 # Sets are mutable. They can be modified after
 # they are initialised.
 
-# The .add() method will add items in a random
-# order to the set.
+# The .add() method will add items in a random order to the set.
 items.add('Istanbul')
 
 # Attempt to add a duplicate to this set.
@@ -62,6 +72,22 @@ print('items:', items, '\n')
 # A hash table is how Python stores set items so they can be found quickly,
 # which is why sets do not keep items in a predictable order.
 
+items.remove("Venice")
+
+print("items after removing \"Venice\":\n", items, sep="")
+
+# A KeyError exception is raised if an item that does not
+# exist in a set is attempted to be removed from it.
+# items.remove("Athens")
+
+# Membership operator: checks if a value exists in a collection.
+print("\n1.0 in items:", 1.0 in items, '\n')
+
+# Insertion, deletion, and lookup are O(1) on average because sets are
+# implemented using a hash table. A hash function maps each element to
+# a specific index (slot) in an underlying array, allowing direct access
+# without scanning the entire collection.
+
 # The set difference operator.
 
 courses = [
@@ -76,5 +102,5 @@ courses_completed = [
 
 # To find the difference between two lists, convert them to sets
 # using set(), then apply the set difference operator (-).
-print("set(courses) - set(courses_completed):",
-      set(courses) - set(courses_completed))
+print("set(courses) - set(courses_completed):\n",
+      set(courses) - set(courses_completed), sep="")

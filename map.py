@@ -1,3 +1,15 @@
+# The built-in map() function applies a given function to each
+# item in an iterable (sequence of values).
+
+# Syntax:
+# map(function, one_or_more_iterables)
+
+# function: The function to apply to each item in an iterable.
+# one_or_more_iterables: A sequence of values, or multiple sequences of
+# 						 values (if the function accepts multiple arguments).
+
+# It returns a map object which is an iterator.
+
 num1: int = 0
 num2: int = 0
 

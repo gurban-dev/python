@@ -1,8 +1,8 @@
 """
 The concept or abstract idea of a dictionary:
 
-A dictionary is a collection of data where the
-structure of the data is key-value pairs.
+A dictionary is a collection of data where the structure of
+the data is made up of key-value pairs.
 
 Each element in a dictionary has two parts:
 a key and a value.
