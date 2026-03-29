@@ -55,17 +55,16 @@ def main():
 	# must be invoked instead of my_coin.__sideup.
 	# my_coin._Coin__sideup = ''
 
-	# Directly accessing the "__sideup" instance variable shows
+	# Directly accessing the '__sideup' instance variable shows
 	# that Python does not enforce strict private access like some
 	# languages, but has name mangling (__var) to discourage external
 	# access.
 	print('\nmy_coin._Coin__sideup:', my_coin._Coin__sideup)
 
-	# The get_sideup() method will return the same
-	# result.
+	# The get_sideup() method will return the same result.
 	print('\nThis side is up:', my_coin.get_sideup())
 
 # Prevents the main() function from being run automatically if
-# this file is imported. 
+# this file is imported.
 if __name__ == "__main__":
 	main()

@@ -3,15 +3,15 @@ Simple Grocery Price Checker
 
 CONCEPTS:
 - Lists (creating and accessing elements)
+- Index lookup (.index())
 - The len() function
 - User input with input()
-- String methods (.lower(), .capitalize())
-- Membership operator (in)
-- Index lookup (.index())
+- String methods (.lower(), .upper(), .capitalize())
+- String indexing (accessing characters like choice[-1])
+- Membership operator for strings and lists (in)
 - Conditional statements (if / elif / else)
 - Comparison operators (==, <, >=, <=)
 - Boolean expressions
-- String indexing (accessing characters like choice[-1])
 - Basic output formatting with print()
 
 --------------------------------------------------

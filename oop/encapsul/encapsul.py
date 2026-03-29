@@ -8,8 +8,7 @@
 
 class BankAccount:
 	def __init__(self, balance):
-		# Python does not have strict access modifiers like
-		# TypeScript.
+		# Python does not have strict access modifiers like TypeScript.
 
 		# Prefixing an attribute with __ triggers name mangling,
 		# making it less accessible from outside of the class.
@@ -21,7 +20,7 @@ class BankAccount:
 		# have two underscores preceding their names are treated
 		# as private attributes.
 		self.__balance = balance
-	
+
 	# Selector/getter method.
 	def get_balance(self):
 		return self.__balance
@@ -36,7 +35,7 @@ class BankAccount:
 	
 	def withdraw(self, amount):
 		if amount > self.__balance:
-			print("Insufficient funds.")
+			print("You cannot withdraw due to insufficient funds.\n")
 			return
 		self.__balance -= amount
 
@@ -59,13 +58,16 @@ bankAccount = BankAccount(5_000)
 # bankAccount._BankAccount__balance += 500
 
 # The following is bad practice because it breaks encapsulation.
-bankAccount._BankAccount__balance = -9999
+bankAccount._BankAccount__balance -= 10_000
 
 # Should a bank account ever have negative thousands?
 
+# The ensuing approach is the proper way:
+bankAccount.withdraw(10_000)
+
 # Encapsulation ensures that business rules are checked before
 # an object's internal state can change.
-print(bankAccount.get_balance())
+print('bankAccount.get_balance():', bankAccount.get_balance(), '\n')
 
 bankAccount.deposit(500)
 

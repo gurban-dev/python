@@ -1,5 +1,5 @@
-If Windows suggests getting Python from the Microsoft store,
-do the following instead:
+If Windows suggests getting Python from the Microsoft store, do the
+following instead:
 
 Input the following into the Windows search bar:
 Manage app execution aliases
@@ -9,34 +9,99 @@ python.exe
 
 python3.exe
 
-If one of the following errors appear, it indicates that
-Python was installed, but it wasn't added to PATH:
+---------------------------------------------------------------------
 
-'pip' is not recognized as an internal or external command,
-operable program or batch file.
+FIXING "pip is not recognized" ERROR (Windows)
 
-The term 'pip' is not recognized as the name of a cmdlet,
-function, script file, or operable program.
+This error usually means Python is installed, but its executable paths
+were NOT added to your system PATH.
 
-Windows OS:
-Search for python.exe in the search bar next to the Windows
-button.
+Follow these steps carefully:
 
-Click on Open file location.
+--------------------------------------------------
+STEP 1: Locate Python installation
+--------------------------------------------------
+1. Click the Windows Start button.
+2. Type: python.exe
+3. Right-click on "python.exe" and select:
+   -> Open file location
+4. In the folder that opens:
+   - Click the address bar at the top
+   - Copy the full path
 
-Copy the file path for python.exe.
+   Example:
+   C:\Users\YourName\AppData\Local\Programs\Python\Python311\
 
-Select Path under User variables.
+5. ALSO locate the "Scripts" folder inside this directory:
+   Example:
+   C:\Users\YourName\AppData\Local\Programs\Python\Python311\Scripts\
 
-Click Edit...
+   You will need BOTH paths.
 
-Click New.
+--------------------------------------------------
+STEP 2: Open Environment Variables
+--------------------------------------------------
+1. Click the Windows Start button.
+2. Search for:
+   -> Environment Variables
+3. Click:
+   -> "Edit the system environment variables"
+4. In the window that opens, click:
+   -> Environment Variables...
 
-Paste the file path for python.exe and click the Enter.
+--------------------------------------------------
+STEP 3: Edit the PATH variable
+--------------------------------------------------
+1. Under "User variables" (top section), find:
+   -> Path
+2. Click:
+   -> Edit...
 
-Click 'Ok' and then 'Ok' again.
+3. In the new window, click:
+   -> New
 
-Restart the terminal.
+4. Paste the Python main folder path:
+   (the one containing python.exe)
+
+5. Click:
+   -> New again
+
+6. Paste the Scripts folder path:
+   (the one containing pip.exe)
+
+--------------------------------------------------
+STEP 4: Save changes
+--------------------------------------------------
+1. Click OK
+2. Click OK again
+3. Click OK one more time to close all windows
+
+--------------------------------------------------
+STEP 5: Restart terminal
+--------------------------------------------------
+IMPORTANT:
+- Close ALL Command Prompt / PowerShell windows
+- Open a NEW terminal
+
+--------------------------------------------------
+STEP 6: Verify installation
+--------------------------------------------------
+Run the following commands:
+
+python --version
+pip --version
+
+If both commands work, the issue is fixed.
+
+--------------------------------------------------
+COMMON MISTAKES TO AVOID
+--------------------------------------------------
+- Adding only python.exe instead of the full folder path
+- Forgetting to add the Scripts folder
+- Not restarting the terminal
+- Editing System PATH instead of User PATH (either works, but be consistent)
+
+---------------------------------------------------------------------
 
 If Python is not installed, download a stable release of
 Python from the official Python website:
@@ -63,7 +128,7 @@ python --version
 
 pip --version
 
------------------------------------------------------------
+---------------------------------------------------------------------
 Linux OS:
 
 sudo apt update

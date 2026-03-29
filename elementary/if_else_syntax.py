@@ -16,8 +16,9 @@ if likes_vanilla:
 else:
 	# pass acts as a placeholder.
 
-	# It's used when you syntactically need to write an instruction/statement,
-	# but don't need to execute an action.
+	# It's used when you syntactically need to write an
+	# instruction/statement, but don't need to execute
+	# an action.
 	pass
 
 print('vanilla_orders:', vanilla_orders)

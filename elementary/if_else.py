@@ -7,7 +7,7 @@ age = 9
 
 # In Python, you can change the value that a variable
 # references by assigning a new value to it.
-# age = 18
+age = 18
 
 # A float can also be compared to the integer value 18 because
 # despite being two different data types, they are part of the
