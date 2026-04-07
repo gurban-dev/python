@@ -48,8 +48,10 @@ player.shapesize(stretch_wid=0.75, stretch_len=0.75)
 
 
 def move_up():
+    # Get the player's current y-coordinate.
     y_position = player.ycor()
 
+    # Move the player up by increasing the y-coordinate by 20.
     player.sety(y_position + 20)
 
 def move_down():
@@ -153,8 +155,16 @@ for row in range(len(maze)):
             # that makes up the maze.
             walls.append((x_coordinate, y_coordinate))
 
+# Instruct the Screen object that is referenced by the variable
+# named 'window' to listen for keys that are pressed on the
+# user's keyboard.
 window.listen()
 
+# Bind the keys on the user's keyboard to specific functions that
+# were defined in this program.
+
+# When the Up arrow on the user's keyboard is pressed, the function
+# move_up() will be invoked.
 window.onkey(move_up, "Up") 
 window.onkey(move_down, "Down")
 window.onkey(move_left, "Left")

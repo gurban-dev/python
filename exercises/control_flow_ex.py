@@ -10,7 +10,7 @@ CONCEPTS:
 - String indexing (accessing characters like choice[-1])
 - Membership operator for strings and lists (in)
 - Conditional statements (if / elif / else)
-- Comparison operators (==, <, >=, <=)
+- Comparison operators (==, !=, <, >=, <=)
 - Boolean expressions
 - Basic output formatting with print()
 

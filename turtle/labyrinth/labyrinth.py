@@ -2,9 +2,7 @@ import turtle
 import tkinter as tk
 import random
 
-# =========================
-# CONFIG
-# =========================
+# Configuration
 WINDOW_WIDTH = 850
 WINDOW_HEIGHT = 600
 
@@ -16,9 +14,7 @@ MOVE_SPEED = 6
 COLLISION_PADDING = 14
 
 
-# =========================
-# MAZE GENERATION (DFS)
-# =========================
+# Maze generation (DFS)
 class MazeGenerator:
     def __init__(self, width, height):
         self.width = width
@@ -40,14 +36,14 @@ class MazeGenerator:
             for dx, dy in directions:
                 nx, ny = x + dx, y + dy
 
-                # ✅ allow carving closer to edges (prevents double walls)
+                # Allow carving closer to edges (prevents double walls)
                 if 0 < nx < self.width and 0 < ny < self.height:
                     if self.grid[ny][nx] == "X":
                         self.grid[ny][nx] = " "
                         self.grid[y + dy // 2][x + dx // 2] = " "
                         carve(nx, ny)
 
-        # ✅ start in center
+        # Start in center
         start_x = self.width // 2
         start_y = self.height // 2
 
@@ -56,9 +52,7 @@ class MazeGenerator:
 
         self._add_loops(120)
 
-        # =========================
-        # ✅ enforce single border
-        # =========================
+        # Enforce single border
         for x in range(self.width):
             self.grid[0][x] = "X"
             self.grid[self.height - 1][x] = "X"
@@ -67,9 +61,7 @@ class MazeGenerator:
             self.grid[y][0] = "X"
             self.grid[y][self.width - 1] = "X"
 
-        # =========================
-        # ✅ create ONE exit AFTER border fix
-        # =========================
+        # Create ONE exit AFTER border fix
         self.exit_pos = self._create_exit()
 
         return self.grid, (start_x, start_y), self.exit_pos
@@ -125,9 +117,6 @@ class MazeGenerator:
                     self.grid[y][x] = " "
 
 
-# =========================
-# MAZE CLASS
-# =========================
 class Maze:
     def __init__(self, grid):
         self.grid = grid
@@ -165,9 +154,6 @@ class Maze:
         return False
 
 
-# =========================
-# PLAYER
-# =========================
 class Player:
     def __init__(self, start_pos):
         self.turtle = turtle.Turtle()
@@ -175,7 +161,7 @@ class Player:
         self.turtle.color("red")
         self.turtle.penup()
 
-        # 🔥 slightly larger player
+        # Slightly larger player
         self.turtle.shapesize(0.8, 0.8)
 
         self.turtle.goto(start_pos)
@@ -190,20 +176,43 @@ class Player:
     def distance_to(self, pos):
         return self.turtle.distance(pos)
 
+# A class defines a blueprint for an object.
+# Objects/instances of this class can be created by using this blueprint.
+# An object has state and behaviour.
 
-# =========================
-# GAME
-# =========================
+# In other words, an object contains data and methods that you
+# would use to interact with that data.
 class Game:
+    # Constructor method which is responsible for initialising
+    # the state of an object.
+
+    # A constructor method must have 'self' as its first parameter.
+
+    # Python automatically looks for a method named __init__() and calls it
+    # when a new object is created, to initialise its attributes.
     def __init__(self):
+        # Create a game window.
+
+        # Create a main window using turtle.
         self.window = turtle.Screen()
+
+        # Establishing a title for the main window.
         self.window.title("Impossible Labyrinth")
+
+        # Setting the background colour.
         self.window.bgcolor("white")
+
+        # Setting the size of the window.
         self.window.setup(WINDOW_WIDTH, WINDOW_HEIGHT)
 
+        # Create a MazeGenerator object.
         generator = MazeGenerator(MAZE_WIDTH, MAZE_HEIGHT)
+
+        # The MazeGenerator class has a method named .generate().
+        # This method is being invoked on a MazeGenerator object.
         grid, start_cell, exit_cell = generator.generate()
 
+        # Draw the maze by creating a Maze() object.
         self.maze = Maze(grid)
 
         self.player = Player(self._cell_to_screen(start_cell))
@@ -290,13 +299,31 @@ class Game:
 
     def _restart(self, popup):
         popup.destroy()
+
         turtle.clearscreen()
+
         Game()
 
+# __name__ is a dunder variable because it has two leading and trailing
+# underscores.
 
-# =========================
-# RUN
-# =========================
+# "Dunder" (short for double underscore) methods and variables are special,
+# predefined names that let your objects define exactly what happens when
+# they are used with Python's built-in operations (like +, print(), ==, <, >)
+# and constructs (like for-loops and len()).
+print("__name__:", __name__)
+
+# The dunder variable '__name__' is equal to "__main__" when this file
+# is directly run.
+
+# To directly run this file, you would execute the following command in
+# the terminal or run this file by clicking on the "Run Python File" button:
+# python labyrinth.py
 if __name__ == "__main__":
+    # Entry point for the program.
+
+    # Calling the Game() class like so, would invoke its constructor
+    # method and creates an object/instance of the Game class.
     Game()
+
     turtle.done()

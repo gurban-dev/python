@@ -1,3 +1,7 @@
+If the python3 command works, but python doesn't, simply execute the
+following command:
+alias python=python3
+
 If Windows suggests getting Python from the Microsoft store, do the
 following instead:
 
