@@ -10,21 +10,24 @@ CONCEPTS:
 - String indexing (accessing characters like choice[-1])
 - Membership operator for strings and lists (in)
 - Conditional statements (if / elif / else)
-- Comparison operators (==, !=, <, >=, <=)
+- Comparison operators (==, !=, <, >, >=, <=)
 - Boolean expressions
 - Basic output formatting with print()
 
---------------------------------------------------
+-----------------------------------------------------------
 
 OBJECTIVE
 Build a simple program that:
 1. Stores a list of items and their corresponding prices.
+
 2. Asks the user what they would like to buy.
+
 3. Checks whether the item exists in the store.
+
 4. If it exists:
    - Finds its price
    - Formats the item name nicely
-   - Determines whether it is affordable, moderately priced, or expensive
+
 5. If it does not exist:
    - Displays an appropriate message
 
@@ -71,12 +74,7 @@ STEP-BY-STEP INSTRUCTIONS
 - If it ends with 's', use "are"
 - Otherwise, use "is"
 
-9. DETERMINE PRICE CATEGORY
-- If price < 5 -> "affordable"
-- If price between 5 and 10 -> "moderately priced"
-- Otherwise -> "expensive"
-
-10. IF ITEM DOES NOT EXIST
+9. IF ITEM DOES NOT EXIST
 - Print:
   "Sorry, we don't sell that item."
 """

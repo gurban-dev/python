@@ -41,11 +41,6 @@ if choice in items:
 	else:
 		choice += " is"
 
-	if price < 5:
-		print(choice, "affordable.")
-	elif price >= 5 and price <= 10:
-		print(choice, "moderately priced.")
-	else:
-		print(choice, "expensive.")
+	print(choice, "available.")
 else:
 	print("Sorry, we don't sell that item.")
