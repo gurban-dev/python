@@ -106,10 +106,16 @@ COMMON MISTAKES TO AVOID
 - Editing System PATH instead of User PATH (either works, but be consistent)
 
 ---------------------------------------------------------------------
+Windows OS
 
 If Python is not installed, download a stable release of
 Python from the official Python website:
-https://www.python.org/downloads/
+https://www.python.org/downloads/windows/
+
+Under the desired version of Python, click on something like:
+Download Windows installer (64-bit)
+
+https://www.python.org/downloads/release/python-31210/
 
 Download the installer:
 python-3.x.x-amd64.exe

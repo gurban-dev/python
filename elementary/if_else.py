@@ -2,8 +2,8 @@
 # <variable_name> = <value_being_assigned_to_the_variable>
 
 # Variable name: age
-# Value being assigned to the variable: 9
-age = 9
+# Value being assigned to the variable: 10
+age = 10
 
 # In Python, you can change the value that a variable
 # references by assigning a new value to it.
