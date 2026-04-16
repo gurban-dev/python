@@ -61,9 +61,9 @@ class MyMeta(type):
 		return super().__new__(cls, name, bases, dct)
 	
 	def __init__(cls, name, bases, dct):
-        print(f"Initialising class {name}")
+		print(f"Initialising class {name}")
 
-        super().__init__(name, bases, dct)
+		super().__init__(name, bases, dct)
   
 # Use the MyMeta metaclass.
 class MyClass(metaclass=MyMeta):

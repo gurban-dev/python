@@ -27,6 +27,8 @@ print('\n"KEFIR" == "kefir":', "KEFIR" == "kefir")
 print('\nchoice in items:', choice in items, '\n')
 
 if choice in items:
+	# Find the index where the value referenced by 'choice' is
+	# located.
 	index = items.index(choice)
 
 	# Capitalise the first letter of choice after

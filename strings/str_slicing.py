@@ -63,5 +63,8 @@ not including the whitespace character at salutation[-5].
 '''
 
 # Output:
-# salutation[:-5]: Good
+# salutation[:-5]: ' ' (whitespace character)
 print('\nsalutation[:-5]:', salutation[:-5])
+
+# Reverse a string.
+print("\nsalutation[::-1]:", salutation[::-1])
