@@ -316,8 +316,9 @@ print("__name__:", __name__)
 # The dunder variable '__name__' is equal to "__main__" when this file
 # is directly run.
 
-# To directly run this file, you would execute the following command in
-# the terminal or run this file by clicking on the "Run Python File" button:
+# To directly run this file, you would execute the following command
+# in the terminal or run this file by clicking on the "Run Python File"
+# button:
 # python labyrinth.py
 if __name__ == "__main__":
     # Entry point for the program.
@@ -326,4 +327,6 @@ if __name__ == "__main__":
     # method and creates an object/instance of the Game class.
     Game()
 
+    # Signals the end of a drawing program and keeps the window open
+    # until it is manually closed.
     turtle.done()
