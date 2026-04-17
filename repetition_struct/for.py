@@ -30,10 +30,9 @@ for num in [1, 2, 3, 4, 5]:
 	# It returns True if the operands it compares are seen as equal
 	# by Python. Otherwise, it returns False.
 	if num == 5:
-		print(num, end='')
+		print(num, end='\n')
 	else:
 		print(num, end=', ')
-print('\n')
 
 # Python lists can store elements that have different data types.
 for item in ['Alexander', 30, 20.0, True, [], range(2)]:
