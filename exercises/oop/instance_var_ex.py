@@ -14,5 +14,7 @@ that prints a message indicating that the restaurant is open.
 
 Make an instance called restaurant from your class.
 
-Print the two attributes individually, and then call both methods.
+Print the two attributes individually, write a comment explaining
+why directly accessing the instance variable is discouraged and
+then call both instance methods.
 '''

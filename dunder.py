@@ -60,6 +60,7 @@ Special execution context
 
 Summary
 -------
-- Dunder methods: define behavior (what an object does)
+- Dunder methods: define behaviour (what an object does with Python's
+  built-in operations)
 - Dunder variables: store metadata (what an object is / contains)
 """
