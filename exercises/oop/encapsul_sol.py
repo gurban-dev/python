@@ -3,7 +3,7 @@
 # which can lead to rounding issues in financial calculations.
 
 # For instance, the subsequent expression returns True:
-# 0.1 + 0.3 != 0.3
+# 0.1 + 0.2 != 0.3
 from decimal import Decimal
 
 
@@ -12,8 +12,8 @@ class BankAccount:
 
         self.account_holder = account_holder
         self.account_number = account_number
-        
-        # Initialize balance as Decimal.
+
+        # Initialise balance as Decimal.
         self.__balance = Decimal("0.0")
 
         # A list of tuples.
@@ -30,7 +30,8 @@ class BankAccount:
             print(f"Successfully deposited {amount} dollars.")
 
             if amount > Decimal("250000"):
-                print("Warning: The FDIC only insures up to 250000 dollars in your bank account!")
+                print("Warning: The FDIC only insures up to 250000\n"
+                      "dollars in your bank account!")
 
             print()
 
@@ -44,7 +45,7 @@ class BankAccount:
 
         if amount <= 0:
             raise ValueError("Withdrawal amount must be positive.")
-        
+
         if amount > self.__balance:
             raise ValueError("Insufficient funds.")
 
@@ -78,7 +79,12 @@ class BankAccount:
         if amount > self.__balance:
             raise ValueError("Insufficient funds to complete the transfer.")
 
+        # acc1.transfer_to(acc2, 300)
+        # In the context of the above line, 'self' references the same
+        # object that 'acc1' references because the withdraw() method
+        # is being invoked on 'acc1'.
         self.withdraw(amount)
+
         other_account.deposit(amount)
 
     def apply_interest(self, rate: float):
@@ -123,10 +129,10 @@ REFLECTION QUESTIONS
 2. How does name mangling work in Python?
    Internally, Python renames self.__balance to self._BankAccount__balance.
 
-   This way, when someone attempts acc1.__balance = 1_000_000 the instance
+   This way, when someone attempts acc1.__balance = 1_000_000, the instance
    variables stays unchanged.
 
-3. Is Python encapsulation truly secure?
+3. Is Python encapsulation (E.g. self.__balance) truly secure?
    No because this is convention-based protection.
 
    A user can still modify the instance variable by doing:
@@ -138,5 +144,5 @@ REFLECTION QUESTIONS
    Java and C++ use private, protected and public access modifiers.
 
    There is no way to directly access a private or protected
-   attribute outside of a class.
+   attribute outside of a class these languages.
 """
