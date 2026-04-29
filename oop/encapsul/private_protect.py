@@ -31,7 +31,7 @@ class SavingsAccount(BankAccount):
 
         # Create a new instance variable instead of overwriting the
         # parent's.
-        # self.__balance = 0
+        self.__balance = 0
 
         # The two underscores that precede "balance" force the instance
         # to become the following internally:
@@ -47,3 +47,8 @@ savings_acc = SavingsAccount()
 # overwrite _balance in the parent class. They are different
 # variables.
 print("savings_acc.get_balance():", savings_acc.get_balance())
+
+# Name mangling is a highly discouraged way of accessing instance
+# variable outside of a class.
+print("\nsavings_acc._SavingsAccount__balance:",
+      savings_acc._SavingsAccount__balance)

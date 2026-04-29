@@ -1,27 +1,70 @@
-choice = 'cappuccino'
+# Concept:
+# if-elif-else statement
 
-if choice == "fruits":
-    print('The theatregoer chose fruits.')
-elif choice == "popcorn":
-    print('The theatregoer chose popcorn.')
+# This program shows how Python makes decisions step by step.
+# It will check conditions and choose only one path to run.
+
+# Question: How many blocks execute?
+# Answer: Only one block executes.
+
+# Question: If both conditions are True, will both messages print?
+# Answer: No. Python checks from top to bottom and stops at the first
+#         True condition.
+
+# Case A
+# This is the number we are testing in the program.
+num = 7
+
+# Case B
+# Try changing the number to 3 to see a different result.
+# num = 3
+
+# Case C
+# Try changing the number to 10 to see another result.
+# num = 10
+
+# Python starts by checking this first condition.
+# It asks: Is num greater than 10?
+if num > 10:
+    # This line runs only if the condition above is True.
+    print("num is greater than 10.")
+
+# If the first condition is False, Python checks this next one.
+# It asks: Is num greater than 5?
+elif num > 5:
+    # This runs only if the first condition was False and this is True.
+    print("num is greater than 5.")
+
+# If none of the above conditions are True, Python runs this block.
 else:
-    print('The theatregoer chose neither fruits nor popcorn.')
+    # This is the default case when all other checks fail.
+    print("num is not greater than 5.")
+
+# This prints a blank line for spacing in the output.
+print()
+
+
+# Question: Why does Python stop after the first True condition?
+# Answer: Because an if-elif-else statement is designed to choose only
+#         one path.
+
+#         Once a True condition is found, the rest are skipped.
 
 """
-Control flow in an if-elif-else statement proceeds from top to
-bottom, evaluating each condition in order. The program first
-checks the condition in the if statement. If it evaluates to
-True, the corresponding block of code is executed, and the rest
-of the conditions are skipped.
+How if-elif-else works
 
-If the if condition is False, the program moves to the next
-condition in the elif statement and evaluates it. This process
-continues sequentially until a True condition is found. Once a
-True condition is encountered, its block executes and the
-remaining conditions are not checked.
+Python checks conditions from top to bottom, one at a time.
 
-If none of the conditions in the if or any elif statements
-evaluate to True, the else block is executed by default. The
-else statement does not have a condition because it serves as
-a fallback case when all prior conditions fail.
+It starts with the if condition:
+- If it is True, that block runs.
+- All remaining conditions are skipped.
+
+If the if condition is False, Python moves to the next elif:
+- It checks each elif in order.
+- As soon as one is True, that block runs.
+- The rest are not checked.
+
+If none of the conditions are True:
+- The else block runs.
+- else has no condition because it is the default case.
 """

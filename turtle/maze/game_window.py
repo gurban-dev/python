@@ -1,6 +1,9 @@
 # turtle creates a drawing window where the game will live.
 import turtle
 
+# turtle is module that allows you to build graphical user
+# interfaces or GUIs with Python.
+
 # Create the window.
 
 # The Screen() function creates the game window.
@@ -29,45 +32,58 @@ window.setup(width=850, height=600)
 # fifty percent of the screen.
 # window.setup(width=0.5, height=0.5)
 
-# Create player
+# Create the player which will be a Turtle object.
 player = turtle.Turtle()
-player.shape("circle")
+
+# "arrow", "turtle", "circle", "square", "triangle", "classic"
+player.shape("arrow")
+
 player.color("red")
-player.penup()
+
+# Allows the turtle to move across the screen without drawing a
+# line.
+player.pendown()
 
 # Make the square that represents the player, larger by calling
 # the .shapesize() method on the Turtle object.
 
-# (stretch_wid=1, stretch_len=1) is the default square size of
-# 20x20 pixels.
+# .shapesize(stretch_wid=None, stretch_len=None, outline=None)
+
+# stretch_wid is stretchfactor perpendicular to its orientation,
+# stretch_len is stretchfactor in direction of its orientation,
+# outline determines the width of the shape's outline.
 
 # (stretch_wid=2, stretch_len=2) makes the square 40x40 pixels.
+
+# (stretch_wid=1, stretch_len=1) is the default square size of
+# 20x20 pixels.
 
 # 30x30 pixels
 player.shapesize(stretch_wid=0.75, stretch_len=0.75)
 
 
 def move_up():
-    # Get the player's current y-coordinate.
+    # Before the player's vertical position changes, first the
+    # player's current y-coordinate position must be found.
     y_position = player.ycor()
 
-    # Move the player up by increasing the y-coordinate by 20.
-    player.sety(y_position + 20)
+    # Move the player up by increasing the y-coordinate by 25.
+    player.sety(y_position + 25)
 
 def move_down():
     y_position = player.ycor()
 
-    player.sety(y_position - 20)
+    player.sety(y_position - 25)
 
 def move_right():
     x_position = player.xcor()
 
-    player.setx(x_position + 20)
+    player.setx(x_position + 25)
 
 def move_left():
     x_position = player.xcor()
 
-    player.setx(x_position - 20)
+    player.setx(x_position - 25)
 
 # Control the positioning of the player (white square).
 # The .goto() method moves the turtle.

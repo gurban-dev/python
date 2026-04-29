@@ -76,7 +76,8 @@ developed_country = False
 has_crude_oil = True
 
 if developed_country:
-  	print("\nThe country ranks highly on the human development index report.")
+  	print("\nThe country ranks highly on the human development "
+		  "index report.")
 else:
   	print("\nThe country is still developing.")
 

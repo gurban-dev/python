@@ -1,5 +1,7 @@
 """
-Dunder (double underscore) methods and variables in Python
+Dunder methods and variables in Python
+
+The term "dunder" is short for "double underscore".
 ---------------------------------------------------------
 
 Dunder methods and variables are special, predefined names that let your
