@@ -12,16 +12,16 @@
 #         True condition.
 
 # Case A
-# This is the number we are testing in the program.
-num = 7
+# Try changing the number to 3 to see a different result.
+num = 3
 
 # Case B
-# Try changing the number to 3 to see a different result.
-# num = 3
+# This is the number we are testing in the program.
+num = 10
 
 # Case C
 # Try changing the number to 10 to see another result.
-# num = 10
+# num = 10.01
 
 # Python starts by checking this first condition.
 # It asks: Is num greater than 10?
