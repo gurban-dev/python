@@ -6,7 +6,7 @@ import turtle
 
 # Create the window.
 
-# The Screen() function creates the game window.
+# Instantiate the Screen() class to create the game window.
 window = turtle.Screen()
 
 # Setting the text shown in the title bar of the game window.
@@ -36,13 +36,13 @@ window.setup(width=850, height=600)
 player = turtle.Turtle()
 
 # "arrow", "turtle", "circle", "square", "triangle", "classic"
-player.shape("arrow")
+player.shape("circle")
 
 player.color("red")
 
 # Allows the turtle to move across the screen without drawing a
 # line.
-player.pendown()
+player.penup()
 
 # Make the square that represents the player, larger by calling
 # the .shapesize() method on the Turtle object.
@@ -91,10 +91,10 @@ def move_left():
 # Passing -200 for 'x' indicates that the player will be moved
 # 200 pixels to the left horizontally.
 
-# Passing 200 pixels for 'y' means that the player will be moved
-# 200 pixels vertically higher.
+# Passing 280 pixels for 'y' means that the player will be moved
+# 280 pixels vertically higher.
 # player.goto(x, y)
-player.goto(180, 280)
+player.goto(x=280, y=480)
 
 # The 'X' character represents a wall in the maze.
 # Each of the ten items in this maze are separated by a
