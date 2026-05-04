@@ -17,7 +17,7 @@ Your job is to complete the subclasses so they follow the blueprint.
 What You Need to Do:
 
 1. Read the Country class carefully.
-2. Complete each subclass by implementing ALL required methods.
+2. Complete each subclass by implementing ALL the required methods.
 3. Run the program and fix any errors.
 4. Answer the reflection questions at the bottom.
 
@@ -29,11 +29,13 @@ from abc import ABC, abstractmethod
 
 class Country(ABC):
 
-    # Initialize name and population.
+    # Initialise the name of the country and its population.
     def __init__(self, name, population):
         if population <= 0:
             raise ValueError("Population must be greater than zero.")
+
         self.name = name
+
         self.population = population
 
     # Must be implemented in subclasses.
@@ -114,15 +116,15 @@ class YourCountry(Country):
 # -------------------------
 
 # Create objects.
-usa = USA("United States", 331_000_000)
-japan = Japan("Japan", 125_000_000)
+usa = USA("United States", 342_000_000)
+japan = Japan("Japan", 124_000_000)
 your_country = YourCountry("Your Country", 50_000_000)
 
 countries = [usa, japan, your_country]
 
 gdp_values = {
-    "United States": 25_000_000_000_000,
-    "Japan": 5_000_000_000_000,
+    "United States": 31_000_000_000_000,
+    "Japan": 4_300_000_000_000,
     "Your Country": 1_000_000_000_000
 }
 
@@ -130,6 +132,7 @@ for country in countries:
     print(country.describe())
 
     gdp = gdp_values[country.name]
+
     print("GDP per person:", country.calculate_gdp_per_capita(gdp))
     print()
 

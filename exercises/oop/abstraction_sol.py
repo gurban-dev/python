@@ -18,11 +18,6 @@ class Country(ABC):
     def get_government_type(self):
         pass
 
-    # Require subclasses to calculate GDP per capita.
-    @abstractmethod
-    def calculate_gdp_per_capita(self, gdp):
-        pass
-
     # Require subclasses to define currency.
     @abstractmethod
     def get_currency(self):
@@ -35,6 +30,9 @@ class Country(ABC):
             f"and uses the {self.get_currency()}."
         )
 
+    # Calculate GDP per capita.
+    def calculate_gdp_per_capita(self, gdp):
+        return gdp / self.population
 
 # Define the United States class.
 class USA(Country):
@@ -42,10 +40,6 @@ class USA(Country):
     # Return the government type of the USA.
     def get_government_type(self):
         return "Federal Republic"
-
-    # Calculate GDP per capita using a simple formula.
-    def calculate_gdp_per_capita(self, gdp):
-        return gdp / self.population
 
     # Return the currency used in the USA.
     def get_currency(self):
@@ -59,10 +53,6 @@ class Japan(Country):
     def get_government_type(self):
         return "Constitutional Monarchy"
 
-    # Calculate GDP per capita.
-    def calculate_gdp_per_capita(self, gdp):
-        return gdp / self.population
-
     # Return the currency used in Japan.
     def get_currency(self):
         return "Japanese Yen"
@@ -75,18 +65,14 @@ class YourCountry(Country):
     def get_government_type(self):
         return "Democracy"
 
-    # Calculate GDP per capita.
-    def calculate_gdp_per_capita(self, gdp):
-        return gdp / self.population
-
     # Return the currency of the custom country.
     def get_currency(self):
         return "Custom Currency"
 
 
 # Create instances of each country.
-usa = USA("United States", 331_000_000)
-japan = Japan("Japan", 125_000_000)
+usa = USA("United States", 342_000_000)
+japan = Japan("Japan", 124_000_000)
 your_country = YourCountry("Your Country", 50_000_000)
 
 
@@ -96,8 +82,8 @@ countries = [usa, japan, your_country]
 
 # Define GDP values for each country.
 gdp_values = {
-    "United States": 25_000_000_000_000,
-    "Japan": 5_000_000_000_000,
+    "United States": 31_000_000_000_000,
+    "Japan": 4_300_000_000_000,
     "Your Country": 1_000_000_000_000
 }
 
@@ -110,6 +96,7 @@ for country in countries:
 
     # Look up GDP and calculate per capita value.
     gdp = gdp_values[country.name]
+
     result = country.calculate_gdp_per_capita(gdp)
 
     # Print the result.
