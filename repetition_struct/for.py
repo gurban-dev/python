@@ -1,8 +1,9 @@
 # One of the repetition structures in Python is called a for loop.
 
 # A for loop executes a block of source code zero or more times.
-# A for loop in Python iterates over an iterable (an object that
-# can return values one at a time).
+
+# A for loop in Python iterates over an iterable (a sequence of
+# items whose items can be returned one at a time).
 
 # [1, 2, 3, 4, 5] is a list data structure in Python.
 
@@ -30,7 +31,7 @@ for num in [1, 2, 3, 4, 5]:
 	# It returns True if the operands it compares are seen as equal
 	# by Python. Otherwise, it returns False.
 	if num == 5:
-		print(num, end='\n')
+		print(num, end='\n\n')
 	else:
 		print(num, end=', ')
 

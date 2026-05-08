@@ -1,0 +1,233 @@
+Objective:
+Develop a structured approach for solving Python problems from scratch
+without feeling overwhelmed by the blank screen.
+
+
+Problem-Solving Framework
+
+1. Clarify the Goal
+
+Before writing any code, first define exactly what the program is
+supposed to accomplish in plain English.
+
+A lot of beginners jump into syntax too early without fully
+understanding the objective. If you cannot clearly explain the
+problem in words, writing the code becomes much harder.
+
+Questions to ask:
+
+•  What is the program supposed to do?
+•  What data is needed?
+•  Will the user provide input?
+•  What action will be performed on the data?
+•  What would a correct solution look like?
+•  Are there any rules or constraints?
+
+Example:
+"Find the sum of all numbers in a list."
+
+
+2. Identify the Inputs and Outputs
+
+Determine what information the program receives and what result it
+should produce.
+
+Inputs:
+
+•  Numbers
+•  Strings
+•  Lists
+•  Files
+•  User input
+
+Outputs:
+
+•  Printed results
+•  Returned values
+•  Modified data structures
+
+Examples:
+
+•  Input -> list of numbers
+•  Output -> total sum
+
+This step removes ambiguity and gives structure to the problem.
+
+
+3. Break the Problem into Smaller Tasks
+
+Instead of trying to solve the entire problem at once, divide it into
+smaller logical steps.
+
+Example:
+
+•  Get the data
+•  Validate the data
+•  Process the information
+•  Store results
+•  Display the output
+
+Complex programs are usually combinations of many smaller simple tasks.
+
+
+4. Describe the Process in Plain English
+
+Before touching Python syntax, describe the logic step by step using
+natural language.
+
+This is called pseudocode.
+
+Example:
+
+1. Initialise "sum" with 0
+2. Loop through each number in the list
+3. Add the current number to "sum"
+4. Print the final value of "sum"
+
+This keeps your focus on logic and problem solving rather than syntax.
+
+
+5. Identify the Pattern and Choose the Right Tools
+
+Once the logic is clear, decide which programming tools fit the problem.
+
+Common tools:
+•  Variables -> store information
+•  if / elif / else -> decision making
+•  for loops -> repeat a known number of times
+•  while loops -> repeat until a condition is met
+•  Functions -> organise reusable logic
+•  Lists / dictionaries -> manage collections of data
+
+Examples:
+•  Use a for loop when iterating through a list
+•  Use a while loop when repeatedly asking for input
+•  Use conditionals when decisions must be made
+
+The goal is not just learning what tools exist, but understanding
+when and why to use them.
+
+
+6. Write Pseudocode
+
+Convert the logical steps into structured pseudocode before writing
+actual Python.
+
+Example:
+1. Ask the user for a number
+2. Check whether the number is even
+3. Print the result
+
+This creates a roadmap for the actual implementation.
+
+
+7. Convert the Pseudocode into Python
+
+Once the logic is organised, translate each step into Python syntax.
+
+At this point, programming becomes much easier because the thinking
+process has already been completed.
+
+
+8. Build Incrementally
+
+One of the biggest beginner mistakes is trying to write the entire
+program perfectly in one attempt.
+
+Instead:
+•  Write one section
+•  Test it
+•  Confirm it works
+•  Then move to the next section
+
+This builds confidence and makes debugging easier because you always
+know which part is functioning correctly.
+
+
+9. Debug Logically
+
+Strong programmers become effective because they know how to
+investigate problems systematically.
+
+Helpful debugging strategies:
+•  Read error messages carefully
+•  Print variables step by step
+•  Trace the program flow logically
+•  Isolate the exact source of the issue
+•  Think about why the program behaves the way it does
+
+The goal is to make bugs feel explainable rather than random.
+
+
+10. Handle Edge Cases
+
+Think about situations that could cause problems.
+
+Examples:
+•  Empty lists
+•  Invalid user input
+•  Non-numeric data
+•  Unexpected capitalisation
+•  Division by zero
+
+Thinking about edge cases improves program reliability and develops
+stronger problem-solving habits.
+
+
+11. Develop Pattern Recognition
+
+Over time, you will notice that many programming problems follow
+similar patterns.
+
+Examples:
+•  Searching through data
+•  Counting occurrences
+•  Comparing values
+•  Repeating actions
+•  Organising information
+•  Validating input
+
+As pattern recognition improves, new problems become easier because
+you are no longer starting from zero each time.
+
+
+Example Walkthrough
+
+Problem:
+Find the sum of all numbers in a list.
+
+Step 1: Clarify the Goal
+We want to calculate the total value of all numbers in a list.
+
+Step 2: Identify Inputs and Outputs
+
+Input:
+•  List of numbers
+
+Output:
+•  Sum of all values
+
+Step 3: Break into Smaller Tasks
+
+•  Create a variable to store the total
+•  Loop through the list
+•  Add each number to the total
+•  Print the result
+
+Step 4: Write Pseudocode
+
+1. Initialise sum to 0
+2. Loop through each item in the list
+3. Add the current item to sum
+4. Print sum
+
+Step 5: Choose the Appropriate Tools
+
+• List -> stores the numbers
+• for loop -> iterates through each item
+• Variable -> stores the running total
+
+Step 6: Handle Edge Cases
+
+• The list may be empty
+• The list may contain invalid data

@@ -36,14 +36,13 @@ that repeat a known number of times.
 
 Syntax:
 
-for <variable> in [value1, value2, ...]:
+for <variable> in <iterable>:
 	<instruction>
 	<instruction>
 	...
 	etc.
 
-[value1, value2, ...] is an iterable, a collection of items the loop
-can process one by one.
+An iterable is a sequence of items the loop can process one by one.
 
 The for clause defines the loop variable that takes the value of each
 item in turn.

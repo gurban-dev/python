@@ -1,9 +1,8 @@
-
 # EXERCISE: REACH THE GOAL
 
 # Goal:
 # Move the player to the green circle to win the game.
-#
+
 # You will complete a few small pieces of code.
 # Read the comments carefully and fill in the TODO parts.
 
@@ -19,14 +18,13 @@ goal.color("green")
 goal.penup()
 
 # Place the goal somewhere in the maze.
-goal.goto(-200, -200)
+goal.goto(x=-200, y=-200)
 
 
 
 # PART 2: CHECK IF PLAYER WINS
 
-
-def check_win():
+def check_if_player_won():
     # Get the player's position.
     player_x = player.xcor()
     player_y = player.ycor()
@@ -38,9 +36,18 @@ def check_win():
     # TODO:
     # Complete the condition below so that:
     # If the player is VERY CLOSE to the goal,
-    # it prints "You win!"
-    #
-    # Replace ??? with a number like 20
+    # the program prints "You win!"
+
+    # Replace ? with a number like 20.
+
+    # player_x = 10
+    # goal_x = 0
+
+    # 10 - 0 -> 10 -> abs(10) -> 10
+
+    # 0 - 10 -> -10 -> abs(-10) -> 10
+
+    # How can I find the difference between player_x and goal_x?
 
     if abs(player_x - goal_x) < 20 and abs(player_y - goal_y) < 20:
         print("You win!")

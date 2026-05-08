@@ -94,7 +94,7 @@ def move_left():
 # Passing 280 pixels for 'y' means that the player will be moved
 # 280 pixels vertically higher.
 # player.goto(x, y)
-player.goto(x=280, y=480)
+player.goto(x=280, y=220)
 
 # The 'X' character represents a wall in the maze.
 # Each of the ten items in this maze are separated by a
@@ -142,7 +142,7 @@ spacing_between_walls = 30
 width = len(maze[0])
 
 start_x = -350
-start_y = 240
+start_y = 150
 
 # len(maze) returns 10 because 'maze' references a list that
 # contains ten items. The items are separated by commas.

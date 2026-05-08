@@ -20,8 +20,8 @@ num = 3
 num = 10
 
 # Case C
-# Try changing the number to 10 to see another result.
-# num = 10.01
+# Try changing the number to 10.01 to see another result.
+num = 10.01
 
 # Python starts by checking this first condition.
 # It asks: Is num greater than 10?
@@ -40,15 +40,13 @@ else:
     # This is the default case when all other checks fail.
     print("num is not greater than 5.")
 
-# This prints a blank line for spacing in the output.
-print()
-
-
 # Question: Why does Python stop after the first True condition?
-# Answer: Because an if-elif-else statement is designed to choose only
-#         one path.
 
-#         Once a True condition is found, the rest are skipped.
+# Answer: Because an if-elif-else statement is designed to execute
+#         only the first code block whose condition evaluates to True.
+
+#         Once Python finds a True condition, it skips the remaining
+#         elif and else blocks.
 
 """
 How if-elif-else works
