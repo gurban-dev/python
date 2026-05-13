@@ -14,8 +14,8 @@ python.exe
 python3.exe
 
 ---------------------------------------------------------------------
-
-FIXING "pip is not recognized" ERROR (Windows)
+Windows OS:
+'pip' is not recognized as the name of a cmdlet
 
 This error usually means Python is installed, but its executable paths
 were NOT added to your system PATH.
@@ -25,7 +25,7 @@ Follow these steps carefully:
 --------------------------------------------------
 STEP 1: Locate Python installation
 --------------------------------------------------
-1. Click the Windows Start button.
+1. Click the Windows Search field.
 2. Type: python.exe
 3. Right-click on "python.exe" and select:
    -> Open file location
@@ -36,7 +36,7 @@ STEP 1: Locate Python installation
    Example:
    C:\Users\YourName\AppData\Local\Programs\Python\Python311\
 
-5. ALSO locate the "Scripts" folder inside this directory:
+5. Also locate the "Scripts" folder inside this directory:
    Example:
    C:\Users\YourName\AppData\Local\Programs\Python\Python311\Scripts\
 
@@ -97,14 +97,6 @@ pip --version
 
 If both commands work, the issue is fixed.
 
---------------------------------------------------
-COMMON MISTAKES TO AVOID
---------------------------------------------------
-- Adding only python.exe instead of the full folder path
-- Forgetting to add the Scripts folder
-- Not restarting the terminal
-- Editing System PATH instead of User PATH (either works, but be consistent)
-
 ---------------------------------------------------------------------
 Windows OS
 
@@ -120,15 +112,13 @@ https://www.python.org/downloads/release/python-31210/
 Download the installer:
 python-3.x.x-amd64.exe
 
-Run the installer by double-clicking the downloaded file.
-
-On Windows OS:
-python-3.x.x-amd64.exe
-
 E.g.
 python-3.12.2-amd64.exe
 
+Run the installer by double-clicking the downloaded file.
+
 At the bottom of the installer window check the following:
+Use admin privileges when install Python
 Add Python to PATH
 
 Click "Install Now".
