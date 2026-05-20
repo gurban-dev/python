@@ -18,9 +18,9 @@ for num in [1, 2, 3, 4, 5]:
 	'''
 	On each iteration, the 'num' variable will be assigned the
 	value of the current item/element in the [1, 2, 3, 4, 5] list.
-	
+
 	The print() function will output the value of the 'num' variable.
-	
+
 	The print() function automatically appends a newline escape
 	sequence at the end of its output.'''
 	# print(num, end='\n')
@@ -74,7 +74,7 @@ print('\nPrinting for i in range(-1, 6, 1):')
 
 # The variable "i" is assigned the element from the current iteration.
 for i in range(-1, 6, 1):
-  print('i:', i)
+	print('i:', i)
 
 # In the case that the range() function is given two
 # arguments:
