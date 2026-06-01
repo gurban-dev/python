@@ -2,7 +2,7 @@
 Goal:
 Develop a clear and practical understanding of how Python's
 range() function works by using it to generate sequences of
-numbers with different start points, end points, and step
+numbers with different start values, stop values, and step
 values.
 
 Tasks:

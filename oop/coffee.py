@@ -1,9 +1,13 @@
 '''
-A class is a blueprint for an object that contains
-state (data) and behaviour (methods).
+A class is a blueprint that defines what data an object
+has and what functions (methods) can operate on that
+data.
 
-The state of an object is defined with instance
-variables and class variables.
+An object is a specific instance of a class that contains
+its own data and can use the methods defined by the class.
+
+The state of an object is defined with instance variables
+and class variables.
 
 The behaviour of an object is defined with methods.
 

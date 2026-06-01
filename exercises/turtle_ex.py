@@ -1,21 +1,21 @@
 # ============================================================
 # EXERCISE: REACH THE GOAL
 # ============================================================
-#
+
 # Your Mission:
-#
+
 # Move the red player to the green goal.
-#
+
 # As you move:
 # - Far away -> "Cold"
 # - Closer -> "Warm"
 # - Very close -> "Hot"
 # - Touching the goal -> "You win!"
-#
+
 # You must complete the TODO sections yourself.
-#
+
 # Read the method explanations carefully before solving each part.
-#
+
 # ============================================================
 
 
@@ -30,18 +30,18 @@ import turtle
 window = turtle.Screen()
 
 # title(text)
-#
+
 # Changes the window title.
-#
+
 # Parameter:
 # text
 # -> The words shown at the top of the window.
 window.title("Reach the Goal Exercise")
 
 # bgcolor(color_name)
-#
+
 # Changes the background colour.
-#
+
 # Parameter:
 # color_name
 # -> A string such as:
@@ -59,9 +59,9 @@ window.bgcolor("black")
 player = turtle.Turtle()
 
 # shape(shape_name)
-#
+
 # Changes the turtle's shape.
-#
+
 # Parameter:
 # shape_name
 # -> A string such as:
@@ -72,9 +72,9 @@ player = turtle.Turtle()
 player.shape("arrow")
 
 # color(color_name)
-#
+
 # Changes the turtle's colour.
-#
+
 # Parameter:
 # color_name
 # -> A string such as:
@@ -84,16 +84,16 @@ player.shape("arrow")
 player.color("red")
 
 # penup()
-#
+
 # Stops the turtle from drawing lines.
-#
+
 # This method has NO parameters.
 player.penup()
 
 # speed(number)
-#
+
 # Changes animation speed.
-#
+
 # Parameter:
 # number
 # -> 0 is the fastest.
@@ -108,65 +108,67 @@ player.speed(0)
 goal = turtle.Turtle()
 
 # ============================================================
-# TODO:
-#
 # Make the goal a circle.
-#
+
+# TODO:
+
 # Useful method:
-#
+
 # shape(shape_name)
-#
+
 # Example:
-# goal.shape("circle")
+# goal.shape("square")
 # ============================================================
 
 
 
 # ============================================================
-# TODO:
-#
 # Make the goal green.
-#
+
+# TODO:
+
 # Useful method:
-#
+
 # color(color_name)
-#
+
 # Example:
-# goal.color("green")
+# goal.color("blue")
 # ============================================================
 
 
 
 # ============================================================
-# TODO:
-#
 # Stop the goal from drawing lines.
-#
-# Useful method:
-#
-# penup()
-# ============================================================
 
-
-
-# ============================================================
 # TODO:
-#
-# Move the goal to:
-# x = -200
-# y = -200
-#
+
 # Useful method:
-#
+
+# penup(): prevents the Turtle object from drawing lines when
+#          moving throughout the window.
+# ============================================================
+
+
+
+# ============================================================
+# Move the goal to:
+# x = -290
+# y = 230
+
+# TODO:
+
+
+# Useful method:
+
 # goto(x, y)
-#
+
 # Parameters:
 # x
-# -> Left/right position.
-#
+# -> Horizontal (Left/Right) position.
+
 # y
-# -> Up/down position.
-#
+# -> Vertical (Up/down) position.
+
 # Example:
 # goal.goto(100, 50)
 # ============================================================
@@ -191,16 +193,16 @@ moving_right = False
 def move_player(dx, dy):
 
     # xcor()
-    #
+
     # Gets the turtle's current x position.
-    #
+
     # No parameters.
     current_x = player.xcor()
 
     # ycor()
-    #
+
     # Gets the turtle's current y position.
-    #
+
     # No parameters.
     current_y = player.ycor()
 
@@ -209,7 +211,7 @@ def move_player(dx, dy):
     new_y = current_y + dy
 
     # goto(x, y)
-    #
+
     # Moves the turtle to a position.
     player.goto(new_x, new_y)
 
@@ -273,23 +275,23 @@ def check_if_player_won():
     goal_y = goal.ycor()
 
     # abs(number)
-    #
+
     # abs means "absolute value".
-    #
+
     # It removes negative signs.
-    #
+
     # Examples:
-    #
+
     # abs(-10) -> 10
     # abs(10) -> 10
-    #
+
     # This is useful for measuring distance.
 
     # ========================================================
     # TODO:
-    #
+
     # Find the x distance between the player and goal.
-    #
+
     # Example:
     # abs(player_x - goal_x)
     # ========================================================
@@ -299,7 +301,7 @@ def check_if_player_won():
 
     # ========================================================
     # TODO:
-    #
+
     # Find the y distance between the player and goal.
     # ========================================================
 
@@ -308,20 +310,20 @@ def check_if_player_won():
 
     # ========================================================
     # TODO:
-    #
+
     # If the player is close to the goal,
     # print "You win!"
-    #
+
     # Useful operators:
-    #
+
     # <
     # -> Less than.
-    #
+
     # and
     # -> BOTH conditions must be true.
-    #
+
     # Example:
-    #
+
     # if x_distance < 20 and y_distance < 20:
     #     print("You win!")
     # ========================================================
@@ -347,36 +349,35 @@ def give_hint():
     # ========================================================
     # COMPARISON OPERATORS
     # ========================================================
-    #
+
     # <
     # -> Less than.
-    #
+
     # >=
     # -> Greater than OR equal to.
-    #
+
     # ========================================================
     # BOOLEAN WORDS
     # ========================================================
-    #
+
     # and
     # -> BOTH conditions must be true.
-    #
+
     # or
     # -> Only ONE condition must be true.
-    #
     # ========================================================
 
 
     # ========================================================
     # TODO:
-    #
+
     # Print "Cold" if the player is far away.
-    #
+
     # Hint:
     # Use >= and or
-    #
+
     # Example:
-    #
+
     # if dx >= 100 or dy >= 100:
     #     print("Cold")
     # ========================================================
@@ -386,9 +387,9 @@ def give_hint():
 
     # ========================================================
     # TODO:
-    #
+
     # Print "Warm" if the player is getting closer.
-    #
+
     # Hint:
     # Use < and and
     # ========================================================
@@ -398,7 +399,7 @@ def give_hint():
 
     # ========================================================
     # TODO:
-    #
+
     # Print "Hot" if the player is very close.
     # ========================================================
 
@@ -407,10 +408,10 @@ def give_hint():
 
     # ========================================================
     # BONUS:
-    #
+
     # Add:
     # print("VERY HOT")
-    #
+
     # when the player is almost touching the goal.
     # ========================================================
 
@@ -436,9 +437,9 @@ def game_loop():
 
     # ========================================================
     # TODO:
-    #
+
     # Call the function that checks if the player won.
-    #
+
     # Example:
     # check_if_player_won()
     # ========================================================
@@ -448,7 +449,7 @@ def game_loop():
 
     # ========================================================
     # TODO:
-    #
+
     # Call the function that gives hints.
     # ========================================================
 
@@ -456,19 +457,19 @@ def game_loop():
 
 
     # ontimer(function, milliseconds)
-    #
+
     # Runs a function again later.
-    #
+
     # Parameters:
-    #
+
     # function
     # -> Which function to run.
-    #
+
     # milliseconds
     # -> How long to wait.
-    #
+
     # Example:
-    #
+
     # window.ontimer(game_loop, 20)
 
     window.ontimer(game_loop, 20)
@@ -479,19 +480,19 @@ def game_loop():
 # ============================================================
 
 # listen()
-#
+
 # Starts listening for keyboard input.
 window.listen()
 
 # onkeypress(function, key)
-#
+
 # Runs a function when a key is pressed.
-#
+
 # Parameters:
-#
+
 # function
 # -> Which function to run.
-#
+
 # key
 # -> Which key to listen for.
 window.onkeypress(start_moving_up, "Up")
@@ -500,7 +501,7 @@ window.onkeypress(start_moving_left, "Left")
 window.onkeypress(start_moving_right, "Right")
 
 # onkeyrelease(function, key)
-#
+
 # Runs a function when a key is released.
 window.onkeyrelease(stop_moving_up, "Up")
 window.onkeyrelease(stop_moving_down, "Down")
@@ -514,9 +515,9 @@ window.onkeyrelease(stop_moving_right, "Right")
 
 # ============================================================
 # TODO:
-#
+
 # Start the game loop.
-#
+
 # Example:
 # game_loop()
 # ============================================================
@@ -525,6 +526,6 @@ window.onkeyrelease(stop_moving_right, "Right")
 
 
 # mainloop()
-#
+
 # Keeps the game window open.
 window.mainloop()

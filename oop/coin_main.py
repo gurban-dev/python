@@ -1,11 +1,9 @@
 '''
-Programmers commonly organise their class
-definitions by storing them in their own
-separate modules.
+Programmers commonly organise their class definitions by
+storing them in their own separate modules.
 
-Then the modules can be imported into any
-programs that need to use the classes they
-contain.'''
+Then the modules can be imported into any programs that
+need to use the classes they contain.'''
 # import coin
 from coin import Coin
 

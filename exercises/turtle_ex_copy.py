@@ -18,9 +18,7 @@
 #
 # ============================================================
 
-
 import turtle
-
 
 # ============================================================
 # PART 1: CREATE THE GAME WINDOW
@@ -59,9 +57,9 @@ window.bgcolor("black")
 player = turtle.Turtle()
 
 # shape(shape_name)
-#
+
 # Changes the turtle's shape.
-#
+
 # Parameter:
 # shape_name
 # -> A string such as:
@@ -72,9 +70,9 @@ player = turtle.Turtle()
 player.shape("arrow")
 
 # color(color_name)
-#
+
 # Changes the turtle's colour.
-#
+
 # Parameter:
 # color_name
 # -> A string such as:
@@ -109,64 +107,69 @@ goal = turtle.Turtle()
 
 # ============================================================
 # TODO:
-#
+goal.shape("circle")
+
 # Make the goal a circle.
-#
+
 # Useful method:
-#
+
 # shape(shape_name)
-#
+
 # Example:
-# goal.shape("circle")
+# goal.shape("square")
 # ============================================================
 
 
 
 # ============================================================
-# TODO:
-#
 # Make the goal green.
-#
+
+# TODO:
+goal.color("green")
+
 # Useful method:
-#
+
 # color(color_name)
-#
+
 # Example:
-# goal.color("green")
+# goal.color("blue")
 # ============================================================
 
 
 
 # ============================================================
-# TODO:
-#
 # Stop the goal from drawing lines.
-#
-# Useful method:
-#
-# penup()
-# ============================================================
 
-
-
-# ============================================================
 # TODO:
-#
-# Move the goal to:
-# x = -200
-# y = -200
-#
+goal.penup()
+
 # Useful method:
-#
+
+# penup(): prevents the Turtle object from drawing lines when
+#          moving throughout the window.
+# ============================================================
+
+
+
+# ============================================================
+# Move the goal to:
+# x = -290
+# y = 230
+
+# TODO:
+goal.goto(x=-290, y=230)
+
+# Useful method:
+
 # goto(x, y)
-#
+
 # Parameters:
 # x
-# -> Left/right position.
-#
+# -> Horizontal (Left/Right) position.
+
 # y
-# -> Up/down position.
-#
+# -> Vertical (Up/down) position.
+
 # Example:
 # goal.goto(100, 50)
 # ============================================================
@@ -294,7 +297,7 @@ def check_if_player_won():
     # abs(player_x - goal_x)
     # ========================================================
 
-    x_distance =
+    # x_distance =
 
 
     # ========================================================
@@ -303,7 +306,7 @@ def check_if_player_won():
     # Find the y distance between the player and goal.
     # ========================================================
 
-    y_distance =
+    # y_distance = 
 
 
     # ========================================================
