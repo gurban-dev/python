@@ -34,7 +34,7 @@ print("The father of history is " + name + ".\n"
 
 # Or:
 print("\nThe father of history is ", name, ".\n"
-      "He lived during the ", str(century), "th century BC.\n", sep="")
+      "He lived during the ", century, "th century BC.\n", sep="")
 
 '''
 Practice Exercise

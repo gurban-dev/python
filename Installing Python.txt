@@ -164,3 +164,23 @@ Verify installation:
 python --version
 
 pip --version
+
+---------------------------------------------------------------------
+MacOS:
+
+zsh: command not found: python
+
+macOS:
+
+zsh: command not found: python
+
+Zsh (Z shell) is the default command-line shell on modern
+versions of macOS. This error indicates that the shell
+could not find a command named "python". On many macOS
+systems, Python 3 is available as "python3" instead of
+"python".
+
+Execute the following if python3 works, but python doesn't:
+echo "alias python='python3'" >> ~/.zshrc
+
+source ~/.zshrc
