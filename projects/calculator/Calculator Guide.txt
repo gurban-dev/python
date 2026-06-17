@@ -1,0 +1,28 @@
+Step 1: Define the Requirements
+The calculator will support:
+• Addition
+• Substraction
+• Multiplication
+• Division
+
+Later we may add:
+• Powers/Exponentation
+• Square roots
+
+Avoid putting all of the source code into one file.
+
+Step 2: Separate Responsibilities
+Responsibility        Purpose
+Operations            Perform calculations
+Calculator            Coordinate operations
+User Interface        Interact with the user
+Entry Point           Start application
+
+This is called separation of concerns.
+
+Step 3: Create an Operations Module
+
+A module is a Python file that contains:
+• Variables
+• Functions
+• Classes
