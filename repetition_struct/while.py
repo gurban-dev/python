@@ -3,14 +3,14 @@
 # Create a variable to control the loop.
 keep_going = 'y'
 
-# The "while" keyword is a prerequisite.
+# The "while" keyword is a prerequisite in the while clause.
 
 # Calculate a series of commissions.
 while keep_going == 'y':
 	# Get a salesperson's sales and commission rate.
 	sales = float(input('Enter the amount of sales: '))
 
-		# Python's built-in input() function returns a string.
+	# Python's built-in input() function always returns a string.
 
 	# In this case, that string must be converted to a
 	# float data type because of the multiplication that
