@@ -14,7 +14,7 @@ from languages import english, french
 # functions, classes and data into separate files.
 
 # Say hello in English.
-print(english['hello'])
+print(f"english['hello']: {english['hello']}\n")
 
 # Say hello in French.
-print(french['hello'])
+print(f"french['hello']: {french['hello']}")
