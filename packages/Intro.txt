@@ -1,0 +1,30 @@
+Non-technical definition:
+• A module is a single book.
+• A package is a bookshelf that holds related books.
+• A library is a library building that contains many bookshelves.
+• The Python ecosystem is like a city filled with many libraries.
+
+Technical definition:
+• A module is a single Python file (.py) that contains Python code,
+  such as functions, classes, and variables.
+• A package is a folder that groups related Python modules together.
+• A library is a collection of related packages and modules that
+  solve a larger problem.
+• The Python ecosystem is the collection of all Python libraries,
+  frameworks, and tools.
+
+
+Library (NumPy)
+│
+├── Package A
+│   ├── Module 1
+│   ├── Module 2
+│   └── Module 3
+│
+├── Package B
+│   ├── Module 1
+│   └── Module 2
+│
+└── Package C
+    ├── Module 1
+    └── Module 2
