@@ -13,9 +13,9 @@ else:
 
 # The first condition also evaluates to True, so the code inside
 # the if block is executed.
-if temp_in_fahrenheit > 27:
+if temp_in_fahrenheit > 84:
 	print("It's a hot day.")
-elif temp_in_fahrenheit > 20:
+elif temp_in_fahrenheit > 70:
 	print("It's a warm day.")
 else:
 	print("It's a chilly day.")
