@@ -1,64 +1,42 @@
-# In Python, an f-string (short for formatted string
-# literal) lets you put variables directly inside a
-# string literal using {} (curly braces). This makes
-# your code shorter and easier to read.
+# An f-string (short for formatted string literal) lets you
+# insert variables or expressions directly into a string using
+# {} (curly braces).
 
 name = "Herodotus"
-
 century = 5
 
-# Using an f-string requires preceding the quotation marks
-# with a lowercase f.
-
-# The f before the string tells Python to evaluate expressions
-# inside the curly braces {} and insert the result into the
-# string before printing.
+# To create an f-string, place a lowercase f immediately before
+# the opening quotation mark.
 print(f"The father of history is {name}.\n"
       f"He lived during the {century}th century BC.\n")
 
-# An advantage of using f-strings is that variables that reference
-# integers, are automatically converted to strings.
+# The f tells Python to evaluate any expressions inside {}
+# and insert their values into the string before it is printed.
+print(f"Next century: {century + 1}th century BC.")
 
-# When should you use an f-string?
+# F-strings automatically convert values such as integers,
+# floats, and booleans to strings. This means you do not need
+# to call str() yourself.
 
-# Answer:
-# Use an f-string when variables need to automatically be converted to
-# strings and when spacing around variables is inconsistent.
+# F-strings are usually the easiest way to combine text with
+# variables. The code closely matches the output, making it
+# easier to read and write.
 
-# In other words, certain variables need whitespace characters before
-# or after them whereas others do not.
-
-# Without an f-string:
+# Without an f-string, the sentence is split into several
+# separate pieces.
 print("The father of history is " + name + ".\n"
       "He lived during the " + str(century) + "th century BC.\n")
 
-# Or:
-print("\nThe father of history is ", name, ".\n"
+# Another approach is to separate the values with commas.
+print("The father of history is ", name, ".\n"
       "He lived during the ", century, "th century BC.\n", sep="")
 
-'''
-Practice Exercise
+# Commas separate the arguments passed to print().
 
-Create three variables:
-fruit -> your favorite fruit (string)
+# By default, print() places a space between each argument.
 
-colour -> the colour of that fruit (string)
+# The sep parameter controls the separator that print() places
+# between its arguments.
 
-times_per_week -> how many times you eat it in a week (integer)
-
-
-Use an f-string to print a sentence about your fruit:
-
-E.g.
-My favourite fruit is banana. It is yellow, and I eat it
-3 times per week.
-'''
-fruit = 'apple'
-
-colour = 'green'
-
-times_per_week = 5
-
-print(f'My favourite fruit is {fruit}. It is '
-      f'{colour}, and\nI eat it {times_per_week} '
-      f'times per week.')
+# sep="" changes the separator to an empty string, so no spaces
+# are inserted between the arguments.
