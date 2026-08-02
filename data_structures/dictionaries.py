@@ -64,22 +64,34 @@ The values can also be of different data types.
 # 'abc' is a string.
 # 99.9 is a float.
 # (3, 6, 9) is a tuple.
-mixed_up = {
+mixed_key_types = {
 	'abc': 1,
-
 	99.9: 'yada yada',
-
 	(3, 6, 9): [3, 6, 9]
 }
 
-print(f'\nmixed_up: {mixed_up}')
+print(f'\nmixed_key_types: {mixed_key_types}')
+
+# Call the .keys() method on the dictionary object to get
+# all of its keys.
+print(f"\nmixed_key_types.keys(): {mixed_key_types.keys()}")
+
+# Call the .values() method on the dictionary object to get
+# all of its values.
+print(f"\nmixed_key_types.values(): {mixed_key_types.values()}\n")
+
+# Each time the for loop iterates, the .items() method returns the
+# key and its corresponding value for the current iteration in the
+# dictionary.
+for key, value in mixed_key_types.items():
+    print(f"key: {key}, value: {value}")
 
 # In some programs, an empty dictionary is
 # initialised for the purpose of inserting
 # elements or key-value pairs later on.
 employees = {}
 
-# Python's built-in dict() method is another
-# option to pick from when declaring empty
-# dictionaries.
+# Python's built-in dict() class constructor is another
+# option to pick from when declaring empty dictionaries.
 managers = dict()
+
