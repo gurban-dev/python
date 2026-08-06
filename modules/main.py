@@ -5,7 +5,7 @@
 
 # Template for importing specific objects from a module:
 # from <module_name> import <object_one>, <object_two>
-from languages import english, french
+from languages import french, italian
 
 # Imports the entire module so its members are accessed
 # through the module namespace (for example, languages.french).
@@ -23,8 +23,8 @@ from languages import english, french
 # Inside each room are the things that belong there.
 
 # The languages Room contains:
-# english
 # french
+# italian
 
 # The math room contains:
 # pi
@@ -46,8 +46,8 @@ print("languages.french:", languages.french, "\n")
 # Modules help organise code by grouping related variables,
 # functions, classes and data into separate files.
 
-# Say hello in English.
-print(f"english['hello']: {english['hello']}\n")
-
 # Say hello in French.
-print(f"french['hello']: {french['hello']}")
+print(f"french['hello']: {french['hello']}\n")
+
+# Say hello in Italian.
+print(f"italian['hello']: {italian['hello']}")

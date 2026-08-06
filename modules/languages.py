@@ -7,15 +7,18 @@
 # The key appears before the colon (:).
 # The value appears after the space that follows the colon (:).
 
-english = {
-    # key: value
-    "hello": "Hello",
-    "goodbye": "Goodbye",
-    "thank_you": "Thank you"
-}
-
 french = {
+    # key: value
     "hello": "Bonjour",
     "goodbye": "Au revoir",
+
+    # "thank you" is also valid as a dictionary key in Python,
+    # but less common.
     "thank_you": "Merci"
+}
+
+italian = {
+    "hello": "Buongiorno",
+    "goodbye": "Arrivederci",
+    "thank_you": "Grazie"
 }
