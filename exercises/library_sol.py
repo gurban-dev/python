@@ -2,10 +2,16 @@
 books = {}
 
 # Keep reading input until the user exits the program.
+
+# Non-entry controlled while loop since the condition is hardcoded to
+# be True.
 while True:
     try:
-        # Remove extra spaces and convert the title to lowercase so
-        # every title is stored in the same format.
+        # .strip() removes the leading and trailing whitespace
+        # characters.
+        # .lower() makes all character lowercase
+
+        # This ensures that every title is stored in the same format.
         title = input("Book title: ").strip().lower()
 
         # Stop the loop if the user wants to quit.
@@ -13,7 +19,7 @@ while True:
             break
 
         # Increase the count if the title already exists.
-        if title in books:
+        elif title in books:
             books[title] += 1
 
         # Otherwise, add the title to the dictionary with a count of one.
@@ -21,7 +27,10 @@ while True:
             books[title] = 1
 
     # Exit the loop when an EOFError is raised.
-    # EOF means "End Of File", indicating that the user has finished entering input.
+    # EOF means "End Of File", indicating that the user has
+    # finished entering input.
+
+    # This also catches Ctrl+D safely.
     except EOFError:
         break
 

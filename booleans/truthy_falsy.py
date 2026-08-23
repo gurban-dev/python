@@ -1,21 +1,35 @@
 '''
-Explicit boolean values are True or False.
+Boolean values
 
-In Python, they are written as "True" and "False"
-(without the quotation marks).
+In Python, the two explicit boolean values are True and False.
 
-Assigning True or False to a variable will make
-that variable a boolean variable.
+Assigning True or False to a variable makes that variable reference
+to a boolean value:
+is_logged_in = True
+is_admin = False
 
-In Python there are truthy and falsy values which
-are not explicitly a boolean True or False, but
-can be interpreted as such.
+Python can also interpret other values as either True or False.
 
-In Python, 0 and 1 are treated as booleans because bool
-is a subclass of int.
+This is called truthiness.
 
-Assigning any of the following falsy values will make a
-variable be interpreted as False.
+Every Python value can be evaluated in a boolean context.
+
+Truthy values evaluate to True.
+Falsy values evaluate to False.
+
+The bool() function lets us see the boolean interpretation of a value:
+bool(1)       # True
+bool(0)       # False
+bool("hello") # True
+bool("")      # False
+
+Python has a particularly close relationship between integers and
+booleans because bool is a subclass of int:
+isinstance(True, int)   # True
+isinstance(False, int)  # True
+
+Assigning any of the following falsy values will make a variable
+be interpreted as False.
 
 Examples of falsy values:
 Empty strings: '', ""

@@ -1,0 +1,65 @@
+An algorithm is a step-by-step approach to solving a problem.
+
+Inventor:
+Persian mathematician al-Khwarizmi (780 - 850 AD) in the 820s
+
+Requirements:
+1. An algorithm must be unambiguous.
+   Unambiguous means not open to more than one interpretation.
+
+   Meaning that any two people should read it and arrive at the
+   same conclusion.
+
+2. An algorithm should have clearly defined inputs and outputs.
+
+   Inputs are the information that you give to the algorithm.
+   Outputs are the results that the algorithm produces.
+
+   Inputs -> Algorithm -> Outputs
+
+3. An algorithm should be programming language-neutral, so that a
+   Python developer and a TypeScript developer can both look at it
+   and understand it.
+
+Suppose we wanted to write an algorithm for a program that computes
+the sum of two whole numbers.
+
+Inputs: Two integers, num1 and num2
+
+Output: The sum of num1 and num2
+
+Steps
+1. Get the first integer and store it in num1.
+2. Get the second integer and store it in num2.
+3. Add num1 and num2.
+4. Store the result in sum.
+5. Display sum.
+
+Pseudocode is a way of writing an algorithm in a code-like format
+without using a specific programming language.
+
+The pseudocode for this program would look like:
+ALGORITHM SumTwoIntegers
+	INPUT num1
+	INPUT num2
+
+	sum <- num1 + num2
+
+	OUTPUT sum
+END ALGORITHM
+
+Suppose we wanted to write an algorithm for a washing dishes.
+
+
+
+Pseudocode for washing dishes:
+ALGORITHM WashDishes
+	COLLECT dishes
+	ADD soap to sponge
+
+	FOR each dish
+		WASH dish
+		RINSE dish
+		PLACE dish on drying rack
+	END FOR
+END ALGORITHM
