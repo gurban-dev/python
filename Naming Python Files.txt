@@ -1,0 +1,51 @@
+Why Do Python Files Need Descriptive Names?
+
+Imagine you open a project and see these files:
+    a.py
+    test.py
+    stuff.py
+    new.py
+    program.py
+
+Can you tell what these programs do without opening them?
+
+Now imagine the same project contains:
+    calculate_order_total.py
+    validate_email.py
+    database_connection.py
+    generate_invoice.py
+    user_authentication.py
+
+These filenames immediately give you useful information about
+the code inside them.
+
+Why are descriptive filenames important?
+
+- They make files easier to find.
+- They help you understand what a file contains.
+- They make unfamiliar projects easier to navigate.
+- They help developers collaborate.
+- They make projects easier to maintain.
+
+In this context, maintain means keeping a project organized,
+understandable and working properly as you continue to make
+changes to it.
+
+Imagine that you are working on a project with 100 Python files.
+
+A file called:
+    stuff.py
+
+does not tell you much.
+
+A file called:
+    calculate_order_total.py
+
+immediately gives you a useful clue about what the file does.
+
+The main idea:
+A filename should give the reader a useful clue about
+what the file contains.
+
+The filename itself can help people understand what the purpose
+of a file is.
