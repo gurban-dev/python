@@ -3,13 +3,12 @@
 
 print("🕵️ PYTHON FILE RESCUE MISSION 🕵️")
 
-print("Uh oh!")
 print("Someone left a folder full of Python programs...")
 print("But the filenames are TERRIBLE! 😱")
 
 print("\nYour mission:")
-print("Figure out which filenames help you understand")
-print("what each program does.")
+print("Figure out which filenames help you understand what\n"
+      "what each program does.")
 
 
 input("\nPress Enter to begin the mission...")
@@ -92,7 +91,7 @@ print("You find these four files:")
 
 print("1. stuff.py")
 print("2. pizza.py")
-print("3. student_name.py")
+print("3. get_name.py")
 print("4. thing.py")
 
 print('\nWhich file asks the user for their name?')
@@ -115,15 +114,15 @@ print("THE SECRET OF GOOD FILENAMES")
 print("========================================")
 
 
-print("A filename is like a label on a box.")
+print("A filename is like a label on a box.\n")
 
 print("Imagine two boxes:")
 
 print("📦 Box 1: 'stuff'")
-print("📦 Box 2: 'board games'")
+print("📦 Box 2: 'board games'\n")
 
-print("Which box would you open if you wanted")
-print("to play some board games?")
+print("Which box would you open if you wanted to play some\n"
+      "board games?\n")
 
 print("A descriptive filename helps you and other programmers\n"
       "understand what a program is about without opening the file.")
