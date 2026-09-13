@@ -1,10 +1,10 @@
-# This exercise reinforces the below concepts:
+# This exercise reinforces the following concepts:
 # Class creation
-# Constructor method
+# Constructor methods
 
 # Create a class for a country.
 
-# The constructor method will intialise the following data:
+# The constructor method should initialise the following data:
 # • Country name
-# • The population of the country which will be represented
-#   in millions. 9.82 indicates 9.82 million.
+# • Country population, represented in millions.
+#   For example, 9.82 represents 9.82 million people.
