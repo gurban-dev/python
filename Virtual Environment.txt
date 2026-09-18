@@ -1,81 +1,292 @@
-Establishing a virtual environment on a Windows OS:
+# Python Virtual Environments with Windows PowerShell and Jupyter
 
-Navigate to the directory where all of your programs are.
+===============================================================================
+1. CREATE A VIRTUAL ENVIRONMENT
+===============================================================================
+
+Open Windows PowerShell.
+
+You can tell that you are in PowerShell by checking if there is "PS" at the
+beginning of the command prompt:
+
+PS C:\Users\gurban-dev\python>
+
+
+Navigate to the directory where all of your programs are located.
+
 
 Create a virtual environment folder in that same directory:
+
 python -m venv .venv
 
-It is a good practice to have the name of the virtual environment folder
-begin with a dot so that it is not committed to a Git repository.
 
-In that same directory, run the following command to activate the virtual
-environment:
-.\.venv\Scripts\Activate.ps1
+It is good practice to have the name of the virtual environment folder begin
+with a dot. This makes it clear that the folder is an environment folder and
+helps prevent it from being accidentally committed to a Git repository.
 
-With .venv activated, update pip (the Python package manager) inside the
-virtual environment:
-python -m pip install --upgrade pip
-
-Install Jupyter and ipykernel inside .venv:
-python -m pip install jupyter ipykernel
-
-Register the kernel:
-python -m ipykernel install --user --name .venv --display-name ".venv"
-
-Launch Jupyter Notebook:
-juptyer notebook
-
-If you already have a Jupyter Notebook file open, restart the kernel.
-
-Click on the "Kernel" button, then hover over "Change kernel", and select:
-.venv
 
 -------------------------------------------------------------------------------
-Creating a virtual environment with a different version of Python:
-py install <python_version>
+2. ACTIVATE THE VIRTUAL ENVIRONMENT
+-------------------------------------------------------------------------------
 
-E.g.
-py install 3.13
+In the same directory, run:
 
-
-Verify that it has been installed:
-py -<python_version> --version
-
-E.g.
-py -3.13 --version
+.\.venv\Scripts\Activate.ps1
 
 
-Create the virtual environment with the specific version of Python:
-py -<python_version> -m venv .venv
+Once activated, you should see (.venv) at the beginning of the command prompt:
 
-E.g.
-py -3.13.12 -m venv .venv
+(.venv) PS C:\Users\gurban-dev\python>
 
 
-Make sure that ipykernel is installed:
-pip install ipykernel
+-------------------------------------------------------------------------------
+3. IF POWERSHELL PREVENTS THE ACTIVATION
+-------------------------------------------------------------------------------
 
+If PowerShell prevents the activation script from running, open PowerShell
+and run it as an administrator:
 
-Register the kernel:
-python -m ipykernel install --user --name .venv --display-name ".venv"
-
-If on Windows, run PowerShell as an administrator:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
-Activate the virtual environment:
+Then try activating the virtual environment again:
 
-Linux:
-. .venv/bin/activate
-
-Windows:
 .\.venv\Scripts\Activate.ps1
 
 
-Launch jupyter notebook:
+-------------------------------------------------------------------------------
+4. UPDATE PIP
+-------------------------------------------------------------------------------
+
+With .venv activated, update pip, the Python package manager:
+
+python -m pip install --upgrade pip
+
+
+-------------------------------------------------------------------------------
+5. INSTALL JUPYTER AND IPYKERNEL
+-------------------------------------------------------------------------------
+
+Install Jupyter and ipykernel inside the virtual environment:
+
+python -m pip install jupyter ipykernel
+
+
+-------------------------------------------------------------------------------
+6. REGISTER THE VIRTUAL ENVIRONMENT AS A JUPYTER KERNEL
+-------------------------------------------------------------------------------
+
+Register the virtual environment as a Jupyter kernel:
+
+python -m ipykernel install --user --name .venv --display-name ".venv"
+
+
+-------------------------------------------------------------------------------
+7. LAUNCH JUPYTER NOTEBOOK
+-------------------------------------------------------------------------------
+
+Launch Jupyter Notebook:
+
 jupyter notebook
 
 
-The following line can be added to a cell in Jupyter notebook to ensure
-that the proper version of Python is in use:
+If you already have a Jupyter Notebook file open, restart the kernel.
+
+
+Click the "Kernel" button.
+
+Then hover over "Change kernel".
+
+Select:
+
+.venv
+
+
+-------------------------------------------------------------------------------
+8. VERIFY THE PYTHON VERSION IN JUPYTER
+-------------------------------------------------------------------------------
+
+The following line can be added to a cell in Jupyter Notebook to make sure
+that the correct version of Python is being used:
+
 !python --version
+
+
+This allows you to verify which Python interpreter is being used by the
+current Jupyter kernel.
+
+
+===============================================================================
+9. CREATING A VIRTUAL ENVIRONMENT WITH A DIFFERENT VERSION OF PYTHON
+===============================================================================
+
+You can install a specific version of Python using the Python launcher:
+
+py install <python_version>
+
+
+For example:
+
+py install 3.13
+
+
+Verify that the Python version has been installed:
+
+py -<python_version> --version
+
+
+For example:
+
+py -3.13 --version
+
+
+-------------------------------------------------------------------------------
+10. CREATE THE VIRTUAL ENVIRONMENT WITH A SPECIFIC PYTHON VERSION
+-------------------------------------------------------------------------------
+
+Use the Python launcher to create the virtual environment with the specific
+Python version:
+
+py -<python_version> -m venv .venv
+
+
+For example:
+
+py -3.13.12 -m venv .venv
+
+
+The Python version used to create the virtual environment determines which
+Python interpreter the virtual environment will use.
+
+
+-------------------------------------------------------------------------------
+11. INSTALL IPYKERNEL
+-------------------------------------------------------------------------------
+
+Make sure that ipykernel is installed inside the virtual environment:
+
+pip install ipykernel
+
+
+-------------------------------------------------------------------------------
+12. REGISTER THE KERNEL
+-------------------------------------------------------------------------------
+
+Register the virtual environment as a Jupyter kernel:
+
+python -m ipykernel install --user --name .venv --display-name ".venv"
+
+
+-------------------------------------------------------------------------------
+13. ACTIVATE THE VIRTUAL ENVIRONMENT
+-------------------------------------------------------------------------------
+
+Windows PowerShell:
+
+.\.venv\Scripts\Activate.ps1
+
+
+Linux:
+
+. .venv/bin/activate
+
+
+-------------------------------------------------------------------------------
+14. DELETE THE VIRTUAL ENVIRONMENT
+-------------------------------------------------------------------------------
+
+Windows PowerShell:
+
+Remove-Item -Recurse -Force .\.venv
+
+
+Linux:
+
+rm -rf .venv
+
+
+A virtual environment can safely be deleted because it can be recreated from
+the project requirements.
+
+
+-------------------------------------------------------------------------------
+15. LAUNCH JUPYTER NOTEBOOK
+-------------------------------------------------------------------------------
+
+Run:
+
+jupyter notebook
+
+
+===============================================================================
+QUICK REFERENCE
+===============================================================================
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+Activate on Windows PowerShell:
+
+.\.venv\Scripts\Activate.ps1
+
+
+Activate on Linux:
+
+. .venv/bin/activate
+
+
+Update pip:
+
+python -m pip install --upgrade pip
+
+
+Install Jupyter and ipykernel:
+
+python -m pip install jupyter ipykernel
+
+
+Register the kernel:
+
+python -m ipykernel install --user --name .venv --display-name ".venv"
+
+
+Launch Jupyter:
+
+jupyter notebook
+
+
+Check Python version:
+
+python --version
+
+
+Check Python version from inside Jupyter:
+
+!python --version
+
+
+Delete the virtual environment on Windows:
+
+Remove-Item -Recurse -Force .\.venv
+
+
+Delete the virtual environment on Linux:
+
+rm -rf .venv
+
+
+Install a specific Python version:
+
+py install 3.13
+
+
+Check a specific Python version:
+
+py -3.13 --version
+
+
+Create a virtual environment with a specific Python version:
+
+py -3.13 -m venv .venv
