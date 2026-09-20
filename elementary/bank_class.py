@@ -29,12 +29,12 @@ class BankAccount:
         # balance_par from self.balance.
         print("balance_par:", balance_par)
 
-        # self.balance belongs to the object or instance of the
-        # class.
+        # self.balance is an instance variable. It belongs to the
+        # object or instance of the class.
 
-        # balance_par (without self.) is a parameter that allows this
-        # constructor method to accept data from outside of the
-        # class when an instance of this class is created.
+        # balance_par is a parameter that allows this constructor
+        # method to accept data from outside of the class when an
+        # instance of this class is created.
         self.balance = balance_par
 
 # Create an instance/object of the BankAccount class.
