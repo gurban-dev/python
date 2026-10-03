@@ -11,7 +11,8 @@
 # class <NameOfClass>:
 
 # Notice how the name of the class is written in the PascalCase
-# naming convention.
+# naming convention. The PEP 8 style guide recommends naming classes
+# this way.
 
 # Meaning that the first letter of each word is uppercase.
 
