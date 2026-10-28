@@ -6,22 +6,29 @@
 
 # What does the print() function return?
 
+
 # What is the name of the standard tool for installing third-party
 # Python packages?
 
-# Complete the following sentence with the below choices:
+
+# Complete the following sentence with the below choices.
+
+# The below choices are limited to the first blank line:
 # index, element, number
 
 # In a Python for loop, the loop variable takes each _ from an
 # _.
 
+# The below choices are limited to the second blank line:
 # boolean, integer, iterable
+
 
 # Define the correct terms that were used to complete the above
 # sentence.
 
+
 # Name a built-in data type that is mutable and one that is
-# immutable.
+# immutable. Write an example of each.
 
 
 # Which of the following statement are true about dictionaries?
@@ -30,6 +37,7 @@
 # c. Insertion order is preserved.
 # d. Dictionary values must be unique.
 # e. Dictionary items are accessed by their numeric index.
+
 
 # numbers = range(5)
 

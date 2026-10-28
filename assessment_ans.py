@@ -1,12 +1,17 @@
 # In Python, which function do you use to display text and numbers?
-print("Hello, world!")
+print("Hello, world!\n")
 
 # Which keyword do you use to start a function definition?
+# def
+
 def greet(first_name, last_name):
-    return f"Hello {first_name} {last_name}!"
+    return f"Hello {first_name} {last_name}!\n"
+
+print(greet(first_name="Alexander", last_name="Hamilton"))
 
 # What does the print() function return?
 # The print() function returns None.
+
 
 # What is the name of the standard tool for installing third-party
 # Python packages?
@@ -15,19 +20,20 @@ def greet(first_name, last_name):
 # The name is a recursive acronym, meaning the word itself is used
 # inside its own definition.
 
+
 # Complete the following sentence with the below choices.
 
-# # The below choices are limited to the first blank line:
+# The below choices are limited to the first blank line:
 # index, element, number
 
 # In a Python for loop, the loop variable takes each _ from an
 # _.
 
-# In a Python for loop, the loop variable takes each element
-# from an iterable.
-
 # The below choices are limited to the second blank line:
 # boolean, integer, iterable
+
+# In a Python for loop, the loop variable takes each element
+# from an iterable.
 
 # Indices:
 #       0  1  2  3  4
@@ -37,12 +43,14 @@ nums = [1, 2, 3, 4, 5]
 # 1, 2, 3, 4, 5
 
 for num in nums:
-    print(num)
+    print("num:", num)
+print()
 
 # Indices:
 #              01234
 for letter in "abcde":
-    print(letter)
+    print("letter:", letter)
+print()
 
 # Define the correct terms that were used to complete the above
 # sentence.
@@ -56,8 +64,21 @@ for letter in "abcde":
 
 # Name a built-in data type that is mutable and one that is
 # immutable.
+
 # Mutable: A list
+portfolio_projections = [10_500, 11_025, 11_576]
+
+# Valid since lists can be mutated.
+portfolio_projections[2] = 11_842
+
 # Immutable: A tuple
+date_of_birth = (29, 5, 1917)
+
+# Invalid since tuples cannot be mutated.
+try:
+    date_of_birth[2] = 1917
+except TypeError as err:
+    print("Error:", err)
 
 # Which of the following statement are true about dictionaries?
 # a. Dictionary keys must be hashable.
@@ -77,8 +98,6 @@ for letter in "abcde":
 #    dictionary, the entries appear in that order unless they are deleted
 #    and reinserted.
 
-# A dictionary is made up of key-value pairs.
-
 date_of_birth = {
     # key: value
     "day": 9,
@@ -86,7 +105,8 @@ date_of_birth = {
     "year": 1917
 }
 
-print("date_of_birth[\"year\"]:", date_of_birth["year"])
+print("\ndate_of_birth[\"year\"]:", date_of_birth["year"])
+
 
 # numbers = range(5)
 
@@ -96,7 +116,7 @@ print("date_of_birth[\"year\"]:", date_of_birth["year"])
 
 # Predict the output of each.
 
-print("5 == \"5.0\":", 5 == "5.0", "\n")
+print("\n5 == \"5.0\":", 5 == "5.0", "\n")
 
 print("5 == 5.0:", 5 == 5.0, "\n")
 
@@ -104,6 +124,6 @@ try:
     print("5 > \"5.0\":", 5 > "5.0", "\n")
 except TypeError:
     print("The greater-than sign cannot be used to compare "
-          "a numeric type and a text type.\n")
+          "a numeric\ntype and a text type.\n")
 
 print("5 > 5.0:", 5 > 5.0, "\n")
