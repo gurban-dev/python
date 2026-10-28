@@ -33,7 +33,6 @@ Determine what information the program receives and what result it
 should produce.
 
 Inputs:
-
 •  Numbers
 •  Strings
 •  Lists
@@ -41,13 +40,11 @@ Inputs:
 •  User input
 
 Outputs:
-
 •  Printed results
 •  Returned values
 •  Modified data structures
 
 Examples:
-
 •  Input -> list of numbers
 •  Output -> total sum
 
@@ -60,7 +57,6 @@ Instead of trying to solve the entire problem at once, divide it into
 smaller logical steps.
 
 Example:
-
 •  Get the data
 •  Validate the data
 •  Process the information
@@ -78,7 +74,6 @@ natural language.
 This is called pseudocode.
 
 Example:
-
 1. Initialise "sum" with 0
 2. Loop through each number in the list
 3. Add the current number to "sum"
